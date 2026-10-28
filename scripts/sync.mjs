@@ -247,7 +247,7 @@ Not every site is here yet. Sitepeel gives you three ways to make the file yours
 
 ## All brands
 
-${n} brands in ${categories.length} categories. Colors are listed background first, then surfaces, text and the accent. Open a brand to see its screenshot.
+${n} brands in ${categories.length} categories. Colors are listed background first, then surfaces, text and the accent. Open a brand to see its screenshot. Scripts and agents can read the same list from [index.json](index.json).
 
 ${tables}
 
