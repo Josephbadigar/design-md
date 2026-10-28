@@ -1,0 +1,3794 @@
+{
+  "name": "Sitepeel DESIGN.md library",
+  "source": "https://sitepeel.dev/design-md/examples/",
+  "license": "CC-BY-4.0",
+  "credit": "Sitepeel (sitepeel.dev)",
+  "count": 168,
+  "categories": [
+    {
+      "name": "AI",
+      "count": 14
+    },
+    {
+      "name": "Developer tools",
+      "count": 37
+    },
+    {
+      "name": "UI and animation libraries",
+      "count": 7
+    },
+    {
+      "name": "SaaS and productivity",
+      "count": 37
+    },
+    {
+      "name": "Fintech and payments",
+      "count": 13
+    },
+    {
+      "name": "Marketing and analytics",
+      "count": 11
+    },
+    {
+      "name": "Design tools and site builders",
+      "count": 13
+    },
+    {
+      "name": "Inspiration",
+      "count": 7
+    },
+    {
+      "name": "E-commerce and brands",
+      "count": 12
+    },
+    {
+      "name": "Media and consumer apps",
+      "count": 14
+    },
+    {
+      "name": "Security and privacy",
+      "count": 3
+    }
+  ],
+  "brands": [
+    {
+      "name": "Anthropic",
+      "host": "anthropic.com",
+      "category": "AI",
+      "theme": "dark",
+      "fonts": [
+        "anthropicSerif",
+        "anthropicSans"
+      ],
+      "colors": [
+        "#141413",
+        "#3B3B3B",
+        "#262624",
+        "#FAF9F5",
+        "#E8E6DC"
+      ],
+      "accent": "#E8E6DC",
+      "file": "design-md/anthropic.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/anthropic.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/anthropic.com/",
+      "screenshot": "https://sitepeel.dev/design-md/anthropic.com/screenshot.jpg"
+    },
+    {
+      "name": "bolt.new",
+      "host": "bolt.new",
+      "category": "AI",
+      "theme": "dark",
+      "fonts": [
+        "Schibsted Grotesk",
+        "Silkscreen"
+      ],
+      "colors": [
+        "#111114",
+        "#000000",
+        "#171719",
+        "#FFFFFF",
+        "#F9F6F9",
+        "#2BA6FF"
+      ],
+      "accent": "#2BA6FF",
+      "file": "design-md/bolt.new/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/bolt.new/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/bolt.new/",
+      "screenshot": "https://sitepeel.dev/design-md/bolt.new/screenshot.jpg"
+    },
+    {
+      "name": "Cursor",
+      "host": "cursor.com",
+      "category": "AI",
+      "theme": "dark",
+      "fonts": [
+        "CursorGothic",
+        "EB Garamond"
+      ],
+      "colors": [
+        "#14120B",
+        "#201E18",
+        "#1B1913",
+        "#EDECEC",
+        "#969592",
+        "#F54E00"
+      ],
+      "accent": "#F54E00",
+      "file": "design-md/cursor.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/cursor.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/cursor.com/",
+      "screenshot": "https://sitepeel.dev/design-md/cursor.com/screenshot.jpg"
+    },
+    {
+      "name": "DeepL",
+      "host": "deepl.com",
+      "category": "AI",
+      "theme": "light",
+      "fonts": [
+        "robotoLatin"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#DEFDEE",
+        "#F8F8F8",
+        "#191919",
+        "#091A2B",
+        "#0F2B46"
+      ],
+      "accent": "#0F2B46",
+      "file": "design-md/deepl.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/deepl.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/deepl.com/",
+      "screenshot": "https://sitepeel.dev/design-md/deepl.com/screenshot.jpg"
+    },
+    {
+      "name": "ElevenLabs",
+      "host": "elevenlabs.io",
+      "category": "AI",
+      "theme": "light",
+      "fonts": [
+        "Waldenburg",
+        "Inter"
+      ],
+      "colors": [
+        "#F5F3F1",
+        "#FFFFFF",
+        "#FDFCFC",
+        "#000000",
+        "#777169",
+        "#0A59D2"
+      ],
+      "accent": "#000000",
+      "file": "design-md/elevenlabs.io/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/elevenlabs.io/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/elevenlabs.io/",
+      "screenshot": "https://sitepeel.dev/design-md/elevenlabs.io/screenshot.jpg"
+    },
+    {
+      "name": "Granola",
+      "host": "granola.ai",
+      "category": "AI",
+      "theme": "light",
+      "fonts": [
+        "quadrant",
+        "melange"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#EAEBE5",
+        "#F7F7F2",
+        "#292929",
+        "#72726E",
+        "#B2C248"
+      ],
+      "accent": "#B2C248",
+      "file": "design-md/granola.ai/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/granola.ai/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/granola.ai/",
+      "screenshot": "https://sitepeel.dev/design-md/granola.ai/screenshot.jpg"
+    },
+    {
+      "name": "Hugging Face",
+      "host": "huggingface.co",
+      "category": "AI",
+      "theme": "dark",
+      "fonts": [
+        "Source Sans Pro",
+        "IBM Plex Mono"
+      ],
+      "colors": [
+        "#0B0F19",
+        "#101828",
+        "#E5E7EB",
+        "#D1D5DC",
+        "#2B7FFF"
+      ],
+      "accent": "#E5E7EB",
+      "file": "design-md/huggingface.co/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/huggingface.co/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/huggingface.co/",
+      "screenshot": "https://sitepeel.dev/design-md/huggingface.co/screenshot.jpg"
+    },
+    {
+      "name": "Mistral",
+      "host": "mistral.ai",
+      "category": "AI",
+      "theme": "dark",
+      "fonts": [
+        "ALTMistral",
+        "Inter"
+      ],
+      "colors": [
+        "#101013",
+        "#1A1A1E",
+        "#FAFAF4",
+        "#A1A1AA",
+        "#FFAF01",
+        "#FF8204"
+      ],
+      "accent": "#FFAF01",
+      "file": "design-md/mistral.ai/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/mistral.ai/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/mistral.ai/",
+      "screenshot": "https://sitepeel.dev/design-md/mistral.ai/screenshot.jpg"
+    },
+    {
+      "name": "Perplexity AI",
+      "host": "perplexity.ai",
+      "category": "AI",
+      "theme": "dark",
+      "fonts": [
+        "pplxSans"
+      ],
+      "colors": [
+        "#15191D",
+        "#1A1E21",
+        "#081F22",
+        "#DADFE3",
+        "#959A9E",
+        "#016A71"
+      ],
+      "accent": "#016A71",
+      "file": "design-md/perplexity.ai/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/perplexity.ai/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/perplexity.ai/",
+      "screenshot": "https://sitepeel.dev/design-md/perplexity.ai/screenshot.jpg"
+    },
+    {
+      "name": "Replicate",
+      "host": "replicate.com",
+      "category": "AI",
+      "theme": "dark",
+      "fonts": [
+        "rb-freigeist-neue",
+        "basier-square"
+      ],
+      "colors": [
+        "#111111",
+        "#1B180F",
+        "#181111",
+        "#EEEEEE",
+        "#B4B4B4",
+        "#FFFFFF"
+      ],
+      "accent": "#FFFFFF",
+      "file": "design-md/replicate.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/replicate.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/replicate.com/",
+      "screenshot": "https://sitepeel.dev/design-md/replicate.com/screenshot.jpg"
+    },
+    {
+      "name": "Runway",
+      "host": "runwayml.com",
+      "category": "AI",
+      "theme": "light",
+      "fonts": [
+        "abcNormal"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#EEF1F5",
+        "#F7F7F7",
+        "#404040",
+        "#1A1A1A",
+        "#2B22FA"
+      ],
+      "accent": "#2B22FA",
+      "file": "design-md/runwayml.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/runwayml.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/runwayml.com/",
+      "screenshot": "https://sitepeel.dev/design-md/runwayml.com/screenshot.jpg"
+    },
+    {
+      "name": "Suno",
+      "host": "suno.com",
+      "category": "AI",
+      "theme": "dark",
+      "fonts": [
+        "Neue Montreal",
+        "Editorial New"
+      ],
+      "colors": [
+        "#101012",
+        "#000000",
+        "#F7F4EF",
+        "#FCFBF9",
+        "#02D95C",
+        "#1F8BFF"
+      ],
+      "accent": "#02D95C",
+      "file": "design-md/suno.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/suno.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/suno.com/",
+      "screenshot": "https://sitepeel.dev/design-md/suno.com/screenshot.jpg"
+    },
+    {
+      "name": "Synthesia",
+      "host": "synthesia.io",
+      "category": "AI",
+      "theme": "light",
+      "fonts": [
+        "Basiersquare Webfont"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F7F7F7",
+        "#363636",
+        "#68686A",
+        "#771A0D",
+        "#3E57DA"
+      ],
+      "accent": "#771A0D",
+      "file": "design-md/synthesia.io/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/synthesia.io/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/synthesia.io/",
+      "screenshot": "https://sitepeel.dev/design-md/synthesia.io/screenshot.jpg"
+    },
+    {
+      "name": "v0",
+      "host": "v0.app",
+      "category": "AI",
+      "theme": "dark",
+      "fonts": [
+        "GeistSans",
+        "Inter"
+      ],
+      "colors": [
+        "#000000",
+        "#121212",
+        "#0A0A0A",
+        "#EDEDED",
+        "#A0A0A0"
+      ],
+      "accent": "#EDEDED",
+      "file": "design-md/v0.app/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/v0.app/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/v0.app/",
+      "screenshot": "https://sitepeel.dev/design-md/v0.app/screenshot.jpg"
+    },
+    {
+      "name": "Astro",
+      "host": "astro.build",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Obviously"
+      ],
+      "colors": [
+        "#060913",
+        "#0C0F19",
+        "#0D0F14",
+        "#F2F6FA",
+        "#BFC1C9",
+        "#1A1367"
+      ],
+      "accent": "#1A1367",
+      "file": "design-md/astro.build/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/astro.build/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/astro.build/",
+      "screenshot": "https://sitepeel.dev/design-md/astro.build/screenshot.jpg"
+    },
+    {
+      "name": "Auth0",
+      "host": "auth0.com",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Aeonik",
+        "Aeonik Mono"
+      ],
+      "colors": [
+        "#20003A",
+        "#120021",
+        "#FFFFFF",
+        "#E5E5E5",
+        "#BCBAFF"
+      ],
+      "accent": "#FFFFFF",
+      "file": "design-md/auth0.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/auth0.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/auth0.com/",
+      "screenshot": "https://sitepeel.dev/design-md/auth0.com/screenshot.jpg"
+    },
+    {
+      "name": "Bun",
+      "host": "bun.sh",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Archivo"
+      ],
+      "colors": [
+        "#0D0A0C",
+        "#000000",
+        "#0E0E0E",
+        "#EAEAE8",
+        "#A8A8A5",
+        "#FF2E97"
+      ],
+      "accent": "#EAEAE8",
+      "file": "design-md/bun.sh/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/bun.sh/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/bun.sh/",
+      "screenshot": "https://sitepeel.dev/design-md/bun.sh/screenshot.jpg"
+    },
+    {
+      "name": "Clerk",
+      "host": "clerk.com",
+      "category": "Developer tools",
+      "theme": "light",
+      "fonts": [
+        "geistNumbers"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#EEEEF0",
+        "#F7F7F8",
+        "#131316",
+        "#5E5F6E",
+        "#42434D"
+      ],
+      "accent": "#42434D",
+      "file": "design-md/clerk.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/clerk.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/clerk.com/",
+      "screenshot": "https://sitepeel.dev/design-md/clerk.com/screenshot.jpg"
+    },
+    {
+      "name": "Cloudflare",
+      "host": "cloudflare.com",
+      "category": "Developer tools",
+      "theme": "light",
+      "fonts": [
+        "STK Bureau Sans"
+      ],
+      "colors": [
+        "#FF5E1F",
+        "#1F1F1F",
+        "#FFFBF5",
+        "#FF5F08",
+        "#FF9910"
+      ],
+      "accent": "#FF5E1F",
+      "file": "design-md/cloudflare.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/cloudflare.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/cloudflare.com/",
+      "screenshot": "https://sitepeel.dev/design-md/cloudflare.com/screenshot.jpg"
+    },
+    {
+      "name": "Datadog",
+      "host": "datadoghq.com",
+      "category": "Developer tools",
+      "theme": "light",
+      "fonts": [
+        "NationalWeb"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F6F6F6",
+        "#212529",
+        "#555555",
+        "#632CA6",
+        "#9EC5FE"
+      ],
+      "accent": "#632CA6",
+      "file": "design-md/datadoghq.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/datadoghq.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/datadoghq.com/",
+      "screenshot": "https://sitepeel.dev/design-md/datadoghq.com/screenshot.jpg"
+    },
+    {
+      "name": "Deno",
+      "host": "deno.com",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Inter",
+        "Menlo"
+      ],
+      "colors": [
+        "#001319",
+        "#25272B",
+        "#121417",
+        "#868789",
+        "#9EA0A5",
+        "#F5F5F5"
+      ],
+      "accent": "#25272B",
+      "file": "design-md/deno.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/deno.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/deno.com/",
+      "screenshot": "https://sitepeel.dev/design-md/deno.com/screenshot.jpg"
+    },
+    {
+      "name": "Docker",
+      "host": "docker.com",
+      "category": "Developer tools",
+      "theme": "light",
+      "fonts": [
+        "Repro",
+        "Inter"
+      ],
+      "colors": [
+        "#F9FAFB",
+        "#F0F0F0",
+        "#FFFFFF",
+        "#2C333F",
+        "#475569",
+        "#2560FF"
+      ],
+      "accent": "#2560FF",
+      "file": "design-md/docker.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/docker.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/docker.com/",
+      "screenshot": "https://sitepeel.dev/design-md/docker.com/screenshot.jpg"
+    },
+    {
+      "name": "Flutter",
+      "host": "flutter.dev",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Google Sans Flex"
+      ],
+      "colors": [
+        "#1A68D3",
+        "#FFFFFF",
+        "#000000",
+        "#14C2AD"
+      ],
+      "accent": "#1A68D3",
+      "file": "design-md/flutter.dev/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/flutter.dev/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/flutter.dev/",
+      "screenshot": "https://sitepeel.dev/design-md/flutter.dev/screenshot.jpg"
+    },
+    {
+      "name": "Fly.io",
+      "host": "fly.io",
+      "category": "Developer tools",
+      "theme": "light",
+      "fonts": [
+        "Mackinac",
+        "Fricolage Grotesque"
+      ],
+      "colors": [
+        "#F4F6EB",
+        "#FFFFFF",
+        "#5B5077",
+        "#686082",
+        "#7C3AED",
+        "#CAE3FD"
+      ],
+      "accent": "#7C3AED",
+      "file": "design-md/fly.io/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/fly.io/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/fly.io/",
+      "screenshot": "https://sitepeel.dev/design-md/fly.io/screenshot.jpg"
+    },
+    {
+      "name": "GitHub",
+      "host": "github.com",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Mona Sans",
+        "Mona Sans VF"
+      ],
+      "colors": [
+        "#000000",
+        "#0D1117",
+        "#090D0A",
+        "#FFFFFF",
+        "#A4AEA6",
+        "#080A3D"
+      ],
+      "accent": "#080A3D",
+      "file": "design-md/github.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/github.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/github.com/",
+      "screenshot": "https://sitepeel.dev/design-md/github.com/screenshot.jpg"
+    },
+    {
+      "name": "GitLab",
+      "host": "gitlab.com",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "GitLab Sans",
+        "GitLab Mono"
+      ],
+      "colors": [
+        "#171321",
+        "#FFFFFF",
+        "#F7F7F5",
+        "#FC6D26",
+        "#FCA326"
+      ],
+      "accent": "#FFFFFF",
+      "file": "design-md/gitlab.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/gitlab.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/gitlab.com/",
+      "screenshot": "https://sitepeel.dev/design-md/gitlab.com/screenshot.jpg"
+    },
+    {
+      "name": "Go",
+      "host": "go.dev",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Roboto"
+      ],
+      "colors": [
+        "#202224",
+        "#253443",
+        "#2D2D2D",
+        "#F0F1F2",
+        "#AAACAE",
+        "#007D9C"
+      ],
+      "accent": "#007D9C",
+      "file": "design-md/go.dev/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/go.dev/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/go.dev/",
+      "screenshot": "https://sitepeel.dev/design-md/go.dev/screenshot.jpg"
+    },
+    {
+      "name": "Grafana Labs",
+      "host": "grafana.com",
+      "category": "Developer tools",
+      "theme": "light",
+      "fonts": [
+        "Poppins",
+        "Inter"
+      ],
+      "colors": [
+        "#F4F4F6",
+        "#F9F9FA",
+        "#EAF0FF",
+        "#000000",
+        "#2E2E38",
+        "#1B55F5"
+      ],
+      "accent": "#1B55F5",
+      "file": "design-md/grafana.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/grafana.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/grafana.com/",
+      "screenshot": "https://sitepeel.dev/design-md/grafana.com/screenshot.jpg"
+    },
+    {
+      "name": "MongoDB",
+      "host": "mongodb.com",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Sohne Condensed",
+        "Sohne"
+      ],
+      "colors": [
+        "#061621",
+        "#081B28",
+        "#FFFFFF",
+        "#FDFEEC",
+        "#00ED64",
+        "#016BF8"
+      ],
+      "accent": "#00ED64",
+      "file": "design-md/mongodb.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/mongodb.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/mongodb.com/",
+      "screenshot": "https://sitepeel.dev/design-md/mongodb.com/screenshot.jpg"
+    },
+    {
+      "name": "Neon",
+      "host": "neon.tech",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Inter",
+        "GeistMono"
+      ],
+      "colors": [
+        "#000000",
+        "#151617",
+        "#111315",
+        "#FFFFFF",
+        "#C9CBCF",
+        "#34D59A"
+      ],
+      "accent": "#34D59A",
+      "file": "design-md/neon.tech/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/neon.tech/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/neon.tech/",
+      "screenshot": "https://sitepeel.dev/design-md/neon.tech/screenshot.jpg"
+    },
+    {
+      "name": "Netlify",
+      "host": "netlify.com",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Figtree",
+        "Instrument Sans"
+      ],
+      "colors": [
+        "#12181F",
+        "#181A1C",
+        "#DEFFFE",
+        "#E4F0FB",
+        "#32E6E2",
+        "#89DDFF"
+      ],
+      "accent": "#32E6E2",
+      "file": "design-md/netlify.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/netlify.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/netlify.com/",
+      "screenshot": "https://sitepeel.dev/design-md/netlify.com/screenshot.jpg"
+    },
+    {
+      "name": "Next.js",
+      "host": "nextjs.org",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "GeistSans"
+      ],
+      "colors": [
+        "#000000",
+        "#292929",
+        "#0A0A0A",
+        "#EDEDED",
+        "#A1A1A1",
+        "#0057FF"
+      ],
+      "accent": "#EDEDED",
+      "file": "design-md/nextjs.org/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/nextjs.org/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/nextjs.org/",
+      "screenshot": "https://sitepeel.dev/design-md/nextjs.org/screenshot.jpg"
+    },
+    {
+      "name": "Node.js",
+      "host": "nodejs.org",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "OPEN SANS",
+        "SFMono-Regular"
+      ],
+      "colors": [
+        "#0D121C",
+        "#2C3437",
+        "#FFFFFF",
+        "#ECEFF4",
+        "#AE5F00",
+        "#84BA64"
+      ],
+      "accent": "#AE5F00",
+      "file": "design-md/nodejs.org/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/nodejs.org/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/nodejs.org/",
+      "screenshot": "https://sitepeel.dev/design-md/nodejs.org/screenshot.jpg"
+    },
+    {
+      "name": "Postman",
+      "host": "postman.com",
+      "category": "Developer tools",
+      "theme": "light",
+      "fonts": [
+        "gtStandard"
+      ],
+      "colors": [
+        "#FF6C37",
+        "#212121",
+        "#FFFFFF",
+        "#E0531F",
+        "#FF8A5C"
+      ],
+      "accent": "#FF6C37",
+      "file": "design-md/postman.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/postman.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/postman.com/",
+      "screenshot": "https://sitepeel.dev/design-md/postman.com/screenshot.jpg"
+    },
+    {
+      "name": "Prisma",
+      "host": "prisma.io",
+      "category": "Developer tools",
+      "theme": "light",
+      "fonts": [
+        "Sora",
+        "Inter"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F4F7F7",
+        "#DCFDFF",
+        "#3A3B3C",
+        "#646567",
+        "#000000"
+      ],
+      "accent": "#000000",
+      "file": "design-md/prisma.io/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/prisma.io/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/prisma.io/",
+      "screenshot": "https://sitepeel.dev/design-md/prisma.io/screenshot.jpg"
+    },
+    {
+      "name": "Python.org",
+      "host": "python.org",
+      "category": "Developer tools",
+      "theme": "light",
+      "fonts": [
+        "Flux-Regular",
+        "SourceSansProBold"
+      ],
+      "colors": [
+        "#F9F9F9",
+        "#E6E8EA",
+        "#FFFFFF",
+        "#444444",
+        "#4D4D4D",
+        "#2B5B84"
+      ],
+      "accent": "#2B5B84",
+      "file": "design-md/python.org/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/python.org/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/python.org/",
+      "screenshot": "https://sitepeel.dev/design-md/python.org/screenshot.jpg"
+    },
+    {
+      "name": "Railway",
+      "host": "railway.com",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "IBM Plex Serif",
+        "Inter"
+      ],
+      "colors": [
+        "#13111C",
+        "#291839",
+        "#1C1A28",
+        "#FFFFFF",
+        "#F7F7F8",
+        "#553F83"
+      ],
+      "accent": "#553F83",
+      "file": "design-md/railway.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/railway.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/railway.com/",
+      "screenshot": "https://sitepeel.dev/design-md/railway.com/screenshot.jpg"
+    },
+    {
+      "name": "React",
+      "host": "react.dev",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Optimistic Display",
+        "Optimistic Text"
+      ],
+      "colors": [
+        "#23272F",
+        "#343A46",
+        "#FFFFFF",
+        "#F6F7F9",
+        "#58C4DC",
+        "#77B7D7"
+      ],
+      "accent": "#58C4DC",
+      "file": "design-md/react.dev/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/react.dev/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/react.dev/",
+      "screenshot": "https://sitepeel.dev/design-md/react.dev/screenshot.jpg"
+    },
+    {
+      "name": "Redis",
+      "host": "redis.io",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "primaryFont",
+        "Space Grotesk"
+      ],
+      "colors": [
+        "#091A23",
+        "#351D22",
+        "#0D212C",
+        "#FFFFFF",
+        "#B9C2C6",
+        "#DCFF1E"
+      ],
+      "accent": "#DCFF1E",
+      "file": "design-md/redis.io/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/redis.io/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/redis.io/",
+      "screenshot": "https://sitepeel.dev/design-md/redis.io/screenshot.jpg"
+    },
+    {
+      "name": "Render",
+      "host": "render.com",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Roobert",
+        "PPNeueMontreal"
+      ],
+      "colors": [
+        "#0D0D0D",
+        "#FFFFFF",
+        "#E3E3E3",
+        "#1C0037",
+        "#D1B8FF",
+        "#8A05FF"
+      ],
+      "accent": "#1C0037",
+      "file": "design-md/render.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/render.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/render.com/",
+      "screenshot": "https://sitepeel.dev/design-md/render.com/screenshot.jpg"
+    },
+    {
+      "name": "Resend",
+      "host": "resend.com",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "domaine",
+        "aBCFavorit"
+      ],
+      "colors": [
+        "#000000",
+        "#0B0E14",
+        "#F0F0F0",
+        "#ABAFB4",
+        "#3B9EFF"
+      ],
+      "accent": "#F0F0F0",
+      "file": "design-md/resend.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/resend.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/resend.com/",
+      "screenshot": "https://sitepeel.dev/design-md/resend.com/screenshot.jpg"
+    },
+    {
+      "name": "Retool",
+      "host": "retool.com",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "saansFont",
+        "pxGroteskFont"
+      ],
+      "colors": [
+        "#151515",
+        "#242424",
+        "#E9EBDF",
+        "#CBCCC4",
+        "#ECA438",
+        "#EF4444"
+      ],
+      "accent": "#ECA438",
+      "file": "design-md/retool.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/retool.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/retool.com/",
+      "screenshot": "https://sitepeel.dev/design-md/retool.com/screenshot.jpg"
+    },
+    {
+      "name": "Rust",
+      "host": "rust-lang.org",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Alfa Slab One",
+        "Fira Sans"
+      ],
+      "colors": [
+        "#0B7261",
+        "#000000",
+        "#2A3439",
+        "#4299BF"
+      ],
+      "accent": "#0B7261",
+      "file": "design-md/rust-lang.org/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/rust-lang.org/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/rust-lang.org/",
+      "screenshot": "https://sitepeel.dev/design-md/rust-lang.org/screenshot.jpg"
+    },
+    {
+      "name": "Sentry",
+      "host": "sentry.io",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Dammit Sans",
+        "Rubik"
+      ],
+      "colors": [
+        "#1F1633",
+        "#FFFFFF",
+        "#6A5FC1",
+        "#FD44B0",
+        "#C2EF4E"
+      ],
+      "accent": "#6A5FC1",
+      "file": "design-md/sentry.io/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/sentry.io/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/sentry.io/",
+      "screenshot": "https://sitepeel.dev/design-md/sentry.io/screenshot.jpg"
+    },
+    {
+      "name": "Supabase",
+      "host": "supabase.com",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Manrope",
+        "Inter"
+      ],
+      "colors": [
+        "#131413",
+        "#181A19",
+        "#0C0F24",
+        "#EDEFEE",
+        "#BCBDBC",
+        "#006338"
+      ],
+      "accent": "#006338",
+      "file": "design-md/supabase.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/supabase.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/supabase.com/",
+      "screenshot": "https://sitepeel.dev/design-md/supabase.com/screenshot.jpg"
+    },
+    {
+      "name": "Svelte",
+      "host": "svelte.dev",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "DM Serif Display",
+        "Fira Sans"
+      ],
+      "colors": [
+        "#1C1E22",
+        "#2E333E",
+        "#23272F",
+        "#CACBCE",
+        "#E5E5E6",
+        "#F96743"
+      ],
+      "accent": "#F96743",
+      "file": "design-md/svelte.dev/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/svelte.dev/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/svelte.dev/",
+      "screenshot": "https://sitepeel.dev/design-md/svelte.dev/screenshot.jpg"
+    },
+    {
+      "name": "Twilio",
+      "host": "twilio.com",
+      "category": "Developer tools",
+      "theme": "light",
+      "fonts": [
+        "Buffalo",
+        "Whitney SSm"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#000D25",
+        "#7E869C",
+        "#1866EE",
+        "#DB132A",
+        "#030B5D"
+      ],
+      "accent": "#1866EE",
+      "file": "design-md/twilio.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/twilio.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/twilio.com/",
+      "screenshot": "https://sitepeel.dev/design-md/twilio.com/screenshot.jpg"
+    },
+    {
+      "name": "TypeScript",
+      "host": "typescriptlang.org",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Segoe UI Web (West European)",
+        "JetBrains Mono"
+      ],
+      "colors": [
+        "#3178C6",
+        "#FFFFFF",
+        "#000000",
+        "#235A97",
+        "#F7CBA4"
+      ],
+      "accent": "#3178C6",
+      "file": "design-md/typescriptlang.org/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/typescriptlang.org/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/typescriptlang.org/",
+      "screenshot": "https://sitepeel.dev/design-md/typescriptlang.org/screenshot.jpg"
+    },
+    {
+      "name": "Vercel",
+      "host": "vercel.com",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "GeistSans",
+        "Geist Mono"
+      ],
+      "colors": [
+        "#000000",
+        "#262626",
+        "#0A0A0A",
+        "#EDEDED",
+        "#A1A1A1"
+      ],
+      "accent": "#EDEDED",
+      "file": "design-md/vercel.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/vercel.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/vercel.com/",
+      "screenshot": "https://sitepeel.dev/design-md/vercel.com/screenshot.jpg"
+    },
+    {
+      "name": "Vite",
+      "host": "vite.dev",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "APK Protocol",
+        "Inter"
+      ],
+      "colors": [
+        "#16171D",
+        "#14121A",
+        "#FFFFFF",
+        "#BABABC",
+        "#9AC8FF",
+        "#B39AFF"
+      ],
+      "accent": "#9AC8FF",
+      "file": "design-md/vite.dev/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/vite.dev/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/vite.dev/",
+      "screenshot": "https://sitepeel.dev/design-md/vite.dev/screenshot.jpg"
+    },
+    {
+      "name": "Vue.js",
+      "host": "vuejs.org",
+      "category": "Developer tools",
+      "theme": "dark",
+      "fonts": [
+        "Inter var experimental"
+      ],
+      "colors": [
+        "#1A1A1A",
+        "#2F2F2F",
+        "#242424",
+        "#E1E1E1",
+        "#AAC8E4",
+        "#42D392"
+      ],
+      "accent": "#42D392",
+      "file": "design-md/vuejs.org/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/vuejs.org/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/vuejs.org/",
+      "screenshot": "https://sitepeel.dev/design-md/vuejs.org/screenshot.jpg"
+    },
+    {
+      "name": "GSAP",
+      "host": "gsap.com",
+      "category": "UI and animation libraries",
+      "theme": "dark",
+      "fonts": [
+        "Mori"
+      ],
+      "colors": [
+        "#0E100F",
+        "#000000",
+        "#FFFCE1",
+        "#FEC5FB",
+        "#9D95FF",
+        "#FF8709"
+      ],
+      "accent": "#FFFCE1",
+      "file": "design-md/gsap.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/gsap.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/gsap.com/",
+      "screenshot": "https://sitepeel.dev/design-md/gsap.com/screenshot.jpg"
+    },
+    {
+      "name": "Motion",
+      "host": "motion.dev",
+      "category": "UI and animation libraries",
+      "theme": "dark",
+      "fonts": [
+        "TASA Orbiter"
+      ],
+      "colors": [
+        "#080808",
+        "#0E1312",
+        "#000000",
+        "#EDEBE5",
+        "#979D97",
+        "#FBD509"
+      ],
+      "accent": "#FBD509",
+      "file": "design-md/motion.dev/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/motion.dev/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/motion.dev/",
+      "screenshot": "https://sitepeel.dev/design-md/motion.dev/screenshot.jpg"
+    },
+    {
+      "name": "MUI",
+      "host": "mui.com",
+      "category": "UI and animation libraries",
+      "theme": "dark",
+      "fonts": [
+        "General Sans",
+        "IBM Plex Sans"
+      ],
+      "colors": [
+        "#0F1214",
+        "#3B3B3B",
+        "#303840",
+        "#FFFFFF",
+        "#CCE6FF",
+        "#0073E6"
+      ],
+      "accent": "#0073E6",
+      "file": "design-md/mui.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/mui.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/mui.com/",
+      "screenshot": "https://sitepeel.dev/design-md/mui.com/screenshot.jpg"
+    },
+    {
+      "name": "Radix UI",
+      "host": "radix-ui.com",
+      "category": "UI and animation libraries",
+      "theme": "dark",
+      "fonts": [
+        "adobeTextPro"
+      ],
+      "colors": [
+        "#111113",
+        "#EDEEF0",
+        "#B0B4BA",
+        "#3E63DD",
+        "#9EB1FF"
+      ],
+      "accent": "#EDEEF0",
+      "file": "design-md/radix-ui.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/radix-ui.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/radix-ui.com/",
+      "screenshot": "https://sitepeel.dev/design-md/radix-ui.com/screenshot.jpg"
+    },
+    {
+      "name": "shadcn/ui",
+      "host": "ui.shadcn.com",
+      "category": "UI and animation libraries",
+      "theme": "dark",
+      "fonts": [
+        "Geist"
+      ],
+      "colors": [
+        "#0A0A0A",
+        "#262626",
+        "#171717",
+        "#FAFAFA",
+        "#A1A1A1",
+        "#E5E5E5"
+      ],
+      "accent": "#E5E5E5",
+      "file": "design-md/ui.shadcn.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/ui.shadcn.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/ui.shadcn.com/",
+      "screenshot": "https://sitepeel.dev/design-md/ui.shadcn.com/screenshot.jpg"
+    },
+    {
+      "name": "Storybook",
+      "host": "storybook.js.org",
+      "category": "UI and animation libraries",
+      "theme": "dark",
+      "fonts": [
+        "Nunito Sans"
+      ],
+      "colors": [
+        "#0D1026",
+        "#020617",
+        "#0F172A",
+        "#FFFFFF",
+        "#94A3B8",
+        "#029CFD"
+      ],
+      "accent": "#FFFFFF",
+      "file": "design-md/storybook.js.org/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/storybook.js.org/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/storybook.js.org/",
+      "screenshot": "https://sitepeel.dev/design-md/storybook.js.org/screenshot.jpg"
+    },
+    {
+      "name": "Tailwind CSS",
+      "host": "tailwindcss.com",
+      "category": "UI and animation libraries",
+      "theme": "dark",
+      "fonts": [
+        "inter",
+        "plexMono"
+      ],
+      "colors": [
+        "#030712",
+        "#FFFFFF",
+        "#CAD5E2",
+        "#00BCFF",
+        "#FB64B6",
+        "#74D4FF"
+      ],
+      "accent": "#00BCFF",
+      "file": "design-md/tailwindcss.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/tailwindcss.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/tailwindcss.com/",
+      "screenshot": "https://sitepeel.dev/design-md/tailwindcss.com/screenshot.jpg"
+    },
+    {
+      "name": "37signals",
+      "host": "37signals.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Lab Grotesque"
+      ],
+      "colors": [
+        "#F87917",
+        "#000000",
+        "#FFFFFF",
+        "#F87918"
+      ],
+      "accent": "#F87918",
+      "file": "design-md/37signals.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/37signals.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/37signals.com/",
+      "screenshot": "https://sitepeel.dev/design-md/37signals.com/screenshot.jpg"
+    },
+    {
+      "name": "Airtable",
+      "host": "airtable.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "ATSeasonSans",
+        "SF Pro Text"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#E0DAFD",
+        "#EEF0F4",
+        "#2E2F32",
+        "#1D1F25",
+        "#944D37"
+      ],
+      "accent": "#944D37",
+      "file": "design-md/airtable.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/airtable.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/airtable.com/",
+      "screenshot": "https://sitepeel.dev/design-md/airtable.com/screenshot.jpg"
+    },
+    {
+      "name": "Arc",
+      "host": "arc.net",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Marlin Soft SQ",
+        "Marlin"
+      ],
+      "colors": [
+        "#FFFCEC",
+        "#FFFFFF",
+        "#000000",
+        "#3139FB",
+        "#2702C2",
+        "#FF5060"
+      ],
+      "accent": "#3139FB",
+      "file": "design-md/arc.net/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/arc.net/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/arc.net/",
+      "screenshot": "https://sitepeel.dev/design-md/arc.net/screenshot.jpg"
+    },
+    {
+      "name": "Asana",
+      "host": "asana.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "TWK Lausanne"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F3F3F3",
+        "#FAFAFA",
+        "#0D0D0D",
+        "#3D3D3D",
+        "#FFC9FF"
+      ],
+      "accent": "#FFC9FF",
+      "file": "design-md/asana.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/asana.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/asana.com/",
+      "screenshot": "https://sitepeel.dev/design-md/asana.com/screenshot.jpg"
+    },
+    {
+      "name": "Atlassian",
+      "host": "atlassian.com",
+      "category": "SaaS and productivity",
+      "theme": "dark",
+      "fonts": [
+        "Charlie Display",
+        "Charlie Text"
+      ],
+      "colors": [
+        "#101214",
+        "#FFFFFF",
+        "#1868DB",
+        "#BAF3DB",
+        "#7EE2B8"
+      ],
+      "accent": "#1868DB",
+      "file": "design-md/atlassian.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/atlassian.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/atlassian.com/",
+      "screenshot": "https://sitepeel.dev/design-md/atlassian.com/screenshot.jpg"
+    },
+    {
+      "name": "Attio",
+      "host": "attio.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "interDisplay",
+        "inter"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#FAFAFB",
+        "#242629",
+        "#2E3238",
+        "#202124",
+        "#266DF0"
+      ],
+      "accent": "#202124",
+      "file": "design-md/attio.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/attio.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/attio.com/",
+      "screenshot": "https://sitepeel.dev/design-md/attio.com/screenshot.jpg"
+    },
+    {
+      "name": "Basecamp",
+      "host": "basecamp.com",
+      "category": "SaaS and productivity",
+      "theme": "dark",
+      "fonts": [
+        "Graphik"
+      ],
+      "colors": [
+        "#131F25",
+        "#1B2930",
+        "#0B151B",
+        "#E1E5E8",
+        "#A8AFB3",
+        "#117AF3"
+      ],
+      "accent": "#117AF3",
+      "file": "design-md/basecamp.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/basecamp.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/basecamp.com/",
+      "screenshot": "https://sitepeel.dev/design-md/basecamp.com/screenshot.jpg"
+    },
+    {
+      "name": "Cal.com",
+      "host": "cal.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Cal Sans",
+        "Cal Sans UI Variable Light"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F4F4F4",
+        "#F5F5F5",
+        "#111111",
+        "#242424",
+        "#0099FF"
+      ],
+      "accent": "#111111",
+      "file": "design-md/cal.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/cal.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/cal.com/",
+      "screenshot": "https://sitepeel.dev/design-md/cal.com/screenshot.jpg"
+    },
+    {
+      "name": "Calendly.com",
+      "host": "calendly.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Calendly Sans",
+        "Wulkan Text"
+      ],
+      "colors": [
+        "#F5F3EE",
+        "#FFFFFF",
+        "#FCFBF8",
+        "#071A31",
+        "#3D464E",
+        "#C3DFFE"
+      ],
+      "accent": "#C3DFFE",
+      "file": "design-md/calendly.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/calendly.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/calendly.com/",
+      "screenshot": "https://sitepeel.dev/design-md/calendly.com/screenshot.jpg"
+    },
+    {
+      "name": "ClickUp",
+      "host": "clickup.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Plus Jakarta Sans",
+        "Inter"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#FEEFF6",
+        "#E7F9F5",
+        "#646464",
+        "#8A8A94",
+        "#FFC53D"
+      ],
+      "accent": "#FFC53D",
+      "file": "design-md/clickup.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/clickup.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/clickup.com/",
+      "screenshot": "https://sitepeel.dev/design-md/clickup.com/screenshot.jpg"
+    },
+    {
+      "name": "Coda",
+      "host": "coda.io",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Calibre-R",
+        "Inter"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#FFF6EC",
+        "#FCFAF7",
+        "#141413",
+        "#292827",
+        "#FFE6C8"
+      ],
+      "accent": "#FFE6C8",
+      "file": "design-md/coda.io/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/coda.io/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/coda.io/",
+      "screenshot": "https://sitepeel.dev/design-md/coda.io/screenshot.jpg"
+    },
+    {
+      "name": "Craft",
+      "host": "craft.do",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "UntitledSerifFont",
+        "UntitledSansFont"
+      ],
+      "colors": [
+        "#FCF9F7",
+        "#FFFFFF",
+        "#030302",
+        "#1B1B1A",
+        "#B8CAF5",
+        "#AADAF1"
+      ],
+      "accent": "#B8CAF5",
+      "file": "design-md/craft.do/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/craft.do/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/craft.do/",
+      "screenshot": "https://sitepeel.dev/design-md/craft.do/screenshot.jpg"
+    },
+    {
+      "name": "Deel",
+      "host": "deel.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "BagossExtendedFont",
+        "BagossCondensedFont"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F7F5F2",
+        "#1B1B1B",
+        "#212121",
+        "#5938B7",
+        "#B1D8FC"
+      ],
+      "accent": "#5938B7",
+      "file": "design-md/deel.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/deel.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/deel.com/",
+      "screenshot": "https://sitepeel.dev/design-md/deel.com/screenshot.jpg"
+    },
+    {
+      "name": "Dropbox",
+      "host": "dropbox.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Sharp Grotesk",
+        "Sharp Grotesk 23"
+      ],
+      "colors": [
+        "#F7F5F2",
+        "#FFFFFF",
+        "#1E1919",
+        "#70695E",
+        "#0061FE",
+        "#CD2F7B"
+      ],
+      "accent": "#0061FE",
+      "file": "design-md/dropbox.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/dropbox.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/dropbox.com/",
+      "screenshot": "https://sitepeel.dev/design-md/dropbox.com/screenshot.jpg"
+    },
+    {
+      "name": "Fastmail",
+      "host": "fastmail.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "roca",
+        "Proxima Nova"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F4F5F5",
+        "#FBF7EF",
+        "#1B1E20",
+        "#5B646C",
+        "#253859"
+      ],
+      "accent": "#253859",
+      "file": "design-md/fastmail.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/fastmail.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/fastmail.com/",
+      "screenshot": "https://sitepeel.dev/design-md/fastmail.com/screenshot.jpg"
+    },
+    {
+      "name": "Folk",
+      "host": "folk.app",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Uxumgrotesque",
+        "Inter"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#1F1E1C",
+        "#333333",
+        "#FFC53D",
+        "#8145B5"
+      ],
+      "accent": "#FFC53D",
+      "file": "design-md/folk.app/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/folk.app/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/folk.app/",
+      "screenshot": "https://sitepeel.dev/design-md/folk.app/screenshot.jpg"
+    },
+    {
+      "name": "HEY",
+      "host": "hey.com",
+      "category": "SaaS and productivity",
+      "theme": "dark",
+      "fonts": [
+        "Really Sans Large",
+        "Moniker"
+      ],
+      "colors": [
+        "#202C38",
+        "#333C47",
+        "#17212B",
+        "#ECE9E6",
+        "#8C85FF"
+      ],
+      "accent": "#8C85FF",
+      "file": "design-md/hey.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/hey.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/hey.com/",
+      "screenshot": "https://sitepeel.dev/design-md/hey.com/screenshot.jpg"
+    },
+    {
+      "name": "Lattice",
+      "host": "lattice.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Matter"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F7F6F2",
+        "#FAF9F7",
+        "#001F1F",
+        "#003D3D",
+        "#B1F0E7"
+      ],
+      "accent": "#B1F0E7",
+      "file": "design-md/lattice.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/lattice.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/lattice.com/",
+      "screenshot": "https://sitepeel.dev/design-md/lattice.com/screenshot.jpg"
+    },
+    {
+      "name": "Linear",
+      "host": "linear.app",
+      "category": "SaaS and productivity",
+      "theme": "dark",
+      "fonts": [
+        "Inter Variable",
+        "Berkeley Mono"
+      ],
+      "colors": [
+        "#08090A",
+        "#121414",
+        "#0F1011",
+        "#F7F8F8",
+        "#D0D6E0",
+        "#E5E5E6"
+      ],
+      "accent": "#E5E5E6",
+      "file": "design-md/linear.app/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/linear.app/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/linear.app/",
+      "screenshot": "https://sitepeel.dev/design-md/linear.app/screenshot.jpg"
+    },
+    {
+      "name": "Loom",
+      "host": "loom.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Charlie Display",
+        "Charlie Text"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#E9F2FE",
+        "#F8EEFE",
+        "#101214",
+        "#292A2E",
+        "#1868DB"
+      ],
+      "accent": "#1868DB",
+      "file": "design-md/loom.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/loom.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/loom.com/",
+      "screenshot": "https://sitepeel.dev/design-md/loom.com/screenshot.jpg"
+    },
+    {
+      "name": "Make",
+      "host": "make.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Satoshi"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#FAFAFA",
+        "#342237",
+        "#69586C",
+        "#8F4BD2",
+        "#E1B9F9"
+      ],
+      "accent": "#8F4BD2",
+      "file": "design-md/make.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/make.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/make.com/",
+      "screenshot": "https://sitepeel.dev/design-md/make.com/screenshot.jpg"
+    },
+    {
+      "name": "Miro",
+      "host": "miro.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Roobert PRO Medium",
+        "Noto Sans"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#FDE0F0",
+        "#F0F0F0",
+        "#000000",
+        "#1C1C1E",
+        "#FDE050"
+      ],
+      "accent": "#FDE050",
+      "file": "design-md/miro.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/miro.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/miro.com/",
+      "screenshot": "https://sitepeel.dev/design-md/miro.com/screenshot.jpg"
+    },
+    {
+      "name": "monday.com",
+      "host": "monday.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Poppins"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#CCCCCC",
+        "#F3F4F5",
+        "#000000",
+        "#535768",
+        "#6161FF"
+      ],
+      "accent": "#6161FF",
+      "file": "design-md/monday.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/monday.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/monday.com/",
+      "screenshot": "https://sitepeel.dev/design-md/monday.com/screenshot.jpg"
+    },
+    {
+      "name": "n8n",
+      "host": "n8n.io",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "n8n Baumer Uniwidth",
+        "Inter"
+      ],
+      "colors": [
+        "#FAFAFA",
+        "#E6E6E6",
+        "#F0F0F0",
+        "#161616",
+        "#212121",
+        "#FFBCCA"
+      ],
+      "accent": "#FFBCCA",
+      "file": "design-md/n8n.io/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/n8n.io/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/n8n.io/",
+      "screenshot": "https://sitepeel.dev/design-md/n8n.io/screenshot.jpg"
+    },
+    {
+      "name": "Notion",
+      "host": "notion.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "NotionInter"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#E6F3FE",
+        "#F9F9F8",
+        "#0D0D0D",
+        "#1A1A1A",
+        "#0075DE"
+      ],
+      "accent": "#0075DE",
+      "file": "design-md/notion.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/notion.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/notion.com/",
+      "screenshot": "https://sitepeel.dev/design-md/notion.com/screenshot.jpg"
+    },
+    {
+      "name": "Obsidian",
+      "host": "obsidian.md",
+      "category": "SaaS and productivity",
+      "theme": "dark",
+      "fonts": [
+        "system fonts"
+      ],
+      "colors": [
+        "#0F0F0F",
+        "#404040",
+        "#1F1F1F",
+        "#EEEEEE",
+        "#BCBCBC",
+        "#A88BFA"
+      ],
+      "accent": "#A88BFA",
+      "file": "design-md/obsidian.md/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/obsidian.md/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/obsidian.md/",
+      "screenshot": "https://sitepeel.dev/design-md/obsidian.md/screenshot.jpg"
+    },
+    {
+      "name": "Plain",
+      "host": "plain.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "ABC Favorit Regular",
+        "ABC Favorit Medium"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#000000",
+        "#0A2414",
+        "#1AD379",
+        "#F14A4A"
+      ],
+      "accent": "#1AD379",
+      "file": "design-md/plain.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/plain.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/plain.com/",
+      "screenshot": "https://sitepeel.dev/design-md/plain.com/screenshot.jpg"
+    },
+    {
+      "name": "Raycast",
+      "host": "raycast.com",
+      "category": "SaaS and productivity",
+      "theme": "dark",
+      "fonts": [
+        "Inter",
+        "Segoe UI Variable"
+      ],
+      "colors": [
+        "#07080A",
+        "#111214",
+        "#130D0E",
+        "#FFFFFF",
+        "#9C9C9D",
+        "#FF6363"
+      ],
+      "accent": "#FF6363",
+      "file": "design-md/raycast.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/raycast.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/raycast.com/",
+      "screenshot": "https://sitepeel.dev/design-md/raycast.com/screenshot.jpg"
+    },
+    {
+      "name": "Rippling",
+      "host": "rippling.com",
+      "category": "SaaS and productivity",
+      "theme": "dark",
+      "fonts": [
+        "basel"
+      ],
+      "colors": [
+        "#4A0039",
+        "#000000",
+        "#C9B3C4",
+        "#000088",
+        "#7A005D"
+      ],
+      "accent": "#4A0039",
+      "file": "design-md/rippling.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/rippling.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/rippling.com/",
+      "screenshot": "https://sitepeel.dev/design-md/rippling.com/screenshot.jpg"
+    },
+    {
+      "name": "Slack",
+      "host": "slack.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Salesforce-Avant-Garde",
+        "Salesforce-Sans"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F9F0FF",
+        "#000000",
+        "#1D1D1D",
+        "#730394",
+        "#481A54"
+      ],
+      "accent": "#730394",
+      "file": "design-md/slack.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/slack.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/slack.com/",
+      "screenshot": "https://sitepeel.dev/design-md/slack.com/screenshot.jpg"
+    },
+    {
+      "name": "Superhuman",
+      "host": "superhuman.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Super Sans VF"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F2F0EB",
+        "#F7F5F2",
+        "#292827",
+        "#666665",
+        "#714CB6"
+      ],
+      "accent": "#714CB6",
+      "file": "design-md/superhuman.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/superhuman.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/superhuman.com/",
+      "screenshot": "https://sitepeel.dev/design-md/superhuman.com/screenshot.jpg"
+    },
+    {
+      "name": "Todoist",
+      "host": "todoist.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Graphik",
+        "Inter"
+      ],
+      "colors": [
+        "#FEFDFC",
+        "#F9F7F6",
+        "#FFFFFF",
+        "#25221E",
+        "#6F6D6A",
+        "#E34432"
+      ],
+      "accent": "#E34432",
+      "file": "design-md/todoist.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/todoist.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/todoist.com/",
+      "screenshot": "https://sitepeel.dev/design-md/todoist.com/screenshot.jpg"
+    },
+    {
+      "name": "Trello",
+      "host": "trello.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Charlie Display",
+        "Charlie Text"
+      ],
+      "colors": [
+        "#F4F5F7",
+        "#FFFFFF",
+        "#F0F0F0",
+        "#091E42",
+        "#172B4D",
+        "#0065FF"
+      ],
+      "accent": "#0065FF",
+      "file": "design-md/trello.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/trello.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/trello.com/",
+      "screenshot": "https://sitepeel.dev/design-md/trello.com/screenshot.jpg"
+    },
+    {
+      "name": "Twenty",
+      "host": "twenty.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "aleo",
+        "hostGrotesk"
+      ],
+      "colors": [
+        "#F4F4F4",
+        "#F9F9F9",
+        "#EEF4F1",
+        "#1C1C1C",
+        "#333333",
+        "#FF5F57"
+      ],
+      "accent": "#1C1C1C",
+      "file": "design-md/twenty.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/twenty.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/twenty.com/",
+      "screenshot": "https://sitepeel.dev/design-md/twenty.com/screenshot.jpg"
+    },
+    {
+      "name": "Typefully",
+      "host": "typefully.com",
+      "category": "SaaS and productivity",
+      "theme": "dark",
+      "fonts": [
+        "Inter",
+        "inter-arrows-subset"
+      ],
+      "colors": [
+        "#111418",
+        "#282B31",
+        "#C4C9D4",
+        "#8B94A7",
+        "#199AF5",
+        "#00E5CC"
+      ],
+      "accent": "#199AF5",
+      "file": "design-md/typefully.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/typefully.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/typefully.com/",
+      "screenshot": "https://sitepeel.dev/design-md/typefully.com/screenshot.jpg"
+    },
+    {
+      "name": "Zapier",
+      "host": "zapier.com",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Degular Display",
+        "Inter"
+      ],
+      "colors": [
+        "#FFFEFB",
+        "#ECEAE3",
+        "#F8F4F0",
+        "#201515",
+        "#36342E",
+        "#FF4F00"
+      ],
+      "accent": "#FF4F00",
+      "file": "design-md/zapier.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/zapier.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/zapier.com/",
+      "screenshot": "https://sitepeel.dev/design-md/zapier.com/screenshot.jpg"
+    },
+    {
+      "name": "Zoom",
+      "host": "zoom.us",
+      "category": "SaaS and productivity",
+      "theme": "light",
+      "fonts": [
+        "Newsreader",
+        "Inter"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#E6F0FF",
+        "#F3F8FF",
+        "#00053D",
+        "#181819",
+        "#0B5CFF"
+      ],
+      "accent": "#0B5CFF",
+      "file": "design-md/zoom.us/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/zoom.us/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/zoom.us/",
+      "screenshot": "https://sitepeel.dev/design-md/zoom.us/screenshot.jpg"
+    },
+    {
+      "name": "Brex",
+      "host": "brex.com",
+      "category": "Fintech and payments",
+      "theme": "light",
+      "fonts": [
+        "inter"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F3F3F7",
+        "#F9F9FB",
+        "#15191E",
+        "#60646C",
+        "#FF3D00"
+      ],
+      "accent": "#FF3D00",
+      "file": "design-md/brex.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/brex.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/brex.com/",
+      "screenshot": "https://sitepeel.dev/design-md/brex.com/screenshot.jpg"
+    },
+    {
+      "name": "Family",
+      "host": "family.co",
+      "category": "Fintech and payments",
+      "theme": "light",
+      "fonts": [
+        "Family",
+        "Inter"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F6F4EF",
+        "#FBFAF9",
+        "#474645",
+        "#343433",
+        "#0090FF"
+      ],
+      "accent": "#0090FF",
+      "file": "design-md/family.co/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/family.co/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/family.co/",
+      "screenshot": "https://sitepeel.dev/design-md/family.co/screenshot.jpg"
+    },
+    {
+      "name": "Lemonsqueezy",
+      "host": "lemonsqueezy.com",
+      "category": "Fintech and payments",
+      "theme": "dark",
+      "fonts": [
+        "Circularpro book",
+        "Inter"
+      ],
+      "colors": [
+        "#5423E7",
+        "#FFFFFF",
+        "#121217",
+        "#7047EB"
+      ],
+      "accent": "#5423E7",
+      "file": "design-md/lemonsqueezy.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/lemonsqueezy.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/lemonsqueezy.com/",
+      "screenshot": "https://sitepeel.dev/design-md/lemonsqueezy.com/screenshot.jpg"
+    },
+    {
+      "name": "Mercury",
+      "host": "mercury.com",
+      "category": "Fintech and payments",
+      "theme": "dark",
+      "fonts": [
+        "arcadiaDisplay",
+        "arcadia"
+      ],
+      "colors": [
+        "#171721",
+        "#1E1E2A",
+        "#EDEDF3",
+        "#C3C3CC",
+        "#5266EB"
+      ],
+      "accent": "#5266EB",
+      "file": "design-md/mercury.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/mercury.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/mercury.com/",
+      "screenshot": "https://sitepeel.dev/design-md/mercury.com/screenshot.jpg"
+    },
+    {
+      "name": "Monzo",
+      "host": "monzo.com",
+      "category": "Fintech and payments",
+      "theme": "light",
+      "fonts": [
+        "MonzoSansDisplay",
+        "MonzoSansText"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F2F8F3",
+        "#6B747B",
+        "#091723",
+        "#FF4F40",
+        "#EAA240"
+      ],
+      "accent": "#FF4F40",
+      "file": "design-md/monzo.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/monzo.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/monzo.com/",
+      "screenshot": "https://sitepeel.dev/design-md/monzo.com/screenshot.jpg"
+    },
+    {
+      "name": "Paddle",
+      "host": "paddle.com",
+      "category": "Fintech and payments",
+      "theme": "light",
+      "fonts": [
+        "serrifCondensed",
+        "Inter"
+      ],
+      "colors": [
+        "#F9F8F7",
+        "#E8E6E2",
+        "#FCFCFC",
+        "#1C1A15",
+        "#FFD400"
+      ],
+      "accent": "#FFD400",
+      "file": "design-md/paddle.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/paddle.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/paddle.com/",
+      "screenshot": "https://sitepeel.dev/design-md/paddle.com/screenshot.jpg"
+    },
+    {
+      "name": "PayPal",
+      "host": "paypal.com",
+      "category": "Fintech and payments",
+      "theme": "light",
+      "fonts": [
+        "PayPal Pro",
+        "PayPal Pro Text VF"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F5F7FA",
+        "#000000",
+        "#5E5E5E",
+        "#002991",
+        "#60CDFF"
+      ],
+      "accent": "#002991",
+      "file": "design-md/paypal.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/paypal.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/paypal.com/",
+      "screenshot": "https://sitepeel.dev/design-md/paypal.com/screenshot.jpg"
+    },
+    {
+      "name": "Plaid",
+      "host": "plaid.com",
+      "category": "Fintech and payments",
+      "theme": "light",
+      "fonts": [
+        "Plaid Sans",
+        "Cern"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#111111",
+        "#00172E",
+        "#034049",
+        "#05565C",
+        "#CCF8FF"
+      ],
+      "accent": "#034049",
+      "file": "design-md/plaid.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/plaid.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/plaid.com/",
+      "screenshot": "https://sitepeel.dev/design-md/plaid.com/screenshot.jpg"
+    },
+    {
+      "name": "Ramp",
+      "host": "ramp.com",
+      "category": "Fintech and payments",
+      "theme": "light",
+      "fonts": [
+        "Lausanne"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F4F2F0",
+        "#0C0A08",
+        "#6D6C6B",
+        "#1A1919",
+        "#E4F222"
+      ],
+      "accent": "#1A1919",
+      "file": "design-md/ramp.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/ramp.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/ramp.com/",
+      "screenshot": "https://sitepeel.dev/design-md/ramp.com/screenshot.jpg"
+    },
+    {
+      "name": "Robinhood",
+      "host": "robinhood.com",
+      "category": "Fintech and payments",
+      "theme": "dark",
+      "fonts": [
+        "Phonic",
+        "Capsule Sans Text"
+      ],
+      "colors": [
+        "#000000",
+        "#110E08",
+        "#FFFFFF",
+        "#D9D9D9",
+        "#CCFF00"
+      ],
+      "accent": "#CCFF00",
+      "file": "design-md/robinhood.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/robinhood.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/robinhood.com/",
+      "screenshot": "https://sitepeel.dev/design-md/robinhood.com/screenshot.jpg"
+    },
+    {
+      "name": "Square",
+      "host": "squareup.com",
+      "category": "Fintech and payments",
+      "theme": "light",
+      "fonts": [
+        "Square Sans Display VF",
+        "Exact Block"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F7F6F5",
+        "#000000",
+        "#707070",
+        "#004BFF",
+        "#041EEC"
+      ],
+      "accent": "#004BFF",
+      "file": "design-md/squareup.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/squareup.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/squareup.com/",
+      "screenshot": "https://sitepeel.dev/design-md/squareup.com/screenshot.jpg"
+    },
+    {
+      "name": "Stripe",
+      "host": "stripe.com",
+      "category": "Fintech and payments",
+      "theme": "light",
+      "fonts": [
+        "sohne-var"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F5F5FF",
+        "#F8FAFD",
+        "#061B31",
+        "#50617A",
+        "#533AFD"
+      ],
+      "accent": "#533AFD",
+      "file": "design-md/stripe.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/stripe.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/stripe.com/",
+      "screenshot": "https://sitepeel.dev/design-md/stripe.com/screenshot.jpg"
+    },
+    {
+      "name": "Wise",
+      "host": "wise.com",
+      "category": "Fintech and payments",
+      "theme": "light",
+      "fonts": [
+        "Wise Sans",
+        "Inter"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#163300",
+        "#454745",
+        "#9FE870",
+        "#054D28",
+        "#B8232B"
+      ],
+      "accent": "#9FE870",
+      "file": "design-md/wise.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/wise.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/wise.com/",
+      "screenshot": "https://sitepeel.dev/design-md/wise.com/screenshot.jpg"
+    },
+    {
+      "name": "Amplitude",
+      "host": "amplitude.com",
+      "category": "Marketing and analytics",
+      "theme": "light",
+      "fonts": [
+        "Gellix",
+        "IBM Plex Sans"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F5F7FA",
+        "#000000",
+        "#50565B",
+        "#1E61F0",
+        "#0052F2"
+      ],
+      "accent": "#1E61F0",
+      "file": "design-md/amplitude.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/amplitude.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/amplitude.com/",
+      "screenshot": "https://sitepeel.dev/design-md/amplitude.com/screenshot.jpg"
+    },
+    {
+      "name": "Buffer",
+      "host": "buffer.com",
+      "category": "Marketing and analytics",
+      "theme": "light",
+      "fonts": [
+        "Stolzl",
+        "Figtree"
+      ],
+      "colors": [
+        "#FEFDFB",
+        "#213130",
+        "#4A4A45",
+        "#B0EC9C",
+        "#F3BDFF"
+      ],
+      "accent": "#B0EC9C",
+      "file": "design-md/buffer.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/buffer.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/buffer.com/",
+      "screenshot": "https://sitepeel.dev/design-md/buffer.com/screenshot.jpg"
+    },
+    {
+      "name": "Dub",
+      "host": "dub.co",
+      "category": "Marketing and analytics",
+      "theme": "light",
+      "fonts": [
+        "satoshi",
+        "Inter"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F5F5F5",
+        "#FAFAFA",
+        "#737373",
+        "#262626",
+        "#000000"
+      ],
+      "accent": "#000000",
+      "file": "design-md/dub.co/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/dub.co/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/dub.co/",
+      "screenshot": "https://sitepeel.dev/design-md/dub.co/screenshot.jpg"
+    },
+    {
+      "name": "Grammarly",
+      "host": "grammarly.com",
+      "category": "Marketing and analytics",
+      "theme": "light",
+      "fonts": [
+        "matter",
+        "Matter"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F5F5F5",
+        "#1F243C",
+        "#0E101A",
+        "#027E6F",
+        "#4285F4"
+      ],
+      "accent": "#027E6F",
+      "file": "design-md/grammarly.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/grammarly.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/grammarly.com/",
+      "screenshot": "https://sitepeel.dev/design-md/grammarly.com/screenshot.jpg"
+    },
+    {
+      "name": "Hootsuite",
+      "host": "hootsuite.com",
+      "category": "Marketing and analytics",
+      "theme": "light",
+      "fonts": [
+        "Montserrat"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F2F4F5",
+        "#012B3A",
+        "#1F60C9",
+        "#7E48EC"
+      ],
+      "accent": "#1F60C9",
+      "file": "design-md/hootsuite.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/hootsuite.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/hootsuite.com/",
+      "screenshot": "https://sitepeel.dev/design-md/hootsuite.com/screenshot.jpg"
+    },
+    {
+      "name": "HubSpot",
+      "host": "hubspot.com",
+      "category": "Marketing and analytics",
+      "theme": "light",
+      "fonts": [
+        "HubSpot Serif",
+        "HubSpot Sans"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#FCFCFA",
+        "#1F1F1F",
+        "#616161",
+        "#FF4800",
+        "#FCC6B1"
+      ],
+      "accent": "#FF4800",
+      "file": "design-md/hubspot.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/hubspot.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/hubspot.com/",
+      "screenshot": "https://sitepeel.dev/design-md/hubspot.com/screenshot.jpg"
+    },
+    {
+      "name": "Intercom",
+      "host": "intercom.com",
+      "category": "Marketing and analytics",
+      "theme": "light",
+      "fonts": [
+        "Saans",
+        "Serrif"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#D3CEC6",
+        "#FAF9F6",
+        "#000000",
+        "#111111",
+        "#0007CB"
+      ],
+      "accent": "#111111",
+      "file": "design-md/intercom.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/intercom.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/intercom.com/",
+      "screenshot": "https://sitepeel.dev/design-md/intercom.com/screenshot.jpg"
+    },
+    {
+      "name": "Later",
+      "host": "later.com",
+      "category": "Marketing and analytics",
+      "theme": "light",
+      "fonts": [
+        "Super X sans Display",
+        "Inter Tight"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F8F2EA",
+        "#FEFCFB",
+        "#000000",
+        "#FE3F00",
+        "#5124C1"
+      ],
+      "accent": "#FE3F00",
+      "file": "design-md/later.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/later.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/later.com/",
+      "screenshot": "https://sitepeel.dev/design-md/later.com/screenshot.jpg"
+    },
+    {
+      "name": "Mailchimp",
+      "host": "mailchimp.com",
+      "category": "Marketing and analytics",
+      "theme": "light",
+      "fonts": [
+        "Means Web",
+        "Graphik Web"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F5F5F5",
+        "#000000",
+        "#231E15",
+        "#FFE01B",
+        "#004E56"
+      ],
+      "accent": "#FFE01B",
+      "file": "design-md/mailchimp.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/mailchimp.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/mailchimp.com/",
+      "screenshot": "https://sitepeel.dev/design-md/mailchimp.com/screenshot.jpg"
+    },
+    {
+      "name": "Mixpanel",
+      "host": "mixpanel.com",
+      "category": "Marketing and analytics",
+      "theme": "light",
+      "fonts": [
+        "Garnett Medium",
+        "Garnett Regular"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F6F6F6",
+        "#FAFAFA",
+        "#1F2023",
+        "#2A2A2F",
+        "#C6B7FF"
+      ],
+      "accent": "#1F2023",
+      "file": "design-md/mixpanel.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/mixpanel.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/mixpanel.com/",
+      "screenshot": "https://sitepeel.dev/design-md/mixpanel.com/screenshot.jpg"
+    },
+    {
+      "name": "PostHog",
+      "host": "posthog.com",
+      "category": "Marketing and analytics",
+      "theme": "light",
+      "fonts": [
+        "RoundHog"
+      ],
+      "colors": [
+        "#EEEFE9",
+        "#FFFFFF",
+        "#374151",
+        "#111827",
+        "#F54E00",
+        "#EB9D2A"
+      ],
+      "accent": "#F54E00",
+      "file": "design-md/posthog.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/posthog.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/posthog.com/",
+      "screenshot": "https://sitepeel.dev/design-md/posthog.com/screenshot.jpg"
+    },
+    {
+      "name": "Descript",
+      "host": "descript.com",
+      "category": "Design tools and site builders",
+      "theme": "dark",
+      "fonts": [
+        "brett",
+        "gamuthDisplay"
+      ],
+      "colors": [
+        "#390A1A",
+        "#190308",
+        "#110A0D",
+        "#D1C7CB",
+        "#FFF7FD",
+        "#F73B3B"
+      ],
+      "accent": "#F73B3B",
+      "file": "design-md/descript.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/descript.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/descript.com/",
+      "screenshot": "https://sitepeel.dev/design-md/descript.com/screenshot.jpg"
+    },
+    {
+      "name": "Excalidraw",
+      "host": "excalidraw.com",
+      "category": "Design tools and site builders",
+      "theme": "light",
+      "fonts": [
+        "Times New Roman",
+        "Assistant"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#ECECF4",
+        "#F0EFFF",
+        "#1B1B1F",
+        "#B8B8B8",
+        "#6965DB"
+      ],
+      "accent": "#6965DB",
+      "file": "design-md/excalidraw.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/excalidraw.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/excalidraw.com/",
+      "screenshot": "https://sitepeel.dev/design-md/excalidraw.com/screenshot.jpg"
+    },
+    {
+      "name": "Figma",
+      "host": "figma.com",
+      "category": "Design tools and site builders",
+      "theme": "light",
+      "fonts": [
+        "figmaSans",
+        "figmaMono"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#000000",
+        "#00B6FF"
+      ],
+      "accent": "#000000",
+      "file": "design-md/figma.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/figma.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/figma.com/",
+      "screenshot": "https://sitepeel.dev/design-md/figma.com/screenshot.jpg"
+    },
+    {
+      "name": "Framer",
+      "host": "framer.com",
+      "category": "Design tools and site builders",
+      "theme": "dark",
+      "fonts": [
+        "GT Walsheim Medium",
+        "Inter"
+      ],
+      "colors": [
+        "#000000",
+        "#FFFFFF",
+        "#CCCCCC",
+        "#0099FF",
+        "#4CD963"
+      ],
+      "accent": "#FFFFFF",
+      "file": "design-md/framer.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/framer.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/framer.com/",
+      "screenshot": "https://sitepeel.dev/design-md/framer.com/screenshot.jpg"
+    },
+    {
+      "name": "LottieFiles",
+      "host": "lottiefiles.com",
+      "category": "Design tools and site builders",
+      "theme": "light",
+      "fonts": [
+        "DM Sans LF",
+        "Inter LF"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#FFF8E5",
+        "#FAFAFA",
+        "#09090B",
+        "#71717B",
+        "#019D91"
+      ],
+      "accent": "#019D91",
+      "file": "design-md/lottiefiles.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/lottiefiles.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/lottiefiles.com/",
+      "screenshot": "https://sitepeel.dev/design-md/lottiefiles.com/screenshot.jpg"
+    },
+    {
+      "name": "Pitch",
+      "host": "pitch.com",
+      "category": "Design tools and site builders",
+      "theme": "light",
+      "fonts": [
+        "Mark Pro Bold",
+        "Mark Pro Regular"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#EBE3FE",
+        "#0C021C",
+        "#C6A5FF",
+        "#280F62",
+        "#5318EB"
+      ],
+      "accent": "#C6A5FF",
+      "file": "design-md/pitch.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/pitch.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/pitch.com/",
+      "screenshot": "https://sitepeel.dev/design-md/pitch.com/screenshot.jpg"
+    },
+    {
+      "name": "Readymag",
+      "host": "readymag.com",
+      "category": "Design tools and site builders",
+      "theme": "dark",
+      "fonts": [
+        "custom 157067"
+      ],
+      "colors": [
+        "#000000",
+        "#FFFFFF",
+        "#444444",
+        "#EC520B",
+        "#C8020A",
+        "#FF5900"
+      ],
+      "accent": "#EC520B",
+      "file": "design-md/readymag.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/readymag.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/readymag.com/",
+      "screenshot": "https://sitepeel.dev/design-md/readymag.com/screenshot.jpg"
+    },
+    {
+      "name": "Rive",
+      "host": "rive.app",
+      "category": "Design tools and site builders",
+      "theme": "dark",
+      "fonts": [
+        "Orbitron",
+        "Inter"
+      ],
+      "colors": [
+        "#000000",
+        "#FFFFFF",
+        "#CCCCCC",
+        "#E6E6E6"
+      ],
+      "accent": "#E6E6E6",
+      "file": "design-md/rive.app/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/rive.app/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/rive.app/",
+      "screenshot": "https://sitepeel.dev/design-md/rive.app/screenshot.jpg"
+    },
+    {
+      "name": "Sketch",
+      "host": "sketch.com",
+      "category": "Design tools and site builders",
+      "theme": "light",
+      "fonts": [
+        "Reckless",
+        "InterVariable"
+      ],
+      "colors": [
+        "#F5F5F5",
+        "#FAFAFA",
+        "#F9F9F9",
+        "#212123",
+        "#494949",
+        "#151515"
+      ],
+      "accent": "#151515",
+      "file": "design-md/sketch.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/sketch.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/sketch.com/",
+      "screenshot": "https://sitepeel.dev/design-md/sketch.com/screenshot.jpg"
+    },
+    {
+      "name": "Spline",
+      "host": "spline.design",
+      "category": "Design tools and site builders",
+      "theme": "dark",
+      "fonts": [
+        "Spline Sans"
+      ],
+      "colors": [
+        "#000000",
+        "#999999",
+        "#E6E6E6",
+        "#0062FF"
+      ],
+      "accent": "#999999",
+      "file": "design-md/spline.design/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/spline.design/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/spline.design/",
+      "screenshot": "https://sitepeel.dev/design-md/spline.design/screenshot.jpg"
+    },
+    {
+      "name": "Squarespace",
+      "host": "squarespace.com",
+      "category": "Design tools and site builders",
+      "theme": "dark",
+      "fonts": [
+        "Clarkson",
+        "Clarkson Serif"
+      ],
+      "colors": [
+        "#000000",
+        "#2F2F2F",
+        "#FFFFFF"
+      ],
+      "accent": "#FFFFFF",
+      "file": "design-md/squarespace.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/squarespace.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/squarespace.com/",
+      "screenshot": "https://sitepeel.dev/design-md/squarespace.com/screenshot.jpg"
+    },
+    {
+      "name": "Webflow",
+      "host": "webflow.com",
+      "category": "Design tools and site builders",
+      "theme": "dark",
+      "fonts": [
+        "WF Visual Sans Variable"
+      ],
+      "colors": [
+        "#080808",
+        "#171717",
+        "#FFFFFF",
+        "#ABABAB",
+        "#146EF5",
+        "#3B89FF"
+      ],
+      "accent": "#146EF5",
+      "file": "design-md/webflow.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/webflow.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/webflow.com/",
+      "screenshot": "https://sitepeel.dev/design-md/webflow.com/screenshot.jpg"
+    },
+    {
+      "name": "wix.com",
+      "host": "wix.com",
+      "category": "Design tools and site builders",
+      "theme": "light",
+      "fonts": [
+        "wix-madefor-display-v2",
+        "wix-madefor-text-v2"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#000000",
+        "#514B3D",
+        "#9FEAFF",
+        "#166AEA",
+        "#1A6AFF"
+      ],
+      "accent": "#9FEAFF",
+      "file": "design-md/wix.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/wix.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/wix.com/",
+      "screenshot": "https://sitepeel.dev/design-md/wix.com/screenshot.jpg"
+    },
+    {
+      "name": "Are.na",
+      "host": "are.na",
+      "category": "Inspiration",
+      "theme": "dark",
+      "fonts": [
+        "areal"
+      ],
+      "colors": [
+        "#000000",
+        "#333333",
+        "#1A1A1A",
+        "#FFFFFF",
+        "#E5E5E5",
+        "#E2DFE9"
+      ],
+      "accent": "#E2DFE9",
+      "file": "design-md/are.na/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/are.na/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/are.na/",
+      "screenshot": "https://sitepeel.dev/design-md/are.na/screenshot.jpg"
+    },
+    {
+      "name": "Awwwards",
+      "host": "awwwards.com",
+      "category": "Inspiration",
+      "theme": "light",
+      "fonts": [
+        "Inter Tight"
+      ],
+      "colors": [
+        "#E9E9E9",
+        "#F8F8F8",
+        "#222222"
+      ],
+      "accent": "#222222",
+      "file": "design-md/awwwards.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/awwwards.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/awwwards.com/",
+      "screenshot": "https://sitepeel.dev/design-md/awwwards.com/screenshot.jpg"
+    },
+    {
+      "name": "Cosmos",
+      "host": "cosmos.so",
+      "category": "Inspiration",
+      "theme": "light",
+      "fonts": [
+        "cosmosOracle"
+      ],
+      "colors": [
+        "#F7F5F3",
+        "#FCFBFA",
+        "#F2F1F0",
+        "#0D0D0D",
+        "#6E6A69",
+        "#4694F6"
+      ],
+      "accent": "#0D0D0D",
+      "file": "design-md/cosmos.so/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/cosmos.so/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/cosmos.so/",
+      "screenshot": "https://sitepeel.dev/design-md/cosmos.so/screenshot.jpg"
+    },
+    {
+      "name": "Dribbble",
+      "host": "dribbble.com",
+      "category": "Inspiration",
+      "theme": "light",
+      "fonts": [
+        "Mona Sans",
+        "Arial"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#ECEBF0",
+        "#FAF9FB",
+        "#0D0C22",
+        "#524B63",
+        "#EA4C89"
+      ],
+      "accent": "#EA4C89",
+      "file": "design-md/dribbble.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/dribbble.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/dribbble.com/",
+      "screenshot": "https://sitepeel.dev/design-md/dribbble.com/screenshot.jpg"
+    },
+    {
+      "name": "Mobbin",
+      "host": "mobbin.com",
+      "category": "Inspiration",
+      "theme": "light",
+      "fonts": [
+        "saans"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#141414",
+        "#707070"
+      ],
+      "accent": "#141414",
+      "file": "design-md/mobbin.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/mobbin.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/mobbin.com/",
+      "screenshot": "https://sitepeel.dev/design-md/mobbin.com/screenshot.jpg"
+    },
+    {
+      "name": "mymind",
+      "host": "mymind.com",
+      "category": "Inspiration",
+      "theme": "light",
+      "fonts": [
+        "Avenir LT W01 45 Book1475508",
+        "Louize-Regular-205TF"
+      ],
+      "colors": [
+        "#F9FAFC",
+        "#FFF1F1",
+        "#FFFFFF",
+        "#000000",
+        "#3A475A",
+        "#FF5924"
+      ],
+      "accent": "#FF5924",
+      "file": "design-md/mymind.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/mymind.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/mymind.com/",
+      "screenshot": "https://sitepeel.dev/design-md/mymind.com/screenshot.jpg"
+    },
+    {
+      "name": "Savee",
+      "host": "savee.com",
+      "category": "Inspiration",
+      "theme": "dark",
+      "fonts": [
+        "saveeFont"
+      ],
+      "colors": [
+        "#0A0A0A",
+        "#151515",
+        "#D4D4D4",
+        "#9C9C9C",
+        "#FDFDFD"
+      ],
+      "accent": "#FDFDFD",
+      "file": "design-md/savee.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/savee.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/savee.com/",
+      "screenshot": "https://sitepeel.dev/design-md/savee.com/screenshot.jpg"
+    },
+    {
+      "name": "Allbirds",
+      "host": "allbirds.com",
+      "category": "E-commerce and brands",
+      "theme": "light",
+      "fonts": [
+        "Self Modern",
+        "Geograph"
+      ],
+      "colors": [
+        "#ECE9E2",
+        "#FFFFFF",
+        "#000000",
+        "#212121"
+      ],
+      "accent": "#212121",
+      "file": "design-md/allbirds.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/allbirds.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/allbirds.com/",
+      "screenshot": "https://sitepeel.dev/design-md/allbirds.com/screenshot.jpg"
+    },
+    {
+      "name": "Apple",
+      "host": "apple.com",
+      "category": "E-commerce and brands",
+      "theme": "light",
+      "fonts": [
+        "SF Pro Display",
+        "SF Pro Text"
+      ],
+      "colors": [
+        "#F5F5F7",
+        "#FFFFFF",
+        "#FAFAFC",
+        "#1D1D1F",
+        "#313131",
+        "#0071E3"
+      ],
+      "accent": "#0071E3",
+      "file": "design-md/apple.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/apple.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/apple.com/",
+      "screenshot": "https://sitepeel.dev/design-md/apple.com/screenshot.jpg"
+    },
+    {
+      "name": "Glossier",
+      "host": "glossier.com",
+      "category": "E-commerce and brands",
+      "theme": "light",
+      "fonts": [
+        "Apercu"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F0F0F0",
+        "#F5F5F5",
+        "#000000",
+        "#666666",
+        "#0600FF"
+      ],
+      "accent": "#FFFFFF",
+      "file": "design-md/glossier.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/glossier.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/glossier.com/",
+      "screenshot": "https://sitepeel.dev/design-md/glossier.com/screenshot.jpg"
+    },
+    {
+      "name": "Gumroad",
+      "host": "gumroad.com",
+      "category": "E-commerce and brands",
+      "theme": "dark",
+      "fonts": [
+        "ABC Favorit",
+        "Arial"
+      ],
+      "colors": [
+        "#000000",
+        "#242423",
+        "#FFFFFF",
+        "#B3B3B3",
+        "#FF90E8"
+      ],
+      "accent": "#FF90E8",
+      "file": "design-md/gumroad.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/gumroad.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/gumroad.com/",
+      "screenshot": "https://sitepeel.dev/design-md/gumroad.com/screenshot.jpg"
+    },
+    {
+      "name": "IKEA",
+      "host": "ikea.com",
+      "category": "E-commerce and brands",
+      "theme": "light",
+      "fonts": [
+        "Omani Rial"
+      ],
+      "colors": [
+        "#FFFEFB",
+        "#DADADA",
+        "#FFFFFF",
+        "#111111",
+        "#0058A3",
+        "#0000EE"
+      ],
+      "accent": "#0058A3",
+      "file": "design-md/ikea.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/ikea.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/ikea.com/",
+      "screenshot": "https://sitepeel.dev/design-md/ikea.com/screenshot.jpg"
+    },
+    {
+      "name": "Nike",
+      "host": "nike.com",
+      "category": "E-commerce and brands",
+      "theme": "light",
+      "fonts": [
+        "Nike Futura ND",
+        "Helvetica Now Text"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#111111",
+        "#707072"
+      ],
+      "accent": "#111111",
+      "file": "design-md/nike.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/nike.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/nike.com/",
+      "screenshot": "https://sitepeel.dev/design-md/nike.com/screenshot.jpg"
+    },
+    {
+      "name": "Nothing",
+      "host": "nothing.tech",
+      "category": "E-commerce and brands",
+      "theme": "light",
+      "fonts": [
+        "NType82-Regular",
+        "Ndot-Regular"
+      ],
+      "colors": [
+        "#F4F4F4",
+        "#FFFFFF",
+        "#040404",
+        "#595A5A"
+      ],
+      "accent": "#040404",
+      "file": "design-md/nothing.tech/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/nothing.tech/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/nothing.tech/",
+      "screenshot": "https://sitepeel.dev/design-md/nothing.tech/screenshot.jpg"
+    },
+    {
+      "name": "Oura Ring",
+      "host": "ouraring.com",
+      "category": "E-commerce and brands",
+      "theme": "light",
+      "fonts": [
+        "Editorial New",
+        "AkkuratLL"
+      ],
+      "colors": [
+        "#F7F1E8",
+        "#FFFFFF",
+        "#000000",
+        "#4A4741",
+        "#2A72DE",
+        "#253B80"
+      ],
+      "accent": "#2A72DE",
+      "file": "design-md/ouraring.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/ouraring.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/ouraring.com/",
+      "screenshot": "https://sitepeel.dev/design-md/ouraring.com/screenshot.jpg"
+    },
+    {
+      "name": "Rivian",
+      "host": "rivian.com",
+      "category": "E-commerce and brands",
+      "theme": "light",
+      "fonts": [
+        "Liga",
+        "Adventure"
+      ],
+      "colors": [
+        "#ECECEC",
+        "#FFFFFF",
+        "#F2F2F2",
+        "#151515",
+        "#FFAA00",
+        "#A15842"
+      ],
+      "accent": "#FFAA00",
+      "file": "design-md/rivian.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/rivian.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/rivian.com/",
+      "screenshot": "https://sitepeel.dev/design-md/rivian.com/screenshot.jpg"
+    },
+    {
+      "name": "Shopify",
+      "host": "shopify.com",
+      "category": "E-commerce and brands",
+      "theme": "dark",
+      "fonts": [
+        "Shopify-Inter",
+        "ui-monospace"
+      ],
+      "colors": [
+        "#02090A",
+        "#000000",
+        "#000A1E",
+        "#FFFFFF",
+        "#99B3AD"
+      ],
+      "accent": "#FFFFFF",
+      "file": "design-md/shopify.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/shopify.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/shopify.com/",
+      "screenshot": "https://sitepeel.dev/design-md/shopify.com/screenshot.jpg"
+    },
+    {
+      "name": "Sonos",
+      "host": "sonos.com",
+      "category": "E-commerce and brands",
+      "theme": "light",
+      "fonts": [
+        "aktiv-grotesk"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F4F4F4",
+        "#000000",
+        "#2E2E2E"
+      ],
+      "accent": "#000000",
+      "file": "design-md/sonos.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/sonos.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/sonos.com/",
+      "screenshot": "https://sitepeel.dev/design-md/sonos.com/screenshot.jpg"
+    },
+    {
+      "name": "teenage engineering",
+      "host": "teenage.engineering",
+      "category": "E-commerce and brands",
+      "theme": "dark",
+      "fonts": [
+        "te-20"
+      ],
+      "colors": [
+        "#000000",
+        "#F1F2F2",
+        "#E5E5E5"
+      ],
+      "accent": "#F1F2F2",
+      "file": "design-md/teenage.engineering/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/teenage.engineering/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/teenage.engineering/",
+      "screenshot": "https://sitepeel.dev/design-md/teenage.engineering/screenshot.jpg"
+    },
+    {
+      "name": "Airbnb",
+      "host": "airbnb.com",
+      "category": "Media and consumer apps",
+      "theme": "light",
+      "fonts": [
+        "Airbnb Cereal VF"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#EBEBEB",
+        "#F2F2F2",
+        "#222222",
+        "#FF385C"
+      ],
+      "accent": "#FF385C",
+      "file": "design-md/airbnb.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/airbnb.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/airbnb.com/",
+      "screenshot": "https://sitepeel.dev/design-md/airbnb.com/screenshot.jpg"
+    },
+    {
+      "name": "BBC",
+      "host": "bbc.com",
+      "category": "Media and consumer apps",
+      "theme": "light",
+      "fonts": [
+        "BBC Reith Serif",
+        "BBC Reith Sans"
+      ],
+      "colors": [
+        "#F8F8F8",
+        "#E6E8EA",
+        "#FFFFFF",
+        "#000000",
+        "#202224",
+        "#EB0000"
+      ],
+      "accent": "#000000",
+      "file": "design-md/bbc.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/bbc.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/bbc.com/",
+      "screenshot": "https://sitepeel.dev/design-md/bbc.com/screenshot.jpg"
+    },
+    {
+      "name": "Booking.com",
+      "host": "booking.com",
+      "category": "Media and consumer apps",
+      "theme": "light",
+      "fonts": [
+        "Avenir Next"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#E7E7E7",
+        "#F5F5F5",
+        "#1A1A1A",
+        "#595959",
+        "#003B95"
+      ],
+      "accent": "#003B95",
+      "file": "design-md/booking.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/booking.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/booking.com/",
+      "screenshot": "https://sitepeel.dev/design-md/booking.com/screenshot.jpg"
+    },
+    {
+      "name": "Discord",
+      "host": "discord.com",
+      "category": "Media and consumer apps",
+      "theme": "dark",
+      "fonts": [
+        "Abcgintodiscordnord",
+        "Abcgintodiscord"
+      ],
+      "colors": [
+        "#1A2081",
+        "#FFFFFF",
+        "#BBBDD9",
+        "#5865F2",
+        "#161986"
+      ],
+      "accent": "#5865F2",
+      "file": "design-md/discord.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/discord.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/discord.com/",
+      "screenshot": "https://sitepeel.dev/design-md/discord.com/screenshot.jpg"
+    },
+    {
+      "name": "Duolingo",
+      "host": "duolingo.com",
+      "category": "Media and consumer apps",
+      "theme": "light",
+      "fonts": [
+        "feather",
+        "duolingo-sans"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#4B4B4B",
+        "#777777",
+        "#A5ED6E",
+        "#58CC02",
+        "#AF623C"
+      ],
+      "accent": "#A5ED6E",
+      "file": "design-md/duolingo.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/duolingo.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/duolingo.com/",
+      "screenshot": "https://sitepeel.dev/design-md/duolingo.com/screenshot.jpg"
+    },
+    {
+      "name": "Headspace",
+      "host": "headspace.com",
+      "category": "Media and consumer apps",
+      "theme": "light",
+      "fonts": [
+        "Headspace Apercu"
+      ],
+      "colors": [
+        "#F9F4F2",
+        "#FFFFFF",
+        "#2D2C2B",
+        "#44423F",
+        "#0061EF",
+        "#1A0C54"
+      ],
+      "accent": "#0061EF",
+      "file": "design-md/headspace.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/headspace.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/headspace.com/",
+      "screenshot": "https://sitepeel.dev/design-md/headspace.com/screenshot.jpg"
+    },
+    {
+      "name": "Netflix",
+      "host": "netflix.com",
+      "category": "Media and consumer apps",
+      "theme": "dark",
+      "fonts": [
+        "Netflix Sans"
+      ],
+      "colors": [
+        "#000000",
+        "#2D2D2D",
+        "#232323",
+        "#FFFFFF",
+        "#B3B3B3",
+        "#E50914"
+      ],
+      "accent": "#E50914",
+      "file": "design-md/netflix.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/netflix.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/netflix.com/",
+      "screenshot": "https://sitepeel.dev/design-md/netflix.com/screenshot.jpg"
+    },
+    {
+      "name": "Pinterest",
+      "host": "pinterest.com",
+      "category": "Media and consumer apps",
+      "theme": "light",
+      "fonts": [
+        "Pin Sans"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#E5E5E0",
+        "#000000",
+        "#62625B",
+        "#E60023",
+        "#4285F4"
+      ],
+      "accent": "#E60023",
+      "file": "design-md/pinterest.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/pinterest.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/pinterest.com/",
+      "screenshot": "https://sitepeel.dev/design-md/pinterest.com/screenshot.jpg"
+    },
+    {
+      "name": "Spotify",
+      "host": "spotify.com",
+      "category": "Media and consumer apps",
+      "theme": "dark",
+      "fonts": [
+        "SpotifyMixUITitle",
+        "SpotifyMixUI"
+      ],
+      "colors": [
+        "#121212",
+        "#3B3B3B",
+        "#1F1F1F",
+        "#B3B3B3",
+        "#292929"
+      ],
+      "accent": "#292929",
+      "file": "design-md/spotify.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/spotify.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/spotify.com/",
+      "screenshot": "https://sitepeel.dev/design-md/spotify.com/screenshot.jpg"
+    },
+    {
+      "name": "Strava",
+      "host": "strava.com",
+      "category": "Media and consumer apps",
+      "theme": "light",
+      "fonts": [
+        "Boathouse"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#F9F8F5",
+        "#FAFAFA",
+        "#000000",
+        "#21211F",
+        "#FC5200"
+      ],
+      "accent": "#FC5200",
+      "file": "design-md/strava.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/strava.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/strava.com/",
+      "screenshot": "https://sitepeel.dev/design-md/strava.com/screenshot.jpg"
+    },
+    {
+      "name": "Substack",
+      "host": "substack.com",
+      "category": "Media and consumer apps",
+      "theme": "dark",
+      "fonts": [
+        "Cahuenga"
+      ],
+      "colors": [
+        "#161718",
+        "#232525",
+        "#1B1C1D",
+        "#EEEEEE",
+        "#777777",
+        "#FF6719"
+      ],
+      "accent": "#FF6719",
+      "file": "design-md/substack.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/substack.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/substack.com/",
+      "screenshot": "https://sitepeel.dev/design-md/substack.com/screenshot.jpg"
+    },
+    {
+      "name": "The Verge",
+      "host": "theverge.com",
+      "category": "Media and consumer apps",
+      "theme": "dark",
+      "fonts": [
+        "polySans",
+        "fkRomanStandard"
+      ],
+      "colors": [
+        "#131313",
+        "#313131",
+        "#000000",
+        "#FFFFFF",
+        "#E9E9E9",
+        "#3CFFD0"
+      ],
+      "accent": "#3CFFD0",
+      "file": "design-md/theverge.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/theverge.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/theverge.com/",
+      "screenshot": "https://sitepeel.dev/design-md/theverge.com/screenshot.jpg"
+    },
+    {
+      "name": "Uber",
+      "host": "uber.com",
+      "category": "Media and consumer apps",
+      "theme": "dark",
+      "fonts": [
+        "UberMove"
+      ],
+      "colors": [
+        "#000000",
+        "#292929",
+        "#111111",
+        "#FFFFFF",
+        "#AFAFAF",
+        "#0000EE"
+      ],
+      "accent": "#FFFFFF",
+      "file": "design-md/uber.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/uber.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/uber.com/",
+      "screenshot": "https://sitepeel.dev/design-md/uber.com/screenshot.jpg"
+    },
+    {
+      "name": "WIRED",
+      "host": "wired.com",
+      "category": "Media and consumer apps",
+      "theme": "light",
+      "fonts": [
+        "WiredDisplay",
+        "Apercu"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#000000",
+        "#1A1A1A",
+        "#057DBC"
+      ],
+      "accent": "#000000",
+      "file": "design-md/wired.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/wired.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/wired.com/",
+      "screenshot": "https://sitepeel.dev/design-md/wired.com/screenshot.jpg"
+    },
+    {
+      "name": "1Password",
+      "host": "1password.com",
+      "category": "Security and privacy",
+      "theme": "dark",
+      "fonts": [
+        "agileSans"
+      ],
+      "colors": [
+        "#1D1D21",
+        "#303136",
+        "#D2D2D3",
+        "#CBB88E",
+        "#145FE4"
+      ],
+      "accent": "#CBB88E",
+      "file": "design-md/1password.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/1password.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/1password.com/",
+      "screenshot": "https://sitepeel.dev/design-md/1password.com/screenshot.jpg"
+    },
+    {
+      "name": "Bitwarden",
+      "host": "bitwarden.com",
+      "category": "Security and privacy",
+      "theme": "dark",
+      "fonts": [
+        "Inter Variable"
+      ],
+      "colors": [
+        "#0A171F",
+        "#FFFFFF",
+        "#F3F6F9",
+        "#0C3276",
+        "#65ABFF",
+        "#FF4E63"
+      ],
+      "accent": "#0C3276",
+      "file": "design-md/bitwarden.com/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/bitwarden.com/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/bitwarden.com/",
+      "screenshot": "https://sitepeel.dev/design-md/bitwarden.com/screenshot.jpg"
+    },
+    {
+      "name": "Proton",
+      "host": "proton.me",
+      "category": "Security and privacy",
+      "theme": "light",
+      "fonts": [
+        "ProtonSerif",
+        "ProtonSans"
+      ],
+      "colors": [
+        "#FFFFFF",
+        "#4B5563",
+        "#A6ACB7",
+        "#6D4AFF",
+        "#372580"
+      ],
+      "accent": "#6D4AFF",
+      "file": "design-md/proton.me/DESIGN.md",
+      "raw": "https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/proton.me/DESIGN.md",
+      "sitepeel": "https://sitepeel.dev/design-md/proton.me/",
+      "screenshot": "https://sitepeel.dev/design-md/proton.me/screenshot.jpg"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+---
+version: alpha
+name: WIRED
+description: "Light monochrome interface measured from wired.com: WiredDisplay type with Apercu, flat surfaces and 4px corners."
+colors:
+  background: "#FFFFFF"
+  surface: "#FFFFFF"
+  on-surface: "#000000"
+  on-background: "#000000"
+  on-surface-variant: "#1A1A1A"
+  on-surface-muted: "#333333"
+  overlay: "#000000D9"
+  primary: "#000000"
+  on-primary: "#FFFFFF"
+  secondary: "#057DBC"
+typography:
+  headline-display:
+    fontFamily: WiredDisplay
+    fontSize: 64px
+    fontWeight: 400
+    lineHeight: 0.93
+    letterSpacing: -0.008em
+  headline-lg:
+    fontFamily: WiredDisplay
+    fontSize: 58px
+    fontWeight: 400
+    lineHeight: 0.93
+    letterSpacing: -0.009em
+  headline-md:
+    fontFamily: WiredDisplay
+    fontSize: 26px
+    fontWeight: 400
+    lineHeight: 1.08
+  headline-sm:
+    fontFamily: Apercu
+    fontSize: 20px
+    fontWeight: 700
+    lineHeight: 1.2
+    letterSpacing: -0.015em
+  body-md:
+    fontFamily: Apercu
+    fontSize: 17px
+    fontWeight: 700
+    lineHeight: 1.29
+    letterSpacing: -0.006em
+  body-sm:
+    fontFamily: Proxima Nova
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 1.33
+  caption:
+    fontFamily: Proxima Nova
+    fontSize: 11px
+    fontWeight: 400
+    lineHeight: 1.45
+  label-md:
+    fontFamily: Breve Text
+    fontSize: 19px
+    fontWeight: 400
+    lineHeight: 1.47
+    letterSpacing: 0.005em
+  code:
+    fontFamily: WIRED Mono
+    fontSize: 13px
+    fontWeight: 700
+    lineHeight: 1.23
+rounded:
+  md: 4px
+spacing:
+  xs: 4px
+  sm: 8px
+  md: 14.11px
+  lg: 32px
+  xl: 64px
+  gutter: 8px
+  margin: 64px
+  container: 1600px
+components:
+  button-ghost:
+    textColor: "{colors.on-surface}"
+    typography: "{typography.code}"
+    rounded: 0px
+    padding: 12px 8px
+  card:
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.on-primary}"
+    typography: "{typography.body-sm}"
+    rounded: 0px
+    padding: 8px
+  link:
+    textColor: "#999999"
+---
+
+# WIRED Design System
+
+## Overview
+
+WIRED describes itself as: “We bring you the future as it happens. From the latest in science and technology to the big stories in business and culture, we've got you covered.” The interface is light, built on **White (#FFFFFF)** with **Near Black (#000000)** text and almost no color: actions are carried by contrast, not hue.
+
+Type is set in **WiredDisplay** and **Apercu**, with **WIRED Mono** for code. Headlines run large with tight negative tracking; body text is 17px. The surface language is flat. Corners are mostly 4px.
+
+Measured from [wired.com](https://www.wired.com/) on October 21, 2026 at 1440×900 and 728×1576 from 450 rendered elements. Values are computed styles from the live page, not the original source files.
+
+## Colors
+
+The palette has 8 roles.
+
+- **White (#FFFFFF):** Page background, seen 1 time. Token `background`, CSS `--fides-overlay-gpc-applied-text-color`.
+- **Near Black (#000000):** Primary text and headings, seen 78 times. Token `on-surface`.
+- **Charcoal (#1A1A1A):** Secondary text, seen 28 times. Token `on-surface-variant`.
+- **Graphite (#333333):** Muted text and metadata, seen 3 times. Token `on-surface-muted`.
+- **Near Black 85% (#000000D9):** Translucent fill for cards and controls, seen 17 times. Token `overlay`.
+- **Near Black (#000000):** Primary actions (the main text color; the palette is monochrome), seen 105 times. Token `primary`.
+- **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
+- **Dark Blue (#057DBC):** Accent, seen 1 time. Token `secondary`.
+
+## Typography
+
+**WiredDisplay**, **Apercu**, **Proxima Nova**, **Breve Text** and **WIRED Mono** (monospace) share the interface. Fallback stack: `WiredDisplay, helvetica, sans-serif`.
+
+- **headline-display:** WiredDisplay 64px at weight 400, line height 0.93, tracking -0.008em. Page title (h1).
+- **headline-lg:** WiredDisplay 58px at weight 400, line height 0.93, tracking -0.009em. Section headings (h2).
+- **headline-md:** WiredDisplay 26px at weight 400, line height 1.08. Sub-section headings.
+- **headline-sm:** Apercu 20px at weight 700, line height 1.2, tracking -0.015em. Card and feature titles.
+- **body-md:** Apercu 17px at weight 700, line height 1.29, tracking -0.006em. Body text.
+- **body-sm:** Proxima Nova 12px at weight 400, line height 1.33. Secondary and small text.
+- **caption:** Proxima Nova 11px at weight 400, line height 1.45. Captions and fine print.
+- **label-md:** Breve Text 19px at weight 400, line height 1.47, tracking 0.005em. Buttons, navigation and labels.
+- **code:** WIRED Mono 13px at weight 700, line height 1.23. Code and technical values.
+
+## Layout
+
+Spacing is mostly on a 4px grid (74% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
+
+- **Scale:** xs 4px, sm 8px, md 14.11px, lg 32px, xl 64px.
+- **Gaps:** 8px is the most common gap in flex and grid layouts.
+- **Container:** content is capped at 1600px.
+- **Page margin:** 64px on each side of full-width sections.
+- **Breakpoints:** 0px, 320px, 767px, 768px, 1023px, 1024px, 1025px, 1280px, 1600px.
+
+## Elevation & Depth
+
+The design is flat: no shadows were measured. Hierarchy comes from color contrast.
+
+## Shapes
+
+Most elements use 4px corners. Measured radii, most used first:
+
+- **md (4px):** 68 elements.
+
+## Components
+
+Measured from the rendered page. Token values reference the tokens above.
+
+- **button-ghost (“Menu”):** transparent fill, #000000 text, 13px/400, padding 12px 8px.
+- **card:** #000000 fill, #FFFFFF text, 12px/400, padding 8px.
+- **link:** transparent fill, #999999 text, padding 0px.
+
+## Do's and Don'ts
+
+- Do use #FFFFFF for the page.
+- Do keep text in 3 levels: #000000, #1A1A1A, #333333.
+- Do let contrast carry emphasis; primary actions use #000000 on #FFFFFF.
+- Do set headlines in WiredDisplay with tight tracking (-0.008em).
+- Do reuse the measured spacing steps (8px, 14.11px, 32px).
+- Do use 4px corners on most elements.
+- Don't add drop shadows for depth; use borders and contrast.
+- Don't introduce new font families beyond WiredDisplay, Apercu, Proxima Nova, Breve Text and WIRED Mono.
+- Don't add saturated accent colors; the measured palette is almost entirely neutral.
+- Don't make interface transitions slower than 0.2s.
+
+## Motion
+
+Interface transitions are quick: 0.2s. Longer ambient animations run 1s.
+
+- **Easing:** `ease-in-out`, `cubic-bezier(0.37, 0, 0.63, 1)`, `ease`.
+- **Reduced motion:** the page responds to `prefers-reduced-motion`.
+
+Generated by [Sitepeel](https://sitepeel.dev/design-md/wired.com/), the free DESIGN.md generator.
