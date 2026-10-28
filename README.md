@@ -335,7 +335,7 @@ The library grows every day, but not every site is here yet. Sitepeel gives you 
 **For your AI agent:** the [Sitepeel MCP server](https://sitepeel.dev/mcp/) gives Claude Code, Cursor, Codex, VS Code and other agents the same tools, free and without an API key. The quickest setup is to paste this line into your agent:
 
 ```
-set up sitepeel - https://sitepeel.dev/llms.txt
+set up sitepeel mcp - https://sitepeel.dev/setup.md
 ```
 
 **In your browser:** the [Sitepeel Chrome extension](https://sitepeel.dev/extension/) works on the page you have open, including pages behind a login. Copy an element's HTML and CSS, export a whole page, get its DESIGN.md, colors, fonts and assets, measure spacing, try other fonts and check every screen size.
