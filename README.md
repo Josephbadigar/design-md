@@ -39,7 +39,7 @@ Not every site is here yet. Sitepeel gives you three ways to make the file yours
 
 ## All brands
 
-168 brands in 11 categories. Colors are listed background first, then surfaces, text and the accent. Open a brand to see its screenshot.
+168 brands in 11 categories. Colors are listed background first, then surfaces, text and the accent. Open a brand to see its screenshot. Scripts and agents can read the same list from [index.json](index.json).
 
 ### AI
 
