@@ -19,4 +19,6 @@ How to use: save [DESIGN.md](DESIGN.md) in your project's root folder and tell y
 curl -o DESIGN.md https://raw.githubusercontent.com/Josephbadigar/design-md/main/design-md/vercel.com/DESIGN.md
 ```
 
+Need another site? The free [DESIGN.md generator](https://sitepeel.dev/design-md/) makes one from any link, and the [Sitepeel MCP server](https://sitepeel.dev/mcp/) lets your agent fetch it on its own.
+
 [Back to all brands](../../README.md)

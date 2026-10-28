@@ -17,6 +17,8 @@ const SITE = 'https://sitepeel.dev';
 const LIBRARY_URL = `${SITE}/design-md/examples/`;
 const INDEX_URL = `${LIBRARY_URL}index.md`;
 const REPO = 'Josephbadigar/design-md';
+// Shown with screenshots at the top of the README, in this order (missing ones are skipped).
+const FEATURED = ['stripe.com', 'linear.app', 'vercel.com', 'notion.com', 'figma.com', 'apple.com', 'anthropic.com', 'cursor.com', 'supabase.com'];
 const RAW_BASE = `https://raw.githubusercontent.com/${REPO}/main`;
 const USER_AGENT = `sitepeel-design-md-sync (+https://github.com/${REPO})`;
 const CONCURRENCY = 6;
@@ -181,6 +183,8 @@ How to use: save [DESIGN.md](DESIGN.md) in your project's root folder and tell y
 curl -o DESIGN.md ${rawUrl(b)}
 \`\`\`
 
+Need another site? The free [DESIGN.md generator](${SITE}/design-md/) makes one from any link, and the [Sitepeel MCP server](${SITE}/mcp/) lets your agent fetch it on its own.
+
 [Back to all brands](../../README.md)
 `;
 }
@@ -206,19 +210,49 @@ ${rows.join('\n')}`;
     })
     .join('\n\n');
 
+  // A few well-known brands shown with their screenshots at the top (skipped if one leaves the library).
+  const featured = FEATURED.map((h) => brands.find((b) => b.host === h)).filter(Boolean).slice(0, 9);
+  const cell = (b) => `<td align="center" width="33%"><a href="design-md/${b.host}/"><img src="${pageUrl(b)}screenshot.jpg" alt="${b.name} DESIGN.md" width="100%"></a><br><a href="design-md/${b.host}/"><b>${b.name}</b></a> · <a href="design-md/${b.host}/DESIGN.md">DESIGN.md</a></td>`;
+  const gallery = featured.length >= 3 ? `<table>\n${Array.from({ length: Math.floor(featured.length / 3) }, (_, i) => `<tr>${featured.slice(i * 3, i * 3 + 3).map(cell).join('')}</tr>`).join('\n')}\n</table>` : '';
+
   return `${GENERATED}
 
-# DESIGN.md files for ${n} websites
+<p align="center"><a href="${LIBRARY_URL}"><img src="assets/banner.png" alt="A growing library of DESIGN.md files, by Sitepeel" width="100%"></a></p>
 
-DESIGN.md is a plain-text design system in the format Google published with Stitch. Colors, fonts, spacing and component tokens sit at the top of the file, with short rules underneath. AI coding agents such as Claude Code, Cursor, Codex and Stitch read it to build UI in a set style. This repo has ${n} of them, for sites like Stripe, Linear and Vercel. [Sitepeel](https://sitepeel.dev) measured each file from the live site. You can browse the same library, with a style guide for every brand, at [sitepeel.dev/design-md/examples](${LIBRARY_URL}).
+<h1 align="center">DESIGN.md library</h1>
+
+<p align="center">A growing library of free DESIGN.md files for AI coding agents.<br>${n} websites so far, measured by <a href="${SITE}">Sitepeel</a> and updated every day.</p>
+
+<p align="center">
+  <a href="${SITE}/design-md/"><b>Generate a DESIGN.md</b></a> ·
+  <a href="${LIBRARY_URL}">Browse with style guides</a> ·
+  <a href="${SITE}/mcp/">MCP server</a> ·
+  <a href="${SITE}/extension/">Chrome extension</a> ·
+  <a href="${SITE}">sitepeel.dev</a>
+</p>
+
+<p align="center">
+  <a href="#all-brands"><img src="https://img.shields.io/badge/dynamic/json?url=${encodeURIComponent(RAW_BASE + '/index.json')}&query=%24.count&label=DESIGN.md%20files&color=9045E8&style=flat-square" alt="DESIGN.md files in the library"></a>
+  <a href="https://github.com/${REPO}/actions/workflows/sync.yml"><img src="https://img.shields.io/github/actions/workflow/status/${REPO}/sync.yml?label=daily%20sync&style=flat-square" alt="Daily sync from sitepeel.dev"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY%204.0-555?style=flat-square" alt="License: CC BY 4.0"></a>
+</p>
+
+DESIGN.md is a plain-text design system in the format Google published with Stitch. Colors, fonts, spacing and component tokens sit at the top of the file, with short rules underneath. AI coding agents such as Claude Code, Cursor, Codex and Stitch read it to build UI in a set style. This library has ${n} of them so far, for sites like Stripe, Linear and Vercel, and it grows as people make new ones on [Sitepeel](${SITE}). Each file is measured from the live site. You can browse the same library, with a style guide for every brand, at [sitepeel.dev/design-md/examples](${LIBRARY_URL}).
+
+${gallery}
+
+**Don't see your site?** [Generate its DESIGN.md](${SITE}/design-md/) from any link in under a minute, free.
 
 - [How to use](#how-to-use)
-- [Get the DESIGN.md of any site](#get-the-designmd-of-any-site)
+- [Generate a DESIGN.md for any site](#generate-a-designmd-for-any-site)
 - [All brands](#all-brands): ${toc}
+- [About Sitepeel](#about-sitepeel)
 - [Credit and license](#credit-and-license)
 - [FAQ](#faq)
 
 ## How to use
+
+![Pick a brand, save it as DESIGN.md, and your agent builds in that style](assets/how-to-use.png)
 
 1. Pick a brand close to what you are building.
 2. Save its DESIGN.md in your project's root folder.
@@ -232,11 +266,13 @@ curl -o DESIGN.md ${RAW_BASE}/design-md/linear.app/DESIGN.md
 
 Swap \`linear.app\` for any folder name in the tables below.
 
-## Get the DESIGN.md of any site
+## Generate a DESIGN.md for any site
 
-Not every site is here yet. Sitepeel gives you three ways to make the file yourself:
+![Any website goes through the DESIGN.md generator, the MCP server or the Chrome extension and comes out as a DESIGN.md file](assets/any-site.png)
 
-- The free [DESIGN.md generator](${SITE}/design-md/). Paste a link and it measures the live page.
+The library grows every day, but not every site is here yet. Sitepeel gives you three ways to make the file yourself:
+
+- The free [DESIGN.md generator](${SITE}/design-md/). Paste a link and it measures the live page, with a visual style guide you can share.
 - The free [MCP server](${SITE}/mcp/), so your agent can call \`get_design_md\` and \`search_design_library\` on its own. Add it to Claude Code with:
 
   \`\`\`sh
@@ -247,9 +283,32 @@ Not every site is here yet. Sitepeel gives you three ways to make the file yours
 
 ## All brands
 
-${n} brands in ${categories.length} categories. Colors are listed background first, then surfaces, text and the accent. Open a brand to see its screenshot. Scripts and agents can read the same list from [index.json](index.json).
+${n} brands in ${categories.length} categories so far, with more added as the [library on sitepeel.dev](${LIBRARY_URL}) grows. Colors are listed background first, then surfaces, text and the accent. Open a brand to see its screenshot. Scripts and agents can read the same list from [index.json](index.json).
 
 ${tables}
+
+## About Sitepeel
+
+[![More free tools at sitepeel.dev: clone prompt, AI slop checker, assets, fonts, colors and tech stack](assets/sitepeel-tools.png)](${SITE})
+
+[Sitepeel](${SITE}) is a set of free tools for people who build websites. Paste a link and see what the page is made of, then take it into your own project. This library is one part of it.
+
+**Website tools** (nothing to install):
+
+- [Clone prompt](${SITE}/free-tools/clone-prompt/): one prompt that rebuilds a page's look and layout in Claude Code, Cursor, Codex, Lovable or v0.
+- [DESIGN.md generator](${SITE}/design-md/): the DESIGN.md and a visual style guide of any public page.
+- [AI slop checker](${SITE}/free-tools/ai-slop-checker/): a 0 to 100 score for how generic a page looks, the tells marked on the page and a prompt that fixes them.
+- [Asset extractor](${SITE}/free-tools/asset-extractor/): every image, SVG, video, font, Lottie and 3D file on a page, in one ZIP.
+- [Website to HTML](${SITE}/free-tools/website-to-html/): the rendered page as plain HTML, one CSS file and its files.
+- [Font finder](${SITE}/free-tools/font-finder/), [color palette](${SITE}/free-tools/color-palette-generator/), [tech stack checker](${SITE}/free-tools/built-with/), [responsive checker](${SITE}/free-tools/responsive-checker/) and [full-page screenshot](${SITE}/free-tools/screenshot/).
+
+**For your AI agent:** the [Sitepeel MCP server](${SITE}/mcp/) gives Claude Code, Cursor, Codex, VS Code and other agents the same tools, free and without an API key. The quickest setup is to paste this line into your agent:
+
+\`\`\`
+set up sitepeel - ${SITE}/llms.txt
+\`\`\`
+
+**In your browser:** the [Sitepeel Chrome extension](${SITE}/extension/) works on the page you have open, including pages behind a login. Copy an element's HTML and CSS, export a whole page, get its DESIGN.md, colors, fonts and assets, measure spacing, try other fonts and check every screen size.
 
 ## Credit and license
 
@@ -273,7 +332,7 @@ No. Each file is an independent measurement of a public page. The brands did not
 
 ### How often is this repo updated?
 
-Every day. A GitHub Action copies the latest files from the Sitepeel library, so new brands show up here soon after they reach sitepeel.dev.
+Every day. A GitHub Action copies the latest files from the Sitepeel library, so new brands show up here soon after they reach sitepeel.dev. Star or watch the repo to see them land.
 
 ### Can I request a site?
 
