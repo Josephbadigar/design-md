@@ -11,14 +11,15 @@ colors:
   on-surface-variant: "#1A1A1A"
   surface-container-low: "#F9F9F8"
   surface-container: "#E6F3FE"
+  overlay: "#0000000D"
   outline: "#0000001A"
   primary: "#0075DE"
   on-primary: "#FFFFFF"
   inverse-surface: "#78736F"
   secondary: "#005BAB"
-  warning: "#FFB110"
-  error: "#F64932"
   success: "#1AAE39"
+  error: "#F64932"
+  warning: "#FFB110"
 typography:
   headline-display:
     fontFamily: NotionInter
@@ -109,7 +110,7 @@ components:
     rounded: "{rounded.lg}"
     padding: 0px
   link:
-    textColor: "{colors.on-surface}"
+    textColor: "{colors.on-surface-variant}"
 ---
 
 # Notion Design System
@@ -120,26 +121,27 @@ Notion describes itself as: “Build Custom Agents, search across all your apps,
 
 Type is set in **NotionInter**. Headlines run large with tight negative tracking; body text is 14px. The surface language is flat. Corners are mostly 8px.
 
-Measured from [notion.com](https://www.notion.com/) on October 21, 2026 at 1440×900 and 390×844 from 262 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [notion.com](https://www.notion.com/) on October 28, 2026 at 1440×900 and 390×844 from 266 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 14 roles.
+The palette has 15 roles.
 
 - **White (#FFFFFF):** Page background, seen 14 times. Token `background`.
 - **Charcoal (#0D0D0D):** Primary text and headings. Token `on-surface`.
 - **Near Black (#000000):** Headings and emphasis, seen 13 times. Token `on-surface-strong`.
 - **Charcoal (#1A1A1A):** Secondary text, seen 6 times. Token `on-surface-variant`.
 - **Snow (#F9F9F8):** Raised areas one step from the page, seen 3 times. Token `surface-container-low`, CSS `--tatami-color-menu-button-background`.
-- **Pale Blue (#E6F3FE):** Cards and panels, seen 2 times. Token `surface-container`, CSS `--tatami-color-blue-200`.
+- **Pale Blue (#E6F3FE):** Cards and panels, seen 1 time. Token `surface-container`, CSS `--tatami-color-blue-200`.
+- **Near Black 5% (#0000000D):** Translucent fill for cards and controls, seen 1 time. Token `overlay`.
 - **Near Black 10% (#0000001A):** Borders and dividers, seen 15 times. Token `outline`, CSS `--tatami-color-background-base-active`.
 - **Vivid Blue (#0075DE):** Primary buttons and calls to action, seen 3 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
 - **Warm Slate (#78736F):** High-contrast fills, seen 9 times. Token `inverse-surface`, CSS `--tatami-color-gray-500`.
 - **Dark Blue (#005BAB):** Accent, seen 2 times. Token `secondary`.
-- **Vivid Amber (#FFB110):** Warnings and highlights, seen 2 times. Token `warning`.
+- **Green (#1AAE39):** Success and positive states, seen 2 times. Token `success`.
 - **Vivid Red (#F64932):** Errors and destructive states, seen 2 times. Token `error`.
-- **Green (#1AAE39):** Success and positive states, seen 1 time. Token `success`.
+- **Vivid Amber (#FFB110):** Warnings and highlights, seen 1 time. Token `warning`.
 
 ## Typography
 
@@ -160,7 +162,7 @@ Spacing does not follow a strict grid: 62% of measured values are multiples of 4
 - **Scale:** xs 3px, sm 8px, md 12px, lg 24px, xl 40px.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
 - **Container:** content is capped at 500px.
-- **Breakpoints:** 374px, 375px, 400px, 440px, 600px, 700px, 712px, 768px, 839px, 840px, 919px, 1080px, 1280px, 1300px, 1440px.
+- **Breakpoints:** 600px, 840px, 1080px, 1280px, 1440px.
 
 ## Elevation & Depth
 
@@ -172,7 +174,7 @@ Most elements use 8px corners. Measured radii, most used first:
 
 - **md (8px):** 204 elements.
 - **lg (12px):** 56 elements.
-- **full (9999px):** 28 elements.
+- **full (9999px):** 32 elements.
 - **sm (4px):** 20 elements.
 
 ## Components
@@ -185,7 +187,7 @@ Measured from the rendered page. Token values reference the tokens above.
 - **button-outline-hover:** background #F2F9FF, text #005BAB on hover.
 - **button-ghost (“Product”):** transparent fill, #000000E5 text, 16px/400, 4px radius, padding 5px 10px.
 - **card:** #FFFFFF fill, #000000E5 text, 16px/400, 12px radius, padding 0px.
-- **link:** transparent fill, #000000F2 text, padding 0px.
+- **link:** transparent fill, #000000E5 text, padding 0px.
 
 ## Do's and Don'ts
 

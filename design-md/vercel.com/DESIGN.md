@@ -1,19 +1,18 @@
 ---
 version: alpha
 name: Vercel
-description: "Dark monochrome interface measured from vercel.com: GeistSans type, tonal surfaces and 6px corners."
+description: "Light monochrome interface measured from vercel.com: GeistSans type, tonal surfaces and 6px corners."
 colors:
-  background: "#000000"
-  surface: "#000000"
-  on-surface: "#EDEDED"
-  on-background: "#EDEDED"
-  on-surface-strong: "#FFFFFF"
-  on-surface-variant: "#A1A1A1"
+  background: "#FAFAFA"
+  surface: "#FAFAFA"
+  on-surface: "#171717"
+  on-background: "#171717"
+  on-surface-variant: "#4D4D4D"
   on-surface-muted: "#8F8F8F"
-  surface-container-low: "#0A0A0A"
-  surface-container: "#262626"
-  primary: "#EDEDED"
-  on-primary: "#0A0A0A"
+  surface-container-low: "#FFFFFF"
+  surface-container: "#EBEBEB"
+  primary: "#171717"
+  on-primary: "#FFFFFF"
 typography:
   headline-display:
     fontFamily: GeistSans
@@ -79,7 +78,7 @@ components:
     padding: 0px 6px
     height: 32px
   button-primary-hover:
-    backgroundColor: "#CCCCCC"
+    backgroundColor: "#383838"
   button-outline:
     backgroundColor: "{colors.surface-container-low}"
     textColor: "{colors.on-surface}"
@@ -88,7 +87,7 @@ components:
     padding: 0px 6px
     height: 32px
   button-outline-hover:
-    backgroundColor: "#1F1F1F"
+    backgroundColor: "#F2F2F2"
   button-ghost:
     textColor: "{colors.on-surface-variant}"
     typography: "{typography.label-sm}"
@@ -102,25 +101,24 @@ components:
 
 ## Overview
 
-Vercel describes itself as: “The autonomous stack for every app and agent.” The interface is dark, built on **Near Black (#000000)** with **Mist (#EDEDED)** text and almost no color: actions are carried by contrast, not hue.
+Vercel describes itself as: “The autonomous stack for every app and agent.” The interface is light, built on **Snow (#FAFAFA)** with **Charcoal (#171717)** text and almost no color: actions are carried by contrast, not hue.
 
 Type is set in **GeistSans**, with **Geist Mono** for code. Headlines run large with tight negative tracking; body text is 16px. Depth comes from hairline borders and inset highlights rather than drop shadows. Corners are mostly 6px.
 
-Measured from [vercel.com](https://vercel.com/) on October 21, 2026 at 1440×900 and 390×844 from 360 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [vercel.com](https://vercel.com/) on October 28, 2026 at 1440×900 and 390×844 from 358 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 9 roles.
+The palette has 8 roles.
 
-- **Near Black (#000000):** Page background, seen 5 times. Token `background`, CSS `--tw-mask-bottom-from-color`.
-- **Mist (#EDEDED):** Primary text and headings, seen 51 times. Token `on-surface`.
-- **White (#FFFFFF):** Headings and emphasis, seen 3 times. Token `on-surface-strong`.
-- **Gray (#A1A1A1):** Secondary text, seen 92 times. Token `on-surface-variant`.
+- **Snow (#FAFAFA):** Page background, seen 5 times. Token `background`, CSS `--ds-background-200`.
+- **Charcoal (#171717):** Primary text and headings, seen 51 times. Token `on-surface`.
+- **Slate (#4D4D4D):** Secondary text, seen 92 times. Token `on-surface-variant`.
 - **Gray (#8F8F8F):** Muted text and metadata, seen 3 times. Token `on-surface-muted`.
-- **Near Black (#0A0A0A):** Raised areas one step from the page, seen 11 times. Token `surface-container-low`.
-- **Graphite (#262626):** Cards and panels, seen 4 times. Token `surface-container`.
-- **Mist (#EDEDED):** Primary buttons and calls to action, seen 68 times. Token `primary`.
-- **Near Black (#0A0A0A):** Text and icons on primary. Token `on-primary`.
+- **White (#FFFFFF):** Raised areas one step from the page, seen 11 times. Token `surface-container-low`, CSS `--dropdown-triangle-stroke`.
+- **Mist (#EBEBEB):** Cards and panels, seen 4 times. Token `surface-container`.
+- **Charcoal (#171717):** Primary buttons and calls to action, seen 67 times. Token `primary`.
+- **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
 
 ## Typography
 
@@ -144,13 +142,13 @@ Spacing does not follow a strict grid: 15% of measured values are multiples of 4
 
 ## Elevation & Depth
 
-Depth comes mostly from hairline rings and inset highlights on tonal surfaces (#0A0A0A → #262626):
+Depth comes mostly from hairline rings and inset highlights on tonal surfaces (#FFFFFF → #EBEBEB):
 
-- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(46, 46, 46) 0px 0px 0px 1px`
-- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(46, 46, 46) 0px 0px 0px 1px inset`
-- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.145) 0px 0px 0px 1px, rgb(0, 0, 0) 0px 0px 0px 1px`
+- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px`
+- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px inset`
+- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgb(250, 250, 250) 0px 0px 0px 1px`
 
-A few raised panels add a soft drop shadow: `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.145) 0px 0px 0px 1px, rgba(0, 0, 0, 0.16) 0px 1px 2px 0px, rgb(0, 0, 0) 0px 0px 0px 1px`.
+A few raised panels add a soft drop shadow: `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 2px 2px 0px, rgb(250, 250, 250) 0px 0px 0px 1px`.
 
 ## Shapes
 
@@ -164,21 +162,22 @@ Most elements use 6px corners. Measured radii, most used first:
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Sign Up”):** #EDEDED fill, #0A0A0A text, 14px/500, 6px radius, padding 0px 6px.
-- **button-primary-hover:** background #CCCCCC, text #0A0A0A on hover.
-- **button-outline (“Get a Demo”):** #0A0A0A fill, #EDEDED text, 14px/500, 6px radius, padding 0px 6px, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(46, 46, 46) 0px 0px 0px 1px`.
-- **button-outline-hover:** background #1F1F1F, text #EDEDED on hover.
-- **button-ghost (“Products”):** transparent fill, #A1A1A1 text, 14px/400, padding 0px.
-- **link:** transparent fill, #A1A1A1 text, padding 0px.
+- **button-primary (“Sign Up”):** #171717 fill, #FFFFFF text, 14px/500, 6px radius, padding 0px 6px.
+- **button-primary-hover:** background #383838, text #FFFFFF on hover.
+- **button-outline (“Get a Demo”):** #FFFFFF fill, #171717 text, 14px/500, 6px radius, padding 0px 6px, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px`.
+- **button-outline-hover:** background #F2F2F2, text #171717 on hover.
+- **button-ghost (“Products”):** transparent fill, #4D4D4D text, 14px/400, padding 0px.
+- **link:** transparent fill, #4D4D4D text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #000000 for the page and lift surfaces in small steps: #0A0A0A, #262626.
-- Do keep text in 4 levels: #EDEDED, #FFFFFF, #A1A1A1, #8F8F8F.
-- Do let contrast carry emphasis; primary actions use #EDEDED on #000000.
+- Do use #FAFAFA for the page and lift surfaces in small steps: #FFFFFF, #EBEBEB.
+- Do keep text in 3 levels: #171717, #4D4D4D, #8F8F8F.
+- Do let contrast carry emphasis; primary actions use #171717 on #FAFAFA.
 - Do set headlines in GeistSans with tight tracking (-0.06em).
 - Do reuse the measured spacing steps (6px, 12px, 20px).
 - Do use 6px corners on most elements; larger surfaces also use 20px and 4px.
+- Don't use #8F8F8F for body text; it reaches 3.1:1 on #FAFAFA. Keep it for large text or metadata.
 - Don't use heavy drop shadows; keep depth to hairline rings and tonal surfaces.
 - Don't introduce new font families beyond GeistSans and Geist Mono.
 - Don't add saturated accent colors; the measured palette is almost entirely neutral.

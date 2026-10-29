@@ -7,22 +7,20 @@ colors:
   surface: "#FFFFFF"
   on-surface: "#061B31"
   on-background: "#061B31"
+  on-surface-strong: "#000000"
   on-surface-variant: "#50617A"
   on-surface-muted: "#64748D"
-  on-surface-subtle: "#7D8BA4"
   surface-container-low: "#F8FAFD"
   surface-container: "#F5F5FF"
   surface-container-high: "#E5EDF5"
   surface-container-highest: "#E3ECF7"
+  overlay: "#FFFFFFA6"
   outline: "#E5EDF5"
   outline-variant: "#E2E4FF"
   primary: "#533AFD"
   on-primary: "#FFFFFF"
-  secondary: "#1C1E54"
-  tertiary: "#7389FF"
-  warning: "#FBBC05"
-  error: "#EA4335"
-  success: "#34A853"
+  secondary: "#0A2540"
+  tertiary: "#1C1E54"
 typography:
   headline-display:
     fontFamily: sohne-var
@@ -112,59 +110,69 @@ components:
   button-primary-hover:
     backgroundColor: "#4032C8"
   button-outline:
-    textColor: "{colors.primary}"
-    typography: "{typography.body-sm}"
-    rounded: "{rounded.sm}"
-    padding: 10.5px 20px 13.5px 20px
-    height: 40px
-  button-outline-hover:
     backgroundColor: "{colors.background}"
+    textColor: "{colors.primary}"
+    typography: "{typography.label-md}"
+    rounded: "{rounded.sm}"
+    padding: 14.5px 24px 15.5px 24px
+    height: 48px
+  button-outline-hover:
     textColor: "#2E2B8C"
+  button-secondary:
+    backgroundColor: "{colors.secondary}"
+    textColor: "{colors.on-primary}"
+    rounded: "{rounded.sm}"
+    padding: 0px 24px
+    height: 40px
   button-ghost:
     textColor: "{colors.on-surface}"
     typography: "{typography.body-sm}"
     rounded: "{rounded.sm}"
     padding: 12px 0px
+  input-field:
+    backgroundColor: "{colors.background}"
+    textColor: "{colors.on-surface-strong}"
+    typography: "{typography.body-md}"
+    rounded: 0px
+    padding: 11px 17px
   link:
-    textColor: "{colors.primary}"
+    textColor: "{colors.on-surface}"
 ---
 
 # Stripe Design System
 
 ## Overview
 
-Stripe describes itself as: “Stripe is a financial services platform that helps all types of businesses accept payments, build flexible billing models and manage money movement.” The interface is light, built on **White (#FFFFFF)** with **Deep Blue (#061B31)** text, and **Vivid Indigo (#533AFD)** as the main accent.
+Stripe describes itself as: “Stripe is a financial services platform that helps all types of businesses accept payments, build flexible billing models, and manage money movement.” The interface is light, built on **White (#FFFFFF)** with **Deep Blue (#061B31)** text, and **Vivid Indigo (#533AFD)** as the main accent.
 
 Type is set in **sohne-var**. Headlines run large with tight negative tracking; body text is 16px. The surface language is flat. Corners are mostly 4px.
 
-Measured from [stripe.com](https://stripe.com/in) on October 21, 2026 at 1440×900 and 390×844 from 467 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [stripe.com](https://stripe.com/) on October 28, 2026 at 1440×900 and 390×844 from 474 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 18 roles, plus gradient stops #DA4BFECC, #FF8C6CCC, #8A35DF, #715CFFCC.
+The palette has 16 roles, plus gradient stops #DA4BFECC, #FF8C6CCC, #4304EA, #715CFFCC.
 
-- **White (#FFFFFF):** Page background, seen 10 times. Token `background`, CSS `--hds-color-util-bg-min`.
-- **Deep Blue (#061B31):** Primary text and headings, seen 64 times. Token `on-surface`, CSS `--hds-color-heading-solid`.
-- **Blue (#50617A):** Secondary text, seen 15 times. Token `on-surface-variant`.
-- **Blue (#64748D):** Muted text and metadata, seen 27 times. Token `on-surface-muted`, CSS `--hds-color-heading-subdued`.
-- **Blue (#7D8BA4):** Subtle text and placeholders, seen 7 times. Token `on-surface-subtle`, CSS `--hds-color-input-text-placeholder`.
-- **Snow (#F8FAFD):** Raised areas one step from the page, seen 2 times. Token `surface-container-low`, CSS `--hds-color-util-bg-quiet`.
+- **White (#FFFFFF):** Page background, seen 13 times. Token `background`, CSS `--hds-color-util-bg-min`.
+- **Deep Blue (#061B31):** Primary text and headings, seen 77 times. Token `on-surface`, CSS `--hds-color-heading-solid`.
+- **Near Black (#000000):** Headings and emphasis, seen 19 times. Token `on-surface-strong`.
+- **Blue (#50617A):** Secondary text, seen 8 times. Token `on-surface-variant`.
+- **Blue (#64748D):** Muted text and metadata, seen 37 times. Token `on-surface-muted`, CSS `--hds-color-heading-subdued`.
+- **Snow (#F8FAFD):** Raised areas one step from the page, seen 3 times. Token `surface-container-low`, CSS `--hds-color-util-bg-quiet`.
 - **Cool Snow (#F5F5FF):** Cards and panels, seen 2 times. Token `surface-container`.
-- **Cool Mist (#E5EDF5):** Hover and pressed fills, seen 4 times. Token `surface-container-high`, CSS `--hds-color-util-neutral-50`.
+- **Cool Mist (#E5EDF5):** Hover and pressed fills, seen 5 times. Token `surface-container-high`, CSS `--hds-color-util-neutral-50`.
 - **Pale Blue (#E3ECF7):** Highest raised elements, seen 3 times. Token `surface-container-highest`.
-- **Cool Mist (#E5EDF5):** Borders and dividers, seen 6 times. Token `outline`, CSS `--hds-color-util-neutral-50`.
+- **White 65% (#FFFFFFA6):** Translucent fill for cards and controls, seen 1 time. Token `overlay`, CSS `--hds-color-action-bg-translucent`.
+- **Cool Mist (#E5EDF5):** Borders and dividers, seen 4 times. Token `outline`, CSS `--hds-color-util-neutral-50`.
 - **Pale Indigo (#E2E4FF):** Secondary dividers, seen 3 times. Token `outline-variant`.
-- **Vivid Indigo (#533AFD):** Primary buttons and calls to action, seen 49 times. Token `primary`, CSS `--hds-color-accent-border-solid`.
+- **Vivid Indigo (#533AFD):** Primary buttons and calls to action, seen 21 times. Token `primary`, CSS `--hds-color-accent-border-solid`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Deep Indigo (#1C1E54):** Brand accent (CSS variable), seen 12 times. Token `secondary`.
-- **Light Indigo (#7389FF):** Most used accent color, seen 5 times. Token `tertiary`.
-- **Vivid Amber (#FBBC05):** Warnings and highlights, seen 1 time. Token `warning`.
-- **Vivid Red (#EA4335):** Errors and destructive states, seen 1 time. Token `error`.
-- **Green (#34A853):** Success and positive states, seen 1 time. Token `success`.
+- **Deep Blue (#0A2540):** Secondary buttons. Token `secondary`.
+- **Deep Indigo (#1C1E54):** Accent (CSS variable). Token `tertiary`.
 
 ## Typography
 
-**sohne-var** carries the whole interface. Fallback stack: `sohne-var, SF Pro Display, sans-serif`.
+**sohne-var** carries the whole interface. Fallback stack: `sohne-var, SF Pro Display, sans-serif`. Other loaded fonts: SourceCodePro.
 
 - **headline-display:** sohne-var 48px at weight 300, line height 1.15, tracking -0.02em (34px on mobile). Page title (h1).
 - **headline-lg:** sohne-var 32px at weight 300, line height 1.1, tracking -0.02em (22px on mobile). Section headings (h2).
@@ -178,7 +186,7 @@ The palette has 18 roles, plus gradient stops #DA4BFECC, #FF8C6CCC, #8A35DF, #71
 
 ## Layout
 
-Spacing is mostly on a 4px grid (77% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
+Spacing is mostly on a 4px grid (80% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
 
 - **Scale:** xs 4px, sm 8px, md 16px, lg 24px, xl 64px.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
@@ -192,8 +200,8 @@ The design is flat: no shadows were measured. Hierarchy comes from tonal surface
 
 Most elements use 4px corners. Measured radii, most used first:
 
-- **sm (4px):** 132 elements.
-- **md (6px):** 12 elements.
+- **sm (4px):** 128 elements.
+- **md (6px):** 16 elements.
 
 ## Components
 
@@ -201,29 +209,30 @@ Measured from the rendered page. Token values reference the tokens above.
 
 - **button-primary (“Contact sales”):** #533AFD fill, #FFFFFF text, 14px/400, 4px radius, padding 11.5px 20px 12.5px 20px.
 - **button-primary-hover:** background #4032C8, text #FFFFFF on hover.
-- **button-outline (“Sign in Sign in”):** transparent fill, #533AFD text, 14px/400, 4px radius, padding 10.5px 20px 13.5px 20px, border 1px solid #FFFFFF.
-- **button-outline-hover:** background #FFFFFF, text #2E2B8C on hover.
+- **button-outline (“Sign up with Google”):** #FFFFFFA6 fill, #533AFD text, 16px/400, 4px radius, padding 14.5px 24px 15.5px 24px, border 1px solid #B9B9F9.
+- **button-outline-hover:** background #FFFFFFA6, text #2E2B8C on hover.
+- **button-secondary (“Chat now with sales”):** #0A2540 fill, #FFFFFF text, 15px/400, 4px radius, padding 0px 24px, border 1px solid #FFFFFF1F.
 - **button-ghost (“Products”):** transparent fill, #061B31 text, 14px/400, 4px radius, padding 12px 0px.
-- **link:** transparent fill, #533AFD text, padding 0px.
+- **input-field (“Sell software subscriptions to o”):** #FFFFFF fill, #000000 text, 16px/300, padding 11px 17px.
+- **link:** transparent fill, #061B31 text, padding 0px.
 
 ## Do's and Don'ts
 
 - Do use #FFFFFF for the page and lift surfaces in small steps: #F8FAFD, #F5F5FF, #E5EDF5, #E3ECF7.
-- Do keep text in 4 levels: #061B31, #50617A, #64748D, #7D8BA4.
+- Do keep text in 4 levels: #061B31, #000000, #50617A, #64748D.
 - Do reserve #533AFD for primary actions and key highlights.
 - Do set headlines in sohne-var with tight tracking (-0.02em).
 - Do reuse the measured spacing steps (8px, 16px, 24px).
 - Do use 4px corners on most elements; larger surfaces also use 6px.
-- Don't use #7D8BA4 for body text; it reaches 3.4:1 on #FFFFFF. Keep it for large text or metadata.
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond sohne-var.
 - Don't use #533AFD for large backgrounds or body text.
-- Don't make interface transitions slower than 0.3s.
+- Don't make interface transitions slower than 0.4s.
 
 ## Motion
 
-Interface transitions are quick: 0.3s, 0.15s, 0.1s, 0.2s.
+Interface transitions are quick: 0.3s, 0.15s, 0.24s, 0.4s. Longer ambient animations run 0.8s, 1.2s.
 
-- **Easing:** `cubic-bezier(0.25, 1, 0.5, 1)`, `linear`, `ease`.
+- **Easing:** `cubic-bezier(0.25, 1, 0.5, 1)`, `linear`, `cubic-bezier(0.45, 0.05, 0.55, 0.95)`.
 
 Generated by [Sitepeel](https://sitepeel.dev/design-md/stripe.com/), the free DESIGN.md generator.

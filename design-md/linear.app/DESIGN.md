@@ -20,10 +20,7 @@ colors:
   outline-variant: "#2E2E32"
   primary: "#E5E5E6"
   on-primary: "#08090A"
-  secondary: "#E4F222"
-  warning: "#F0BF00"
-  success: "#27A644"
-  error: "#F34E52"
+  secondary: "#F0BF00"
 typography:
   headline-display:
     fontFamily: Inter Variable
@@ -150,11 +147,11 @@ Linear describes itself as: “Purpose-built for planning and building products 
 
 Type is set in **Inter Variable**, with **Berkeley Mono** for code. Headlines run large with tight negative tracking; body text is 16px. Depth comes from hairline borders and inset highlights rather than drop shadows. Controls are pill-shaped.
 
-Measured from [linear.app](https://linear.app/) on October 26, 2026 at 1440×900 and 390×844 from 438 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [linear.app](https://linear.app/) on October 28, 2026 at 1440×900 and 390×844 from 438 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 19 roles, plus gradient stops #B2D5FF, #DFD1FF.
+The palette has 16 roles, plus gradient stops #B2D5FF, #DFD1FF.
 
 - **Near Black (#08090A):** Page background, seen 3 times. Token `background`.
 - **Snow (#F7F8F8):** Primary text and headings, seen 20 times. Token `on-surface`.
@@ -169,12 +166,9 @@ The palette has 19 roles, plus gradient stops #B2D5FF, #DFD1FF.
 - **White 5% (#FFFFFF0D):** Stronger translucent fill, seen 2 times. Token `overlay-strong`, CSS `--sx-1urpf9d`.
 - **White 8% (#FFFFFF14):** Borders and dividers, seen 6 times. Token `outline`.
 - **Graphite (#2E2E32):** Secondary dividers, seen 2 times. Token `outline-variant`.
-- **Mist (#E5E5E6):** Primary buttons and calls to action, seen 4 times. Token `primary`.
+- **Mist (#E5E5E6):** Primary buttons and calls to action, seen 82 times. Token `primary`.
 - **Near Black (#08090A):** Text and icons on primary. Token `on-primary`.
-- **Vivid Yellow (#E4F222):** Accent, seen 1 time. Token `secondary`.
-- **Vivid Amber (#F0BF00):** Warnings and highlights, seen 6 times. Token `warning`.
-- **Green (#27A644):** Success and positive states, seen 1 time. Token `success`.
-- **Red (#F34E52):** Errors and destructive states, seen 1 time. Token `error`.
+- **Vivid Amber (#F0BF00):** Accent, seen 6 times. Token `secondary`.
 
 ## Typography
 
@@ -238,7 +232,7 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do set headlines in Inter Variable with tight tracking (-0.022em).
 - Do reuse the measured spacing steps (8px, 12px, 24px).
 - Do make buttons and chips fully rounded (9999px); most other elements use 4px corners.
-- Don't use #62666D for body text; it reaches 3.5:1 on #08090A. Keep it for large text or metadata.
+- Don't use #62666D for body text; it reaches 3.4:1 on #08090A. Keep it for large text or metadata.
 - Don't use heavy drop shadows; keep depth to hairline rings and tonal surfaces.
 - Don't introduce new font families beyond Inter Variable and Berkeley Mono.
 - Don't add saturated accent colors; the measured palette is almost entirely neutral.
