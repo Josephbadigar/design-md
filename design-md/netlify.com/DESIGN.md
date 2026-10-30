@@ -5,24 +5,19 @@ description: "Dark interface measured from netlify.com: Figtree type with Instru
 colors:
   background: "#12181F"
   surface: "#12181F"
-  on-surface: "#DEFFFE"
-  on-background: "#DEFFFE"
-  on-surface-strong: "#FFFFFF"
-  on-surface-variant: "#E4F0FB"
-  on-surface-muted: "#7E8792"
-  surface-container-low: "#12181FF2"
-  surface-container: "#181A1C"
-  surface-container-high: "#1E242C"
-  surface-container-highest: "#0C2A2A"
+  on-surface: "#FFFFFF"
+  on-background: "#FFFFFF"
+  on-surface-variant: "#DEFFFE"
+  on-surface-muted: "#E4F0FB"
+  on-surface-subtle: "#545A61"
+  surface-container-low: "#181A1C"
   overlay: "#E9EBED1A"
-  overlay-strong: "#0C2A2A33"
+  overlay-strong: "#FFFFFF19"
   outline: "#FFFFFF33"
-  outline-variant: "#272F38"
   primary: "#32E6E2"
-  on-primary: "#12181F"
-  secondary: "#89DDFF"
-  tertiary: "#C792EA"
-  warning: "#FBB13D"
+  on-primary: "#181A1C"
+  secondary: "#014847"
+  tertiary: "#89DDFF"
 typography:
   headline-display:
     fontFamily: Figtree
@@ -100,69 +95,60 @@ components:
     backgroundColor: "#8EFBF7"
   button-secondary:
     backgroundColor: "{colors.primary}"
-    textColor: "#014847"
-    typography: "{typography.label-sm}"
-    rounded: "{rounded.md}"
-    padding: 8px
-    height: 34px
-  button-outline:
-    textColor: "{colors.primary}"
-    typography: "{typography.label-sm}"
-    rounded: "{rounded.md}"
-    padding: 8px
-    height: 34px
+    textColor: "{colors.background}"
+    typography: "{typography.label-md}"
+    rounded: "{rounded.xl}"
+    padding: 10px 17px
+    height: 40px
+  button-secondary-hover:
+    backgroundColor: "#8EFBF7"
   button-ghost:
-    textColor: "{colors.on-surface}"
+    textColor: "#353A3E"
     typography: "{typography.label-md}"
     padding: 4px
   input-field:
-    backgroundColor: "{colors.surface-container-high}"
-    textColor: "{colors.on-surface-strong}"
+    backgroundColor: "{colors.on-surface}"
+    textColor: "#353A3E"
     typography: "{typography.label-md}"
     rounded: "{rounded.md}"
     padding: 8px
   card:
-    backgroundColor: "{colors.surface-container-highest}"
-    textColor: "{colors.on-surface}"
+    backgroundColor: "{colors.on-surface}"
+    textColor: "#353A3E"
     typography: "{typography.label-md}"
     rounded: "{rounded.lg}"
     padding: 24px
   link:
-    textColor: "{colors.on-surface-muted}"
+    textColor: "{colors.on-surface-subtle}"
 ---
 
 # Netlify Design System
 
 ## Overview
 
-Netlify describes itself as: “Create with AI or code, deploy instantly on production infrastructure. One platform to build and ship.” The interface is dark, built on **Cool Charcoal (#12181F)** with **Pale Cyan (#DEFFFE)** text, and **Cyan (#32E6E2)** as the main accent.
+Netlify describes itself as: “Create with AI or code, deploy instantly on production infrastructure. One platform to build and ship.” The interface is dark, built on **Cool Charcoal (#12181F)** with **White (#FFFFFF)** text, and **Cyan (#32E6E2)** as the main accent.
 
 Type is set in **Figtree** and **Instrument Sans**, with **Martian Mono** for code. Headlines run large; body text is 14px. Depth comes from soft drop shadows. Corners are mostly 4px.
 
-Measured from [netlify.com](https://www.netlify.com/) on October 21, 2026 at 1440×900 and 390×844 from 390 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [netlify.com](https://www.netlify.com/) on October 29, 2026 at 1440×900 and 390×844 from 390 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 18 roles.
+The palette has 13 roles.
 
-- **Cool Charcoal (#12181F):** Page background, seen 9 times. Token `background`, CSS `--ntl-button-primary-text-color`.
-- **Pale Cyan (#DEFFFE):** Primary text and headings, seen 41 times. Token `on-surface`, CSS `--color-text-default`.
-- **White (#FFFFFF):** Headings and emphasis, seen 20 times. Token `on-surface-strong`, CSS `--color-bg-1-inverse`.
-- **Pale Blue (#E4F0FB):** Secondary text, seen 14 times. Token `on-surface-variant`.
-- **Cool Gray (#7E8792):** Muted text and metadata, seen 37 times. Token `on-surface-muted`.
-- **Cool Charcoal 95% (#12181FF2):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`.
-- **Charcoal (#181A1C):** Cards and panels, seen 1 time. Token `surface-container`.
-- **Cool Graphite (#1E242C):** Hover and pressed fills, seen 2 times. Token `surface-container-high`, CSS `--ntl-neutral-700`.
-- **Deep Cyan (#0C2A2A):** Highest raised elements, seen 5 times. Token `surface-container-highest`.
+- **Cool Charcoal (#12181F):** Page background, seen 1 time. Token `background`.
+- **White (#FFFFFF):** Primary text and headings, seen 18 times. Token `on-surface`, CSS `--table-bg`.
+- **Pale Cyan (#DEFFFE):** Secondary text, seen 2 times. Token `on-surface-variant`.
+- **Pale Blue (#E4F0FB):** Muted text and metadata, seen 14 times. Token `on-surface-muted`.
+- **Cool Slate (#545A61):** Subtle text and placeholders, seen 36 times. Token `on-surface-subtle`.
+- **Charcoal (#181A1C):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`, CSS `--ntl-button-primary-text-color`.
 - **Mist 10% (#E9EBED1A):** Translucent fill for cards and controls, seen 10 times. Token `overlay`.
-- **Deep Cyan 20% (#0C2A2A33):** Stronger translucent fill, seen 4 times. Token `overlay-strong`.
+- **White 10% (#FFFFFF19):** Stronger translucent fill, seen 2 times. Token `overlay-strong`.
 - **White 20% (#FFFFFF33):** Borders and dividers, seen 10 times. Token `outline`.
-- **Cool Graphite (#272F38):** Secondary dividers, seen 4 times. Token `outline-variant`, CSS `--ntl-color-bg-3`.
-- **Cyan (#32E6E2):** Primary buttons and calls to action, seen 30 times. Token `primary`, CSS `--search-loading-color`.
-- **Cool Charcoal (#12181F):** Text and icons on primary. Token `on-primary`.
-- **Light Cyan (#89DDFF):** Most used accent color, seen 15 times. Token `secondary`.
-- **Light Violet (#C792EA):** Most used accent color, seen 15 times. Token `tertiary`.
-- **Vivid Orange (#FBB13D):** Warnings and highlights, seen 1 time. Token `warning`.
+- **Cyan (#32E6E2):** Primary buttons and calls to action, seen 19 times. Token `primary`, CSS `--ntl-button-primary-bg-color`.
+- **Charcoal (#181A1C):** Text and icons on primary. Token `on-primary`.
+- **Deep Cyan (#014847):** Accent in the logo, seen 8 times. Token `secondary`.
+- **Light Cyan (#89DDFF):** Accent in text, fills and borders, seen 29 times. Token `tertiary`.
 
 ## Typography
 
@@ -184,13 +170,13 @@ Spacing is mostly on a 4px grid (86% of measured values), with some off-grid ste
 - **Scale:** xs 4px, sm 8px, md 12px, lg 24px, xl 48px.
 - **Sections:** 96px vertical padding between major sections.
 - **Gaps:** 12px is the most common gap in flex and grid layouts.
-- **Breakpoints:** 480px, 500px, 600px, 640px, 750px, 768px, 1024px, 1085px.
 
 ## Elevation & Depth
 
 Raised elements use soft drop shadows. The most used recipes:
 
 - `rgba(0, 0, 0, 0.25) 0px 4px 12px 0px`
+- `rgba(51, 55, 59, 0.08) 0px 2px 4px 0px, rgba(51, 55, 59, 0.06) 0px 1px 10px 0px`
 
 ## Shapes
 
@@ -206,31 +192,32 @@ Most elements use 4px corners. Measured radii, most used first:
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Sign up”):** #32E6E2 fill, #12181F text, 16px/700, 360px radius, padding 10px 17px, border 2px solid #32E6E2.
-- **button-primary-hover:** background #8EFBF7, text #12181F on hover.
-- **button-secondary (“Accept All”):** #32E6E2 fill, #014847 text, 13.008px/700, 4px radius, padding 8px, border 1px solid #32E6E2.
-- **button-outline (“Reject All”):** transparent fill, #32E6E2 text, 13.008px/700, 4px radius, padding 8px, border 1px solid #32E6E2.
-- **button-ghost (“Toggle platform submenu”):** transparent fill, #DEFFFE text, 16px/400, 50% radius, padding 4px.
-- **input-field:** #1E242C fill, #FFFFFF text, 16px/400, 4px radius, padding 8px, border 1px solid #3B434C.
-- **card:** #0C2A2A fill, #DEFFFE text, 16px/400, 6px radius, padding 24px, border 1px solid #0C2A2A.
-- **link:** transparent fill, #7E8792 text, padding 0px.
+- **button-primary (“Sign up”):** #32E6E2 fill, #181A1C text, 16px/700, 360px radius, padding 10px 17px, border 2px solid #32E6E2.
+- **button-primary-hover:** background #8EFBF7, text #181A1C on hover.
+- **button-secondary (“Start building”):** #32E6E2 fill, #12181F text, 16px/700, 360px radius, padding 10px 17px, border 2px solid #32E6E2.
+- **button-secondary-hover:** background #8EFBF7, text #12181F on hover.
+- **button-ghost (“Toggle platform submenu”):** transparent fill, #353A3E text, 16px/400, 50% radius, padding 4px.
+- **input-field:** #FFFFFF fill, #353A3E text, 16px/400, 4px radius, padding 8px, border 1px solid #778089.
+- **card:** #FFFFFF fill, #353A3E text, 16px/400, 6px radius, padding 24px, border 1px solid #E9EBED.
+- **link:** transparent fill, #545A61 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #12181F for the page and lift surfaces in small steps: #12181FF2, #181A1C, #1E242C, #0C2A2A.
-- Do keep text in 4 levels: #DEFFFE, #FFFFFF, #E4F0FB, #7E8792.
+- Do use #12181F for the page and lift surfaces in small steps: #181A1C.
+- Do keep text in 4 levels: #FFFFFF, #DEFFFE, #E4F0FB, #545A61.
 - Do reserve #32E6E2 for primary actions and key highlights.
 - Do reuse the measured spacing steps (8px, 12px, 24px).
 - Do use 4px corners on most elements; larger surfaces also use 360px, 6px and 2px.
+- Don't use #545A61 for body text; it reaches 2.56:1 on #12181F. Keep it for large text or metadata.
 - Don't introduce new font families beyond Figtree, Instrument Sans and Martian Mono.
 - Don't use #32E6E2 for large backgrounds or body text.
-- Don't make interface transitions slower than 0.3s.
+- Don't make interface transitions slower than 0.45s.
 
 ## Motion
 
-Interface transitions are quick: 0.2s, 0.3s, 0.15s.
+Interface transitions are quick: 0.2s, 0.3s, 0.45s, 0.15s.
 
-- **Easing:** `cubic-bezier(0.22, 1, 0.36, 1)`, `cubic-bezier(0.33, 1, 0.68, 1)`, `ease`.
+- **Easing:** `cubic-bezier(0.33, 1, 0.68, 1)`, `cubic-bezier(0.22, 1, 0.36, 1)`, `ease-out`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/netlify.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/netlify.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

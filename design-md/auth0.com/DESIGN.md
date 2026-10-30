@@ -11,7 +11,9 @@ colors:
   on-surface-muted: "#EBD3FF"
   on-surface-subtle: "#C5C5C5"
   surface-container-low: "#120021"
+  surface-container: "#000000"
   overlay: "#FFFFFF40"
+  outline: "#000000"
   primary: "#FFFFFF"
   on-primary: "#000000"
   secondary: "#BCBAFF"
@@ -97,7 +99,7 @@ spacing:
   xs: 4px
   sm: 8px
   md: 12px
-  lg: 24px
+  lg: 32px
   xl: 64px
   gutter: 8px
   section: 106px
@@ -118,7 +120,7 @@ components:
     padding: 7px 24px
     height: 40px
   button-outline:
-    textColor: "#FFFEFA"
+    textColor: "{colors.on-surface}"
     typography: "{typography.label-sm}"
     rounded: "{rounded.xs}"
     padding: 8px 12px 8px 16px
@@ -150,20 +152,22 @@ Auth0 describes itself as: “Secure users, AI agents, and more with Auth0, an e
 
 Type is set in **Aeonik**, with **Aeonik Mono** for code. Headlines run large with tight negative tracking; body text is 16px. The surface language is flat. Corners are mostly 4px.
 
-Measured from [auth0.com](https://auth0.com/) on October 21, 2026 at 1440×900 and 390×844 from 377 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [auth0.com](https://auth0.com/) on October 29, 2026 at 1440×900 and 390×844 from 381 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 10 roles, plus gradient stops #490186, #9921FE, #FF6217.
+The palette has 12 roles, plus gradient stops #490186, #9921FE, #FF6217.
 
 - **Deep Violet (#20003A):** Page background, seen 2 times. Token `background`.
-- **White (#FFFFFF):** Primary text and headings, seen 101 times. Token `on-surface`.
+- **White (#FFFFFF):** Primary text and headings, seen 103 times. Token `on-surface`.
 - **Mist (#E5E5E5):** Secondary text, seen 6 times. Token `on-surface-variant`.
 - **Pale Violet (#EBD3FF):** Muted text and metadata, seen 16 times. Token `on-surface-muted`.
 - **Silver (#C5C5C5):** Subtle text and placeholders, seen 4 times. Token `on-surface-subtle`.
 - **Deep Violet (#120021):** Raised areas one step from the page, seen 6 times. Token `surface-container-low`.
+- **Near Black (#000000):** Cards and panels, seen 2 times. Token `surface-container`.
 - **White 25% (#FFFFFF40):** Translucent fill for cards and controls, seen 4 times. Token `overlay`.
-- **White (#FFFFFF):** Primary buttons and calls to action, seen 123 times. Token `primary`.
+- **Near Black (#000000):** Borders and dividers, seen 3 times. Token `outline`.
+- **White (#FFFFFF):** Primary buttons and calls to action, seen 160 times. Token `primary`.
 - **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
 - **Pale Indigo (#BCBAFF):** Accent, seen 2 times. Token `secondary`.
 
@@ -184,9 +188,9 @@ The palette has 10 roles, plus gradient stops #490186, #9921FE, #FF6217.
 
 ## Layout
 
-Spacing is mostly on a 4px grid (89% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
+Spacing is mostly on a 4px grid (90% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
 
-- **Scale:** xs 4px, sm 8px, md 12px, lg 24px, xl 64px.
+- **Scale:** xs 4px, sm 8px, md 12px, lg 32px, xl 64px.
 - **Sections:** 106px vertical padding between major sections.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
 - **Container:** content is capped at 1728px.
@@ -195,15 +199,15 @@ Spacing is mostly on a 4px grid (89% of measured values), with some off-grid ste
 
 ## Elevation & Depth
 
-The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#120021).
+The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#120021 → #000000) and #000000 borders.
 
 ## Shapes
 
 Most elements use 4px corners. Measured radii, most used first:
 
-- **xs (4px):** 112 elements.
+- **xs (4px):** 108 elements.
 - **md (12px):** 32 elements.
-- **sm (8px):** 16 elements.
+- **sm (8px):** 28 elements.
 - **lg (24px):** 8 elements.
 - **xl (96px):** 8 elements.
 
@@ -213,7 +217,7 @@ Measured from the rendered page. Token values reference the tokens above.
 
 - **button-primary (“Sign up”):** #FFFFFF fill, #000000 text, 16px/500, 4px radius, padding 7px 24px.
 - **button-secondary (“Let's connect”):** transparent fill, #FFFFFF text, 16px/500, 4px radius, padding 7px 24px, border 1px solid #FFFFFFF2.
-- **button-outline (“Auth0 platform announcements”):** transparent fill, #FFFEFA text, 14px/400, 4px radius, padding 8px 12px 8px 16px, border 1px solid #FFFFFF54.
+- **button-outline (“Auth0 platform announcements”):** transparent fill, #FFFFFF text, 14px/400, 4px radius, padding 8px 12px 8px 16px, border 1px solid #FFFFFF54.
 - **button-ghost (“AI Agents”):** transparent fill, #FFFFFF text, 18px/500, padding 24px 0px.
 - **input-field (“Language selector”):** transparent fill, #FFFEFA text, 14px/500, padding 0px 16px 0px 20px.
 - **card:** transparent fill, #FFFEFA text, 14px/400, 12px radius, padding 64px, border 1px solid #FFFFFF54.
@@ -221,11 +225,11 @@ Measured from the rendered page. Token values reference the tokens above.
 
 ## Do's and Don'ts
 
-- Do use #20003A for the page and lift surfaces in small steps: #120021.
+- Do use #20003A for the page and lift surfaces in small steps: #120021, #000000.
 - Do keep text in 4 levels: #FFFFFF, #E5E5E5, #EBD3FF, #C5C5C5.
 - Do let contrast carry emphasis; primary actions use #FFFFFF on #20003A.
 - Do set headlines in Aeonik with tight tracking (-0.016em).
-- Do reuse the measured spacing steps (8px, 12px, 24px).
+- Do reuse the measured spacing steps (8px, 12px, 32px).
 - Do use 4px corners on most elements; larger surfaces also use 12px, 8px and 24px.
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond Aeonik and Aeonik Mono.
@@ -234,9 +238,9 @@ Measured from the rendered page. Token values reference the tokens above.
 
 ## Motion
 
-Interface transitions are quick: 0.2s, 0.15s, 0.6s, 0.25s. Longer ambient animations run 1.1s.
+Interface transitions are quick: 0.2s, 0.15s, 0.6s, 0.45s. Longer ambient animations run 1.1s, 0.7s.
 
 - **Easing:** `ease-in-out`, `ease`, `cubic-bezier(0.4, 0, 0.1, 1)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/auth0.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/auth0.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

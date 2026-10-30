@@ -8,11 +8,13 @@ colors:
   on-surface: "#4B5563"
   on-background: "#4B5563"
   on-surface-variant: "#A6ACB7"
-  overlay: "#9CA3AF1A"
+  overlay: "#9CA3AF66"
+  overlay-strong: "#9CA3AF1A"
   outline: "#D1D5DB99"
   outline-variant: "#C5B7FF"
   primary: "#6D4AFF"
   on-primary: "#FFFFFF"
+  inverse-surface: "#9CA3AF"
   secondary: "#372580"
 typography:
   headline-display:
@@ -46,9 +48,9 @@ typography:
     lineHeight: 1.5
   body-md:
     fontFamily: ProtonSans
-    fontSize: 16px
+    fontSize: 14px
     fontWeight: 400
-    lineHeight: 1.5
+    lineHeight: 1.57
   body-lg:
     fontFamily: ProtonSans
     fontSize: 18px
@@ -56,19 +58,14 @@ typography:
     lineHeight: 1.55
   body-sm:
     fontFamily: ProtonSans
-    fontSize: 14px
-    fontWeight: 400
-    lineHeight: 1.57
-  caption:
-    fontFamily: ProtonSans
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.5
   label-md:
     fontFamily: ProtonSans
     fontSize: 16px
-    fontWeight: 600
-    lineHeight: 1.63
+    fontWeight: 400
+    lineHeight: 1.5
   label-sm:
     fontFamily: ProtonSans
     fontSize: 14px
@@ -123,38 +120,39 @@ components:
 
 Proton describes itself as: “Over 100 million people use Proton to stay private and secure online. Get a free Proton account and take back your privacy.” The interface is light, built on **White (#FFFFFF)** with **Dark Blue (#4B5563)** text, and **Indigo (#6D4AFF)** as the main accent.
 
-Type is set in **ProtonSerif** and **ProtonSans**. Headlines run large with tight negative tracking; body text is 16px. Depth comes from hairline borders and inset highlights rather than drop shadows. Controls are pill-shaped.
+Type is set in **ProtonSerif** and **ProtonSans**. Headlines run large with tight negative tracking; body text is 14px. Depth comes from hairline borders and inset highlights rather than drop shadows. Controls are pill-shaped.
 
-Measured from [proton.me](https://proton.me/) on October 21, 2026 at 1440×900 and 390×844 from 376 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [proton.me](https://proton.me/) on October 29, 2026 at 1440×900 and 390×844 from 398 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 9 roles.
+The palette has 11 roles.
 
 - **White (#FFFFFF):** Page background, seen 2 times. Token `background`, CSS `--tw-ring-offset-color`.
-- **Dark Blue (#4B5563):** Primary text and headings, seen 53 times. Token `on-surface`.
-- **Cool Gray (#A6ACB7):** Secondary text, seen 2 times. Token `on-surface-variant`.
-- **Blue 10% (#9CA3AF1A):** Translucent fill for cards and controls, seen 2 times. Token `overlay`.
+- **Dark Blue (#4B5563):** Primary text and headings, seen 59 times. Token `on-surface`.
+- **Cool Gray (#A6ACB7):** Secondary text, seen 5 times. Token `on-surface-variant`.
+- **Blue 40% (#9CA3AF66):** Translucent fill for cards and controls, seen 10 times. Token `overlay`.
+- **Blue 10% (#9CA3AF1A):** Stronger translucent fill, seen 5 times. Token `overlay-strong`.
 - **Cool Silver 60% (#D1D5DB99):** Borders and dividers, seen 3 times. Token `outline`.
 - **Light Indigo (#C5B7FF):** Secondary dividers, seen 3 times. Token `outline-variant`.
 - **Indigo (#6D4AFF):** Primary buttons and calls to action, seen 71 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Dark Indigo (#372580):** Links and interactive text, seen 33 times. Token `secondary`.
+- **Blue (#9CA3AF):** High-contrast fills, seen 4 times. Token `inverse-surface`.
+- **Dark Indigo (#372580):** Links and interactive text, seen 54 times. Token `secondary`.
 
 ## Typography
 
-**ProtonSerif** and **ProtonSans** share the interface. Fallback stack: `ProtonSerif, ProtonSerifFallback, ProtonScript, ui-serif`. Other loaded fonts: ProtonSansFallback, ProtonSerifFallback.
+**ProtonSerif** and **ProtonSans** share the interface. Fallback stack: `ProtonSerif, ProtonSerifFallback, ProtonScript, ui-serif`.
 
 - **headline-display:** ProtonSerif 60px at weight 400, line height 1.06, tracking -0.04em (36px on mobile). Page title (h1).
 - **headline-lg:** ProtonSerif 48px at weight 400, line height 1.13, tracking -0.04em. Section headings (h2).
 - **headline-md:** ProtonSerif 36px at weight 400, line height 1.16, tracking -0.04em (24px on mobile). Sub-section headings.
 - **headline-sm:** ProtonSerif 30px at weight 400, line height 1.13, tracking -0.04em. Card and feature titles.
 - **title-lg:** ProtonSans 20px at weight 600, line height 1.5. Small titles.
-- **body-md:** ProtonSans 16px at weight 400, line height 1.5. Body text.
+- **body-md:** ProtonSans 14px at weight 400, line height 1.57. Body text.
 - **body-lg:** ProtonSans 18px at weight 400, line height 1.55. Lead paragraphs.
-- **body-sm:** ProtonSans 14px at weight 400, line height 1.57. Secondary and small text.
-- **caption:** ProtonSans 12px at weight 400, line height 1.5. Captions and fine print.
-- **label-md:** ProtonSans 16px at weight 600, line height 1.63. Buttons, navigation and labels.
+- **body-sm:** ProtonSans 12px at weight 400, line height 1.5. Secondary and small text.
+- **label-md:** ProtonSans 16px at weight 400, line height 1.5. Buttons, navigation and labels.
 - **label-sm:** ProtonSans 14px at weight 600, line height 1.57. Small labels and badges.
 
 ## Layout
@@ -171,15 +169,15 @@ Spacing is mostly on a 4px grid (85% of measured values), with some off-grid ste
 
 The design avoids drop shadows. Layers are separated by tonal surface steps and hairline rings:
 
+- `rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px`
 - `rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px`
 - `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(109, 74, 255) 0px 0px 0px 2px inset`
-- `rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px`
 
 ## Shapes
 
 Interactive controls are pill-shaped. Measured radii, most used first:
 
-- **full (9999px):** 160 elements.
+- **full (9999px):** 228 elements.
 
 ## Components
 
@@ -198,7 +196,7 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do set headlines in ProtonSerif with tight tracking (-0.04em).
 - Do reuse the measured spacing steps (6px, 16px, 20px).
 - Do make buttons and chips fully rounded (9999px).
-- Don't use #A6ACB7 for body text; it reaches 2.3:1 on #FFFFFF. Keep it for large text or metadata.
+- Don't use #A6ACB7 for body text; it reaches 2.28:1 on #FFFFFF. Keep it for large text or metadata.
 - Don't add drop shadows for depth; use hairline rings and borders and contrast.
 - Don't introduce new font families beyond ProtonSerif and ProtonSans.
 - Don't use #6D4AFF for large backgrounds or body text.
@@ -211,4 +209,4 @@ Interface transitions are quick: 0.15s, 0.3s.
 - **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/proton.me/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/proton.me/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

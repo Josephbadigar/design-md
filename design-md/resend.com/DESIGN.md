@@ -14,10 +14,9 @@ colors:
   overlay: "#D6EBFD30"
   outline: "#D9EDFE25"
   outline-variant: "#D6EBFD30"
-  primary: "#F0F0F0"
-  on-primary: "#000000"
-  secondary: "#3B9EFF"
-  warning: "#FFFF92"
+  primary: "#0B0E14"
+  on-primary: "#F0F0F0"
+  secondary: "#9281F7"
 typography:
   headline-display:
     fontFamily: domaine
@@ -31,16 +30,21 @@ typography:
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: -0.05em
+  headline-md:
+    fontFamily: aBCFavorit
+    fontSize: 20px
+    fontWeight: 400
+    lineHeight: 1
   body-md:
     fontFamily: inter
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.43
   body-lg:
-    fontFamily: aBCFavorit
-    fontSize: 20px
+    fontFamily: inter
+    fontSize: 18px
     fontWeight: 400
-    lineHeight: 1
+    lineHeight: 1.5
   body-sm:
     fontFamily: inter
     fontSize: 12px
@@ -85,19 +89,19 @@ spacing:
   container: 1280px
 components:
   button-primary:
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.on-primary}"
+    typography: "{typography.body-md}"
+    padding: 0px
+    height: 32px
+  button-primary-hover:
+    backgroundColor: "#0B0E14D1"
+  button-secondary:
     textColor: "#FFFFFF"
     typography: "{typography.body-md}"
     rounded: "{rounded.xl}"
     padding: 0px 16px
     height: 40px
-  button-primary-hover:
-    backgroundColor: "#FFFFFFE6"
-    textColor: "{colors.on-primary}"
-  button-secondary:
-    textColor: "{colors.on-surface}"
-    typography: "{typography.body-md}"
-    padding: 0px
-    height: 32px
   button-ghost:
     textColor: "{colors.on-surface-muted}"
     typography: "{typography.label-sm}"
@@ -120,11 +124,11 @@ Resend describes itself as: “The best way to reach humans instead of spam fold
 
 Type is set in **domaine** and **aBCFavorit**. Headlines run large with tight negative tracking; body text is 14px. Depth comes from soft drop shadows. Corners are mostly 16px.
 
-Measured from [resend.com](https://resend.com/) on October 21, 2026 at 1440×900 and 390×844 from 404 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [resend.com](https://resend.com/) on October 29, 2026 at 1440×900 and 390×844 from 421 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 13 roles, plus gradient stops #FFFF92, #EE8912.
+The palette has 12 roles, plus gradient stops #9281F7, #9A54DC.
 
 - **Near Black (#000000):** Page background, seen 10 times. Token `background`.
 - **Mist (#F0F0F0):** Primary text and headings, seen 19 times. Token `on-surface`.
@@ -135,10 +139,9 @@ The palette has 13 roles, plus gradient stops #FFFF92, #EE8912.
 - **Pale Blue 19% (#D6EBFD30):** Translucent fill for cards and controls, seen 3 times. Token `overlay`.
 - **Pale Blue 14% (#D9EDFE25):** Borders and dividers, seen 30 times. Token `outline`.
 - **Pale Blue 19% (#D6EBFD30):** Secondary dividers, seen 14 times. Token `outline-variant`.
-- **Mist (#F0F0F0):** Primary actions (the main text color; the palette is monochrome), seen 22 times. Token `primary`.
-- **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
-- **Vivid Blue (#3B9EFF):** Accent, seen 1 time. Token `secondary`.
-- **Light Yellow (#FFFF92):** Warnings and highlights, seen 5 times. Token `warning`.
+- **Cool Charcoal (#0B0E14):** Primary buttons and calls to action, seen 1 time. Token `primary`.
+- **Mist (#F0F0F0):** Text and icons on primary. Token `on-primary`.
+- **Light Indigo (#9281F7):** Accent in text, fills and borders, seen 5 times. Token `secondary`.
 
 ## Typography
 
@@ -146,8 +149,9 @@ The palette has 13 roles, plus gradient stops #FFFF92, #EE8912.
 
 - **headline-display:** domaine 96px at weight 400, line height 1, tracking -0.01em (64px on mobile). Page title (h1).
 - **headline-lg:** aBCFavorit 56px at weight 400, line height 1.2, tracking -0.05em (48px on mobile). Section headings (h2).
+- **headline-md:** aBCFavorit 20px at weight 400, line height 1. Sub-section headings.
 - **body-md:** inter 14px at weight 400, line height 1.43. Body text.
-- **body-lg:** aBCFavorit 20px at weight 400, line height 1. Lead paragraphs.
+- **body-lg:** inter 18px at weight 400, line height 1.5. Lead paragraphs.
 - **body-sm:** inter 12px at weight 400, line height 1.33. Secondary and small text.
 - **label-md:** inter 16px at weight 400, line height 1.5. Buttons, navigation and labels.
 - **label-sm:** inter 14px at weight 500, line height 1.43. Small labels and badges.
@@ -161,7 +165,7 @@ Spacing is mostly on a 4px grid (81% of measured values), with some off-grid ste
 - **Gaps:** 16px is the most common gap in flex and grid layouts.
 - **Container:** content is capped at 1280px.
 - **Page margin:** 24px on each side of full-width sections.
-- **Breakpoints:** 359px, 375px, 1000px, 1160px, 1340px, 1920px.
+- **Breakpoints:** 375px, 1000px, 1160px, 1340px, 1920px.
 
 ## Elevation & Depth
 
@@ -182,9 +186,9 @@ Most elements use 16px corners. Measured radii, most used first:
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Get started”):** transparent fill, #FFFFFF text, 14px/600, 16px radius, padding 0px 16px, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px`.
-- **button-primary-hover:** background #FFFFFFE6, text #000000 on hover.
-- **button-secondary (“Join us at Resend Forward”):** transparent fill, #F0F0F0 text, 14px/400, 3.35544e+07px radius, padding 0px.
+- **button-primary (“What you missed at Resend Forwar”):** #0B0E14 fill, #F0F0F0 text, 14px/400, 3.35544e+07px radius, padding 0px.
+- **button-primary-hover:** background #0B0E14D1, text #F0F0F0 on hover.
+- **button-secondary (“Get started”):** transparent fill, #FFFFFF text, 14px/600, 16px radius, padding 0px 16px, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px`.
 - **button-ghost (“Features”):** transparent fill, #A1A4A5 text, 14px/500, padding 4px 12px.
 - **input-field:** transparent fill, #F0F0F0 text, 16px/400, padding 0px.
 - **link:** transparent fill, #F1F7FEB5 text, padding 0px.
@@ -193,7 +197,7 @@ Measured from the rendered page. Token values reference the tokens above.
 
 - Do use #000000 for the page and lift surfaces in small steps: #0B0E14.
 - Do keep text in 4 levels: #F0F0F0, #ABAFB4, #A1A4A5, #A0A0A0.
-- Do let contrast carry emphasis; primary actions use #F0F0F0 on #000000.
+- Do let contrast carry emphasis; primary actions use #0B0E14 on #000000.
 - Do set headlines in domaine with tight tracking (-0.01em).
 - Do reuse the measured spacing steps (8px, 16px, 24px).
 - Do use 16px corners on most elements; larger surfaces also use 6px, 8px and 4px.
@@ -203,9 +207,9 @@ Measured from the rendered page. Token values reference the tokens above.
 
 ## Motion
 
-Interface transitions are quick: 0.2s, 0.15s. Longer ambient animations run 30s.
+Interface transitions are quick: 0.2s, 0.15s. Longer ambient animations run 30s, 1s.
 
 - **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `cubic-bezier(0.4, 0, 1, 1)`, `ease-out`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/resend.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/resend.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

@@ -20,10 +20,7 @@ colors:
   primary: "#1C1C1C"
   on-primary: "#FFFFFF"
   secondary: "#FF5F57"
-  tertiary: "#3A5BC7"
-  error: "#CE2C31"
-  warning: "#FEBC2E"
-  success: "#28C840"
+  tertiary: "#FEBC2E"
 typography:
   headline-display:
     fontFamily: aleo
@@ -53,7 +50,6 @@ typography:
     fontFamily: hostGrotesk
     fontSize: 12px
     fontWeight: 400
-    lineHeight: 1.55
   label-lg:
     fontFamily: hostGrotesk
     fontSize: 16px
@@ -79,11 +75,6 @@ typography:
     fontWeight: 300
     lineHeight: 1.15
     letterSpacing: -0.02em
-  headline-md-mobile:
-    fontFamily: hostGrotesk
-    fontSize: 18px
-    fontWeight: 500
-    lineHeight: 1.33
 rounded:
   sm: 2px
   md: 4px
@@ -126,14 +117,14 @@ Twenty describes itself as: “The #1 Open Source CRM for modern teams. Modular,
 
 Type is set in **aleo** and **hostGrotesk**, with **azeretMono** for code. Headlines run large with tight negative tracking; body text is 16px. Depth comes from soft drop shadows. Controls are pill-shaped.
 
-Measured from [twenty.com](https://twenty.com/) on October 21, 2026 at 1440×900 and 390×844 from 344 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [twenty.com](https://twenty.com/) on October 29, 2026 at 1440×900 and 390×844 from 326 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 19 roles.
+The palette has 16 roles.
 
 - **Snow (#F4F4F4):** Page background, seen 5 times. Token `background`, CSS `--color-neutral`.
-- **Charcoal (#1C1C1C):** Primary text and headings, seen 42 times. Token `on-surface`, CSS `--ink`.
+- **Charcoal (#1C1C1C):** Primary text and headings, seen 39 times. Token `on-surface`, CSS `--ink`.
 - **Graphite (#333333):** Secondary text, seen 21 times. Token `on-surface-variant`.
 - **Slate (#666666):** Muted text and metadata, seen 13 times. Token `on-surface-muted`.
 - **Gray (#999999):** Subtle text and placeholders, seen 14 times. Token `on-surface-subtle`.
@@ -144,24 +135,21 @@ The palette has 19 roles.
 - **Near Black 2% (#00000005):** Stronger translucent fill, seen 3 times. Token `overlay-strong`.
 - **Silver (#D6D6D6):** Borders and dividers, seen 3 times. Token `outline`.
 - **Silver (#D3DFD9):** Secondary dividers, seen 2 times. Token `outline-variant`.
-- **Charcoal (#1C1C1C):** Primary actions (the main text color; the palette is monochrome), seen 67 times. Token `primary`, CSS `--ink`.
+- **Charcoal (#1C1C1C):** Primary actions (the main text color; the palette is monochrome), seen 65 times. Token `primary`, CSS `--ink`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Red (#FF5F57):** Most used accent color, seen 3 times. Token `secondary`.
-- **Blue (#3A5BC7):** Accent, seen 4 times. Token `tertiary`.
-- **Red (#CE2C31):** Errors and destructive states, seen 5 times. Token `error`.
-- **Vivid Amber (#FEBC2E):** Warnings and highlights, seen 2 times. Token `warning`.
-- **Green (#28C840):** Success and positive states, seen 2 times. Token `success`.
+- **Red (#FF5F57):** Accent in text, fills and borders, seen 2 times. Token `secondary`.
+- **Vivid Amber (#FEBC2E):** Accent in text, fills and borders, seen 2 times. Token `tertiary`.
 
 ## Typography
 
-**aleo**, **hostGrotesk**, **Inter** and **azeretMono** (monospace) share the interface. Fallback stack: `aleo, aleo Fallback, serif`. Other loaded fonts: hostGrotesk Fallback, inter.
+**aleo**, **hostGrotesk**, **Inter** and **azeretMono** (monospace) share the interface. Fallback stack: `aleo, aleo Fallback, serif`. Other loaded fonts: inter.
 
 - **headline-display:** aleo 60px at weight 300, line height 1.1, tracking -0.02em (40px on mobile). Page title (h1).
 - **headline-lg:** hostGrotesk 48px at weight 300, line height 1.17. Section headings (h2).
-- **headline-md:** hostGrotesk 22px at weight 500, line height 1.27 (18px on mobile). Sub-section headings.
+- **headline-md:** hostGrotesk 22px at weight 500, line height 1.27. Sub-section headings.
 - **body-md:** hostGrotesk 16px at weight 400. Body text.
 - **body-lg:** hostGrotesk 19px at weight 700. Lead paragraphs.
-- **body-sm:** hostGrotesk 12px at weight 400, line height 1.55. Secondary and small text.
+- **body-sm:** hostGrotesk 12px at weight 400. Secondary and small text.
 - **label-lg:** hostGrotesk 16px at weight 500, line height 1.35. Large buttons and tabs.
 - **label-md:** Inter 13px at weight 500, line height 1. Buttons, navigation and labels.
 - **label-sm:** hostGrotesk 12px at weight 500, line height 1.55. Small labels and badges.
@@ -169,7 +157,7 @@ The palette has 19 roles.
 
 ## Layout
 
-Spacing is mostly on a 4px grid (87% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
+Spacing is mostly on a 4px grid (89% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
 
 - **Scale:** xs 4px, sm 8px, md 16px, lg 20px, xl 64px.
 - **Sections:** 64px vertical padding between major sections.
@@ -209,16 +197,16 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do set headlines in aleo with tight tracking (-0.02em).
 - Do reuse the measured spacing steps (8px, 16px, 20px).
 - Do make buttons and chips fully rounded (9999px); most other elements use 4px corners.
-- Don't use #999999 for body text; it reaches 2.6:1 on #F4F4F4. Keep it for large text or metadata.
+- Don't use #999999 for body text; it reaches 2.59:1 on #F4F4F4. Keep it for large text or metadata.
 - Don't introduce new font families beyond aleo, hostGrotesk, Inter and azeretMono.
 - Don't add saturated accent colors; the measured palette is almost entirely neutral.
-- Don't make interface transitions slower than 0.00001s.
+- Don't make interface transitions slower than 0.34s.
 
 ## Motion
 
-Interface transitions are quick: 1e-05s.
+Interface transitions are quick: 0.3s, 0.14s, 0.12s, 0.2s.
 
-- **Easing:** `ease`, `cubic-bezier(0.16, 1, 0.3, 1)`, `ease-out`.
+- **Easing:** `cubic-bezier(0.16, 1, 0.3, 1)`, `ease`, `ease-out`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/twenty.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/twenty.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

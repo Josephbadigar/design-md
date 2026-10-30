@@ -1,21 +1,19 @@
 ---
 version: alpha
 name: Radix UI
-description: "Dark monochrome interface measured from radix-ui.com: adobeTextPro type with system-ui, flat surfaces and pill-shaped controls."
+description: "Light monochrome interface measured from radix-ui.com: adobeTextPro type with system-ui, flat surfaces and pill-shaped controls."
 colors:
-  background: "#111113"
-  surface: "#111113"
-  on-surface: "#EDEEF0"
-  on-background: "#EDEEF0"
-  on-surface-strong: "#FFFFFF"
-  on-surface-variant: "#B0B4BA"
-  overlay: "#DDEAF814"
-  overlay-strong: "#D6EBFD30"
-  primary: "#EDEEF0"
-  on-primary: "#111113"
+  background: "#FFFFFF"
+  surface: "#FFFFFF"
+  on-surface: "#1C2024"
+  on-background: "#1C2024"
+  on-surface-variant: "#60646C"
+  overlay: "#0000330F"
+  overlay-strong: "#00002F26"
+  primary: "#1C2024"
+  on-primary: "#FCFCFD"
   secondary: "#3E63DD"
-  tertiary: "#9EB1FF"
-  error: "#FF92AD"
+  tertiary: "#CB1D63"
 typography:
   headline-display:
     fontFamily: adobeTextPro
@@ -80,8 +78,15 @@ components:
     rounded: "{rounded.lg}"
     padding: 0px 24px
     height: 48px
+  button-secondary:
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.background}"
+    typography: "{typography.body-sm}"
+    rounded: "{rounded.full}"
+    padding: 0px 2px
+    height: 24px
   button-ghost:
-    textColor: "{colors.tertiary}"
+    textColor: "#002BB7C5"
     typography: "{typography.body-sm}"
     rounded: "{rounded.sm}"
     padding: 0px 12px
@@ -98,31 +103,29 @@ components:
 
 ## Overview
 
-Radix UI describes itself as: “Components, icons, and colors for building high‑quality, accessible UI. Free and open-source.” The interface is dark, built on **Charcoal (#111113)** with **Mist (#EDEEF0)** text and almost no color: actions are carried by contrast, not hue.
+Radix UI describes itself as: “Components, icons, and colors for building high‑quality, accessible UI. Free and open-source.” The interface is light, built on **White (#FFFFFF)** with **Cool Charcoal (#1C2024)** text and almost no color: actions are carried by contrast, not hue.
 
 Type is set in **adobeTextPro** and **system-ui**. Headlines run large with tight negative tracking; body text is 16px. Depth comes from soft drop shadows. Controls are pill-shaped.
 
-Measured from [radix-ui.com](https://www.radix-ui.com/) on October 21, 2026 at 1440×900 and 390×844 from 309 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [radix-ui.com](https://www.radix-ui.com/) on October 29, 2026 at 1440×900 and 390×844 from 309 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 11 roles, plus gradient stops #3E63DD.
+The palette has 9 roles, plus gradient stops #3E63DD.
 
-- **Charcoal (#111113):** Page background. Token `background`.
-- **Mist (#EDEEF0):** Primary text and headings, seen 56 times. Token `on-surface`.
-- **White (#FFFFFF):** Headings and emphasis, seen 6 times. Token `on-surface-strong`, CSS `--blue-contrast`.
-- **Cool Gray (#B0B4BA):** Secondary text, seen 19 times. Token `on-surface-variant`.
-- **Pale Blue 8% (#DDEAF814):** Translucent fill for cards and controls, seen 10 times. Token `overlay`.
-- **Pale Blue 19% (#D6EBFD30):** Stronger translucent fill, seen 7 times. Token `overlay-strong`.
-- **Mist (#EDEEF0):** Primary buttons and calls to action, seen 71 times. Token `primary`.
-- **Charcoal (#111113):** Text and icons on primary. Token `on-primary`.
-- **Blue (#3E63DD):** Most used accent color, seen 18 times. Token `secondary`.
-- **Light Indigo (#9EB1FF):** Most used accent color, seen 15 times. Token `tertiary`.
-- **Light Red (#FF92AD):** Errors and destructive states, seen 6 times. Token `error`.
+- **White (#FFFFFF):** Page background, seen 9 times. Token `background`, CSS `--blue-contrast`.
+- **Cool Charcoal (#1C2024):** Primary text and headings, seen 56 times. Token `on-surface`.
+- **Cool Slate (#60646C):** Secondary text, seen 19 times. Token `on-surface-variant`.
+- **Deep Indigo 6% (#0000330F):** Translucent fill for cards and controls, seen 10 times. Token `overlay`, CSS `--slate-a3`.
+- **Deep Indigo 15% (#00002F26):** Stronger translucent fill, seen 7 times. Token `overlay-strong`.
+- **Cool Charcoal (#1C2024):** Primary buttons and calls to action, seen 71 times. Token `primary`.
+- **Snow (#FCFCFD):** Text and icons on primary. Token `on-primary`.
+- **Blue (#3E63DD):** Accent in text, fills and borders, seen 8 times. Token `secondary`.
+- **Pink (#CB1D63):** Accent in text, fills and borders, seen 6 times. Token `tertiary`.
 
 ## Typography
 
-**adobeTextPro**, **system-ui** and **untitledSans** share the interface. Fallback stack: `adobeTextPro, adobeTextPro Fallback, serif`. Other loaded fonts: soehneMono, soehneMono Fallback, Segoe UI (Custom).
+**adobeTextPro**, **system-ui** and **untitledSans** share the interface. Fallback stack: `adobeTextPro, adobeTextPro Fallback, serif`. Other loaded fonts: soehneMono.
 
 - **headline-display:** adobeTextPro 78px at weight 400, line height 0.9, tracking -0.05em (38.5px on mobile). Page title (h1).
 - **headline-lg:** system-ui 24px at weight 700, line height 1.25, tracking -0.006em. Section headings (h2).
@@ -144,10 +147,10 @@ Spacing does not follow a strict grid: 67% of measured values are multiples of 4
 
 Raised elements use soft drop shadows. The most used recipes:
 
-- `rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.05) 0px 2px 4px -1px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(53, 102, 255, 0.34) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) -1px 0px 1px 0px`
+- `rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.05) 0px 2px 4px -1px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 68, 255, 0.118) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) -1px 0px 1px 0px`
 - `rgba(0, 0, 0, 0.1) 0px 0px 1px 1px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px, rgba(0, 0, 0, 0.05) 0px 2px 4px -1px`
 
-Hairline rings and inset highlights also appear: `rgba(91, 129, 254, 0.675) 0px 0px 0px 1px inset`.
+Hairline rings and inset highlights also appear: `rgba(0, 52, 220, 0.447) 0px 0px 0px 1px inset`.
 
 ## Shapes
 
@@ -162,16 +165,17 @@ Interactive controls are pill-shaped. Measured radii, most used first:
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Get started”):** #EDEEF0 fill, #111113 text, 18px/500, 8px radius, padding 0px 24px.
-- **button-ghost (“Downgrade”):** transparent fill, #9EB1FF text, 14px/500, 4px radius, padding 0px 12px, shadow `rgba(91, 129, 254, 0.675) 0px 0px 0px 1px inset`.
-- **input-field (“Email address”):** transparent fill, #EDEEF0 text, 14px/400, 3px radius, padding 0px 0px 0.5px 0px.
-- **link:** transparent fill, #EDEEF0 text, padding 0px.
+- **button-primary (“Get started”):** #1C2024 fill, #FCFCFD text, 18px/500, 8px radius, padding 0px 24px.
+- **button-secondary (“Themes”):** #1C2024 fill, #FFFFFF text, 14px/400, 999px radius, padding 0px 2px.
+- **button-ghost (“Downgrade”):** transparent fill, #002BB7C5 text, 14px/500, 4px radius, padding 0px 12px, shadow `rgba(0, 52, 220, 0.447) 0px 0px 0px 1px inset`.
+- **input-field (“Email address”):** transparent fill, #1C2024 text, 14px/400, 3px radius, padding 0px 0px 0.5px 0px.
+- **link:** transparent fill, #1C2024 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #111113 for the page.
-- Do keep text in 3 levels: #EDEEF0, #FFFFFF, #B0B4BA.
-- Do let contrast carry emphasis; primary actions use #EDEEF0 on #111113.
+- Do use #FFFFFF for the page.
+- Do keep text in 2 levels: #1C2024, #60646C.
+- Do let contrast carry emphasis; primary actions use #1C2024 on #FFFFFF.
 - Do set headlines in adobeTextPro with tight tracking (-0.05em).
 - Do reuse the measured spacing steps (8px, 12px, 24px).
 - Do make buttons and chips fully rounded (9999px); most other elements use 4px corners.
@@ -186,4 +190,4 @@ Interface transitions are quick: 0.14s.
 - **Easing:** `cubic-bezier(0.45, 0.05, 0.55, 0.95)`, `ease-in-out`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/radix-ui.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/radix-ui.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

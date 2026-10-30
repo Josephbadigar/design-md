@@ -1,27 +1,26 @@
 ---
 version: alpha
 name: MUI
-description: "Dark interface measured from mui.com: General Sans type with IBM Plex Sans, vivid blue accents, tonal surfaces and 18px corners."
+description: "Light interface measured from mui.com: General Sans type with IBM Plex Sans, vivid blue accents, tonal surfaces and 18px corners."
 colors:
-  background: "#0F1214"
-  surface: "#0F1214"
-  on-surface: "#FFFFFF"
-  on-background: "#FFFFFF"
-  on-surface-variant: "#CCE6FF"
-  on-surface-muted: "#B6BEC9"
-  on-surface-subtle: "#98A4B3"
-  surface-container-low: "#303840"
-  surface-container: "#3B3B3B"
-  overlay: "#1D212633"
-  overlay-strong: "#14171ACC"
-  outline: "#1D2126"
-  outline-variant: "#303840"
+  background: "#FFFFFF"
+  surface: "#FFFFFF"
+  on-surface: "#1A1E23"
+  on-background: "#1A1E23"
+  on-surface-strong: "#000000"
+  on-surface-variant: "#303741"
+  on-surface-muted: "#576375"
+  surface-container-low: "#EBF5FF"
+  surface-container: "#DFE2E7"
+  overlay: "#E8EBED1A"
+  overlay-strong: "#1D212633"
+  outline: "#E8EAEE"
+  outline-variant: "#DFE2E7"
   primary: "#0073E6"
   on-primary: "#FFFFFF"
-  secondary: "#3399FF"
-  tertiary: "#66B3FF"
-  success: "#21CA64"
-  warning: "#FFEDA3"
+  secondary: "#809DBA"
+  tertiary: "#0061C2"
+  success: "#178C46"
 typography:
   headline-display:
     fontFamily: General Sans
@@ -109,61 +108,66 @@ components:
     padding: 8px 10px 10px 12px
     height: 40px
   button-primary-hover:
-    backgroundColor: "#0061C2"
+    backgroundColor: "{colors.tertiary}"
   button-outline:
-    backgroundColor: "#1D212666"
+    backgroundColor: "#F6F7F899"
     textColor: "{colors.on-surface-muted}"
     typography: "{typography.body-md}"
     rounded: "{rounded.lg}"
     padding: 1px 6px 1px 8px
     height: 32px
   button-outline-hover:
-    backgroundColor: "{colors.outline}"
+    backgroundColor: "#E8EAEE80"
+  button-secondary:
+    backgroundColor: "{colors.secondary}"
+    textColor: "#99CCFF"
+    rounded: "{rounded.full}"
+    padding: 1px 8px
+    height: 25px
   button-ghost:
-    textColor: "{colors.on-surface-muted}"
+    textColor: "{colors.on-surface-variant}"
     typography: "{typography.label-sm}"
     rounded: "{rounded.lg}"
     padding: 6px 8px
   input-field:
-    backgroundColor: "{colors.surface-container}"
-    textColor: "{colors.on-surface}"
+    backgroundColor: "{colors.background}"
+    textColor: "#9D968E"
     rounded: 0px
     padding: 0px
   link:
-    textColor: "{colors.on-surface-muted}"
+    textColor: "{colors.on-surface-variant}"
 ---
 
 # MUI Design System
 
 ## Overview
 
-MUI describes itself as: “MUI provides a simple, customizable, and accessible library of React components. Follow your own design system, or start with Material Design.” The interface is dark, built on **Charcoal (#0F1214)** with **White (#FFFFFF)** text, and **Vivid Blue (#0073E6)** as the main accent.
+MUI describes itself as: “MUI provides a simple, customizable, and accessible library of React components. Follow your own design system, or start with Material Design.” The interface is light, built on **White (#FFFFFF)** with **Cool Charcoal (#1A1E23)** text, and **Vivid Blue (#0073E6)** as the main accent.
 
 Type is set in **General Sans** and **IBM Plex Sans**. Headlines run large with tight negative tracking; body text is 14px. Depth comes from soft drop shadows. Corners are mostly 18px.
 
-Measured from [mui.com](https://mui.com/) on October 21, 2026 at 1440×900 and 390×844 from 355 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [mui.com](https://mui.com/) on October 29, 2026 at 1440×900 and 390×844 from 363 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 17 roles, plus gradient stops #3399FF, #004D99, #F5C400, #AD6800.
+The palette has 16 roles, plus gradient stops #3399FF, #0073E6, #004D99, #E0B400.
 
-- **Charcoal (#0F1214):** Page background, seen 1 time. Token `background`.
-- **White (#FFFFFF):** Primary text and headings, seen 32 times. Token `on-surface`, CSS `--font-color-onDark`.
-- **Pale Blue (#CCE6FF):** Secondary text, seen 36 times. Token `on-surface-variant`.
-- **Light Blue (#B6BEC9):** Muted text and metadata, seen 38 times. Token `on-surface-muted`.
-- **Blue (#98A4B3):** Subtle text and placeholders, seen 9 times. Token `on-surface-subtle`, CSS `--muidocs-palette-text-tertiary`.
-- **Cool Graphite (#303840):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`.
-- **Graphite (#3B3B3B):** Cards and panels, seen 2 times. Token `surface-container`.
-- **Cool Charcoal 20% (#1D212633):** Translucent fill for cards and controls, seen 4 times. Token `overlay`.
-- **Cool Charcoal 80% (#14171ACC):** Stronger translucent fill, seen 3 times. Token `overlay-strong`.
-- **Cool Charcoal (#1D2126):** Borders and dividers, seen 8 times. Token `outline`.
-- **Cool Graphite (#303840):** Secondary dividers, seen 5 times. Token `outline-variant`.
-- **Vivid Blue (#0073E6):** Primary buttons and calls to action, seen 5 times. Token `primary`.
+- **White (#FFFFFF):** Page background, seen 11 times. Token `background`, CSS `--font-color-onDark`.
+- **Cool Charcoal (#1A1E23):** Primary text and headings, seen 53 times. Token `on-surface`.
+- **Near Black (#000000):** Headings and emphasis, seen 6 times. Token `on-surface-strong`, CSS `--mui-palette-common-onBackground`.
+- **Cool Graphite (#303741):** Secondary text, seen 28 times. Token `on-surface-variant`.
+- **Blue (#576375):** Muted text and metadata, seen 8 times. Token `on-surface-muted`, CSS `--muidocs-palette-Chip-defaultAvatarColor`.
+- **Pale Blue (#EBF5FF):** Raised areas one step from the page, seen 3 times. Token `surface-container-low`.
+- **Cool Mist (#DFE2E7):** Cards and panels, seen 1 time. Token `surface-container`.
+- **Mist 10% (#E8EBED1A):** Translucent fill for cards and controls, seen 4 times. Token `overlay`.
+- **Cool Charcoal 20% (#1D212633):** Stronger translucent fill, seen 2 times. Token `overlay-strong`.
+- **Cool Mist (#E8EAEE):** Borders and dividers, seen 8 times. Token `outline`, CSS `--muidocs-palette-Switch-defaultDisabledColor`.
+- **Cool Mist (#DFE2E7):** Secondary dividers, seen 3 times. Token `outline-variant`.
+- **Vivid Blue (#0073E6):** Primary buttons and calls to action, seen 31 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Vivid Blue (#3399FF):** Most used accent color, seen 16 times. Token `secondary`.
-- **Blue (#66B3FF):** Most used accent color, seen 15 times. Token `tertiary`.
-- **Green (#21CA64):** Success and positive states, seen 6 times. Token `success`.
-- **Light Amber (#FFEDA3):** Warnings and highlights, seen 1 time. Token `warning`.
+- **Blue (#809DBA):** Secondary buttons, seen 1 time. Token `secondary`.
+- **Blue (#0061C2):** Accent in logos and imagery, seen 2 times. Token `tertiary`.
+- **Dark Green (#178C46):** Success and positive states, seen 6 times. Token `success`.
 
 ## Typography
 
@@ -187,25 +191,25 @@ Spacing does not follow a strict grid: 54% of measured values are multiples of 4
 - **Scale:** xs 2px, sm 8px, md 16px, lg 20px.
 - **Gaps:** 16px is the most common gap in flex and grid layouts.
 - **Container:** content is capped at 1200px.
-- **Breakpoints:** 0px, 599.95px, 600px, 768px, 900px, 1200px, 1536px.
+- **Breakpoints:** 0px, 599.95px, 600px, 768px, 899.95px, 900px, 1200px, 1536px.
 
 ## Elevation & Depth
 
 Raised elements use soft drop shadows. The most used recipes:
 
-- `rgba(48, 56, 64, 0.3) 0px 1px 0px 0px inset, rgb(9, 11, 11) 0px -1px 0px 0px inset, rgb(9, 11, 11) 0px 1px 2px 0px`
-- `rgba(29, 33, 38, 0.4) 0px 2px 0px 0px inset, rgb(9, 11, 11) 0px -2px 0px 0px inset, rgb(9, 11, 11) 0px 1px 2px 0px`
-- `rgba(9, 11, 11, 0.2) 0px -3px 1px 0px inset, rgb(15, 18, 20) 0px 2px 3px 0px`
+- `rgb(255, 255, 255) 0px 1px 0px 0px inset, rgba(223, 226, 231, 0.4) 0px -1px 0px 0px inset, rgba(223, 226, 231, 0.5) 0px 1px 2px 0px`
+- `rgba(51, 153, 255, 0.5) 0px 1px 0px 0px inset, rgba(0, 77, 153, 0.4) 0px -1px 0px 1px inset, rgba(9, 11, 11, 0.1) 0px 2px 4px 0px`
+- `rgb(255, 255, 255) 0px 2px 0px 0px inset, rgba(232, 234, 238, 0.3) 0px -2px 0px 0px inset, rgba(223, 226, 231, 0.5) 0px 1px 2px 0px`
 
 ## Shapes
 
 Most elements use 18px corners. Measured radii, most used first:
 
 - **xl (18px):** 124 elements.
-- **lg (12px):** 116 elements.
+- **lg (12px):** 120 elements.
 - **sm (1px):** 44 elements.
-- **full (9999px):** 20 elements.
-- **md (10px):** 16 elements.
+- **md (10px):** 28 elements.
+- **full (9999px):** 28 elements.
 
 ## Components
 
@@ -213,29 +217,30 @@ Measured from the rendered page. Token values reference the tokens above.
 
 - **button-primary (“Discover the Core libraries”):** #0073E6 fill, #FFFFFF text, 15px/500, 10px radius, padding 8px 10px 10px 12px, border 1px solid #006BD6, shadow `rgba(51, 153, 255, 0.5) 0px 1px 0px 0px inset, rgba(0, 77, 153, 0.4) 0px -1px 0px 1px inset, rgba(9, 11, 11, 0.1) 0px 2px 4px 0px`.
 - **button-primary-hover:** background #0061C2, text #FFFFFF on hover.
-- **button-outline (“Search… Ctrl+K”):** #1D212666 fill, #B6BEC9 text, 14px/400, 12px radius, padding 1px 6px 1px 8px, border 1px solid #30384066, shadow `rgba(48, 56, 64, 0.1) 0px 1px 0px 0px inset, rgb(9, 11, 11) 0px -1px 0px 0px inset, rgb(9, 11, 11) 0px 1px 2px 0px`.
-- **button-outline-hover:** background #1D2126, text #B6BEC9 on hover.
-- **button-ghost (“Products”):** transparent fill, #B6BEC9 text, 14px/600, 12px radius, padding 6px 8px.
-- **input-field (“Temperature”):** #3B3B3B fill, #FFFFFF text, 13.3333px/400, padding 0px.
-- **link:** transparent fill, #B6BEC9 text, padding 0px.
+- **button-outline (“Search… Ctrl+K”):** #F6F7F899 fill, #576375 text, 14px/400, 12px radius, padding 1px 6px 1px 8px, border 1px solid #DFE2E7, shadow `rgb(255, 255, 255) 0px 1px 0px 0px inset, rgba(232, 234, 238, 0.4) 0px -1px 0px 0px inset, rgba(223, 226, 231, 0.5) 0px 1px 2px 0px`.
+- **button-outline-hover:** background #E8EAEE80, text #576375 on hover.
+- **button-secondary (“Custom theme”):** #003B7580 fill, #99CCFF text, 12px/500, 1188px radius, padding 1px 8px, border 1px solid #003B75B3, shadow `rgba(0, 59, 117, 0.2) 0px 1px 0px 1px inset, rgb(9, 11, 11) 0px -1px 0px 1px inset, rgb(9, 11, 11) 0px 1px 2px 0px`.
+- **button-ghost (“Products”):** transparent fill, #303741 text, 14px/600, 12px radius, padding 6px 8px.
+- **input-field (“Temperature”):** #FFFFFF fill, #9D968E text, 13.3333px/400, padding 0px.
+- **link:** transparent fill, #303741 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #0F1214 for the page and lift surfaces in small steps: #303840, #3B3B3B.
-- Do keep text in 4 levels: #FFFFFF, #CCE6FF, #B6BEC9, #98A4B3.
+- Do use #FFFFFF for the page and lift surfaces in small steps: #EBF5FF, #DFE2E7.
+- Do keep text in 4 levels: #1A1E23, #000000, #303741, #576375.
 - Do reserve #0073E6 for primary actions and key highlights.
 - Do set headlines in General Sans with tight tracking (-0.004em).
 - Do reuse the measured spacing steps (8px, 16px, 20px).
 - Do use 18px corners on most elements; larger surfaces also use 12px, 1px and 10px.
 - Don't introduce new font families beyond General Sans and IBM Plex Sans.
 - Don't use #0073E6 for large backgrounds or body text.
-- Don't make interface transitions slower than 0.3s.
+- Don't make interface transitions slower than 0.4s.
 
 ## Motion
 
-Interface transitions are quick: 0.25s, 0.1s, 0.2s, 0.15s.
+Interface transitions are quick: 0.3s, 0.25s, 0.1s, 0.15s.
 
 - **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `ease-in`, `ease`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/mui.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/mui.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

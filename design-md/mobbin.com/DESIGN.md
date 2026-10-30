@@ -7,12 +7,13 @@ colors:
   surface: "#FFFFFF"
   on-surface: "#141414"
   on-background: "#141414"
-  on-surface-variant: "#707070"
-  on-surface-muted: "#ADADAD"
+  on-surface-variant: "#222222"
+  on-surface-muted: "#707070"
+  on-surface-subtle: "#ADADAD"
   surface-container-low: "#FFFFFFF5"
   surface-container: "#FFFFFFE6"
   overlay: "#40404014"
-  overlay-strong: "#4040400F"
+  overlay-strong: "#FFFFFF14"
   primary: "#141414"
   on-primary: "#FFFFFF"
 typography:
@@ -103,17 +104,6 @@ components:
     rounded: "{rounded.full}"
     padding: 0px 16px
     height: 44px
-  button-primary-hover:
-    backgroundColor: "#262626"
-  button-outline:
-    backgroundColor: "{colors.background}"
-    textColor: "{colors.on-surface}"
-    typography: "{typography.label-sm}"
-    rounded: "{rounded.full}"
-    padding: 0px 12px
-    height: 36px
-  button-outline-hover:
-    backgroundColor: "{colors.background}"
   button-ghost:
     textColor: "{colors.on-primary}"
     typography: "{typography.label-sm}"
@@ -131,26 +121,27 @@ Mobbin describes itself as: “Save hours of UI & UX research with our library o
 
 Type is set in **saans**. Headlines run large with tight negative tracking; body text is 16px. Depth comes from hairline borders and inset highlights rather than drop shadows. Controls are pill-shaped.
 
-Measured from [mobbin.com](https://mobbin.com/) on October 21, 2026 at 1440×900 and 390×844 from 299 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [mobbin.com](https://mobbin.com/) on October 29, 2026 at 1440×900 and 390×844 from 300 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 10 roles.
+The palette has 11 roles.
 
 - **White (#FFFFFF):** Page background, seen 12 times. Token `background`, CSS `--color-overscroll-canvas`.
 - **Charcoal (#141414):** Primary text and headings, seen 40 times. Token `on-surface`.
-- **Slate (#707070):** Secondary text, seen 10 times. Token `on-surface-variant`, CSS `--color-text-secondary`.
-- **Gray (#ADADAD):** Muted text and metadata, seen 10 times. Token `on-surface-muted`.
+- **Charcoal (#222222):** Secondary text, seen 5 times. Token `on-surface-variant`.
+- **Slate (#707070):** Muted text and metadata, seen 10 times. Token `on-surface-muted`, CSS `--color-text-secondary`.
+- **Gray (#ADADAD):** Subtle text and placeholders, seen 10 times. Token `on-surface-subtle`.
 - **White 96% (#FFFFFFF5):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`.
 - **White 90% (#FFFFFFE6):** Cards and panels, seen 1 time. Token `surface-container`.
 - **Graphite 8% (#40404014):** Translucent fill for cards and controls, seen 6 times. Token `overlay`.
-- **Graphite 6% (#4040400F):** Stronger translucent fill, seen 3 times. Token `overlay-strong`.
-- **Charcoal (#141414):** Primary buttons and calls to action, seen 83 times. Token `primary`.
+- **White 8% (#FFFFFF14):** Stronger translucent fill, seen 3 times. Token `overlay-strong`.
+- **Charcoal (#141414):** Primary buttons and calls to action, seen 84 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
 
 ## Typography
 
-**saans** carries the whole interface. Fallback stack: `saans, saans Fallback`. Other loaded fonts: saans Fallback.
+**saans** carries the whole interface. Fallback stack: `saans, saans Fallback`.
 
 - **headline-display:** saans 80px at weight 652, line height 1, tracking -0.007em (40px on mobile). Page title (h1).
 - **headline-lg:** saans 44px at weight 652, line height 1.09, tracking -0.009em (12px on mobile). Section headings (h2).
@@ -193,31 +184,28 @@ Interactive controls are pill-shaped. Measured radii, most used first:
 Measured from the rendered page. Token values reference the tokens above.
 
 - **button-primary (“Join for free”):** #141414 fill, #FFFFFF text, 16px/600, 9999px radius, padding 0px 16px.
-- **button-primary-hover:** background #262626, text #FFFFFF on hover.
-- **button-outline (“Accept”):** #FFFFFFF5 fill, #141414 text, 14px/600, 9999px radius, padding 0px 12px.
-- **button-outline-hover:** background #FFFFFFE0, text #141414 on hover.
 - **button-ghost (“Deny”):** transparent fill, #FFFFFF text, 14px/600, 9999px radius, padding 0px 12px, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.946552 0.0000431836 0.0000188947 / 0.08) 0px 0px 0px 1px inset`.
 - **link:** transparent fill, #FFFFFF text, padding 0px.
 
 ## Do's and Don'ts
 
 - Do use #FFFFFF for the page and lift surfaces in small steps: #FFFFFFF5, #FFFFFFE6.
-- Do keep text in 3 levels: #141414, #707070, #ADADAD.
+- Do keep text in 4 levels: #141414, #222222, #707070, #ADADAD.
 - Do let contrast carry emphasis; primary actions use #141414 on #FFFFFF.
 - Do set headlines in saans with tight tracking (-0.007em).
 - Do keep spacing on the 4px grid.
 - Do make buttons and chips fully rounded (9999px); most other elements use 32px corners.
-- Don't use #ADADAD for body text; it reaches 2.2:1 on #FFFFFF. Keep it for large text or metadata.
+- Don't use #ADADAD for body text; it reaches 2.24:1 on #FFFFFF. Keep it for large text or metadata.
 - Don't add drop shadows for depth; use hairline rings and tonal surfaces.
 - Don't introduce new font families beyond saans.
 - Don't add saturated accent colors; the measured palette is almost entirely neutral.
-- Don't make interface transitions slower than 0.3s.
+- Don't make interface transitions slower than 0.5s.
 
 ## Motion
 
-Interface transitions are quick: 0.15s, 0.3s, 0.2s.
+Interface transitions are quick: 0.15s, 0.16s, 0.5s, 0.3s.
 
-- **Easing:** `cubic-bezier(0, 0, 0.2, 1)`, `ease-out`.
+- **Easing:** `cubic-bezier(0, 0, 0.2, 1)`, `ease-out`, `ease`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/mobbin.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/mobbin.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

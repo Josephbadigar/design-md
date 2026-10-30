@@ -1,21 +1,20 @@
 ---
 version: alpha
 name: v0
-description: "Dark monochrome interface measured from v0.app: GeistSans type with Inter, tonal surfaces and 4px corners."
+description: "Light monochrome interface measured from v0.app: GeistSans type with Inter, tonal surfaces and 4px corners."
 colors:
-  background: "#000000"
-  surface: "#000000"
-  on-surface: "#EDEDED"
-  on-background: "#EDEDED"
-  on-surface-variant: "#A0A0A0"
-  surface-container-low: "#0A0A0A"
-  surface-container: "#121212"
-  surface-container-high: "#1A1A1A"
-  overlay: "#FFFFFF25"
-  outline: "#FFFFFF25"
-  outline-variant: "#2E2E2E"
-  primary: "#EDEDED"
-  on-primary: "#0A0A0A"
+  background: "#FAFAFA"
+  surface: "#FAFAFA"
+  on-surface: "#171717"
+  on-background: "#171717"
+  on-surface-variant: "#4D4D4D"
+  surface-container-low: "#FFFFFF"
+  surface-container: "#F2F2F2"
+  overlay: "#00000014"
+  outline: "#00000014"
+  outline-variant: "#EBEBEB"
+  primary: "#171717"
+  on-primary: "#FFFFFF"
 typography:
   headline-display:
     fontFamily: GeistSans
@@ -83,17 +82,12 @@ components:
     rounded: "{rounded.lg}"
     padding: 0px 12px
     height: 32px
-  button-primary-hover:
-    backgroundColor: "{colors.on-surface-variant}"
   button-outline:
-    backgroundColor: "{colors.surface-container}"
+    backgroundColor: "{colors.surface-container-low}"
     textColor: "{colors.on-surface-variant}"
     typography: "{typography.label-md}"
     padding: 0px 12px
     height: 32px
-  button-outline-hover:
-    backgroundColor: "{colors.surface-container-high}"
-    textColor: "{colors.on-surface}"
   button-ghost:
     backgroundColor: "{colors.surface-container-low}"
     textColor: "{colors.on-surface}"
@@ -109,27 +103,26 @@ components:
 
 ## Overview
 
-v0 describes itself as: “Your collaborative AI assistant to design, iterate, and scale full-stack applications for the web.” The interface is dark, built on **Near Black (#000000)** with **Mist (#EDEDED)** text and almost no color: actions are carried by contrast, not hue.
+v0 describes itself as: “Your collaborative AI assistant to design, iterate, and scale full-stack applications for the web.” The interface is light, built on **Snow (#FAFAFA)** with **Charcoal (#171717)** text and almost no color: actions are carried by contrast, not hue.
 
 Type is set in **GeistSans** and **Inter**. Headlines run large with tight negative tracking; body text is 16px. Depth comes from hairline borders and inset highlights rather than drop shadows. Corners are mostly 4px.
 
-Measured from [v0.app](https://v0.app/) on October 21, 2026 at 1440×900 and 390×844 from 310 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [v0.app](https://v0.app/) on October 29, 2026 at 1440×900 and 390×844 from 310 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 11 roles.
+The palette has 10 roles.
 
-- **Near Black (#000000):** Page background, seen 2 times. Token `background`.
-- **Mist (#EDEDED):** Primary text and headings, seen 30 times. Token `on-surface`.
-- **Gray (#A0A0A0):** Secondary text, seen 76 times. Token `on-surface-variant`.
-- **Near Black (#0A0A0A):** Raised areas one step from the page, seen 3 times. Token `surface-container-low`.
-- **Charcoal (#121212):** Cards and panels, seen 9 times. Token `surface-container`.
-- **Charcoal (#1A1A1A):** Hover and pressed fills, seen 1 time. Token `surface-container-high`.
-- **White 14% (#FFFFFF25):** Translucent fill for cards and controls, seen 6 times. Token `overlay`.
-- **White 14% (#FFFFFF25):** Borders and dividers, seen 11 times. Token `outline`.
-- **Graphite (#2E2E2E):** Secondary dividers, seen 6 times. Token `outline-variant`.
-- **Mist (#EDEDED):** Primary buttons and calls to action, seen 45 times. Token `primary`.
-- **Near Black (#0A0A0A):** Text and icons on primary. Token `on-primary`.
+- **Snow (#FAFAFA):** Page background, seen 2 times. Token `background`.
+- **Charcoal (#171717):** Primary text and headings, seen 30 times. Token `on-surface`.
+- **Slate (#4D4D4D):** Secondary text, seen 76 times. Token `on-surface-variant`, CSS `--color-v0-gray-900`.
+- **White (#FFFFFF):** Raised areas one step from the page, seen 12 times. Token `surface-container-low`.
+- **Mist (#F2F2F2):** Cards and panels, seen 1 time. Token `surface-container`, CSS `--color-v0-gray-100`.
+- **Near Black 8% (#00000014):** Translucent fill for cards and controls, seen 6 times. Token `overlay`.
+- **Near Black 8% (#00000014):** Borders and dividers, seen 11 times. Token `outline`.
+- **Mist (#EBEBEB):** Secondary dividers, seen 6 times. Token `outline-variant`.
+- **Charcoal (#171717):** Primary buttons and calls to action, seen 44 times. Token `primary`.
+- **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
 
 ## Typography
 
@@ -156,9 +149,9 @@ Spacing does not follow a strict grid: 64% of measured values are multiples of 4
 
 ## Elevation & Depth
 
-The design avoids drop shadows. Layers are separated by tonal surface steps (#0A0A0A → #121212 → #1A1A1A) and hairline rings:
+The design avoids drop shadows. Layers are separated by tonal surface steps (#FFFFFF → #F2F2F2) and hairline rings:
 
-- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklch(0.719 0.1515 250.7) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px`
+- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklch(0.573 0.2146 258.2) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px`
 
 ## Shapes
 
@@ -172,18 +165,16 @@ Most elements use 4px corners. Measured radii, most used first:
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Sign Up”):** #EDEDED fill, #0A0A0A text, 14px/500, 8px radius, padding 0px 12px, border 1px solid #EDEDED.
-- **button-primary-hover:** background #A0A0A0, text #0A0A0A on hover.
-- **button-outline (“Contact Form”):** #121212 fill, #A0A0A0 text, 14px/500, 3.35544e+07px radius, padding 0px 12px, border 1px solid #FFFFFF25.
-- **button-outline-hover:** background #1A1A1A, text #EDEDED on hover.
-- **button-ghost (“Log In”):** #0A0A0A fill, #EDEDED text, 14px/500, 8px radius, padding 0px 12px, border 1px solid #27272A.
-- **link:** transparent fill, #A0A0A0 text, padding 0px.
+- **button-primary (“Sign Up”):** #171717 fill, #FFFFFF text, 14px/500, 8px radius, padding 0px 12px, border 1px solid #171717.
+- **button-outline (“Contact Form”):** #FFFFFF fill, #4D4D4D text, 14px/500, 3.35544e+07px radius, padding 0px 12px, border 1px solid #00000014.
+- **button-ghost (“Log In”):** #FFFFFF fill, #171717 text, 14px/500, 8px radius, padding 0px 12px, border 1px solid #E4E4E7.
+- **link:** transparent fill, #4D4D4D text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #000000 for the page and lift surfaces in small steps: #0A0A0A, #121212, #1A1A1A.
-- Do keep text in 2 levels: #EDEDED, #A0A0A0.
-- Do let contrast carry emphasis; primary actions use #EDEDED on #000000.
+- Do use #FAFAFA for the page and lift surfaces in small steps: #FFFFFF, #F2F2F2.
+- Do keep text in 2 levels: #171717, #4D4D4D.
+- Do let contrast carry emphasis; primary actions use #171717 on #FAFAFA.
 - Do set headlines in GeistSans with tight tracking (-0.06em).
 - Do reuse the measured spacing steps (6px, 12px, 24px).
 - Do use 4px corners on most elements; larger surfaces also use 6px and 8px.
@@ -199,4 +190,4 @@ Interface transitions are quick: 0.15s, 0.2s, 0.6s, 0.3s.
 - **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `cubic-bezier(0.34, 1.56, 0.64, 1)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/v0.app/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/v0.app/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Railway
-description: "Dark interface measured from railway.com: IBM Plex Serif type with Inter, violet accents, tonal surfaces and 6px corners."
+description: "Dark interface measured from railway.com: IBM Plex Serif type with Inter, violet accents, tonal surfaces and 4px corners."
 colors:
   background: "#13111C"
   surface: "#13111C"
@@ -19,7 +19,7 @@ colors:
   primary: "#553F83"
   on-primary: "#FFFFFF"
   secondary: "#F9A8D4"
-  tertiary: "#A78BFA"
+  tertiary: "#183367"
 typography:
   headline-display:
     fontFamily: IBM Plex Serif
@@ -67,10 +67,9 @@ typography:
     lineHeight: 1.12
     letterSpacing: -0.049em
 rounded:
-  sm: 6px
-  md: 8px
-  lg: 12px
-  full: 9999px
+  sm: 4px
+  md: 6px
+  lg: 8px
 spacing:
   base: 4px
   xs: 4px
@@ -85,20 +84,20 @@ components:
   button-primary:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
-    rounded: "{rounded.md}"
+    rounded: "{rounded.lg}"
     padding: 12px 24px
     height: 58px
   button-outline:
     backgroundColor: "{colors.surface-container}"
-    textColor: "{colors.on-surface-variant}"
+    textColor: "#BF93EC"
     typography: "{typography.label-md}"
-    rounded: "{rounded.md}"
+    rounded: "{rounded.lg}"
     padding: 0px
     height: 32px
   button-ghost:
     backgroundColor: "{colors.overlay}"
     textColor: "{colors.on-surface}"
-    rounded: "{rounded.md}"
+    rounded: "{rounded.lg}"
     padding: 12px 24px
     height: 58px
   link:
@@ -111,16 +110,16 @@ components:
 
 Railway describes itself as: “Railway is a full-stack cloud for deploying web apps, servers, databases, and more with automatic scaling, monitoring, and security.” The interface is dark, built on **Cool Charcoal (#13111C)** with **White (#FFFFFF)** text, and **Violet (#553F83)** as the main accent.
 
-Type is set in **IBM Plex Serif** and **Inter**. Headlines run large with tight negative tracking; body text is 14px. The surface language is flat. Corners are mostly 6px.
+Type is set in **IBM Plex Serif** and **Inter**. Headlines run large with tight negative tracking; body text is 14px. The surface language is flat. Corners are mostly 4px.
 
-Measured from [railway.com](https://railway.com/) on October 21, 2026 at 1440×900 and 390×844 from 299 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [railway.com](https://railway.com/) on October 29, 2026 at 1440×900 and 390×844 from 374 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 15 roles.
 
-- **Cool Charcoal (#13111C):** Page background, seen 3 times. Token `background`, CSS `--osano-toggle-on-thumb-color`.
-- **White (#FFFFFF):** Primary text and headings, seen 20 times. Token `on-surface`, CSS `--osano-button-reject-all-foreground-color`.
+- **Cool Charcoal (#13111C):** Page background, seen 2 times. Token `background`, CSS `--osano-toggle-on-thumb-color`.
+- **White (#FFFFFF):** Primary text and headings, seen 18 times. Token `on-surface`, CSS `--osano-button-reject-all-foreground-color`.
 - **Snow (#F7F7F8):** Secondary text, seen 11 times. Token `on-surface-variant`, CSS `--gray-950`.
 - **Silver (#DCDCE0):** Muted text and metadata, seen 5 times. Token `on-surface-muted`.
 - **Cool Gray (#A1A0AB):** Subtle text and placeholders, seen 41 times. Token `on-surface-subtle`, CSS `--gray-600`.
@@ -132,8 +131,8 @@ The palette has 15 roles.
 - **White 10% (#FFFFFF1A):** Secondary dividers, seen 2 times. Token `outline-variant`.
 - **Violet (#553F83):** Primary buttons and calls to action, seen 1 time. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Light Pink (#F9A8D4):** Most used accent color, seen 15 times. Token `secondary`.
-- **Light Violet (#A78BFA):** Most used accent color, seen 3 times. Token `tertiary`.
+- **Light Pink (#F9A8D4):** Accent in text, fills and borders, seen 12 times. Token `secondary`.
+- **Dark Blue (#183367):** Accent on large areas. Token `tertiary`.
 
 ## Typography
 
@@ -163,19 +162,18 @@ The design is flat: no shadows were measured. Hierarchy comes from tonal surface
 
 ## Shapes
 
-Most elements use 6px corners. Measured radii, most used first:
+Most elements use 4px corners. Measured radii, most used first:
 
-- **sm (6px):** 28 elements.
-- **md (8px):** 28 elements.
-- **lg (12px):** 8 elements.
-- **full (9999px):** 4 elements.
+- **sm (4px):** 270 elements.
+- **md (6px):** 28 elements.
+- **lg (8px):** 28 elements.
 
 ## Components
 
 Measured from the rendered page. Token values reference the tokens above.
 
 - **button-primary (“Deploy →”):** #553F83 fill, #FFFFFF text, 20px/500, 8px radius, padding 12px 24px, border 1px solid #FFFFFF26.
-- **button-outline (“Deploy”):** #291839 fill, #F7F7F8 text, 16px/400, 8px radius, padding 0px.
+- **button-outline (“Network”):** #291839 fill, #BF93EC text, 16px/400, 8px radius, padding 0px.
 - **button-ghost (“Agents”):** #00000059 fill, #FFFFFF text, 20px/500, 8px radius, padding 12px 24px, border 1px solid #FFFFFF40.
 - **link:** transparent fill, #FFFFFF text, padding 0px.
 
@@ -186,17 +184,17 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do reserve #553F83 for primary actions and key highlights.
 - Do set headlines in IBM Plex Serif with tight tracking (-0.036em).
 - Do keep spacing on the 4px grid.
-- Do use 6px corners on most elements; larger surfaces also use 8px and 12px.
+- Do use 4px corners on most elements; larger surfaces also use 6px and 8px.
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond IBM Plex Serif and Inter.
 - Don't use #553F83 for large backgrounds or body text.
-- Don't make interface transitions slower than 0.2s.
+- Don't make interface transitions slower than 0.15s.
 
 ## Motion
 
-Interface transitions are quick: 0.15s, 0.2s. Longer ambient animations run 3s.
+Interface transitions are quick: 0.15s.
 
-- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `ease-out`, `cubic-bezier(0.25, 0.1, 0.25, 0.8)`.
+- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/railway.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/railway.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

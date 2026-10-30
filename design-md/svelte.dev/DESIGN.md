@@ -1,22 +1,20 @@
 ---
 version: alpha
 name: Svelte
-description: "Dark interface measured from svelte.dev: DM Serif Display type with Fira Sans, vivid red accents, tonal surfaces and pill-shaped controls."
+description: "Light interface measured from svelte.dev: DM Serif Display type with Fira Sans, vivid red accents, tonal surfaces and pill-shaped controls."
 colors:
-  background: "#1C1E22"
-  surface: "#1C1E22"
-  on-surface: "#CACBCE"
-  on-background: "#CACBCE"
-  on-surface-strong: "#FFFFFF"
-  on-surface-variant: "#E5E5E6"
-  surface-container-low: "#23272F"
-  surface-container: "#2E333E"
-  outline: "#303541"
-  outline-variant: "#23272F"
-  primary: "#F96743"
-  on-primary: "#000000"
-  inverse-surface: "#A1A4AA"
-  secondary: "#B32D00"
+  background: "#FFFFFF"
+  surface: "#FFFFFF"
+  on-surface: "#262626"
+  on-background: "#262626"
+  on-surface-strong: "#000000"
+  on-surface-variant: "#141414"
+  surface-container-low: "#F2F2F2"
+  outline: "#F2F2F2"
+  outline-variant: "#EBEBEB"
+  primary: "#D43008"
+  on-primary: "#FFFFFF"
+  inverse-surface: "#666666"
 typography:
   headline-display:
     fontFamily: DM Serif Display
@@ -60,7 +58,7 @@ spacing:
   section: 100px
 components:
   input-field:
-    backgroundColor: "{colors.surface-container}"
+    backgroundColor: "{colors.surface-container-low}"
     textColor: "{colors.on-surface-strong}"
     rounded: 56px
     padding: 7px 7px 5.6px 28px
@@ -72,28 +70,26 @@ components:
 
 ## Overview
 
-Svelte describes itself as: “Web development for the rest of us” The interface is dark, built on **Cool Charcoal (#1C1E22)** with **Silver (#CACBCE)** text, and **Vivid Red (#F96743)** as the main accent.
+Svelte describes itself as: “Web development for the rest of us” The interface is light, built on **White (#FFFFFF)** with **Graphite (#262626)** text, and **Vivid Red (#D43008)** as the main accent.
 
 Type is set in **DM Serif Display** and **Fira Sans**. Headlines run large; body text is 16px. The surface language is flat. Controls are pill-shaped.
 
-Measured from [svelte.dev](https://svelte.dev/) on October 21, 2026 at 1440×900 and 390×844 from 137 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [svelte.dev](https://svelte.dev/) on October 29, 2026 at 1440×900 and 390×844 from 137 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 12 roles.
+The palette has 10 roles.
 
-- **Cool Charcoal (#1C1E22):** Page background, seen 2 times. Token `background`, CSS `--sk-bg-1`.
-- **Silver (#CACBCE):** Primary text and headings, seen 12 times. Token `on-surface`, CSS `--sk-fg-2`.
-- **White (#FFFFFF):** Headings and emphasis, seen 5 times. Token `on-surface-strong`.
-- **Mist (#E5E5E6):** Secondary text, seen 4 times. Token `on-surface-variant`, CSS `--sk-fg-1`.
-- **Cool Graphite (#23272F):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`, CSS `--sk-bg-3`.
-- **Cool Graphite (#2E333E):** Cards and panels, seen 1 time. Token `surface-container`, CSS `--sk-bg-4`.
-- **Cool Graphite (#303541):** Borders and dividers, seen 2 times. Token `outline`, CSS `--sk-border`.
-- **Cool Graphite (#23272F):** Secondary dividers, seen 2 times. Token `outline-variant`, CSS `--sk-bg-3`.
-- **Vivid Red (#F96743):** Brand accent (CSS variable), seen 85 times. Token `primary`, CSS `--sk-fg-accent`.
-- **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
-- **Cool Gray (#A1A4AA):** High-contrast fills, seen 5 times. Token `inverse-surface`, CSS `--sk-fg-3`.
-- **Dark Orange (#B32D00):** Brand color on large areas, seen 32 times. Token `secondary`.
+- **White (#FFFFFF):** Page background, seen 3 times. Token `background`, CSS `--sk-bg-1`.
+- **Graphite (#262626):** Primary text and headings, seen 12 times. Token `on-surface`, CSS `--twp-parameter`.
+- **Near Black (#000000):** Headings and emphasis, seen 4 times. Token `on-surface-strong`.
+- **Charcoal (#141414):** Secondary text, seen 4 times. Token `on-surface-variant`, CSS `--sk-fg-1`.
+- **Mist (#F2F2F2):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`, CSS `--sk-raised-highlight`.
+- **Mist (#F2F2F2):** Borders and dividers, seen 2 times. Token `outline`, CSS `--sk-raised-highlight`.
+- **Mist (#EBEBEB):** Secondary dividers, seen 2 times. Token `outline-variant`, CSS `--sk-border`.
+- **Vivid Red (#D43008):** Brand accent (CSS variable), seen 85 times. Token `primary`, CSS `--sk-bg-accent`.
+- **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
+- **Slate (#666666):** High-contrast fills, seen 5 times. Token `inverse-surface`, CSS `--sk-fg-3`.
 
 ## Typography
 
@@ -115,7 +111,7 @@ Spacing does not follow a strict grid: 46% of measured values are multiples of 4
 
 ## Elevation & Depth
 
-The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#23272F → #2E333E) and #303541 borders.
+The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#F2F2F2) and #F2F2F2 borders.
 
 ## Shapes
 
@@ -128,19 +124,19 @@ Interactive controls are pill-shaped. Measured radii, most used first:
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **input-field (“Search”):** #2E333E fill, #FFFFFF text, 14px/400, 56px radius, padding 7px 7px 5.6px 28px.
-- **link:** transparent fill, #F96743 text, padding 0px.
+- **input-field (“Search”):** #F2F2F2 fill, #000000 text, 14px/400, 56px radius, padding 7px 7px 5.6px 28px.
+- **link:** transparent fill, #D43008 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #1C1E22 for the page and lift surfaces in small steps: #23272F, #2E333E.
-- Do keep text in 3 levels: #CACBCE, #FFFFFF, #E5E5E6.
-- Do use #F96743 as the brand accent: header, logo and key highlights.
+- Do use #FFFFFF for the page and lift surfaces in small steps: #F2F2F2.
+- Do keep text in 3 levels: #262626, #000000, #141414.
+- Do use #D43008 as the brand accent: header, logo and key highlights.
 - Do reuse the measured spacing steps (8px, 10px, 18px).
 - Do make buttons and chips fully rounded (9999px); most other elements use 4px corners.
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond DM Serif Display, Fira Sans and Georgia.
-- Don't use #F96743 for large backgrounds or body text.
+- Don't use #D43008 for large backgrounds or body text.
 - Don't make interface transitions slower than 0.2s.
 
 ## Motion
@@ -149,4 +145,4 @@ Interface transitions are quick: 0.2s.
 
 - **Easing:** `ease`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/svelte.dev/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/svelte.dev/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

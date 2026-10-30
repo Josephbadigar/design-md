@@ -5,10 +5,10 @@ description: "Dark interface measured from bolt.new: Schibsted Grotesk type with
 colors:
   background: "#111114"
   surface: "#111114"
-  on-surface: "#FFFFFF"
-  on-background: "#FFFFFF"
-  on-surface-variant: "#F9F6F9"
-  on-surface-muted: "#D6D5DE"
+  on-surface: "#F9F6F9"
+  on-background: "#F9F6F9"
+  on-surface-variant: "#D6D5DE"
+  on-surface-muted: "#C3C3C4"
   on-surface-subtle: "#B8B8B9"
   surface-container-low: "#171719"
   surface-container: "#000000"
@@ -89,7 +89,6 @@ typography:
     lineHeight: 1.56
     letterSpacing: 0.01em
 rounded:
-  xs: 2px
   sm: 4px
   md: 6px
   lg: 12px
@@ -99,7 +98,7 @@ spacing:
   xs: 4px
   sm: 8px
   md: 10px
-  lg: 18px
+  lg: 24px
   xl: 40px
   gutter: 8px
   section: 120px
@@ -114,21 +113,21 @@ components:
     height: 36px
   button-outline:
     backgroundColor: "{colors.overlay}"
-    textColor: "{colors.on-surface-muted}"
+    textColor: "{colors.on-surface-variant}"
     typography: "{typography.label-lg}"
     rounded: "{rounded.full}"
     padding: 0px 8px
     height: 28px
   button-outline-hover:
     backgroundColor: "#2BA6FF29"
-    textColor: "{colors.on-surface-variant}"
+    textColor: "{colors.on-surface}"
   button-secondary:
     backgroundColor: "{colors.secondary}"
     textColor: "{colors.on-surface}"
-    typography: "{typography.body-sm}"
-    rounded: "{rounded.xs}"
-    padding: 0px 18px
-    height: 38px
+    typography: "{typography.label-lg}"
+    rounded: "{rounded.md}"
+    padding: 0px 12px
+    height: 36px
   button-ghost:
     textColor: "#FFFFFFBF"
     typography: "{typography.label-lg}"
@@ -142,20 +141,20 @@ components:
 
 ## Overview
 
-bolt.new describes itself as: “Build and scale high-performing websites & apps using your words. Join millions and start building today.” The interface is dark, built on **Charcoal (#111114)** with **White (#FFFFFF)** text, and **Vivid Blue (#2BA6FF)** as the main accent.
+bolt.new describes itself as: “Build and scale high-performing websites & apps using your words. Join millions and start building today.” The interface is dark, built on **Charcoal (#111114)** with **Snow (#F9F6F9)** text, and **Vivid Blue (#2BA6FF)** as the main accent.
 
 Type is set in **Schibsted Grotesk** and **Silkscreen**. Headlines run large with tight negative tracking; body text is 16px. Depth comes from hairline borders and inset highlights rather than drop shadows. Controls are pill-shaped.
 
-Measured from [bolt.new](https://bolt.new/) on October 21, 2026 at 1440×900 and 390×844 from 212 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [bolt.new](https://bolt.new/) on October 29, 2026 at 1440×900 and 390×844 from 212 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 17 roles.
 
 - **Charcoal (#111114):** Page background, seen 4 times. Token `background`.
-- **White (#FFFFFF):** Primary text and headings, seen 4 times. Token `on-surface`.
-- **Snow (#F9F6F9):** Secondary text, seen 15 times. Token `on-surface-variant`, CSS `--cm-textColor`.
-- **Cool Silver (#D6D5DE):** Muted text and metadata, seen 9 times. Token `on-surface-muted`, CSS `--cm-search-button-textColor`.
+- **Snow (#F9F6F9):** Primary text and headings, seen 16 times. Token `on-surface`, CSS `--cm-textColor`.
+- **Cool Silver (#D6D5DE):** Secondary text, seen 9 times. Token `on-surface-variant`, CSS `--cm-search-button-textColor`.
+- **Silver (#C3C3C4):** Muted text and metadata, seen 5 times. Token `on-surface-muted`.
 - **Silver (#B8B8B9):** Subtle text and placeholders, seen 16 times. Token `on-surface-subtle`.
 - **Charcoal (#171719):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`, CSS `--cm-gutter-backgroundColor`.
 - **Near Black (#000000):** Cards and panels, seen 2 times. Token `surface-container`.
@@ -166,9 +165,9 @@ The palette has 17 roles.
 - **Graphite (#3C3C41):** Secondary dividers, seen 3 times. Token `outline-variant`, CSS `--cm-panels-borderColor`.
 - **Vivid Blue (#2BA6FF):** Primary buttons and calls to action, seen 2 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Cool Gray (#A4A3AC):** High-contrast fills, seen 29 times. Token `inverse-surface`.
-- **Vivid Blue (#1488FC):** Secondary buttons, seen 31 times. Token `secondary`, CSS `--cm-selection-backgroundColorFocused`.
-- **Blue (#0258C7):** Brand color in logos and imagery, seen 22 times. Token `tertiary`.
+- **Cool Gray (#A4A3AC):** High-contrast fills, seen 31 times. Token `inverse-surface`.
+- **Vivid Blue (#1488FC):** Secondary buttons, seen 2 times. Token `secondary`, CSS `--cm-selection-backgroundColorFocused`.
+- **Blue (#0258C7):** Accent in logos and imagery. Token `tertiary`.
 
 ## Typography
 
@@ -186,9 +185,9 @@ The palette has 17 roles.
 
 ## Layout
 
-Spacing does not follow a strict grid: 56% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 57% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
-- **Scale:** xs 4px, sm 8px, md 10px, lg 18px, xl 40px.
+- **Scale:** xs 4px, sm 8px, md 10px, lg 24px, xl 40px.
 - **Sections:** 120px vertical padding between major sections.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
 - **Page margin:** 72px on each side of full-width sections.
@@ -207,11 +206,10 @@ A few raised panels add a soft drop shadow: `rgba(0, 0, 0, 0) 0px 0px 0px 0px, r
 Interactive controls are pill-shaped. Measured radii, most used first:
 
 - **full (9999px):** 60 elements.
-- **md (6px):** 20 elements.
+- **md (6px):** 24 elements.
 - **sm (4px):** 16 elements.
 - **lg (12px):** 16 elements.
 - **xl (16px):** 8 elements.
-- **xs (2px):** 4 elements.
 
 ## Components
 
@@ -220,28 +218,28 @@ Measured from the rendered page. Token values reference the tokens above.
 - **button-primary (“Build now”):** #2BA6FF fill, #FFFFFF text, 14px/500, 9999px radius, padding 0px 16px.
 - **button-outline (“Figma”):** #10141C8C fill, #D6D5DE text, 14px/500, 9999px radius, padding 0px 8px, border 1px solid #96BEFF29, shadow `rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset`.
 - **button-outline-hover:** background #2BA6FF29, text #F9F6F9 on hover.
-- **button-secondary (“Get Started Get Started”):** #1488FC fill, #FFFFFF text, 14px/600, 2px radius, padding 0px 18px.
+- **button-secondary (“Get Started”):** #1488FC fill, #F9F6F9 text, 14px/500, 6px radius, padding 0px 12px, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px`.
 - **button-ghost (“Solutions”):** transparent fill, #FFFFFFBF text, 14px/500, 4px radius, padding 8px 14px.
 - **link:** transparent fill, #FFFFFFB3 text, padding 0px.
 
 ## Do's and Don'ts
 
 - Do use #111114 for the page and lift surfaces in small steps: #171719, #000000, #1E1E21.
-- Do keep text in 4 levels: #FFFFFF, #F9F6F9, #D6D5DE, #B8B8B9.
+- Do keep text in 4 levels: #F9F6F9, #D6D5DE, #C3C3C4, #B8B8B9.
 - Do reserve #2BA6FF for primary actions and key highlights.
 - Do set headlines in Schibsted Grotesk with tight tracking (-0.025em).
-- Do reuse the measured spacing steps (8px, 10px, 18px).
+- Do reuse the measured spacing steps (8px, 10px, 24px).
 - Do make buttons and chips fully rounded (9999px); most other elements use 6px corners.
 - Don't use heavy drop shadows; keep depth to hairline rings and tonal surfaces.
 - Don't introduce new font families beyond Schibsted Grotesk and Silkscreen.
 - Don't use #2BA6FF for large backgrounds or body text.
-- Don't make interface transitions slower than 0.45s.
+- Don't make interface transitions slower than 0.3s.
 
 ## Motion
 
-Interface transitions are quick: 0.18s, 0.15s, 0.2s, 0.45s.
+Interface transitions are quick: 0.18s, 0.15s, 0.2s, 0.3s.
 
-- **Easing:** `ease`, `cubic-bezier(0.4, 0, 0.2, 1)`, `cubic-bezier(0.165, 0.84, 0.44, 1)`.
+- **Easing:** `ease`, `cubic-bezier(0.4, 0, 0.2, 1)`, `cubic-bezier(0, 0, 0.2, 1)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/bolt.new/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/bolt.new/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

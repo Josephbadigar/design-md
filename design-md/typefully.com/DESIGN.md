@@ -1,26 +1,22 @@
 ---
 version: alpha
 name: Typefully
-description: "Dark interface measured from typefully.com: Inter type with inter-arrows-subset, vivid blue accents, tonal surfaces and 6px corners."
+description: "Light interface measured from typefully.com: Inter type with inter-arrows-subset, vivid blue accents, flat surfaces and 6px corners."
 colors:
-  background: "#111418"
-  surface: "#111418"
-  on-surface: "#C4C9D4"
-  on-background: "#C4C9D4"
-  on-surface-strong: "#FFFFFF"
-  on-surface-variant: "#8B94A7"
-  on-surface-muted: "#5A6272"
-  surface-container-low: "#282B31"
-  overlay: "#32363E4D"
-  overlay-strong: "#5A62724D"
-  outline: "#5A627280"
-  outline-variant: "#5A62724D"
+  background: "#FFFFFF"
+  surface: "#FFFFFF"
+  on-surface: "#000000"
+  on-background: "#000000"
+  on-surface-variant: "#354450"
+  on-surface-muted: "#5C6D7A"
+  on-surface-subtle: "#8D9AA5"
+  overlay: "#C7CDD133"
+  overlay-strong: "#8D9AA51A"
+  outline: "#E6E8EA"
+  outline-variant: "#C7CDD1"
   primary: "#199AF5"
   on-primary: "#FFFFFF"
-  secondary: "#00E5CC"
-  error: "#FF4D4D"
-  success: "#34A853"
-  warning: "#FBBC05"
+  secondary: "#FF4D4D"
 typography:
   headline-display:
     fontFamily: Inter
@@ -98,14 +94,8 @@ components:
     rounded: "{rounded.md}"
     padding: 0px 10px
     height: 26px
-  button-secondary:
-    backgroundColor: "{colors.surface-container-low}"
-    textColor: "{colors.on-surface}"
-    typography: "{typography.label-sm}"
-    padding: 0px 18px
-    height: 40px
   button-ghost:
-    textColor: "{colors.on-surface-variant}"
+    textColor: "{colors.on-surface-muted}"
     rounded: "{rounded.md}"
     padding: 0px 10px
   link:
@@ -116,32 +106,28 @@ components:
 
 ## Overview
 
-Typefully describes itself as: “Create, schedule, and publish social media posts on X (Twitter), LinkedIn, Threads, Bluesky, and more. Grow faster with analytics, tools and automations.” The interface is dark, built on **Cool Charcoal (#111418)** with **Cool Silver (#C4C9D4)** text, and **Vivid Blue (#199AF5)** as the main accent.
+Typefully describes itself as: “Create, schedule, and publish social media posts on X (Twitter), LinkedIn, Threads, Bluesky, and more. Grow faster with analytics, tools and automations.” The interface is light, built on **White (#FFFFFF)** with **Near Black (#000000)** text, and **Vivid Blue (#199AF5)** as the main accent.
 
 Type is set in **Inter** and **inter-arrows-subset**, with **ui-monospace** for code. Headlines run large; body text is 14px. Depth comes from soft drop shadows. Corners are mostly 6px.
 
-Measured from [typefully.com](https://typefully.com/) on October 21, 2026 at 1440×900 and 390×844 from 382 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [typefully.com](https://typefully.com/) on October 29, 2026 at 1440×900 and 390×844 from 382 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 16 roles, plus gradient stops #7B63F2, #8B5CF6.
+The palette has 12 roles, plus gradient stops #7B63F2, #8B5CF6.
 
-- **Cool Charcoal (#111418):** Page background, seen 1 time. Token `background`, CSS `--bg0`.
-- **Cool Silver (#C4C9D4):** Primary text and headings, seen 52 times. Token `on-surface`.
-- **White (#FFFFFF):** Headings and emphasis, seen 37 times. Token `on-surface-strong`, CSS `--color-typ-verified-badge`.
-- **Blue (#8B94A7):** Secondary text, seen 25 times. Token `on-surface-variant`, CSS `--c3`.
-- **Blue (#5A6272):** Muted text and metadata, seen 8 times. Token `on-surface-muted`.
-- **Cool Graphite (#282B31):** Raised areas one step from the page, seen 25 times. Token `surface-container-low`.
-- **Cool Graphite 30% (#32363E4D):** Translucent fill for cards and controls, seen 1 time. Token `overlay`.
-- **Blue 30% (#5A62724D):** Stronger translucent fill, seen 1 time. Token `overlay-strong`.
-- **Blue 50% (#5A627280):** Borders and dividers, seen 25 times. Token `outline`.
-- **Blue 30% (#5A62724D):** Secondary dividers, seen 25 times. Token `outline-variant`.
+- **White (#FFFFFF):** Page background, seen 27 times. Token `background`, CSS `--bg0`.
+- **Near Black (#000000):** Primary text and headings, seen 38 times. Token `on-surface`, CSS `--tw-mask-bottom-from-color`.
+- **Dark Blue (#354450):** Secondary text, seen 52 times. Token `on-surface-variant`.
+- **Blue (#5C6D7A):** Muted text and metadata, seen 25 times. Token `on-surface-muted`, CSS `--c3`.
+- **Blue (#8D9AA5):** Subtle text and placeholders, seen 8 times. Token `on-surface-subtle`.
+- **Cool Silver 20% (#C7CDD133):** Translucent fill for cards and controls, seen 1 time. Token `overlay`.
+- **Blue 10% (#8D9AA51A):** Stronger translucent fill, seen 1 time. Token `overlay-strong`.
+- **Mist (#E6E8EA):** Borders and dividers, seen 25 times. Token `outline`.
+- **Cool Silver (#C7CDD1):** Secondary dividers, seen 25 times. Token `outline-variant`.
 - **Vivid Blue (#199AF5):** Primary buttons and calls to action, seen 13 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Vivid Teal (#00E5CC):** Accent, seen 2 times. Token `secondary`.
-- **Red (#FF4D4D):** Errors and destructive states, seen 2 times. Token `error`.
-- **Green (#34A853):** Success and positive states, seen 1 time. Token `success`.
-- **Vivid Amber (#FBBC05):** Warnings and highlights, seen 1 time. Token `warning`.
+- **Red (#FF4D4D):** Accent, seen 2 times. Token `secondary`.
 
 ## Typography
 
@@ -188,18 +174,17 @@ Most elements use 6px corners. Measured radii, most used first:
 Measured from the rendered page. Token values reference the tokens above.
 
 - **button-primary (“Sign up”):** #199AF5 fill, #FFFFFF text, 13.5px/600, 9.6px radius, padding 0px 10px.
-- **button-secondary (“Google”):** #282B31 fill, #C4C9D4 text, 15px/500, 3.22639e+07px radius, padding 0px 18px, border 0.96px solid #5A627280, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.666339 -0.0653025 -0.156603 / 0.2) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 1px 3px -1px, rgba(0, 0, 0, 0.04) 0px 1px 4px -1px`.
-- **button-ghost (“Log in”):** transparent fill, #8B94A7 text, 13.5px/500, 9.6px radius, padding 0px 10px.
+- **button-ghost (“Log in”):** transparent fill, #5C6D7A text, 13.5px/500, 9.6px radius, padding 0px 10px.
 - **link:** transparent fill, #199AF5 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #111418 for the page and lift surfaces in small steps: #282B31.
-- Do keep text in 4 levels: #C4C9D4, #FFFFFF, #8B94A7, #5A6272.
+- Do use #FFFFFF for the page.
+- Do keep text in 4 levels: #000000, #354450, #5C6D7A, #8D9AA5.
 - Do reserve #199AF5 for primary actions and key highlights.
 - Do reuse the measured spacing steps (8px, 12px, 18px).
 - Do use 6px corners on most elements; larger surfaces also use 9.6px and 12px.
-- Don't use #5A6272 for body text; it reaches 3.0:1 on #111418. Keep it for large text or metadata.
+- Don't use #8D9AA5 for body text; it reaches 2.88:1 on #FFFFFF. Keep it for large text or metadata.
 - Don't introduce new font families beyond Inter, inter-arrows-subset and ui-monospace.
 - Don't use #199AF5 for large backgrounds or body text.
 - Don't make interface transitions slower than 0.3s.
@@ -211,4 +196,4 @@ Interface transitions are quick: 0.2s, 0.15s, 0.3s.
 - **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `ease`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/typefully.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/typefully.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

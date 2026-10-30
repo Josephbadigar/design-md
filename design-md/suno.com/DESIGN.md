@@ -12,7 +12,7 @@ colors:
   on-surface-muted: "#C2C2C1"
   surface-container-low: "#000000"
   overlay: "#FFFFFF0A"
-  overlay-strong: "#FFFFFF0D"
+  overlay-strong: "#FFFFFF33"
   outline: "#FFFFFF04"
   outline-variant: "#FFFFFF26"
   primary: "#02D95C"
@@ -70,9 +70,9 @@ rounded:
   md: 12px
   full: 9999px
 spacing:
-  xs: 4px
+  xs: 3px
   sm: 8px
-  md: 12px
+  md: 16px
   lg: 24px
   xl: 40px
   gutter: 8px
@@ -85,7 +85,7 @@ components:
     textColor: "{colors.background}"
     typography: "{typography.label-md}"
     rounded: "{rounded.full}"
-    padding: 8px 14px
+    padding: 8px 16px
     height: 40px
   button-outline:
     backgroundColor: "{colors.surface-container-low}"
@@ -114,25 +114,25 @@ Suno describes itself as: “Create stunning original music for free in seconds 
 
 Type is set in **Neue Montreal** and **Editorial New**. Headlines run large; body text is 14px. The surface language is flat. Controls are pill-shaped.
 
-Measured from [suno.com](https://suno.com/) on October 21, 2026 at 1440×900 and 390×844 from 347 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [suno.com](https://suno.com/) on October 29, 2026 at 1440×900 and 390×844 from 349 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 13 roles.
 
 - **Charcoal (#101012):** Page background, seen 6 times. Token `background`.
-- **Warm Mist (#F7F4EF):** Primary text and headings, seen 30 times. Token `on-surface`.
+- **Warm Mist (#F7F4EF):** Primary text and headings, seen 29 times. Token `on-surface`.
 - **White (#FFFFFF):** Headings and emphasis, seen 5 times. Token `on-surface-strong`, CSS `--color-white`.
 - **Snow (#FCFBF9):** Secondary text, seen 5 times. Token `on-surface-variant`, CSS `--color-foreground-button-secondary`.
-- **Silver (#C2C2C1):** Muted text and metadata, seen 22 times. Token `on-surface-muted`.
+- **Silver (#C2C2C1):** Muted text and metadata, seen 23 times. Token `on-surface-muted`.
 - **Near Black (#000000):** Raised areas one step from the page, seen 3 times. Token `surface-container-low`, CSS `--tw-mask-bottom-from-color`.
-- **White 4% (#FFFFFF0A):** Translucent fill for cards and controls, seen 20 times. Token `overlay`.
-- **White 5% (#FFFFFF0D):** Stronger translucent fill, seen 3 times. Token `overlay-strong`.
-- **White 2% (#FFFFFF04):** Borders and dividers, seen 20 times. Token `outline`.
+- **White 4% (#FFFFFF0A):** Translucent fill for cards and controls, seen 19 times. Token `overlay`.
+- **White 20% (#FFFFFF33):** Stronger translucent fill, seen 1 time. Token `overlay-strong`.
+- **White 2% (#FFFFFF04):** Borders and dividers, seen 19 times. Token `outline`.
 - **White 15% (#FFFFFF26):** Secondary dividers, seen 5 times. Token `outline-variant`, CSS `--color-opacity-white-15`.
 - **Vivid Green (#02D95C):** Brand accent (CSS variable), seen 30 times. Token `primary`, CSS `--color-accent-green`.
 - **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
-- **Vivid Blue (#1F8BFF):** Brand accent (CSS variable), seen 12 times. Token `secondary`.
+- **Vivid Blue (#1F8BFF):** Accent (CSS variable). Token `secondary`.
 
 ## Typography
 
@@ -149,9 +149,9 @@ The palette has 13 roles.
 
 ## Layout
 
-Spacing is mostly on a 4px grid (79% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
+Spacing is mostly on a 4px grid (82% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
 
-- **Scale:** xs 4px, sm 8px, md 12px, lg 24px, xl 40px.
+- **Scale:** xs 3px, sm 8px, md 16px, lg 24px, xl 40px.
 - **Sections:** 100px vertical padding between major sections.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
 - **Container:** content is capped at 800px.
@@ -167,14 +167,14 @@ The design is flat: no shadows were measured. Hierarchy comes from tonal surface
 Interactive controls are pill-shaped. Measured radii, most used first:
 
 - **full (9999px):** 68 elements.
-- **md (12px):** 16 elements.
+- **md (12px):** 12 elements.
 - **sm (4px):** 4 elements.
 
 ## Components
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Join Suno for free”):** #F7F4EF fill, #101012 text, 15px/500, 9999.01px radius, padding 8px 14px.
+- **button-primary (“Join Suno for free”):** #F7F4EF fill, #101012 text, 15px/500, 9999.01px radius, padding 8px 16px.
 - **button-outline (“Create”):** #000000 fill, #FFFFFF text, 15px/500, 9999.01px radius, padding 8px 16px.
 - **button-ghost (“Products”):** transparent fill, #F7F4EF text, 15px/500, 3.35544e+07px radius, padding 6px 12px.
 - **input-field (“Chat to make music”):** transparent fill, #FFFFFF text, 18px/400, 12px radius, padding 0px 4px.
@@ -185,7 +185,7 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do use #101012 for the page and lift surfaces in small steps: #000000.
 - Do keep text in 4 levels: #F7F4EF, #FFFFFF, #FCFBF9, #C2C2C1.
 - Do use #02D95C as the brand accent: header, logo and key highlights.
-- Do reuse the measured spacing steps (8px, 12px, 24px).
+- Do reuse the measured spacing steps (8px, 16px, 24px).
 - Do make buttons and chips fully rounded (9999px); most other elements use 12px corners.
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond Neue Montreal and Editorial New.
@@ -199,4 +199,4 @@ Interface transitions are quick: 0.15s, 0.075s, 0.3s, 0.2s. Longer ambient anima
 - **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/suno.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/suno.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

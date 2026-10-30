@@ -19,7 +19,7 @@ colors:
   on-primary: "#F5F5F5"
   secondary: "#42A2FF"
   tertiary: "#0070C9"
-  success: "#004730"
+  success: "#6CF1C9"
 typography:
   display-hero:
     fontFamily: robotoLatin
@@ -52,7 +52,7 @@ typography:
     lineHeight: 1.5
   body-lg:
     fontFamily: robotoLatin
-    fontSize: 24px
+    fontSize: 18px
     fontWeight: 400
     lineHeight: 1.4
   label-md:
@@ -88,10 +88,10 @@ components:
   button-primary:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
-    typography: "{typography.label-sm}"
+    typography: "{typography.label-md}"
     rounded: "{rounded.sm}"
-    padding: 6px 12px
-    height: 32px
+    padding: 8px 16px
+    height: 40px
   button-secondary:
     backgroundColor: "#3B435C"
     textColor: "{colors.background}"
@@ -124,7 +124,7 @@ DeepL describes itself as: “Explore our AI suite and get more done: Translate 
 
 Type is set in **robotoLatin**. Headlines run large with tight negative tracking; body text is 16px. Depth comes from soft drop shadows. Controls are pill-shaped.
 
-Measured from [deepl.com](https://www.deepl.com/en) on October 21, 2026 at 1440×900 and 390×844 from 434 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [deepl.com/en](https://www.deepl.com/en) (the site sent our reader to its /en version; deepl.com was asked for) on October 29, 2026 at 1440×900 and 390×844 from 434 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
@@ -134,28 +134,28 @@ The palette has 15 roles.
 - **Charcoal (#191919):** Primary text and headings, seen 11 times. Token `on-surface`.
 - **Deep Blue (#091A2B):** Secondary text, seen 11 times. Token `on-surface-variant`.
 - **Deep Blue (#0A1B2C):** Muted text and metadata, seen 3 times. Token `on-surface-muted`.
-- **Graphite (#292929):** Subtle text and placeholders, seen 27 times. Token `on-surface-subtle`.
+- **Graphite (#292929):** Subtle text and placeholders, seen 26 times. Token `on-surface-subtle`.
 - **Snow (#F8F8F8):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`.
 - **Pale Teal (#DEFDEE):** Cards and panels, seen 1 time. Token `surface-container`, CSS `--dui-color-green-50-hex`.
 - **Snow (#F5F5F5):** Hover and pressed fills, seen 1 time. Token `surface-container-high`, CSS `--dui-color-background-action-basic-raised-hover`.
 - **Pale Cyan (#DEF5FF):** Highest raised elements, seen 11 times. Token `surface-container-highest`.
 - **White 30% (#FFFFFF4D):** Translucent fill for cards and controls, seen 34 times. Token `overlay`.
-- **Deep Blue (#0F2B46):** Primary buttons and calls to action, seen 29 times. Token `primary`.
+- **Deep Blue (#0F2B46):** Primary buttons and calls to action, seen 28 times. Token `primary`.
 - **Snow (#F5F5F5):** Text and icons on primary. Token `on-primary`.
-- **Blue (#42A2FF):** Most used accent color, seen 15 times. Token `secondary`.
-- **Blue (#0070C9):** Most used accent color, seen 14 times. Token `tertiary`, CSS `--dui-color-chart-status-info`.
-- **Deep Teal (#004730):** Success and positive states, seen 1 time. Token `success`.
+- **Blue (#42A2FF):** Accent in text, fills and borders, seen 19 times. Token `secondary`.
+- **Blue (#0070C9):** Accent in text, fills and borders, seen 9 times. Token `tertiary`, CSS `--dui-color-chart-status-info`.
+- **Teal (#6CF1C9):** Success and positive states, seen 1 time. Token `success`.
 
 ## Typography
 
-**robotoLatin** carries the whole interface. Fallback stack: `robotoLatin, robotoLatin Fallback, sans-serif`. Other loaded fonts: robotoLatin Fallback.
+**robotoLatin** carries the whole interface. Fallback stack: `robotoLatin, robotoLatin Fallback, sans-serif`.
 
 - **display-hero:** robotoLatin 56px at weight 300, line height 1.05, tracking -0.021em. Oversized hero statements.
 - **headline-display:** robotoLatin 48px at weight 300, line height 1.05, tracking -0.02em (28px on mobile). Page title (h1).
 - **headline-lg:** robotoLatin 40px at weight 300, line height 1.05, tracking -0.018em. Section headings (h2).
 - **headline-md:** robotoLatin 28px at weight 300, line height 1.15, tracking -0.017em. Sub-section headings.
 - **body-md:** robotoLatin 16px at weight 400, line height 1.5. Body text.
-- **body-lg:** robotoLatin 24px at weight 400, line height 1.4. Lead paragraphs.
+- **body-lg:** robotoLatin 18px at weight 400, line height 1.4. Lead paragraphs.
 - **label-md:** robotoLatin 16px at weight 600, line height 1.5. Buttons, navigation and labels.
 - **label-sm:** robotoLatin 14px at weight 600, line height 1.43. Small labels and badges.
 
@@ -165,7 +165,7 @@ Spacing follows a 4px grid: 91% of measured gaps and paddings are multiples of 4
 
 - **Scale:** xs 4px, sm 8px, md 12px, lg 20px, xl 40px.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
-- **Breakpoints:** 512px, 767px, 869px, 1023px, 1280px, 1400px, 1615px.
+- **Breakpoints:** 512px, 869px, 1023px, 1099px, 1280px, 1400px, 1615px.
 
 ## Elevation & Depth
 
@@ -177,8 +177,8 @@ Raised elements use soft drop shadows. The most used recipes:
 
 Interactive controls are pill-shaped. Measured radii, most used first:
 
-- **full (9999px):** 216 elements.
-- **sm (8px):** 160 elements.
+- **full (9999px):** 224 elements.
+- **sm (8px):** 156 elements.
 - **md (12px):** 20 elements.
 - **lg (16px):** 16 elements.
 
@@ -186,8 +186,8 @@ Interactive controls are pill-shaped. Measured radii, most used first:
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Close”):** #0F2B46 fill, #F5F5F5 text, 14px/600, 8px radius, padding 6px 12px, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 1px inset`.
-- **button-secondary (“Contact Sales”):** #3B435C fill, #FFFFFF text, 16px/600, 8px radius, padding 12px 20px, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 1px inset`.
+- **button-primary (“Start free trial”):** #0F2B46 fill, #F5F5F5 text, 16px/600, 8px radius, padding 8px 16px, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 1px inset`.
+- **button-secondary (“Contact sales”):** #3B435C fill, #FFFFFF text, 16px/600, 8px radius, padding 12px 20px, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 1px inset`.
 - **button-secondary-hover:** background #474E66, text #FFFFFF on hover.
 - **button-ghost (“Products”):** transparent fill, #191919 text, 16px/500, padding 4px 0px 0px 0px.
 - **card:** #091A2B fill, #191919 text, 16px/400, 16px radius, padding 0px.
@@ -207,9 +207,9 @@ Measured from the rendered page. Token values reference the tokens above.
 
 ## Motion
 
-Interface transitions are quick: 0.15s, 0.3s, 0.25s.
+Interface transitions are quick: 0.15s, 0.3s, 0.25s. Longer ambient animations run 9.2s.
 
-- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `ease-in-out`.
+- **Easing:** `linear`, `cubic-bezier(0.4, 0, 0.2, 1)`, `ease-in-out`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/deepl.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/deepl.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

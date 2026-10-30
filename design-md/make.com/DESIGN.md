@@ -99,19 +99,18 @@ components:
     rounded: "{rounded.sm}"
     padding: 10.5px 18px
     height: 47px
-  button-secondary:
-    textColor: "{colors.on-primary}"
-    typography: "{typography.label-md}"
-    rounded: "{rounded.sm}"
-    padding: 12px 20px
-    height: 52px
+  button-primary-hover:
+    backgroundColor: "#803BBF"
   button-outline:
     backgroundColor: "{colors.background}"
-    textColor: "#58475A"
-    typography: "{typography.label-md}"
+    textColor: "{colors.on-surface-variant}"
+    typography: "{typography.body-md}"
     rounded: "{rounded.sm}"
-    padding: 12px 20px
-    height: 50px
+    padding: 10.5px 18px
+    height: 47px
+  button-outline-hover:
+    backgroundColor: "{colors.surface-container-low}"
+    textColor: "#3D2F40"
   button-ghost:
     textColor: "{colors.on-surface}"
     typography: "{typography.label-md}"
@@ -129,23 +128,23 @@ Make describes itself as: “Automate your work. Make allows you to visually bui
 
 Type is set in **Satoshi**. Headlines run large with tight negative tracking; body text is 16px. Depth comes from soft drop shadows. Corners are mostly 16px.
 
-Measured from [make.com](https://www.make.com/) on October 21, 2026 at 1440×900 and 390×844 from 318 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [make.com](https://www.make.com/) on October 29, 2026 at 1440×900 and 390×844 from 314 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 11 roles, plus gradient stops #8F4BD2.
+The palette has 11 roles.
 
-- **White (#FFFFFF):** Page background, seen 21 times. Token `background`, CSS `--_theme---button-primary--text-hover`.
+- **White (#FFFFFF):** Page background, seen 20 times. Token `background`, CSS `--_theme---button-primary--text-hover`.
 - **Deep Purple (#342237):** Primary text and headings, seen 30 times. Token `on-surface`.
 - **Near Black (#000000):** Headings and emphasis, seen 4 times. Token `on-surface-strong`.
 - **Purple (#69586C):** Secondary text, seen 26 times. Token `on-surface-variant`.
 - **Snow (#FAFAFA):** Raised areas one step from the page, seen 9 times. Token `surface-container-low`.
-- **Silver (#DAD4DA):** Borders and dividers, seen 7 times. Token `outline`, CSS `--_theme---feature-card--border-outer`.
+- **Silver (#DAD4DA):** Borders and dividers, seen 6 times. Token `outline`, CSS `--_theme---feature-card--border-outer`.
 - **Mist (#E9E6E9):** Secondary dividers, seen 4 times. Token `outline-variant`, CSS `--_theme---hero-center-frame-inner`.
-- **Violet (#8F4BD2):** Primary buttons and calls to action, seen 18 times. Token `primary`, CSS `--_theme---button-primary--border`.
+- **Violet (#8F4BD2):** Primary buttons and calls to action, seen 14 times. Token `primary`, CSS `--_theme---button-primary--border`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Light Violet (#E1B9F9):** Brand accent (CSS variable), seen 24 times. Token `secondary`.
-- **Light Violet (#CF8BF5):** Brand accent (CSS variable), seen 12 times. Token `tertiary`.
+- **Light Violet (#E1B9F9):** Accent (CSS variable). Token `secondary`.
+- **Light Violet (#CF8BF5):** Accent (CSS variable). Token `tertiary`.
 
 ## Typography
 
@@ -163,7 +162,7 @@ The palette has 11 roles, plus gradient stops #8F4BD2.
 
 ## Layout
 
-Spacing does not follow a strict grid: 69% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 70% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
 - **Scale:** sm 8px, md 10.5px, lg 32px, xl 64px.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
@@ -175,23 +174,23 @@ Raised elements use soft drop shadows. The most used recipes:
 
 - `rgba(10, 13, 18, 0.05) 0px 1px 2px 0px, rgba(10, 13, 18, 0.05) 0px -2px 0px 0px inset, rgba(10, 13, 18, 0.18) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.12) 0px 0px 0px 2px inset`
 - `rgba(10, 13, 18, 0.05) 0px 1px 2px 0px, rgba(10, 13, 18, 0.05) 0px -2px 0px 0px inset`
-- `rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgba(0, 0, 0, 0.05) 0px -1px 0px 0px inset`
 
 ## Shapes
 
 Most elements use 16px corners. Measured radii, most used first:
 
 - **md (16px):** 72 elements.
-- **sm (8px):** 64 elements.
-- **lg (24px):** 12 elements.
+- **sm (8px):** 52 elements.
+- **lg (24px):** 4 elements.
 
 ## Components
 
 Measured from the rendered page. Token values reference the tokens above.
 
 - **button-primary (“Try it free”):** #8F4BD2 fill, #FFFFFF text, 16px/400, 8px radius, padding 10.5px 18px, border 1px solid #8F4BD2, shadow `rgba(10, 13, 18, 0.05) 0px 1px 2px 0px, rgba(10, 13, 18, 0.05) 0px -2px 0px 0px inset, rgba(10, 13, 18, 0.18) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.12) 0px 0px 0px 2px inset`.
-- **button-secondary (“Understood”):** transparent fill, #FFFFFF text, 16px/500, 8px radius, padding 12px 20px, shadow `rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgba(0, 0, 0, 0.05) 0px -2px 0px 0px inset, rgba(0, 0, 0, 0.18) 0px 0px 0px 1px inset`.
-- **button-outline (“Select Cookies Settings”):** #FFFFFF fill, #58475A text, 16px/500, 8px radius, padding 12px 20px, border 1px solid #DAD4DA, shadow `rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgba(0, 0, 0, 0.05) 0px -1px 0px 0px inset`.
+- **button-primary-hover:** background #803BBF, text #FFFFFF on hover.
+- **button-outline (“Talk to sales”):** #FFFFFF fill, #69586C text, 16px/400, 8px radius, padding 10.5px 18px, border 1px solid #DAD4DA, shadow `rgba(10, 13, 18, 0.05) 0px 1px 2px 0px, rgba(10, 13, 18, 0.05) 0px -2px 0px 0px inset`.
+- **button-outline-hover:** background #FAFAFA, text #3D2F40 on hover.
 - **button-ghost (“What is Make?”):** transparent fill, #342237 text, 16px/500, padding 0px.
 - **link:** transparent fill, #69586C text, padding 0px.
 
@@ -209,9 +208,9 @@ Measured from the rendered page. Token values reference the tokens above.
 
 ## Motion
 
-Interface transitions are quick: 0.001s, 0.3s, 0.15s, 0.6s.
+Interface transitions are quick: 0.48s, 0.3s, 0.6s, 0.2s.
 
-- **Easing:** `ease`, `cubic-bezier(0.4, 0, 0.2, 1)`, `cubic-bezier(0.33, 1, 0.68, 1)`.
+- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `ease`, `cubic-bezier(0.33, 1, 0.68, 1)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/make.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/make.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

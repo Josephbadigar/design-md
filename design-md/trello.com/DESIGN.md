@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Trello
-description: "Light interface measured from trello.com: Charlie Display type with Charlie Text, vivid blue accents, tonal surfaces and pill-shaped controls."
+description: "Light interface measured from trello.com: Charlie Display type with Charlie Text, vivid blue accents, tonal surfaces and 4.8px corners."
 colors:
   background: "#F4F5F7"
   surface: "#F4F5F7"
@@ -9,7 +9,7 @@ colors:
   on-background: "#091E42"
   on-surface-strong: "#000000"
   on-surface-variant: "#172B4D"
-  surface-container-low: "#F0F0F0"
+  surface-container-low: "#EFEFEF"
   surface-container: "#FFFFFF"
   surface-container-high: "#DEEBFF"
   outline: "#FFFFFF"
@@ -49,16 +49,21 @@ typography:
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.33
-  label-md:
+  label-lg:
     fontFamily: Charlie Text
     fontSize: 20px
     fontWeight: 400
     lineHeight: 1.5
-  label-sm:
+  label-md:
     fontFamily: Charlie Display
     fontSize: 16px
     fontWeight: 500
     lineHeight: 1.25
+  label-sm:
+    fontFamily: Charlie Text
+    fontSize: 13px
+    fontWeight: 600
+    lineHeight: 1.5
   headline-display-mobile:
     fontFamily: Charlie Display
     fontSize: 32px
@@ -70,6 +75,7 @@ typography:
     fontWeight: 500
     lineHeight: 1.33
 rounded:
+  sm: 2px
   md: 4.8px
   full: 9999px
 spacing:
@@ -107,9 +113,9 @@ components:
 
 Trello describes itself as: “Make the impossible, possible with Trello. The ultimate tool to boost your productivity. Escape the clutter and chaos—stay efficient with Inbox, Boards, and Planner from anywhere, even on mobile.” The interface is light, built on **Snow (#F4F5F7)** with **Deep Blue (#091E42)** text, and **Vivid Blue (#0065FF)** as the main accent.
 
-Type is set in **Charlie Display** and **Charlie Text**. Headlines run large; body text is 16px. Depth comes from soft drop shadows. Controls are pill-shaped.
+Type is set in **Charlie Display** and **Charlie Text**. Headlines run large; body text is 16px. Depth comes from soft drop shadows. Corners are mostly 4.8px.
 
-Measured from [trello.com](https://trello.com/) on October 21, 2026 at 1440×900 and 390×844 from 196 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [trello.com](https://trello.com/) on October 29, 2026 at 1440×900 and 390×844 from 203 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
@@ -118,16 +124,16 @@ The palette has 13 roles.
 - **Snow (#F4F5F7):** Page background, seen 2 times. Token `background`.
 - **Deep Blue (#091E42):** Primary text and headings, seen 34 times. Token `on-surface`.
 - **Near Black (#000000):** Headings and emphasis, seen 4 times. Token `on-surface-strong`.
-- **Deep Blue (#172B4D):** Secondary text, seen 6 times. Token `on-surface-variant`.
-- **Mist (#F0F0F0):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`.
-- **White (#FFFFFF):** Cards and panels, seen 6 times. Token `surface-container`.
+- **Deep Blue (#172B4D):** Secondary text, seen 7 times. Token `on-surface-variant`.
+- **Mist (#EFEFEF):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`.
+- **White (#FFFFFF):** Cards and panels, seen 7 times. Token `surface-container`.
 - **Pale Blue (#DEEBFF):** Hover and pressed fills, seen 1 time. Token `surface-container-high`.
 - **White (#FFFFFF):** Borders and dividers, seen 5 times. Token `outline`.
 - **Cool Mist (#DFE1E6):** Secondary dividers, seen 2 times. Token `outline-variant`.
 - **Vivid Blue (#0065FF):** Primary buttons and calls to action, seen 9 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Blue (#0052CC):** Brand color in the logo, seen 30 times. Token `secondary`.
-- **Dark Blue (#253858):** Brand color in the logo, seen 15 times. Token `tertiary`.
+- **Blue (#0052CC):** Accent in the logo, seen 24 times. Token `secondary`.
+- **Dark Blue (#253858):** Accent in the logo, seen 6 times. Token `tertiary`.
 
 ## Typography
 
@@ -139,12 +145,13 @@ The palette has 13 roles.
 - **body-md:** Charlie Text 16px at weight 400, line height 1.5. Body text.
 - **body-lg:** Charlie Display 20px at weight 500, line height 1.2. Lead paragraphs.
 - **body-sm:** Charlie Text 12px at weight 400, line height 1.33. Secondary and small text.
-- **label-md:** Charlie Text 20px at weight 400, line height 1.5. Buttons, navigation and labels.
-- **label-sm:** Charlie Display 16px at weight 500, line height 1.25. Small labels and badges.
+- **label-lg:** Charlie Text 20px at weight 400, line height 1.5. Large buttons and tabs.
+- **label-md:** Charlie Display 16px at weight 500, line height 1.25. Buttons, navigation and labels.
+- **label-sm:** Charlie Text 13px at weight 600, line height 1.5. Small labels and badges.
 
 ## Layout
 
-Spacing is mostly on a 4px grid (90% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
+Spacing is mostly on a 4px grid (87% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
 
 - **Scale:** xs 4px, sm 8px, md 16px, lg 24px.
 
@@ -156,10 +163,11 @@ Raised elements use soft drop shadows. The most used recipes:
 
 ## Shapes
 
-Interactive controls are pill-shaped. Measured radii, most used first:
+Most elements use 4.8px corners. Measured radii, most used first:
 
 - **md (4.8px):** 76 elements.
 - **full (9999px):** 20 elements.
+- **sm (2px):** 12 elements.
 
 ## Components
 
@@ -173,11 +181,11 @@ Measured from the rendered page. Token values reference the tokens above.
 
 ## Do's and Don'ts
 
-- Do use #F4F5F7 for the page and lift surfaces in small steps: #F0F0F0, #FFFFFF, #DEEBFF.
+- Do use #F4F5F7 for the page and lift surfaces in small steps: #EFEFEF, #FFFFFF, #DEEBFF.
 - Do keep text in 3 levels: #091E42, #000000, #172B4D.
 - Do reserve #0065FF for primary actions and key highlights.
 - Do reuse the measured spacing steps (8px, 16px, 24px).
-- Do make buttons and chips fully rounded (9999px); most other elements use 4.8px corners.
+- Do use 4.8px corners on most elements; larger surfaces also use 2px.
 - Don't introduce new font families beyond Charlie Display and Charlie Text.
 - Don't use #0065FF for large backgrounds or body text.
 - Don't make interface transitions slower than 0.3s.
@@ -189,4 +197,4 @@ Interface transitions are quick: 0.25s, 0.3s, 0.15s.
 - **Easing:** `ease-out`, `ease`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/trello.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/trello.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

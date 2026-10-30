@@ -7,6 +7,7 @@ colors:
   surface: "#FFFEFB"
   on-surface: "#201515"
   on-background: "#201515"
+  on-surface-strong: "#000000"
   on-surface-variant: "#36342E"
   on-surface-muted: "#605D52"
   surface-container-low: "#F8F4F0"
@@ -15,11 +16,8 @@ colors:
   outline: "#DFDCD2"
   outline-variant: "#ECEAE3"
   primary: "#FF4F00"
-  on-primary: "#201515"
+  on-primary: "#FFFEFB"
   secondary: "#4285F4"
-  success: "#34A853"
-  warning: "#FBBC05"
-  error: "#EA4335"
 typography:
   headline-display:
     fontFamily: Degular Display
@@ -95,21 +93,21 @@ components:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
     typography: "{typography.body-md}"
-    rounded: "{rounded.sm}"
-    padding: 6px 10px
-    height: 36px
-  button-primary-hover:
-    backgroundColor: "{colors.surface-container-low}"
-  button-secondary:
-    backgroundColor: "{colors.primary}"
-    textColor: "{colors.background}"
-    typography: "{typography.body-md}"
     rounded: 18px
     padding: 6px 12px
     height: 36px
+  button-primary-hover:
+    backgroundColor: "#D24304"
+  button-secondary:
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.on-surface}"
+    typography: "{typography.body-md}"
+    rounded: "{rounded.sm}"
+    padding: 6px 10px
+    height: 36px
   button-tertiary:
     backgroundColor: "{colors.on-surface}"
-    textColor: "{colors.background}"
+    textColor: "{colors.on-primary}"
     typography: "{typography.body-lg}"
     rounded: "{rounded.sm}"
     padding: 12px 24px
@@ -139,27 +137,25 @@ Zapier describes itself as: “Build and scale AI workflows and agents across 9,
 
 Type is set in **Degular Display** and **Inter**. Headlines run large; body text is 14px. Depth comes from hairline borders and inset highlights rather than drop shadows. Controls are pill-shaped.
 
-Measured from [zapier.com](https://zapier.com/) on October 21, 2026 at 1440×900 and 390×844 from 386 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [zapier.com](https://zapier.com/) on October 29, 2026 at 1440×900 and 390×844 from 409 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 15 roles.
+The palette has 13 roles.
 
 - **Snow (#FFFEFB):** Page background, seen 6 times. Token `background`.
-- **Warm Charcoal (#201515):** Primary text and headings, seen 42 times. Token `on-surface`.
-- **Warm Graphite (#36342E):** Secondary text, seen 65 times. Token `on-surface-variant`.
+- **Warm Charcoal (#201515):** Primary text and headings, seen 54 times. Token `on-surface`.
+- **Near Black (#000000):** Headings and emphasis, seen 11 times. Token `on-surface-strong`.
+- **Warm Graphite (#36342E):** Secondary text, seen 63 times. Token `on-surface-variant`.
 - **Warm Slate (#605D52):** Muted text and metadata, seen 16 times. Token `on-surface-muted`.
 - **Warm Snow (#F8F4F0):** Raised areas one step from the page, seen 11 times. Token `surface-container-low`.
 - **Warm Mist (#ECEAE3):** Cards and panels, seen 6 times. Token `surface-container`.
 - **Warm Slate 75% (#605D52BF):** Translucent fill for cards and controls, seen 3 times. Token `overlay`.
 - **Warm Silver (#DFDCD2):** Borders and dividers, seen 2 times. Token `outline`.
 - **Warm Mist (#ECEAE3):** Secondary dividers, seen 2 times. Token `outline-variant`.
-- **Vivid Orange (#FF4F00):** Primary buttons and calls to action, seen 18 times. Token `primary`.
-- **Warm Charcoal (#201515):** Text and icons on primary. Token `on-primary`.
+- **Vivid Orange (#FF4F00):** Primary buttons and calls to action, seen 19 times. Token `primary`.
+- **Snow (#FFFEFB):** Text and icons on primary. Token `on-primary`.
 - **Vivid Blue (#4285F4):** Accent, seen 1 time. Token `secondary`.
-- **Green (#34A853):** Success and positive states, seen 1 time. Token `success`.
-- **Vivid Amber (#FBBC05):** Warnings and highlights, seen 1 time. Token `warning`.
-- **Vivid Red (#EA4335):** Errors and destructive states, seen 1 time. Token `error`.
 
 ## Typography
 
@@ -178,7 +174,7 @@ The palette has 15 roles.
 
 ## Layout
 
-Spacing is mostly on a 4px grid (81% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
+Spacing is mostly on a 4px grid (72% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
 
 - **Scale:** xs 4px, sm 6px, md 16px, lg 24px, xl 40px.
 - **Sections:** 120px vertical padding between major sections.
@@ -205,9 +201,9 @@ Interactive controls are pill-shaped. Measured radii, most used first:
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Products”):** #FF4F00 fill, #201515 text, 14px/400, 4px radius, padding 6px 10px.
-- **button-primary-hover:** background #F8F4F0, text #201515 on hover.
-- **button-secondary (“Sign up”):** #FF4F00 fill, #FFFEFB text, 14px/600, 18px radius, padding 6px 12px, border 1px solid #FF4F00.
+- **button-primary (“Sign up”):** #FF4F00 fill, #FFFEFB text, 14px/600, 18px radius, padding 6px 12px, border 1px solid #FF4F00.
+- **button-primary-hover:** background #D24304, text #FFFEFB on hover.
+- **button-secondary (“Products”):** #FF4F00 fill, #201515 text, 14px/400, 4px radius, padding 6px 10px.
 - **button-tertiary (“Explore Zapier for Enterprise”):** #201515 fill, #FFFEFB text, 18px/600, 4px radius, padding 12px 24px, border 1px solid #201515.
 - **button-tertiary-hover:** background #36342E, text #FFFEFB on hover.
 - **button-ghost (“Products”):** transparent fill, #201515 text, 14px/400, 4px radius, padding 6px 10px.
@@ -217,7 +213,7 @@ Measured from the rendered page. Token values reference the tokens above.
 ## Do's and Don'ts
 
 - Do use #FFFEFB for the page and lift surfaces in small steps: #F8F4F0, #ECEAE3.
-- Do keep text in 3 levels: #201515, #36342E, #605D52.
+- Do keep text in 4 levels: #201515, #000000, #36342E, #605D52.
 - Do reserve #FF4F00 for primary actions and key highlights.
 - Do reuse the measured spacing steps (6px, 16px, 24px).
 - Do make buttons and chips fully rounded (9999px); most other elements use 4px corners.
@@ -228,8 +224,9 @@ Measured from the rendered page. Token values reference the tokens above.
 
 ## Motion
 
-Interface transitions are quick: 0.2s, 0.25s, 0.3s.
+Interface transitions are quick: 0.2s, 0.25s, 0.3s, 0.15s.
 
 - **Easing:** `ease`, `cubic-bezier(0.16, 1, 0.3, 1)`, `ease-in-out`.
+- **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/zapier.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/zapier.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

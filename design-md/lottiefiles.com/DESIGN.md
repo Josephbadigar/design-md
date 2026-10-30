@@ -11,9 +11,9 @@ colors:
   surface-container-low: "#FAFAFA"
   surface-container: "#FFF8E5"
   surface-container-high: "#F4F4F5"
-  surface-container-highest: "#F3F4F6"
+  surface-container-highest: "#E9E9E9"
   outline: "#E4E4E7"
-  outline-variant: "#E5E7EB"
+  outline-variant: "#FFFFFF33"
   primary: "#019D91"
   on-primary: "#FAFAFA"
   inverse-surface: "#000000"
@@ -58,22 +58,11 @@ typography:
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.43
-  caption:
-    fontFamily: Inter LF
-    fontSize: 12px
-    fontWeight: 400
-    lineHeight: 1.4
-    letterSpacing: 0.05em
   label-md:
     fontFamily: Inter LF
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
-  label-sm:
-    fontFamily: Inter LF
-    fontSize: 14px
-    fontWeight: 500
-    lineHeight: 1.43
   headline-display-mobile:
     fontFamily: DM Sans LF
     fontSize: 48px
@@ -105,12 +94,10 @@ components:
   button-primary:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
-    typography: "{typography.label-sm}"
+    typography: "{typography.body-sm}"
     rounded: "{rounded.sm}"
     padding: 8px 16px
     height: 36px
-  button-primary-hover:
-    backgroundColor: "#019D91E6"
   button-outline:
     backgroundColor: "{colors.surface-container-low}"
     textColor: "{colors.on-surface}"
@@ -137,7 +124,7 @@ LottieFiles describes itself as: “Effortlessly bring the smallest, free, ready
 
 Type is set in **DM Sans LF** and **Inter LF**. Headlines run large with tight negative tracking; body text is 16px. Depth comes from soft drop shadows. Corners are mostly 16px.
 
-Measured from [lottiefiles.com](https://lottiefiles.com/) on October 21, 2026 at 1440×900 and 390×844 from 403 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [lottiefiles.com](https://lottiefiles.com/) on October 29, 2026 at 1440×900 and 390×844 from 403 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
@@ -148,10 +135,10 @@ The palette has 12 roles.
 - **Cool Slate (#71717B):** Secondary text, seen 13 times. Token `on-surface-variant`.
 - **Snow (#FAFAFA):** Raised areas one step from the page, seen 5 times. Token `surface-container-low`.
 - **Pale Amber (#FFF8E5):** Cards and panels, seen 3 times. Token `surface-container`.
-- **Snow (#F4F4F5):** Hover and pressed fills, seen 34 times. Token `surface-container-high`.
-- **Snow (#F3F4F6):** Highest raised elements, seen 3 times. Token `surface-container-highest`.
+- **Snow (#F4F4F5):** Hover and pressed fills, seen 37 times. Token `surface-container-high`.
+- **Mist (#E9E9E9):** Highest raised elements, seen 3 times. Token `surface-container-highest`.
 - **Mist (#E4E4E7):** Borders and dividers, seen 2 times. Token `outline`.
-- **Cool Mist (#E5E7EB):** Secondary dividers, seen 2 times. Token `outline-variant`.
+- **White 20% (#FFFFFF33):** Secondary dividers, seen 1 time. Token `outline-variant`.
 - **Dark Teal (#019D91):** Primary buttons and calls to action, seen 3 times. Token `primary`.
 - **Snow (#FAFAFA):** Text and icons on primary. Token `on-primary`.
 - **Near Black (#000000):** High-contrast fills, seen 12 times. Token `inverse-surface`, CSS `--cc-btn-primary-hover-border-color`.
@@ -167,9 +154,7 @@ The palette has 12 roles.
 - **body-md:** DM Sans LF 16px at weight 400, line height 1.5. Body text.
 - **body-lg:** DM Sans LF 20px at weight 400, line height 1.4, tracking -0.01em. Lead paragraphs.
 - **body-sm:** DM Sans LF 14px at weight 400, line height 1.43. Secondary and small text.
-- **caption:** Inter LF 12px at weight 400, line height 1.4, tracking 0.05em. Captions and fine print.
 - **label-md:** Inter LF 16px at weight 400, line height 1.5. Buttons, navigation and labels.
-- **label-sm:** Inter LF 14px at weight 500, line height 1.43. Small labels and badges.
 
 ## Layout
 
@@ -201,14 +186,13 @@ Most elements use 16px corners. Measured radii, most used first:
 Measured from the rendered page. Token values reference the tokens above.
 
 - **button-primary (“Sign up”):** #019D91 fill, #FAFAFA text, 14px/500, 6px radius, padding 8px 16px, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px`.
-- **button-primary-hover:** background #019D91E6, text #FAFAFA on hover.
 - **button-outline (“Tiny file format but mighty”):** #FAFAFA fill, #09090B text, 16px/400, 16px radius, padding 16px.
 - **button-ghost (“Search animations”):** #FAFAFA fill, #71717B text, 14px/400, 6px radius, padding 6px 12px 6px 32px.
 - **link:** transparent fill, #9F9FA9 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #FFFFFF for the page and lift surfaces in small steps: #FAFAFA, #FFF8E5, #F4F4F5, #F3F4F6.
+- Do use #FFFFFF for the page and lift surfaces in small steps: #FAFAFA, #FFF8E5, #F4F4F5, #E9E9E9.
 - Do keep text in 2 levels: #09090B, #71717B.
 - Do reserve #019D91 for primary actions and key highlights.
 - Do set headlines in DM Sans LF with tight tracking (-0.05em).
@@ -225,4 +209,4 @@ Interface transitions are quick: 0.3s, 0.15s.
 - **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/lottiefiles.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/lottiefiles.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

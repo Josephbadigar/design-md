@@ -1,22 +1,20 @@
 ---
 version: alpha
 name: Bitwarden
-description: "Dark interface measured from bitwarden.com: Inter Variable type, dark blue accents, flat surfaces and 20px corners."
+description: "Light interface measured from bitwarden.com: Inter Variable type, vivid blue accents, flat surfaces and 20px corners."
 colors:
-  background: "#0A171F"
-  surface: "#0A171F"
-  on-surface: "#FFFFFF"
-  on-background: "#FFFFFF"
-  on-surface-variant: "#F3F6F9"
-  on-surface-muted: "#B8C0CB"
-  overlay: "#020F6633"
-  outline: "#FFFFFF1A"
-  outline-variant: "#5B5D6066"
-  primary: "#0C3276"
+  background: "#FFFFFF"
+  surface: "#FFFFFF"
+  on-surface: "#000000"
+  on-background: "#000000"
+  on-surface-variant: "#0A171F"
+  on-surface-muted: "#33465A"
+  outline: "#9EA7B5"
+  outline-variant: "#0000001A"
+  primary: "#175DDC"
   on-primary: "#FFFFFF"
-  secondary: "#65ABFF"
+  secondary: "#0C3276"
   tertiary: "#FF4E63"
-  success: "#6BF178"
 typography:
   headline-display:
     fontFamily: Inter Variable
@@ -105,69 +103,50 @@ spacing:
   container: 1472px
 components:
   button-primary:
-    backgroundColor: "{colors.on-surface}"
-    textColor: "#000000"
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.on-primary}"
     typography: "{typography.label-md}"
     padding: 12px 20px
     height: 52px
-  button-primary-hover:
-    backgroundColor: "#A2F4FD"
-  button-secondary:
-    backgroundColor: "{colors.secondary}"
-    textColor: "#1D3248"
-    typography: "{typography.body-sm}"
-    rounded: "{rounded.md}"
-    padding: 0px 16px
-    height: 40px
-  button-secondary-hover:
-    backgroundColor: "{colors.on-surface-variant}"
   button-outline:
-    textColor: "{colors.on-surface-variant}"
-    typography: "{typography.body-sm}"
-    rounded: "{rounded.lg}"
-    padding: 0px 16px
-    height: 40px
+    backgroundColor: "{colors.background}"
+    textColor: "{colors.on-surface}"
+    typography: "{typography.label-md}"
+    padding: 12px 20px
+    height: 52px
   button-ghost:
-    textColor: "{colors.on-surface-variant}"
-    typography: "{typography.body-sm}"
-    rounded: "{rounded.lg}"
-    padding: 0px 16px
-  input-field:
-    backgroundColor: "#1D3248"
-    textColor: "{colors.on-surface-variant}"
-    typography: "{typography.body-md}"
-    rounded: "{rounded.sm}"
-    padding: 0px 32px 0px 40px
+    textColor: "{colors.on-surface}"
+    typography: "{typography.label-md}"
+    padding: 12px 20px
+    height: 52px
   link:
-    textColor: "#CBD2DEE6"
+    textColor: "#1D3248E6"
 ---
 
 # Bitwarden Design System
 
 ## Overview
 
-Bitwarden describes itself as: “Bitwarden is the trusted, open source password manager for individuals, teams, and enterprises. Securely store, share, and manage passwords, passkeys, and secrets. Free to start.” The interface is dark, built on **Deep Blue (#0A171F)** with **White (#FFFFFF)** text, and **Dark Blue (#0C3276)** as the main accent.
+Bitwarden describes itself as: “Bitwarden is the trusted, open source password manager for individuals, teams, and enterprises. Securely store, share, and manage passwords, passkeys, and secrets. Free to start.” The interface is light, built on **White (#FFFFFF)** with **Near Black (#000000)** text, and **Vivid Blue (#175DDC)** as the main accent.
 
 Type is set in **Inter Variable**. Headlines run large with tight negative tracking; body text is 16px. The surface language is flat. Corners are mostly 20px.
 
-Measured from [bitwarden.com](https://bitwarden.com/) on October 21, 2026 at 1440×900 and 390×844 from 381 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [bitwarden.com](https://bitwarden.com/) on October 29, 2026 at 1440×900 and 390×844 from 390 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 12 roles, plus gradient stops #65ABFF.
+The palette has 10 roles, plus gradient stops #175DDC, #0C3276.
 
-- **Deep Blue (#0A171F):** Page background, seen 4 times. Token `background`, CSS `--color-secondary-900`.
-- **White (#FFFFFF):** Primary text and headings, seen 96 times. Token `on-surface`, CSS `--color-white`.
-- **Cool Snow (#F3F6F9):** Secondary text, seen 14 times. Token `on-surface-variant`.
-- **Light Blue (#B8C0CB):** Muted text and metadata, seen 5 times. Token `on-surface-muted`.
-- **Deep Indigo 20% (#020F6633):** Translucent fill for cards and controls, seen 1 time. Token `overlay`.
-- **White 10% (#FFFFFF1A):** Borders and dividers, seen 2 times. Token `outline`.
-- **Slate 40% (#5B5D6066):** Secondary dividers, seen 1 time. Token `outline-variant`.
-- **Dark Blue (#0C3276):** Brand color in the header. Token `primary`.
+- **White (#FFFFFF):** Page background, seen 7 times. Token `background`, CSS `--color-white`.
+- **Near Black (#000000):** Primary text and headings, seen 30 times. Token `on-surface`.
+- **Deep Blue (#0A171F):** Secondary text, seen 11 times. Token `on-surface-variant`, CSS `--color-secondary-900`.
+- **Dark Blue (#33465A):** Muted text and metadata, seen 4 times. Token `on-surface-muted`.
+- **Blue (#9EA7B5):** Borders and dividers, seen 2 times. Token `outline`.
+- **Near Black 10% (#0000001A):** Secondary dividers, seen 2 times. Token `outline-variant`.
+- **Vivid Blue (#175DDC):** Primary buttons and calls to action, seen 47 times. Token `primary`, CSS `--k-banner-buttons-tertiary-text-color`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Blue (#65ABFF):** Secondary buttons, seen 40 times. Token `secondary`.
-- **Red (#FF4E63):** Brand accent (CSS variable), seen 12 times. Token `tertiary`.
-- **Green (#6BF178):** Success and positive states, seen 1 time. Token `success`.
+- **Dark Blue (#0C3276):** Accent in the header, seen 1 time. Token `secondary`.
+- **Red (#FF4E63):** Accent (CSS variable). Token `tertiary`.
 
 ## Typography
 
@@ -197,40 +176,36 @@ Spacing follows a 4px grid: 97% of measured gaps and paddings are multiples of 4
 
 ## Elevation & Depth
 
-The design is flat: no shadows were measured. Hierarchy comes from color contrast and #FFFFFF1A borders.
+The design is flat: no shadows were measured. Hierarchy comes from color contrast and #9EA7B5 borders.
 
 ## Shapes
 
 Most elements use 20px corners. Measured radii, most used first:
 
 - **md (20px):** 36 elements.
-- **sm (8px):** 20 elements.
+- **sm (8px):** 24 elements.
 - **lg (29px):** 8 elements.
 
 ## Components
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Get Started Free”):** #FFFFFF fill, #000000 text, 16px/500, 3.35544e+07px radius, padding 12px 20px, border 2px solid #FFFFFF.
-- **button-primary-hover:** background #A2F4FD, text #000000 on hover.
-- **button-secondary (“Accept All”):** #65ABFF fill, #1D3248 text, 14px/600, 20px radius, padding 0px 16px, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px`.
-- **button-secondary-hover:** background #F3F6F9, text #1D3248 on hover.
-- **button-outline (“Reject All”):** transparent fill, #F3F6F9 text, 14px/600, 29px radius, padding 0px 16px, border 1px solid #F3F6F9, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px`.
-- **button-ghost (“Reject All”):** transparent fill, #F3F6F9 text, 14px/600, 29px radius, padding 0px 16px, border 1px solid #F3F6F9, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px`.
-- **input-field:** #1D3248 fill, #F3F6F9 text, 16px/300, 8px radius, padding 0px 32px 0px 40px, border 1px solid #8F98A6.
-- **link:** transparent fill, #CBD2DEE6 text, padding 0px.
+- **button-primary (“Get Started Free”):** #175DDC fill, #FFFFFF text, 16px/500, 3.35544e+07px radius, padding 12px 20px, border 2px solid #175DDC.
+- **button-outline (“Talk to Sales”):** #FFFFFF fill, #000000 text, 16px/500, 3.35544e+07px radius, padding 12px 20px, border 2px solid #175DDC.
+- **button-ghost (“Talk to Sales”):** transparent fill, #000000 text, 16px/500, 3.35544e+07px radius, padding 12px 20px, border 2px solid #175DDC.
+- **link:** transparent fill, #1D3248E6 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #0A171F for the page.
-- Do keep text in 3 levels: #FFFFFF, #F3F6F9, #B8C0CB.
-- Do use #0C3276 as the brand accent: header, logo and key highlights.
+- Do use #FFFFFF for the page.
+- Do keep text in 3 levels: #000000, #0A171F, #33465A.
+- Do reserve #175DDC for primary actions and key highlights.
 - Do set headlines in Inter Variable with tight tracking (-0.014em).
 - Do keep spacing on the 4px grid.
 - Do use 20px corners on most elements; larger surfaces also use 8px and 29px.
 - Don't add drop shadows for depth; use borders and contrast.
 - Don't introduce new font families beyond Inter Variable.
-- Don't use #0C3276 for large backgrounds or body text.
+- Don't use #175DDC for large backgrounds or body text.
 - Don't make interface transitions slower than 0.3s.
 
 ## Motion
@@ -240,4 +215,4 @@ Interface transitions are quick: 0.15s, 0.3s, 0.2s, 0.25s.
 - **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `ease`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/bitwarden.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/bitwarden.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

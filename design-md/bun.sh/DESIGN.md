@@ -1,28 +1,23 @@
 ---
 version: alpha
 name: Bun
-description: "Dark monochrome interface measured from bun.sh: Archivo type with system-ui, tonal surfaces and pill-shaped controls."
+description: "Light monochrome interface measured from bun.sh: Archivo type with system-ui, tonal surfaces and pill-shaped controls."
 colors:
-  background: "#0D0A0C"
-  surface: "#0D0A0C"
-  on-surface: "#EAEAE8"
-  on-background: "#EAEAE8"
-  on-surface-strong: "#FFFFFF"
-  on-surface-variant: "#A8A8A5"
-  on-surface-muted: "#80807E"
-  surface-container-low: "#0E0E0E"
-  surface-container: "#000000"
-  surface-container-high: "#171316"
-  surface-container-highest: "#1E1E21"
-  overlay: "#EAEAE899"
+  background: "#FFFFFF"
+  surface: "#FFFFFF"
+  on-surface: "#0A0A0A"
+  on-background: "#0A0A0A"
+  on-surface-variant: "#525252"
+  on-surface-muted: "#707070"
+  surface-container-low: "#F6F6F6"
+  overlay: "#0A0A0A99"
   overlay-strong: "#FFFFFF26"
-  outline: "#28282B"
-  outline-variant: "#3E3E42"
-  primary: "#EAEAE8"
-  on-primary: "#0D0A0C"
-  secondary: "#FF2E97"
-  success: "#28DC82"
-  warning: "#FCD34D"
+  outline: "#E2E2E2"
+  outline-variant: "#FFFFFF33"
+  primary: "#0C0C0C"
+  on-primary: "#FFFFFF"
+  secondary: "#D60066"
+  tertiary: "#FF1F8F"
 typography:
   display-hero:
     fontFamily: Archivo
@@ -106,61 +101,55 @@ components:
   button-primary:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
-    rounded: 0px
-    padding: 0px 14px
-    height: 36px
-  button-primary-hover:
-    backgroundColor: "{colors.secondary}"
-    textColor: "{colors.on-surface-strong}"
-  button-outline:
-    backgroundColor: "{colors.surface-container-highest}"
-    textColor: "#F0F0EE"
     typography: "{typography.body-sm}"
     rounded: 0px
     padding: 3px 10px
     height: 24px
-  button-ghost:
+  button-secondary:
+    backgroundColor: "{colors.on-surface}"
+    textColor: "{colors.on-primary}"
+    rounded: 0px
+    padding: 0px 14px
+    height: 36px
+  button-secondary-hover:
+    backgroundColor: "{colors.tertiary}"
+  button-outline:
     backgroundColor: "{colors.background}"
     textColor: "{colors.on-surface-muted}"
     rounded: 0px
     padding: 0px 12px
     height: 36px
   link:
-    textColor: "{colors.primary}"
+    textColor: "{colors.secondary}"
 ---
 
 # Bun Design System
 
 ## Overview
 
-Bun describes itself as: “Bundle, install, and run JavaScript & TypeScript — all in Bun. Bun is a fast JavaScript runtime & toolkit with a bundler, test runner, and npm-compatible package manager built in.” The interface is dark, built on **Charcoal (#0D0A0C)** with **Mist (#EAEAE8)** text and almost no color: actions are carried by contrast, not hue.
+Bun describes itself as: “Bundle, install, and run JavaScript & TypeScript — all in Bun. Bun is a fast JavaScript runtime & toolkit with a bundler, test runner, and npm-compatible package manager built in.” The interface is light, built on **White (#FFFFFF)** with **Near Black (#0A0A0A)** text and almost no color: actions are carried by contrast, not hue.
 
 Type is set in **Archivo** and **system-ui**, with **Martian Mono** for code. Headlines run large with tight negative tracking; body text is 14.5px. The surface language is flat. Controls are pill-shaped.
 
-Measured from [bun.sh](https://bun.sh/) on October 21, 2026 at 1440×900 and 390×844 from 423 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [bun.sh](https://bun.sh/) on October 29, 2026 at 1440×900 and 390×844 from 421 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 18 roles.
+The palette has 13 roles.
 
-- **Charcoal (#0D0A0C):** Page background, seen 19 times. Token `background`.
-- **Mist (#EAEAE8):** Primary text and headings, seen 41 times. Token `on-surface`.
-- **White (#FFFFFF):** Headings and emphasis, seen 2 times. Token `on-surface-strong`, CSS `--tw-ring-offset-color`.
-- **Gray (#A8A8A5):** Secondary text, seen 22 times. Token `on-surface-variant`.
-- **Slate (#80807E):** Muted text and metadata, seen 37 times. Token `on-surface-muted`.
-- **Charcoal (#0E0E0E):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`.
-- **Near Black (#000000):** Cards and panels, seen 5 times. Token `surface-container`.
-- **Charcoal (#171316):** Hover and pressed fills, seen 1 time. Token `surface-container-high`.
-- **Charcoal (#1E1E21):** Highest raised elements, seen 2 times. Token `surface-container-highest`.
-- **Mist 60% (#EAEAE899):** Translucent fill for cards and controls, seen 6 times. Token `overlay`.
+- **White (#FFFFFF):** Page background, seen 18 times. Token `background`, CSS `--tw-ring-offset-color`.
+- **Near Black (#0A0A0A):** Primary text and headings, seen 40 times. Token `on-surface`.
+- **Slate (#525252):** Secondary text, seen 22 times. Token `on-surface-variant`.
+- **Slate (#707070):** Muted text and metadata, seen 37 times. Token `on-surface-muted`.
+- **Snow (#F6F6F6):** Raised areas one step from the page, seen 2 times. Token `surface-container-low`.
+- **Near Black 60% (#0A0A0A99):** Translucent fill for cards and controls, seen 6 times. Token `overlay`.
 - **White 15% (#FFFFFF26):** Stronger translucent fill, seen 3 times. Token `overlay-strong`.
-- **Graphite (#28282B):** Borders and dividers, seen 23 times. Token `outline`.
-- **Graphite (#3E3E42):** Secondary dividers, seen 11 times. Token `outline-variant`.
-- **Mist (#EAEAE8):** Primary buttons and calls to action, seen 66 times. Token `primary`.
-- **Charcoal (#0D0A0C):** Text and icons on primary. Token `on-primary`.
-- **Vivid Pink (#FF2E97):** Most used accent color, seen 15 times. Token `secondary`.
-- **Teal (#28DC82):** Success and positive states, seen 10 times. Token `success`.
-- **Amber (#FCD34D):** Warnings and highlights, seen 1 time. Token `warning`.
+- **Mist (#E2E2E2):** Borders and dividers, seen 22 times. Token `outline`.
+- **White 20% (#FFFFFF33):** Secondary dividers, seen 1 time. Token `outline-variant`.
+- **Charcoal (#0C0C0C):** Primary buttons and calls to action, seen 69 times. Token `primary`.
+- **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
+- **Pink (#D60066):** Links and interactive text, seen 1 time. Token `secondary`, CSS `--link-hover-color`.
+- **Vivid Pink (#FF1F8F):** Accent in text, fills and borders, seen 9 times. Token `tertiary`.
 
 ## Typography
 
@@ -179,7 +168,7 @@ The palette has 18 roles.
 
 ## Layout
 
-Spacing does not follow a strict grid: 69% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 68% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
 - **Scale:** xs 2px, sm 8px, md 12px, lg 24px, xl 40px.
 - **Sections:** 112px vertical padding between major sections.
@@ -188,43 +177,43 @@ Spacing does not follow a strict grid: 69% of measured values are multiples of 4
 
 ## Elevation & Depth
 
-The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#0E0E0E → #000000 → #171316 → #1E1E21) and #28282B borders.
+The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#F6F6F6) and #E2E2E2 borders.
 
 ## Shapes
 
 Interactive controls are pill-shaped. Measured radii, most used first:
 
-- **md (3px):** 188 elements.
+- **md (3px):** 180 elements.
 - **full (9999px):** 52 elements.
 
 ## Components
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Install”):** #EAEAE8 fill, #0D0A0C text, 13.5px/600, padding 0px 14px.
-- **button-primary-hover:** background #FF2E97, text #FFFFFF on hover.
-- **button-outline (“Windows”):** #1E1E21 fill, #F0F0EE text, 12px/400, padding 3px 10px.
-- **button-ghost (“Search docs, APIs, guides… /”):** #0D0A0C fill, #80807E text, 13.5px/400, padding 0px 12px, border 1px solid #28282B.
-- **link:** transparent fill, #EAEAE8 text, padding 0px.
+- **button-primary (“macOS & Linux”):** #0C0C0C fill, #FFFFFF text, 12px/400, padding 3px 10px.
+- **button-secondary (“Install”):** #0A0A0A fill, #FFFFFF text, 13.5px/600, padding 0px 14px.
+- **button-secondary-hover:** background #FF1F8F, text #FFFFFF on hover.
+- **button-outline (“Search docs, APIs, guides… /”):** #FFFFFF fill, #707070 text, 13.5px/400, padding 0px 12px, border 1px solid #E2E2E2.
+- **link:** transparent fill, #D60066 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #0D0A0C for the page and lift surfaces in small steps: #0E0E0E, #000000, #171316, #1E1E21.
-- Do keep text in 4 levels: #EAEAE8, #FFFFFF, #A8A8A5, #80807E.
-- Do let contrast carry emphasis; primary actions use #EAEAE8 on #0D0A0C.
+- Do use #FFFFFF for the page and lift surfaces in small steps: #F6F6F6.
+- Do keep text in 3 levels: #0A0A0A, #525252, #707070.
+- Do let contrast carry emphasis; primary actions use #0C0C0C on #FFFFFF.
 - Do set headlines in Archivo with tight tracking (-0.02em).
 - Do reuse the measured spacing steps (8px, 12px, 24px).
 - Do make buttons and chips fully rounded (9999px); most other elements use 3px corners.
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond Archivo, system-ui and Martian Mono.
 - Don't add saturated accent colors; the measured palette is almost entirely neutral.
-- Don't make interface transitions slower than 0.3s.
+- Don't make interface transitions slower than 0.6s.
 
 ## Motion
 
-Interface transitions are quick: 1e-06s, 0.15s, 0.2s, 0.3s.
+Interface transitions are quick: 0.15s, 0.6s, 0.2s, 0.3s. Longer ambient animations run 4.494s.
 
-- **Easing:** `ease`, `cubic-bezier(0.22, 1, 0.36, 1)`.
+- **Easing:** `cubic-bezier(0.22, 1, 0.36, 1)`, `linear`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/bun.sh/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/bun.sh/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

@@ -8,19 +8,18 @@ colors:
   on-surface: "#1B1E20"
   on-background: "#1B1E20"
   on-surface-variant: "#5B646C"
-  on-surface-muted: "#ADB1B5"
   surface-container-low: "#FBF7EF"
   surface-container: "#F4F5F5"
-  surface-container-high: "#C1C5C8"
+  surface-container-high: "#E1EFFA"
   overlay: "#FFFFFF80"
   overlay-strong: "#F2F7FB1A"
   outline: "#D6D8DA"
   outline-variant: "#FFFFFF1A"
   primary: "#253859"
   on-primary: "#FFFFFF"
-  secondary: "#25446A"
-  tertiary: "#0067B9"
-  warning: "#FFC107"
+  inverse-surface: "#47515A"
+  secondary: "#0067B9"
+  tertiary: "#244973"
 typography:
   headline-display:
     fontFamily: roca
@@ -91,14 +90,23 @@ spacing:
   container: 1332px
 components:
   button-primary:
-    backgroundColor: "{colors.surface-container-high}"
-    textColor: "{colors.tertiary}"
+    backgroundColor: "{colors.secondary}"
+    textColor: "{colors.on-primary}"
+    typography: "{typography.body-lg}"
+    rounded: "{rounded.xs}"
+    padding: 0px
+    height: 48px
+  button-primary-hover:
+    backgroundColor: "#176BAD"
+  button-secondary:
+    backgroundColor: "{colors.inverse-surface}"
+    textColor: "{colors.on-primary}"
     typography: "{typography.label-md}"
     rounded: "{rounded.full}"
     padding: 4px 12px 4px 4px
     height: 40px
-  button-primary-hover:
-    backgroundColor: "#CCE0F1"
+  button-secondary-hover:
+    backgroundColor: "#40464C"
   card:
     backgroundColor: "{colors.background}"
     textColor: "{colors.on-surface}"
@@ -117,32 +125,31 @@ Fastmail describes itself as: “Fast, private email hosting for you or your bus
 
 Type is set in **roca** and **Proxima Nova**. Headlines run large; body text is 14px. Depth comes from soft drop shadows. Controls are pill-shaped.
 
-Measured from [fastmail.com](https://www.fastmail.com/) on October 21, 2026 at 1440×900 and 390×844 from 355 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [fastmail.com](https://www.fastmail.com/) on October 29, 2026 at 1440×900 and 390×844 from 356 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 16 roles, plus gradient stops #0067B9, #296B9F, #243959.
+The palette has 15 roles, plus gradient stops #0067B9, #296B9F, #243959.
 
-- **White (#FFFFFF):** Page background, seen 9 times. Token `background`, CSS `--brand-color-grey-0`.
+- **White (#FFFFFF):** Page background, seen 10 times. Token `background`, CSS `--brand-color-grey-0`.
 - **Charcoal (#1B1E20):** Primary text and headings, seen 71 times. Token `on-surface`.
-- **Cool Slate (#5B646C):** Secondary text, seen 3 times. Token `on-surface-variant`.
-- **Cool Gray (#ADB1B5):** Muted text and metadata, seen 2 times. Token `on-surface-muted`.
+- **Cool Slate (#5B646C):** Secondary text, seen 5 times. Token `on-surface-variant`.
 - **Warm Snow (#FBF7EF):** Raised areas one step from the page, seen 2 times. Token `surface-container-low`.
-- **Snow (#F4F5F5):** Cards and panels, seen 1 time. Token `surface-container`, CSS `--brand-color-grey-5`.
-- **Cool Silver (#C1C5C8):** Hover and pressed fills, seen 1 time. Token `surface-container-high`.
+- **Snow (#F4F5F5):** Cards and panels, seen 1 time. Token `surface-container`, CSS `--theme-button-secondary-bg-hover`.
+- **Pale Blue (#E1EFFA):** Hover and pressed fills, seen 1 time. Token `surface-container-high`.
 - **White 50% (#FFFFFF80):** Translucent fill for cards and controls, seen 1 time. Token `overlay`.
 - **Cool Snow 10% (#F2F7FB1A):** Stronger translucent fill, seen 1 time. Token `overlay-strong`.
 - **Silver (#D6D8DA):** Borders and dividers, seen 4 times. Token `outline`, CSS `--brand-color-grey-20`.
 - **White 10% (#FFFFFF1A):** Secondary dividers, seen 1 time. Token `outline-variant`.
 - **Dark Blue (#253859):** Brand color in logos and imagery, seen 4 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Dark Blue (#25446A):** Brand color in logos and imagery, seen 35 times. Token `secondary`.
-- **Dark Blue (#0067B9):** Brand color in the logo, seen 33 times. Token `tertiary`, CSS `--theme-push-select-fg`.
-- **Vivid Amber (#FFC107):** Warnings and highlights, seen 2 times. Token `warning`.
+- **Dark Blue (#47515A):** High-contrast fills, seen 1 time. Token `inverse-surface`.
+- **Dark Blue (#0067B9):** Secondary buttons, seen 23 times. Token `secondary`, CSS `--theme-push-select-fg`.
+- **Dark Blue (#244973):** Accent in logos and imagery. Token `tertiary`.
 
 ## Typography
 
-**roca** and **Proxima Nova** share the interface. Fallback stack: `roca, Georgia Roca Fallback, Iowan Old Style, Palatino Linotype`. Other loaded fonts: Georgia Roca Fallback.
+**roca** and **Proxima Nova** share the interface. Fallback stack: `roca, Georgia Roca Fallback, Iowan Old Style, Palatino Linotype`.
 
 - **headline-display:** roca 58px at weight 400, line height 1.11 (46.5px on mobile). Page title (h1).
 - **headline-lg:** roca 46px at weight 400, line height 1.1 (41.5px on mobile). Section headings (h2).
@@ -185,27 +192,28 @@ Interactive controls are pill-shaped. Measured radii, most used first:
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Why Fastmail?”):** #C1C5C8 fill, #0067B9 text, 15.9389px/600, 9999px radius, padding 4px 12px 4px 4px, shadow `rgba(0, 0, 0, 0.09) 0px 0px 12px 0px, rgba(0, 0, 0, 0.07) 0px 0px 16px 0px, rgba(0, 0, 0, 0.15) 0px 0px 6px 0px`.
-- **button-primary-hover:** background #CCE0F1, text #0067B9 on hover.
+- **button-primary (“Try free for 30 days”):** #0067B9 fill, #FFFFFF text, 16px/400, 8px radius, padding 0px.
+- **button-primary-hover:** background #176BAD, text #FFFFFF on hover.
+- **button-secondary (“Why Fastmail?”):** #47515A fill, #FFFFFF text, 15.9389px/600, 9999px radius, padding 4px 12px 4px 4px, shadow `rgba(0, 0, 0, 0.09) 0px 0px 12px 0px, rgba(0, 0, 0, 0.07) 0px 0px 16px 0px, rgba(0, 0, 0, 0.15) 0px 0px 6px 0px`.
+- **button-secondary-hover:** background #40464C, text #FFFFFF on hover.
 - **card:** #FFFFFF fill, #1B1E20 text, 16px/400, 24px 24px 0px 0px radius, padding 125.52px 0px 161.38px 0px.
 - **link:** transparent fill, #F4F5F7 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #FFFFFF for the page and lift surfaces in small steps: #FBF7EF, #F4F5F5, #C1C5C8.
-- Do keep text in 3 levels: #1B1E20, #5B646C, #ADB1B5.
+- Do use #FFFFFF for the page and lift surfaces in small steps: #FBF7EF, #F4F5F5, #E1EFFA.
+- Do keep text in 2 levels: #1B1E20, #5B646C.
 - Do use #253859 as the brand accent: header, logo and key highlights.
 - Do reuse the measured spacing steps (8px, 16px, 22.41px).
 - Do make buttons and chips fully rounded (9999px); most other elements use 16px corners.
-- Don't use #ADB1B5 for body text; it reaches 2.2:1 on #FFFFFF. Keep it for large text or metadata.
 - Don't introduce new font families beyond roca and Proxima Nova.
 - Don't use #253859 for large backgrounds or body text.
 - Don't make interface transitions slower than 0.5s.
 
 ## Motion
 
-Interface transitions are quick: 0.5s, 0.3s.
+Interface transitions are quick: 0.3s, 0.5s.
 
 - **Easing:** `cubic-bezier(0.16, 1, 0.3, 1)`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/fastmail.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/fastmail.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

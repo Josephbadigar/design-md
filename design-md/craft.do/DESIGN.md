@@ -15,12 +15,12 @@ colors:
   surface-container-high: "#EFEFEF"
   surface-container-highest: "#DBEDFE"
   overlay: "#0000000D"
-  overlay-strong: "#0000000A"
+  overlay-strong: "#03030240"
   outline: "#FFFFFF4D"
   outline-variant: "#03030217"
   primary: "#B8CAF5"
   on-primary: "#000000"
-  secondary: "#AADAF1"
+  secondary: "#9BD2EE"
   tertiary: "#0087FF"
 typography:
   headline-display:
@@ -115,8 +115,6 @@ components:
     typography: "{typography.label-md}"
     padding: 8px 14px
     height: 36px
-  button-primary-hover:
-    backgroundColor: "{colors.on-surface-muted}"
   button-ghost:
     textColor: "{colors.on-surface}"
     typography: "{typography.label-md}"
@@ -140,14 +138,14 @@ Craft describes itself as: “A free notes and productivity app that follows you
 
 Type is set in **UntitledSerifFont** and **UntitledSansFont**. Headlines run large with tight negative tracking; body text is 14px. Depth comes from soft drop shadows. Corners are mostly 24px.
 
-Measured from [craft.do](https://www.craft.do/) on October 21, 2026 at 1440×900 and 390×844 from 428 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [craft.do](https://www.craft.do/) on October 29, 2026 at 1440×900 and 390×844 from 428 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 17 roles.
 
 - **Snow (#FCF9F7):** Page background, seen 1 time. Token `background`.
-- **Near Black (#030302):** Primary text and headings, seen 84 times. Token `on-surface`, CSS `--color-black-900`.
+- **Near Black (#030302):** Primary text and headings, seen 83 times. Token `on-surface`, CSS `--color-black-900`.
 - **Charcoal (#1B1B1A):** Secondary text, seen 13 times. Token `on-surface-variant`.
 - **Graphite (#41413F):** Muted text and metadata, seen 8 times. Token `on-surface-muted`.
 - **Slate (#777879):** Subtle text and placeholders, seen 6 times. Token `on-surface-subtle`.
@@ -156,17 +154,17 @@ The palette has 17 roles.
 - **Mist (#EFEFEF):** Hover and pressed fills, seen 1 time. Token `surface-container-high`.
 - **Pale Blue (#DBEDFE):** Highest raised elements, seen 1 time. Token `surface-container-highest`.
 - **Near Black 5% (#0000000D):** Translucent fill for cards and controls, seen 6 times. Token `overlay`.
-- **Near Black 4% (#0000000A):** Stronger translucent fill, seen 6 times. Token `overlay-strong`.
+- **Near Black 25% (#03030240):** Stronger translucent fill, seen 1 time. Token `overlay-strong`.
 - **White 30% (#FFFFFF4D):** Borders and dividers, seen 4 times. Token `outline`.
 - **Near Black 9% (#03030217):** Secondary dividers, seen 2 times. Token `outline-variant`, CSS `--border`.
 - **Light Blue (#B8CAF5):** Brand color on large areas. Token `primary`.
 - **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
-- **Light Cyan (#AADAF1):** Brand color in logos and imagery, seen 38 times. Token `secondary`.
-- **Vivid Blue (#0087FF):** Most used accent color, seen 8 times. Token `tertiary`.
+- **Light Blue (#9BD2EE):** Accent in logos and imagery. Token `secondary`.
+- **Vivid Blue (#0087FF):** Accent in text, fills and borders, seen 5 times. Token `tertiary`.
 
 ## Typography
 
-**UntitledSerifFont**, **UntitledSansFont** and **apple-system** share the interface. Fallback stack: `UntitledSerifFont, UntitledSerifFont Fallback, apple-system-ui-serif, ui-serif`. Other loaded fonts: UntitledSansFont Fallback, InterFont, InterFont Fallback, UntitledSerifFont Fallback.
+**UntitledSerifFont**, **UntitledSansFont** and **apple-system** share the interface. Fallback stack: `UntitledSerifFont, UntitledSerifFont Fallback, apple-system-ui-serif, ui-serif`. Other loaded fonts: InterFont.
 
 - **headline-display:** UntitledSerifFont 66px at weight 400, line height 1, tracking -0.03em (48px on mobile). Page title (h1).
 - **headline-lg:** UntitledSerifFont 54px at weight 400, line height 1.1, tracking -0.02em (38px on mobile). Section headings (h2).
@@ -188,7 +186,7 @@ Spacing does not follow a strict grid: 67% of measured values are multiples of 4
 - **Gaps:** 24px is the most common gap in flex and grid layouts.
 - **Container:** content is capped at 920px.
 - **Page margin:** 24px on each side of full-width sections.
-- **Breakpoints:** 375px, 390px, 400px, 424px, 425px, 445px, 460px, 480px, 500px, 550px, 700px.
+- **Breakpoints:** 375px, 390px, 400px, 424px, 425px, 445px, 480px, 500px, 550px, 700px, 768px.
 
 ## Elevation & Depth
 
@@ -213,7 +211,6 @@ Most elements use 24px corners. Measured radii, most used first:
 Measured from the rendered page. Token values reference the tokens above.
 
 - **button-primary (“Try Craft Free”):** #030302 fill, #FFFFFF text, 16px/500, 3.35544e+07px radius, padding 8px 14px, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px`.
-- **button-primary-hover:** background #030302BF, text #FFFFFF on hover.
 - **button-ghost (“Product”):** transparent fill, #030302 text, 16px/400, padding 0px.
 - **card:** #FF4500 fill, #030302 text, 16px/400, 24px radius, padding 24px, shadow `rgba(0, 0, 0, 0.01) 0px 50px 40px 0px, rgba(0, 0, 0, 0.02) 0px 50px 40px 0px, rgba(0, 0, 0, 0.05) 0px 20px 40px 0px, rgba(0, 0, 0, 0.08) 0px 3px 10px 0px`.
 - **link:** transparent fill, #FFFFFF text, padding 0px.
@@ -226,15 +223,15 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do set headlines in UntitledSerifFont with tight tracking (-0.03em).
 - Do reuse the measured spacing steps (5px, 16px, 24px).
 - Do use 24px corners on most elements; larger surfaces also use 4px, 8px and 12px.
-- Don't use #777879 for body text; it reaches 4.2:1 on #FCF9F7. Keep it for large text or metadata.
+- Don't use #777879 for body text; it reaches 4.22:1 on #FCF9F7. Keep it for large text or metadata.
 - Don't introduce new font families beyond UntitledSerifFont, UntitledSansFont and apple-system.
 - Don't use #B8CAF5 for large backgrounds or body text.
-- Don't make interface transitions slower than 0.00001s.
+- Don't make interface transitions slower than 0.5s.
 
 ## Motion
 
-Interface transitions are quick: 1e-05s.
+Interface transitions are quick: 0.2s, 0.15s, 0.5s, 0.3s.
 
-- **Easing:** `ease`, `cubic-bezier(0.4, 0, 0.2, 1)`, `cubic-bezier(0, 0, 0.2, 1)`.
+- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `cubic-bezier(0, 0, 0.2, 1)`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/craft.do/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/craft.do/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

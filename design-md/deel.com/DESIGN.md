@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Deel
-description: "Light interface measured from deel.com: BagossExtendedFont type with BagossCondensedFont, violet accents, tonal surfaces and 200px corners."
+description: "Light interface measured from deel.com: BagossExtendedFont type with BagossCondensedFont, deep violet accents, tonal surfaces and 200px corners."
 colors:
   background: "#FFFFFF"
   surface: "#FFFFFF"
@@ -12,14 +12,12 @@ colors:
   on-surface-subtle: "#767676"
   surface-container-low: "#F7F5F2"
   overlay: "#FFFFFF0A"
-  overlay-strong: "#FFFFFF0D"
   outline: "#1B1B1B29"
   outline-variant: "#FFFFFF1A"
-  primary: "#5938B7"
-  on-primary: "#0000EE"
+  primary: "#201148"
+  on-primary: "#FFFFFF"
   secondary: "#B1D8FC"
   tertiary: "#A98DF6"
-  warning: "#FFE27C"
 typography:
   display-hero:
     fontFamily: BagossExtendedFont
@@ -125,27 +123,27 @@ components:
   button-primary:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
-    typography: "{typography.body-md}"
-    rounded: 100px
-    padding: 8px 16px 8px 8px
-    height: 49px
-  button-secondary:
-    backgroundColor: "{colors.on-surface}"
-    textColor: "{colors.background}"
-    typography: "{typography.label-md}"
+    typography: "{typography.label-lg}"
     rounded: "{rounded.xl}"
-    padding: 15px
+    padding: 12px 16px
     height: 51px
   button-outline:
     backgroundColor: "{colors.background}"
     textColor: "{colors.on-surface}"
-    typography: "{typography.caption}"
+    typography: "{typography.body-md}"
     rounded: "{rounded.xl}"
-    padding: 6px 12px
+    padding: 0px
     height: 32px
   button-outline-hover:
     backgroundColor: "#3F3F3F"
-    textColor: "{colors.background}"
+    textColor: "{colors.on-primary}"
+  button-secondary:
+    backgroundColor: "{colors.on-surface}"
+    textColor: "{colors.on-primary}"
+    typography: "{typography.body-sm}"
+    rounded: "{rounded.xl}"
+    padding: 8px 16px
+    height: 40px
   button-ghost:
     textColor: "{colors.on-surface}"
     typography: "{typography.label-sm}"
@@ -171,15 +169,15 @@ components:
 
 ## Overview
 
-Deel describes itself as: “Hire, pay, and manage teams in 150+ countries with Deel. Run global payroll, ensure compliance, and streamline HR operations—all on one powerful platform.” The interface is light, built on **White (#FFFFFF)** with **Charcoal (#1B1B1B)** text, and **Violet (#5938B7)** as the main accent.
+Deel describes itself as: “Hire, pay, and manage teams in 150+ countries with Deel. Run global payroll, ensure compliance, and streamline HR operations—all on one powerful platform.” The interface is light, built on **White (#FFFFFF)** with **Charcoal (#1B1B1B)** text, and **Deep Violet (#201148)** as the main accent.
 
 Type is set in **BagossExtendedFont** and **BagossCondensedFont**. Headlines run large with tight negative tracking; body text is 16px. The surface language is flat. Corners are mostly 200px.
 
-Measured from [deel.com](https://www.deel.com/) on October 21, 2026 at 1440×900 and 390×844 from 337 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [deel.com](https://www.deel.com/) on October 29, 2026 at 1440×900 and 390×844 from 337 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 15 roles.
+The palette has 13 roles.
 
 - **White (#FFFFFF):** Page background, seen 9 times. Token `background`.
 - **Charcoal (#1B1B1B):** Primary text and headings, seen 39 times. Token `on-surface`.
@@ -188,18 +186,16 @@ The palette has 15 roles.
 - **Slate (#767676):** Subtle text and placeholders, seen 3 times. Token `on-surface-subtle`.
 - **Snow (#F7F5F2):** Raised areas one step from the page, seen 6 times. Token `surface-container-low`.
 - **White 4% (#FFFFFF0A):** Translucent fill for cards and controls, seen 5 times. Token `overlay`.
-- **White 5% (#FFFFFF0D):** Stronger translucent fill, seen 1 time. Token `overlay-strong`.
 - **Charcoal 16% (#1B1B1B29):** Borders and dividers, seen 11 times. Token `outline`.
 - **White 10% (#FFFFFF1A):** Secondary dividers, seen 5 times. Token `outline-variant`.
-- **Violet (#5938B7):** Primary buttons and calls to action. Token `primary`.
-- **Vivid Indigo (#0000EE):** Text and icons on primary. Token `on-primary`.
-- **Light Blue (#B1D8FC):** Brand accent (CSS variable), seen 23 times. Token `secondary`, CSS `--color-surface-brand-blue-03`.
-- **Light Violet (#A98DF6):** Brand accent (CSS variable), seen 20 times. Token `tertiary`, CSS `--color-surface-brand-purple-03`.
-- **Light Amber (#FFE27C):** Warnings and highlights, seen 4 times. Token `warning`, CSS `--color-cornbread-300`.
+- **Deep Violet (#201148):** Primary buttons and calls to action. Token `primary`.
+- **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
+- **Light Blue (#B1D8FC):** Accent (CSS variable), seen 1 time. Token `secondary`, CSS `--color-surface-brand-blue-03`.
+- **Light Violet (#A98DF6):** Accent (CSS variable), seen 5 times. Token `tertiary`, CSS `--color-surface-brand-purple-03`.
 
 ## Typography
 
-**BagossExtendedFont**, **BagossCondensedFont**, **Inter** and **BagossStandardVF** share the interface. Fallback stack: `BagossExtendedFont, BagossExtendedFont Fallback, Arial, Helvetica`. Other loaded fonts: Inter Fallback, BagossCondensedFont Fallback, BagossExtendedFont Fallback, BagossStandardVF Fallback.
+**BagossExtendedFont**, **BagossCondensedFont**, **Inter** and **BagossStandardVF** share the interface. Fallback stack: `BagossExtendedFont, BagossExtendedFont Fallback, Arial, Helvetica`.
 
 - **display-hero:** BagossExtendedFont 64px at weight 600, line height 1, tracking 0.005em. Oversized hero statements.
 - **headline-display:** BagossCondensedFont 60px at weight 500, line height 1.05, tracking -0.003em (38px on mobile). Page title (h1).
@@ -243,10 +239,10 @@ Most elements use 200px corners. Measured radii, most used first:
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“175 STORIES Read about real resu”):** #5938B7 fill, #0000EE text, 16px/400, 100px radius, padding 8px 16px 8px 8px.
-- **button-secondary (“Accept all”):** #1B1B1B fill, #FFFFFF text, 15px/500, 200px radius, padding 15px, border 2px solid #1B1B1B.
-- **button-outline (“Claim offer”):** #FFFFFF fill, #1B1B1B text, 12px/500, 200px radius, padding 6px 12px.
+- **button-primary (“Speak with a trusted expert”):** #201148 fill, #FFFFFF text, 16px/500, 200px radius, padding 12px 16px.
+- **button-outline (“Claim offer”):** #FFFFFF fill, #1B1B1B text, 16px/400, 200px radius, padding 0px.
 - **button-outline-hover:** background #3F3F3F, text #FFFFFF on hover.
+- **button-secondary (“Book a demo”):** #1B1B1B fill, #FFFFFF text, 14px/500, 200px radius, padding 8px 16px.
 - **button-ghost (“Manage”):** transparent fill, #1B1B1B text, 14px/600, 200px radius, padding 14px, border 2px solid #1B1B1B29.
 - **input-field (“What's your e-mail?”):** #FFFFFF fill, #000000 text, 16px/460, 200px radius, padding 1px 54px 1px 24px, border 2px solid #1B1B1B29.
 - **card:** #FFFFFF0D fill, #000000DE text, 16px/400, 24px radius, padding 0px.
@@ -256,13 +252,13 @@ Measured from the rendered page. Token values reference the tokens above.
 
 - Do use #FFFFFF for the page and lift surfaces in small steps: #F7F5F2.
 - Do keep text in 4 levels: #1B1B1B, #212121, #5F5F5F, #767676.
-- Do reserve #5938B7 for primary actions and key highlights.
+- Do reserve #201148 for primary actions and key highlights.
 - Do set headlines in BagossExtendedFont with tight tracking (-0.003em).
 - Do reuse the measured spacing steps (8px, 12px, 24px).
 - Do use 200px corners on most elements; larger surfaces also use 8px, 16px and 4px.
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond BagossExtendedFont, BagossCondensedFont, Inter and BagossStandardVF.
-- Don't use #5938B7 for large backgrounds or body text.
+- Don't use #201148 for large backgrounds or body text.
 - Don't make interface transitions slower than 0.3s.
 
 ## Motion
@@ -272,4 +268,4 @@ Interface transitions are quick: 0.1s, 0.2s, 0.15s, 0.3s.
 - **Easing:** `ease-in-out`, `cubic-bezier(0.4, 0, 0.2, 1)`, `cubic-bezier(0, 0, 0.2, 1)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/deel.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/deel.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

@@ -1,91 +1,104 @@
 ---
 version: alpha
 name: Arc
-description: "Light interface measured from arc.net: Marlin Soft SQ type with Marlin, vivid indigo accents, tonal surfaces and 8px corners."
+description: "Dark monochrome interface measured from arc.net: Exposure VAR type with ABC Oracle, tonal surfaces and pill-shaped controls."
 colors:
-  background: "#FFFCEC"
-  surface: "#FFFCEC"
-  on-surface: "#000000"
-  on-background: "#000000"
-  surface-container-low: "#FFFFFF"
-  overlay: "#000000D9"
-  primary: "#3139FB"
-  on-primary: "#FFFFFF"
-  secondary: "#2702C2"
-  tertiary: "#FF5060"
-  error: "#FF9999"
+  background: "#0B0B0B"
+  surface: "#0B0B0B"
+  on-surface: "#FFFFFF"
+  on-background: "#FFFFFF"
+  on-surface-variant: "#7F7F7F"
+  on-surface-muted: "#727272"
+  surface-container-low: "#000000"
+  overlay: "#00000012"
+  overlay-strong: "#0000009E"
+  primary: "#FFFFFF"
+  on-primary: "#000000"
+  secondary: "#5B45E0"
+  tertiary: "#C86B00"
 typography:
   headline-display:
-    fontFamily: Marlin Soft SQ
-    fontSize: 45.5px
-    fontWeight: 700
-    lineHeight: 0.93
-    letterSpacing: -0.04em
-  body-md:
-    fontFamily: Marlin
-    fontSize: 16px
-    fontWeight: 400
-  body-lg:
-    fontFamily: Marlin Soft SQ
-    fontSize: 40px
-    fontWeight: 700
-    lineHeight: 0.97
-    letterSpacing: -0.04em
-  label-lg:
-    fontFamily: Marlin Soft SQ
-    fontSize: 16px
-    fontWeight: 700
-  label-md:
-    fontFamily: Marlin Soft SQ
-    fontSize: 14px
-    fontWeight: 500
-    letterSpacing: -0.02em
-  label-sm:
-    fontFamily: InterVariable
-    fontSize: 12px
+    fontFamily: Exposure VAR
+    fontSize: 76px
     fontWeight: 600
-    letterSpacing: 0.033em
+    lineHeight: 1.13
+    letterSpacing: -0.032em
+  headline-lg:
+    fontFamily: Exposure VAR
+    fontSize: 64px
+    fontWeight: 600
+    lineHeight: 1.06
+    letterSpacing: -0.03em
+  headline-md:
+    fontFamily: ABC Oracle
+    fontSize: 22px
+    fontWeight: 350
+    lineHeight: 1.2
+    letterSpacing: -0.02em
+  body-md:
+    fontFamily: ABC Oracle
+    fontSize: 17px
+    fontWeight: 350
+    lineHeight: 1.41
+    letterSpacing: -0.03em
+  body-lg:
+    fontFamily: ABC Oracle
+    fontSize: 20px
+    fontWeight: 350
+    lineHeight: 1.42
+    letterSpacing: -0.02em
+  body-sm:
+    fontFamily: ABC Oracle
+    fontSize: 16px
+    fontWeight: 350
+  caption:
+    fontFamily: system-ui
+    fontSize: 13px
+    fontWeight: 350
+    lineHeight: 1.23
+  code:
+    fontFamily: ABC Favorit Mono
+    fontSize: 13px
+    fontWeight: 400
+    lineHeight: 1.43
+    letterSpacing: 0.14em
   headline-display-mobile:
-    fontFamily: Marlin Soft SQ
-    fontSize: 32px
-    fontWeight: 700
-    lineHeight: 0.97
-    letterSpacing: -0.05em
+    fontFamily: Exposure VAR
+    fontSize: 52px
+    fontWeight: 600
+    lineHeight: 1
+    letterSpacing: -0.03em
+  headline-md-mobile:
+    fontFamily: ABC Oracle
+    fontSize: 20px
+    fontWeight: 350
+    lineHeight: 1.2
+    letterSpacing: -0.02em
 rounded:
-  sm: 4px
-  md: 8px
-  lg: 10px
-  xl: 22px
+  sm: 3px
+  md: 10px
+  lg: 12px
+  xl: 60px
+  full: 9999px
 spacing:
-  xs: 3px
+  xs: 4px
   sm: 8px
   md: 12px
   lg: 24px
-  xl: 37px
-  gutter: 12px
+  xl: 47px
+  gutter: 24px
+  section: 158.4px
 components:
-  button-primary:
-    backgroundColor: "{colors.overlay}"
-    textColor: "{colors.on-primary}"
-    rounded: "{rounded.xl}"
-    padding: 8px 22px 8px 8px
-    height: 76px
-  button-primary-hover:
-    backgroundColor: "#000000A6"
   button-outline:
-    backgroundColor: "{colors.surface-container-low}"
-    textColor: "{colors.secondary}"
-    typography: "{typography.label-md}"
+    backgroundColor: "{colors.background}"
+    textColor: "{colors.on-surface}"
     rounded: "{rounded.lg}"
-    padding: 8px 0px
-    height: 45px
-  button-secondary:
-    backgroundColor: "{colors.secondary}"
+    padding: 0px 24px
+    height: 60px
+  button-ghost:
     textColor: "{colors.on-primary}"
-    typography: "{typography.label-md}"
     rounded: "{rounded.lg}"
-    padding: 8px 0px
-    height: 45px
+    padding: 0px 24px
   link:
     textColor: "{colors.on-primary}"
 ---
@@ -94,86 +107,96 @@ components:
 
 ## Overview
 
-Arc describes itself as: “Experience a calmer, more personal internet in this browser designed for you. Let go of the clicks, the clutter, the distractions with the Arc browser.” The interface is light, built on **Pale Amber (#FFFCEC)** with **Near Black (#000000)** text, and **Vivid Indigo (#3139FB)** as the main accent.
+Arc describes itself as: “Arc is sunsetting on December 22, 2026. What happens next and the transition to Dia.” The interface is dark, built on **Near Black (#0B0B0B)** with **White (#FFFFFF)** text and almost no color: actions are carried by contrast, not hue.
 
-Type is set in **Marlin Soft SQ** and **Marlin**. Headlines run large with tight negative tracking; body text is 16px. Depth comes from soft drop shadows. Corners are mostly 8px.
+Type is set in **Exposure VAR** and **ABC Oracle**, with **ABC Favorit Mono** for code. Headlines run large with tight negative tracking; body text is 17px. Depth comes from hairline borders and inset highlights rather than drop shadows. Controls are pill-shaped.
 
-Measured from [arc.net](https://arc.net/) on October 21, 2026 at 1440×900 and 390×844 from 165 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [arc.net](https://arc.net/) on October 29, 2026 at 1440×900 and 390×844 from 201 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 9 roles.
+The palette has 11 roles.
 
-- **Pale Amber (#FFFCEC):** Page background, seen 1 time. Token `background`, CSS `--colors-brandOffwhite`.
-- **Near Black (#000000):** Primary text and headings, seen 1 time. Token `on-surface`, CSS `--colors-highContrast`.
-- **White (#FFFFFF):** Raised areas one step from the page, seen 3 times. Token `surface-container-low`, CSS `--colors-lowContrast`.
-- **Near Black 85% (#000000D9):** Translucent fill for cards and controls, seen 1 time. Token `overlay`.
-- **Vivid Indigo (#3139FB):** Brand color on large areas, seen 56 times. Token `primary`.
-- **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Indigo (#2702C2):** Secondary buttons, seen 41 times. Token `secondary`, CSS `--colors-students-dark_blue`.
-- **Red (#FF5060):** Brand color in the logo, seen 15 times. Token `tertiary`.
-- **Light Red (#FF9999):** Errors and destructive states, seen 1 time. Token `error`.
+- **Near Black (#0B0B0B):** Page background, seen 4 times. Token `background`.
+- **White (#FFFFFF):** Primary text and headings, seen 17 times. Token `on-surface`, CSS `--colors-lowContrast`.
+- **Slate (#7F7F7F):** Secondary text, seen 10 times. Token `on-surface-variant`.
+- **Slate (#727272):** Muted text and metadata, seen 2 times. Token `on-surface-muted`.
+- **Near Black (#000000):** Raised areas one step from the page, seen 4 times. Token `surface-container-low`, CSS `--colors-highContrast`.
+- **Near Black 7% (#00000012):** Translucent fill for cards and controls, seen 2 times. Token `overlay`.
+- **Near Black 62% (#0000009E):** Stronger translucent fill, seen 1 time. Token `overlay-strong`.
+- **White (#FFFFFF):** Primary actions (the main text color; the palette is monochrome), seen 28 times. Token `primary`, CSS `--colors-lowContrast`.
+- **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
+- **Indigo (#5B45E0):** Accent in text, fills and borders, seen 3 times. Token `secondary`.
+- **Orange (#C86B00):** Accent in text, fills and borders, seen 3 times. Token `tertiary`.
 
 ## Typography
 
-**Marlin Soft SQ**, **Marlin** and **InterVariable** share the interface. Fallback stack: `Marlin Soft SQ, -apple-system, BlinkMacSystemFont, Segoe UI`. Other loaded fonts: Inter, ABC Favorit Mono, ABC Oracle, Exposure VAR.
+**Exposure VAR**, **ABC Oracle**, **system-ui** and **ABC Favorit Mono** (monospace) share the interface. Fallback stack: `Exposure VAR, Iowan Old Style, Georgia, serif`. Other loaded fonts: Marlin.
 
-- **headline-display:** Marlin Soft SQ 45.5px at weight 700, line height 0.93, tracking -0.04em (32px on mobile). Page title (h1).
-- **body-md:** Marlin 16px at weight 400. Body text.
-- **body-lg:** Marlin Soft SQ 40px at weight 700, line height 0.97, tracking -0.04em. Lead paragraphs.
-- **label-lg:** Marlin Soft SQ 16px at weight 700. Large buttons and tabs.
-- **label-md:** Marlin Soft SQ 14px at weight 500, tracking -0.02em. Buttons, navigation and labels.
-- **label-sm:** InterVariable 12px at weight 600, tracking 0.033em. Small labels and badges.
+- **headline-display:** Exposure VAR 76px at weight 600, line height 1.13, tracking -0.032em (52px on mobile). Page title (h1).
+- **headline-lg:** Exposure VAR 64px at weight 600, line height 1.06, tracking -0.03em. Section headings (h2).
+- **headline-md:** ABC Oracle 22px at weight 350, line height 1.2, tracking -0.02em (20px on mobile). Sub-section headings.
+- **body-md:** ABC Oracle 17px at weight 350, line height 1.41, tracking -0.03em. Body text.
+- **body-lg:** ABC Oracle 20px at weight 350, line height 1.42, tracking -0.02em. Lead paragraphs.
+- **body-sm:** ABC Oracle 16px at weight 350. Secondary and small text.
+- **caption:** system-ui 13px at weight 350, line height 1.23. Captions and fine print.
+- **code:** ABC Favorit Mono 13px at weight 400, line height 1.43, tracking 0.14em, uppercase. Code and technical values.
 
 ## Layout
 
-Spacing is mostly on a 4px grid (79% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
+Spacing does not follow a strict grid: 62% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
-- **Scale:** xs 3px, sm 8px, md 12px, lg 24px, xl 37px.
-- **Gaps:** 12px is the most common gap in flex and grid layouts.
-- **Breakpoints:** 580px, 600px, 650px, 750px, 800px, 1000px, 1075px, 1100px.
+- **Scale:** xs 4px, sm 8px, md 12px, lg 24px, xl 47px.
+- **Sections:** 158.4px vertical padding between major sections.
+- **Gaps:** 24px is the most common gap in flex and grid layouts.
+- **Breakpoints:** 640px, 641px, 799px, 800px, 1099px, 1100px.
 
 ## Elevation & Depth
 
-Raised elements use soft drop shadows. The most used recipes:
+Depth comes mostly from hairline rings and inset highlights on tonal surfaces (#000000):
 
-- `rgba(0, 0, 0, 0.1) 0px 5px 5px 0px`
-- `rgba(0, 0, 0, 0.25) 0px 2px 8px 0px`
+- `rgba(0, 0, 0, 0.12) 0px 0px 0px 0.5px inset`
+- `rgb(0, 0, 0) 0px 0px 0px 1px`
+
+A few raised panels add a soft drop shadow: `rgba(0, 0, 0, 0.25) 0px 0px 2px 0px`.
 
 ## Shapes
 
-Most elements use 8px corners. Measured radii, most used first:
+Interactive controls are pill-shaped. Measured radii, most used first:
 
-- **md (8px):** 20 elements.
-- **lg (10px):** 12 elements.
-- **sm (4px):** 4 elements.
-- **xl (22px):** 4 elements.
+- **full (9999px):** 20 elements.
+- **lg (12px):** 12 elements.
+- **sm (3px):** 8 elements.
+- **md (10px):** 4 elements.
+- **xl (60px):** 4 elements.
 
 ## Components
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Try Dia”):** #000000D9 fill, #FFFFFF text, 24px/400, 22px radius, padding 8px 22px 8px 8px, shadow `rgba(0, 0, 0, 0.25) 0px 2px 8px 0px`.
-- **button-primary-hover:** background #000000A6, text #FFFFFF on hover.
-- **button-outline (“Download Arc for Windows”):** #FFFFFF fill, #2702C2 text, 14px/600, 10px radius, padding 8px 0px, shadow `rgba(0, 0, 0, 0.1) 0px 5px 5px 0px`.
-- **button-secondary (“Download Arc for Mac”):** #2702C2 fill, #FFFFFF text, 14px/600, 10px radius, padding 8px 0px, shadow `rgba(0, 0, 0, 0.1) 0px 5px 5px 0px`.
-- **link:** transparent fill, #FFFFFF text, padding 0px.
+- **button-outline (“Download Dia”):** #0B0B0B fill, #FFFFFF text, 18px/350, 12px radius, padding 0px 24px.
+- **button-ghost (“Download Dia”):** transparent fill, #000000 text, 18px/350, 12px radius, padding 0px 24px, shadow `rgb(0, 0, 0) 0px 0px 0px 1px`.
+- **link:** transparent fill, #000000 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #FFFCEC for the page and lift surfaces in small steps: #FFFFFF.
-- Do use #3139FB as the brand accent: header, logo and key highlights.
-- Do set headlines in Marlin Soft SQ with tight tracking (-0.04em).
+- Do use #0B0B0B for the page and lift surfaces in small steps: #000000.
+- Do keep text in 3 levels: #FFFFFF, #7F7F7F, #727272.
+- Do let contrast carry emphasis; primary actions use #FFFFFF on #0B0B0B.
+- Do set headlines in Exposure VAR with tight tracking (-0.032em).
 - Do reuse the measured spacing steps (8px, 12px, 24px).
-- Do use 8px corners on most elements; larger surfaces also use 10px, 4px and 22px.
-- Don't introduce new font families beyond Marlin Soft SQ, Marlin and InterVariable.
-- Don't use #3139FB for large backgrounds or body text.
-- Don't make interface transitions slower than 0.2s.
+- Do make buttons and chips fully rounded (9999px); most other elements use 12px corners.
+- Don't use #727272 for body text; it reaches 4.09:1 on #0B0B0B. Keep it for large text or metadata.
+- Don't use heavy drop shadows; keep depth to hairline rings and tonal surfaces.
+- Don't introduce new font families beyond Exposure VAR, ABC Oracle, system-ui and ABC Favorit Mono.
+- Don't add saturated accent colors; the measured palette is almost entirely neutral.
+- Don't make interface transitions slower than 0.45s.
 
 ## Motion
 
-Interface transitions are quick: 0.15s, 0.2s.
+Interface transitions are quick: 0.3s, 0.15s, 0.2s, 0.45s.
 
-- **Easing:** `ease`, `ease-out`, `ease-in-out`.
+- **Easing:** `ease`, `cubic-bezier(0.16, 1, 0.3, 1)`.
+- **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/arc.net/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/arc.net/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

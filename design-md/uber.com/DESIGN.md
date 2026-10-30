@@ -12,8 +12,8 @@ colors:
   surface-container-low: "#111111"
   surface-container: "#292929"
   overlay: "#E0E0E099"
-  primary: "#FFFFFF"
-  on-primary: "#000000"
+  primary: "#F6F6F6"
+  on-primary: "#111111"
   secondary: "#0000EE"
 typography:
   headline-display:
@@ -82,12 +82,10 @@ components:
   button-primary:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
-    typography: "{typography.label-sm}"
+    typography: "{typography.label-md}"
     rounded: "{rounded.full}"
-    padding: 10px 12px
-    height: 36px
-  button-primary-hover:
-    backgroundColor: "#E2E2E2"
+    padding: 14px 16px
+    height: 48px
   button-outline:
     backgroundColor: "{colors.surface-container-low}"
     textColor: "#FCFCFC"
@@ -96,49 +94,49 @@ components:
     padding: 10px 12px
     height: 36px
   button-secondary:
-    backgroundColor: "#F6F6F6"
-    textColor: "{colors.surface-container-low}"
-    typography: "{typography.label-md}"
+    backgroundColor: "{colors.on-surface}"
+    textColor: "{colors.background}"
+    typography: "{typography.label-sm}"
     rounded: "{rounded.full}"
-    padding: 14px 16px
-    height: 48px
+    padding: 10px 12px
+    height: 36px
   button-ghost:
     textColor: "{colors.on-surface}"
     typography: "{typography.body-md}"
     rounded: "{rounded.md}"
     padding: 0px
   input-field:
-    textColor: "{colors.surface-container-low}"
+    textColor: "{colors.on-primary}"
     typography: "{typography.body-md}"
     rounded: 0px
     padding: 0px
   link:
-    textColor: "{colors.primary}"
+    textColor: "{colors.on-surface}"
 ---
 
 # Uber Design System
 
 ## Overview
 
-Uber describes itself as: “Get a ride in minutes. Or become a driver and earn money on your schedule. Uber is finding you better ways to move, work, and succeed in India.” The interface is dark, built on **Near Black (#000000)** with **White (#FFFFFF)** text and almost no color: actions are carried by contrast, not hue.
+Uber describes itself as: “Learn how you can leverage the Uber platform and apps to earn more, eat, commute, get a ride, simplify business travel, and more.” The interface is dark, built on **Near Black (#000000)** with **White (#FFFFFF)** text and almost no color: actions are carried by contrast, not hue.
 
 Type is set in **UberMove** and **sans-serif**. Headlines run large; body text is 16px. The surface language is flat. Controls are pill-shaped.
 
-Measured from [uber.com](https://www.uber.com/in/en/) on October 21, 2026 at 1440×900 and 390×844 from 265 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [uber.com](https://www.uber.com/) on October 29, 2026 at 1440×900 and 390×844 from 302 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 10 roles.
 
-- **Near Black (#000000):** Page background, seen 10 times. Token `background`, CSS `--base-magenta-0`.
-- **White (#FFFFFF):** Primary text and headings, seen 62 times. Token `on-surface`.
+- **Near Black (#000000):** Page background, seen 15 times. Token `background`, CSS `--base-magenta-0`.
+- **White (#FFFFFF):** Primary text and headings, seen 82 times. Token `on-surface`.
 - **Gray (#AFAFAF):** Secondary text, seen 5 times. Token `on-surface-variant`.
 - **Graphite (#4A4A4A):** Muted text and metadata, seen 2 times. Token `on-surface-muted`.
-- **Charcoal (#111111):** Raised areas one step from the page, seen 13 times. Token `surface-container-low`.
-- **Graphite (#292929):** Cards and panels, seen 5 times. Token `surface-container`.
+- **Charcoal (#111111):** Raised areas one step from the page, seen 15 times. Token `surface-container-low`.
+- **Graphite (#292929):** Cards and panels, seen 6 times. Token `surface-container`.
 - **Silver 60% (#E0E0E099):** Translucent fill for cards and controls, seen 1 time. Token `overlay`.
-- **White (#FFFFFF):** Primary buttons and calls to action, seen 76 times. Token `primary`.
-- **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
+- **Snow (#F6F6F6):** Primary buttons and calls to action, seen 4 times. Token `primary`.
+- **Charcoal (#111111):** Text and icons on primary. Token `on-primary`.
 - **Vivid Indigo (#0000EE):** Accent, seen 1 time. Token `secondary`.
 
 ## Typography
@@ -157,7 +155,7 @@ The palette has 10 roles.
 
 ## Layout
 
-Spacing does not follow a strict grid: 68% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 66% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
 - **Scale:** xs 4px, sm 8px, md 16px, lg 18px, xl 48px.
 - **Breakpoints:** 320px, 600px, 767px, 768px, 1023px, 1024px, 1119px, 1120px, 1136px.
@@ -170,17 +168,16 @@ The design is flat: no shadows were measured. Hierarchy comes from tonal surface
 
 Interactive controls are pill-shaped. Measured radii, most used first:
 
-- **md (8px):** 60 elements.
-- **full (9999px):** 52 elements.
+- **md (8px):** 80 elements.
+- **full (9999px):** 60 elements.
 
 ## Components
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Sign up”):** #FFFFFF fill, #000000 text, 14px/500, 999px radius, padding 10px 12px.
-- **button-primary-hover:** background #E2E2E2, text #000000 on hover.
+- **button-primary (“Schedule ahead”):** #F6F6F6 fill, #111111 text, 16px/500, 999px radius, padding 14px 16px.
 - **button-outline (“Ride”):** #111111 fill, #FCFCFC text, 14px/500, 999px radius, padding 10px 12px.
-- **button-secondary (“Schedule ahead”):** #F6F6F6 fill, #111111 text, 16px/500, 999px radius, padding 14px 16px.
+- **button-secondary (“Sign up”):** #FFFFFF fill, #000000 text, 14px/500, 999px radius, padding 10px 12px.
 - **button-ghost (“Change city”):** transparent fill, #FFFFFF text, 16px/400, 8px radius, padding 0px.
 - **input-field (“Pickup location needs to be fill”):** transparent fill, #111111 text, 16px/400, padding 0px.
 - **link:** transparent fill, #FFFFFF text, padding 0px.
@@ -189,10 +186,10 @@ Measured from the rendered page. Token values reference the tokens above.
 
 - Do use #000000 for the page and lift surfaces in small steps: #111111, #292929.
 - Do keep text in 3 levels: #FFFFFF, #AFAFAF, #4A4A4A.
-- Do let contrast carry emphasis; primary actions use #FFFFFF on #000000.
+- Do let contrast carry emphasis; primary actions use #F6F6F6 on #000000.
 - Do reuse the measured spacing steps (8px, 16px, 18px).
 - Do make buttons and chips fully rounded (9999px); most other elements use 8px corners.
-- Don't use #4A4A4A for body text; it reaches 2.4:1 on #000000. Keep it for large text or metadata.
+- Don't use #4A4A4A for body text; it reaches 2.37:1 on #000000. Keep it for large text or metadata.
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond UberMove, sans-serif and UberMoveText.
 - Don't add saturated accent colors; the measured palette is almost entirely neutral.
@@ -204,4 +201,4 @@ Interface transitions are quick: 0.2s, 0.5s, 0.3s.
 
 - **Easing:** `cubic-bezier(0.22, 1, 0.36, 1)`, `cubic-bezier(0, 0, 1, 1)`, `cubic-bezier(0.4, 0, 0.2, 1)`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/uber.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/uber.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

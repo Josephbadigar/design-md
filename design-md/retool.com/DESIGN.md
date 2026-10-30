@@ -89,7 +89,7 @@ spacing:
   md: 12px
   lg: 24px
   xl: 40px
-  gutter: 8px
+  gutter: 24px
   section: 80px
   container: 1440px
 components:
@@ -100,8 +100,6 @@ components:
     rounded: "{rounded.md}"
     padding: 8px 12px
     height: 38px
-  button-primary-hover:
-    textColor: "{colors.background}"
   button-outline:
     backgroundColor: "{colors.overlay-strong}"
     textColor: "{colors.on-surface}"
@@ -131,16 +129,16 @@ Retool describes itself as: “Build, deploy, and manage internal tools with Ret
 
 Type is set in **saansFont** and **pxGroteskFont**. Headlines run large with tight negative tracking; body text is 14px. The surface language is flat. Corners are mostly 12px.
 
-Measured from [retool.com](https://retool.com/) on October 21, 2026 at 1440×900 and 390×844 from 368 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [retool.com](https://retool.com/) on October 29, 2026 at 1440×900 and 390×844 from 363 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 13 roles.
 
 - **Charcoal (#151515):** Page background, seen 5 times. Token `background`, CSS `--color-surface-background-base`.
-- **Mist (#E9EBDF):** Primary text and headings, seen 41 times. Token `on-surface`, CSS `--btn-secondary-red-hover-text`.
+- **Mist (#E9EBDF):** Primary text and headings, seen 40 times. Token `on-surface`, CSS `--btn-secondary-red-hover-text`.
 - **Snow (#F7F8F4):** Headings and emphasis, seen 2 times. Token `on-surface-strong`.
-- **Warm Silver (#CBCCC4):** Secondary text, seen 9 times. Token `on-surface-variant`.
+- **Warm Silver (#CBCCC4):** Secondary text, seen 7 times. Token `on-surface-variant`.
 - **Graphite (#242424):** Raised areas one step from the page, seen 6 times. Token `surface-container-low`.
 - **Charcoal 6% (#15151510):** Translucent fill for cards and controls, seen 2 times. Token `overlay`, CSS `--raw-dark-black-2-alpha-6`.
 - **Near Black 80% (#000000CC):** Stronger translucent fill, seen 1 time. Token `overlay-strong`, CSS `--nav-scrolled-background`.
@@ -148,8 +146,8 @@ The palette has 13 roles.
 - **Charcoal 12% (#1515151F):** Secondary dividers, seen 8 times. Token `outline-variant`.
 - **Vivid Orange (#ECA438):** Brand accent (CSS variable). Token `primary`.
 - **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
-- **Vivid Red (#EF4444):** Brand accent (CSS variable), seen 12 times. Token `secondary`.
-- **Blue (#518DD2):** Most used accent color, seen 4 times. Token `tertiary`, CSS `--nav-items-active-selected`.
+- **Vivid Red (#EF4444):** Accent (CSS variable). Token `secondary`.
+- **Blue (#518DD2):** Accent in text, fills and borders, seen 2 times. Token `tertiary`, CSS `--nav-items-active-selected`.
 
 ## Typography
 
@@ -165,13 +163,13 @@ The palette has 13 roles.
 
 ## Layout
 
-Spacing is mostly on a 4px grid (85% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
+Spacing is mostly on a 4px grid (86% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
 
 - **Scale:** xs 4px, sm 8px, md 12px, lg 24px, xl 40px.
 - **Sections:** 80px vertical padding between major sections.
-- **Gaps:** 8px is the most common gap in flex and grid layouts.
+- **Gaps:** 24px is the most common gap in flex and grid layouts.
 - **Container:** content is capped at 1440px.
-- **Breakpoints:** 400px, 544px, 640px, 767px, 768px, 1023.98px, 1024px, 1200px, 1280px.
+- **Breakpoints:** 400px, 544px, 640px, 767px, 768px, 1024px, 1200px, 1280px.
 
 ## Elevation & Depth
 
@@ -183,7 +181,7 @@ Most elements use 12px corners. Measured radii, most used first:
 
 - **md (12px):** 20 elements.
 - **lg (16px):** 20 elements.
-- **xl (36px):** 20 elements.
+- **xl (36px):** 16 elements.
 - **sm (8px):** 8 elements.
 - **full (9999px):** 8 elements.
 
@@ -192,7 +190,6 @@ Most elements use 12px corners. Measured radii, most used first:
 Measured from the rendered page. Token values reference the tokens above.
 
 - **button-primary (“Import code”):** #D9D9D9 fill, #15151599 text, 14px/400, 12px radius, padding 8px 12px, border 1px solid #1515151F.
-- **button-primary-hover:** background #D9D9D9, text #151515 on hover.
 - **button-outline (“See what's new. Watch the film”):** #000000CC fill, #E9EBDF text, 16px/400, 3.35544e+07px radius, padding 0px, border 1px solid #E9EBDF1F.
 - **button-secondary (“Start for free”):** #E9EBDF fill, #151515 text, 14px/400, 3.35544e+07px radius, padding 0px 20px.
 - **button-ghost (“Solution”):** transparent fill, #E9EBDF text, 16px/400, padding 0px.
@@ -213,9 +210,9 @@ Measured from the rendered page. Token values reference the tokens above.
 
 ## Motion
 
-Interface transitions are quick: 0.6s, 0.4s, 0.2s, 0.3s.
+Interface transitions are quick: 0.6s, 0.2s, 0.4s, 0.3s.
 
-- **Easing:** `cubic-bezier(0.72, 0, 0.12, 1)`, `cubic-bezier(0.12, 1, 0.72, 1)`.
+- **Easing:** `cubic-bezier(0.72, 0, 0.12, 1)`, `cubic-bezier(0.24, 0.01, 0.36, 1)`, `cubic-bezier(0.12, 1, 0.72, 1)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/retool.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/retool.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

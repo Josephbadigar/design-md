@@ -1,27 +1,26 @@
 ---
 version: alpha
 name: Replicate
-description: "Dark monochrome interface measured from replicate.com: rb-freigeist-neue type with basier-square, tonal surfaces and pill-shaped controls."
+description: "Light monochrome interface measured from replicate.com: rb-freigeist-neue type with basier-square, tonal surfaces and pill-shaped controls."
 colors:
-  background: "#111111"
-  surface: "#111111"
-  on-surface: "#EEEEEE"
-  on-background: "#EEEEEE"
-  on-surface-strong: "#FFFFFF"
-  on-surface-variant: "#B4B4B4"
-  on-surface-muted: "#606060"
-  surface-container-low: "#181111"
-  surface-container: "#1B180F"
-  surface-container-high: "#000000"
-  overlay: "#0000001A"
+  background: "#FFFFFF"
+  surface: "#FFFFFF"
+  on-surface: "#202020"
+  on-background: "#202020"
+  on-surface-variant: "#24292E"
+  on-surface-muted: "#646464"
+  on-surface-subtle: "#BBBBBB"
+  surface-container-low: "#FFFCFC"
+  surface-container: "#FEFCE9"
+  overlay: "#0000004D"
+  overlay-strong: "#FFFFFF1A"
   outline: "#FFFFFF33"
-  outline-variant: "#000000"
-  primary: "#FFFFFF"
-  on-primary: "#000000"
-  secondary: "#FF7B72"
-  tertiary: "#EC6142"
+  outline-variant: "#FCFCFC"
+  primary: "#000000"
+  on-primary: "#FFFFFF"
+  secondary: "#D73A49"
+  tertiary: "#DD4425"
   error: "#EA2804"
-  warning: "#F5E147"
 typography:
   headline-display:
     fontFamily: rb-freigeist-neue
@@ -107,23 +106,23 @@ components:
     padding: 12px 16px
     height: 54px
   button-primary-hover:
-    backgroundColor: "{colors.on-surface}"
+    backgroundColor: "{colors.on-surface-muted}"
   button-outline:
-    backgroundColor: "{colors.surface-container-high}"
+    backgroundColor: "{colors.background}"
     textColor: "{colors.on-surface}"
     typography: "{typography.body-md}"
     rounded: 0px
     padding: 8px 12px
     height: 42px
   button-outline-hover:
-    backgroundColor: "#FFFFFF1B"
+    backgroundColor: "#00000006"
   button-ghost:
     textColor: "{colors.on-surface}"
     typography: "{typography.label-sm}"
     rounded: 0px
     padding: 10px 8px
   input-field:
-    backgroundColor: "{colors.overlay}"
+    backgroundColor: "{colors.background}"
     textColor: "{colors.on-surface}"
     typography: "{typography.label-sm}"
     rounded: 0px
@@ -141,33 +140,32 @@ components:
 
 ## Overview
 
-Replicate describes itself as: “Run open-source machine learning models with a cloud API” The interface is dark, built on **Charcoal (#111111)** with **Mist (#EEEEEE)** text and almost no color: actions are carried by contrast, not hue.
+Replicate describes itself as: “Run open-source machine learning models with a cloud API” The interface is light, built on **White (#FFFFFF)** with **Charcoal (#202020)** text and almost no color: actions are carried by contrast, not hue.
 
 Type is set in **rb-freigeist-neue** and **basier-square**, with **jetbrains-mono** for code. Headlines run large; body text is 16px. Depth comes from soft drop shadows. Controls are pill-shaped.
 
-Measured from [replicate.com](https://replicate.com/) on October 21, 2026 at 1440×900 and 390×844 from 379 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [replicate.com](https://replicate.com/) on October 29, 2026 at 1440×900 and 390×844 from 379 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 17 roles, plus gradient stops #FF6BFC, #EA2804, #F6F47F.
+The palette has 16 roles, plus gradient stops #FF6BFC, #EA2804, #F6F47F.
 
-- **Charcoal (#111111):** Page background, seen 4 times. Token `background`.
-- **Mist (#EEEEEE):** Primary text and headings, seen 29 times. Token `on-surface`.
-- **White (#FFFFFF):** Headings and emphasis, seen 5 times. Token `on-surface-strong`, CSS `--tw-ring-offset-color`.
-- **Gray (#B4B4B4):** Secondary text, seen 25 times. Token `on-surface-variant`.
-- **Slate (#606060):** Muted text and metadata, seen 8 times. Token `on-surface-muted`.
-- **Warm Charcoal (#181111):** Raised areas one step from the page, seen 3 times. Token `surface-container-low`.
-- **Warm Charcoal (#1B180F):** Cards and panels, seen 2 times. Token `surface-container`.
-- **Near Black (#000000):** Hover and pressed fills, seen 1 time. Token `surface-container-high`.
-- **Near Black 10% (#0000001A):** Translucent fill for cards and controls, seen 1 time. Token `overlay`.
+- **White (#FFFFFF):** Page background, seen 7 times. Token `background`, CSS `--tw-ring-offset-color`.
+- **Charcoal (#202020):** Primary text and headings, seen 29 times. Token `on-surface`.
+- **Cool Graphite (#24292E):** Secondary text, seen 2 times. Token `on-surface-variant`.
+- **Slate (#646464):** Muted text and metadata, seen 24 times. Token `on-surface-muted`.
+- **Silver (#BBBBBB):** Subtle text and placeholders, seen 8 times. Token `on-surface-subtle`.
+- **Snow (#FFFCFC):** Raised areas one step from the page, seen 6 times. Token `surface-container-low`.
+- **Pale Yellow (#FEFCE9):** Cards and panels, seen 2 times. Token `surface-container`.
+- **Near Black 30% (#0000004D):** Translucent fill for cards and controls, seen 1 time. Token `overlay`.
+- **White 10% (#FFFFFF1A):** Stronger translucent fill, seen 1 time. Token `overlay-strong`.
 - **White 20% (#FFFFFF33):** Borders and dividers, seen 6 times. Token `outline`.
-- **Near Black (#000000):** Secondary dividers, seen 5 times. Token `outline-variant`.
-- **White (#FFFFFF):** Primary buttons and calls to action, seen 27 times. Token `primary`, CSS `--tw-ring-offset-color`.
-- **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
-- **Light Red (#FF7B72):** Most used accent color, seen 14 times. Token `secondary`.
-- **Vivid Red (#EC6142):** Most used accent color, seen 12 times. Token `tertiary`.
+- **Snow (#FCFCFC):** Secondary dividers, seen 1 time. Token `outline-variant`.
+- **Near Black (#000000):** Primary buttons and calls to action, seen 24 times. Token `primary`.
+- **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
+- **Red (#D73A49):** Accent in text, fills and borders, seen 9 times. Token `secondary`.
+- **Red (#DD4425):** Accent in text, fills and borders, seen 8 times. Token `tertiary`.
 - **Vivid Red (#EA2804):** Errors and destructive states, seen 15 times. Token `error`.
-- **Vivid Yellow (#F5E147):** Warnings and highlights, seen 2 times. Token `warning`, CSS `--yellow-11`.
 
 ## Typography
 
@@ -187,7 +185,7 @@ The palette has 17 roles, plus gradient stops #FF6BFC, #EA2804, #F6F47F.
 
 ## Layout
 
-Spacing is mostly on a 4px grid (73% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
+Spacing is mostly on a 4px grid (72% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
 
 - **Scale:** xs 2px, sm 8px, md 16px, lg 24px, xl 64px.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
@@ -196,36 +194,36 @@ Spacing is mostly on a 4px grid (73% of measured values), with some off-grid ste
 
 Raised elements use soft drop shadows. The most used recipes:
 
-- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(102, 84, 23) 0px 1px 2px 0px`
+- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(228, 199, 103) 0px 1px 2px 0px`
 
 ## Shapes
 
 Interactive controls are pill-shaped. Measured radii, most used first:
 
-- **full (9999px):** 108 elements.
+- **full (9999px):** 112 elements.
 - **md (2px):** 8 elements.
 
 ## Components
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Get started for free”):** #FFFFFF fill, #000000 text, 18px/400, padding 12px 16px, border 1px solid #FFFFFF.
-- **button-primary-hover:** background #FFFFFFED, text #000000 on hover.
-- **button-outline (“Push a model”):** #000000 fill, #EEEEEE text, 16px/400, padding 8px 12px, border 1px solid #EEEEEE.
-- **button-outline-hover:** background #FFFFFF1B, text #EEEEEE on hover.
-- **button-ghost (“Node”):** transparent fill, #EEEEEE text, 14px/400, padding 10px 8px.
-- **input-field (“Search 'best image models' or 't”):** #0000001A fill, #EEEEEE text, 14px/400, padding 6px 56px 6px 28px.
-- **card:** transparent fill, #EEEEEE text, 16px/400, padding 0px.
-- **link:** transparent fill, #EEEEEE text, padding 0px.
+- **button-primary (“Get started for free”):** #000000 fill, #FFFFFF text, 18px/400, padding 12px 16px, border 1px solid #000000.
+- **button-primary-hover:** background #0000009B, text #FFFFFF on hover.
+- **button-outline (“Push a model”):** #FFFFFF fill, #202020 text, 16px/400, padding 8px 12px, border 1px solid #202020.
+- **button-outline-hover:** background #00000006, text #202020 on hover.
+- **button-ghost (“Node”):** transparent fill, #202020 text, 14px/400, padding 10px 8px.
+- **input-field (“Search 'best image models' or 't”):** #FFFFFF1A fill, #202020 text, 14px/400, padding 6px 56px 6px 28px.
+- **card:** transparent fill, #202020 text, 16px/400, padding 0px.
+- **link:** transparent fill, #202020 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #111111 for the page and lift surfaces in small steps: #181111, #1B180F, #000000.
-- Do keep text in 4 levels: #EEEEEE, #FFFFFF, #B4B4B4, #606060.
-- Do let contrast carry emphasis; primary actions use #FFFFFF on #111111.
+- Do use #FFFFFF for the page and lift surfaces in small steps: #FFFCFC, #FEFCE9.
+- Do keep text in 4 levels: #202020, #24292E, #646464, #BBBBBB.
+- Do let contrast carry emphasis; primary actions use #000000 on #FFFFFF.
 - Do reuse the measured spacing steps (8px, 16px, 24px).
 - Do make buttons and chips fully rounded (9999px); most other elements use 2px corners.
-- Don't use #606060 for body text; it reaches 3.0:1 on #111111. Keep it for large text or metadata.
+- Don't use #BBBBBB for body text; it reaches 1.92:1 on #FFFFFF. Keep it for large text or metadata.
 - Don't introduce new font families beyond rb-freigeist-neue, basier-square and jetbrains-mono.
 - Don't add saturated accent colors; the measured palette is almost entirely neutral.
 - Don't make interface transitions slower than 0.5s.
@@ -236,4 +234,4 @@ Interface transitions are quick: 0.15s, 0.5s, 0.2s. Longer ambient animations ru
 
 - **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `ease`, `linear`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/replicate.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/replicate.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

@@ -11,8 +11,8 @@ colors:
   on-surface-muted: "#5F6D77"
   surface-container-low: "#FCFBF8"
   surface-container: "#FFFFFF"
-  overlay: "#FCFBF80D"
-  overlay-strong: "#071A310D"
+  overlay: "#071A310D"
+  overlay-strong: "#FCFBF80D"
   outline: "#FCFBF81A"
   outline-variant: "#071A310D"
   primary: "#C3DFFE"
@@ -96,7 +96,7 @@ spacing:
   sm: 8px
   md: 12px
   lg: 24px
-  xl: 48px
+  xl: 56px
   gutter: 8px
   section: 120px
   margin: 24px
@@ -108,17 +108,12 @@ components:
     rounded: "{rounded.lg}"
     padding: 12px 16px
     height: 48px
-  button-primary-hover:
-    backgroundColor: "#0E396A"
   button-outline:
     textColor: "{colors.on-surface}"
     typography: "{typography.body-md}"
     rounded: "{rounded.lg}"
     padding: 12px 16px
     height: 48px
-  button-outline-hover:
-    backgroundColor: "{colors.on-surface}"
-    textColor: "{colors.surface-container-low}"
   button-ghost:
     textColor: "{colors.on-surface}"
     typography: "{typography.label-md}"
@@ -136,25 +131,25 @@ Calendly.com describes itself as: “Calendly connects and simplifies all of the
 
 Type is set in **Calendly Sans** and **Wulkan Text**. Headlines run large with tight negative tracking; body text is 14px. Depth comes from soft drop shadows. Corners are mostly 4px.
 
-Measured from [calendly.com](https://calendly.com/) on October 21, 2026 at 1440×900 and 390×844 from 399 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [calendly.com](https://calendly.com/) on October 29, 2026 at 1440×900 and 390×844 from 406 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 14 roles.
 
 - **Warm Mist (#F5F3EE):** Page background. Token `background`.
-- **Deep Blue (#071A31):** Primary text and headings, seen 36 times. Token `on-surface`.
+- **Deep Blue (#071A31):** Primary text and headings, seen 34 times. Token `on-surface`.
 - **Cool Graphite (#3D464E):** Secondary text, seen 4 times. Token `on-surface-variant`.
-- **Blue (#5F6D77):** Muted text and metadata, seen 16 times. Token `on-surface-muted`, CSS `--color-text-secondary`.
-- **Snow (#FCFBF8):** Raised areas one step from the page, seen 14 times. Token `surface-container-low`.
+- **Blue (#5F6D77):** Muted text and metadata, seen 25 times. Token `on-surface-muted`, CSS `--color-text-secondary`.
+- **Snow (#FCFBF8):** Raised areas one step from the page, seen 14 times. Token `surface-container-low`, CSS `--color-ramp-orange-025`.
 - **White (#FFFFFF):** Cards and panels, seen 5 times. Token `surface-container`.
-- **Snow 5% (#FCFBF80D):** Translucent fill for cards and controls, seen 12 times. Token `overlay`.
-- **Deep Blue 5% (#071A310D):** Stronger translucent fill, seen 7 times. Token `overlay-strong`.
+- **Deep Blue 5% (#071A310D):** Translucent fill for cards and controls, seen 12 times. Token `overlay`.
+- **Snow 5% (#FCFBF80D):** Stronger translucent fill, seen 12 times. Token `overlay-strong`.
 - **Snow 10% (#FCFBF81A):** Borders and dividers, seen 12 times. Token `outline`.
-- **Deep Blue 5% (#071A310D):** Secondary dividers, seen 3 times. Token `outline-variant`.
+- **Deep Blue 5% (#071A310D):** Secondary dividers, seen 9 times. Token `outline-variant`.
 - **Pale Blue (#C3DFFE):** Brand color on large areas. Token `primary`.
 - **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
-- **Light Blue (#84C1FF):** Secondary buttons, seen 45 times. Token `secondary`.
+- **Light Blue (#84C1FF):** Secondary buttons, seen 1 time. Token `secondary`.
 - **Light Blue (#6BB1FF):** Accent, seen 6 times. Token `tertiary`.
 
 ## Typography
@@ -174,9 +169,9 @@ The palette has 14 roles.
 
 ## Layout
 
-Spacing follows a 4px grid: 94% of measured gaps and paddings are multiples of 4px.
+Spacing follows a 4px grid: 95% of measured gaps and paddings are multiples of 4px.
 
-- **Scale:** xs 4px, sm 8px, md 12px, lg 24px, xl 48px.
+- **Scale:** xs 4px, sm 8px, md 12px, lg 24px, xl 56px.
 - **Sections:** 120px vertical padding between major sections.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
 - **Page margin:** 24px on each side of full-width sections.
@@ -191,8 +186,8 @@ Raised elements use soft drop shadows. The most used recipes:
 
 Most elements use 4px corners. Measured radii, most used first:
 
-- **xs (4px):** 172 elements.
-- **sm (8px):** 56 elements.
+- **xs (4px):** 168 elements.
+- **sm (8px):** 64 elements.
 - **md (12px):** 48 elements.
 - **lg (16px):** 32 elements.
 - **xl (48px):** 20 elements.
@@ -202,9 +197,7 @@ Most elements use 4px corners. Measured radii, most used first:
 Measured from the rendered page. Token values reference the tokens above.
 
 - **button-primary (“Get started for free”):** #071A31 fill, #FCFBF8 text, 14px/400, 16px radius, padding 12px 16px.
-- **button-primary-hover:** background #0E396A, text #FCFBF8 on hover.
 - **button-outline (“Log In”):** transparent fill, #071A31 text, 14px/400, 16px radius, padding 12px 16px, border 1px solid #071A31.
-- **button-outline-hover:** background #071A31, text #FCFBF8 on hover.
 - **button-ghost (“Product”):** transparent fill, #071A31 text, 14px/500, 16px radius, padding 8px.
 - **link:** transparent fill, #FCFBF8B2 text, padding 0px.
 
@@ -218,13 +211,13 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do use 4px corners on most elements; larger surfaces also use 8px, 12px and 16px.
 - Don't introduce new font families beyond Calendly Sans, Wulkan Text and Geist.
 - Don't use #C3DFFE for large backgrounds or body text.
-- Don't make interface transitions slower than 0.5s.
+- Don't make interface transitions slower than 0.6s.
 
 ## Motion
 
 Interface transitions are quick: 0.15s, 0.2s, 0.5s, 0.18s.
 
-- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `ease`, `ease-in-out`.
+- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `cubic-bezier(0, 0, 0.2, 1)`, `ease-in-out`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/calendly.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/calendly.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

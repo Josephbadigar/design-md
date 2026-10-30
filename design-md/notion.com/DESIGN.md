@@ -9,6 +9,7 @@ colors:
   on-background: "#0D0D0D"
   on-surface-strong: "#000000"
   on-surface-variant: "#1A1A1A"
+  on-surface-muted: "#615D59"
   surface-container-low: "#F9F9F8"
   surface-container: "#E6F3FE"
   overlay: "#0000000D"
@@ -16,10 +17,8 @@ colors:
   primary: "#0075DE"
   on-primary: "#FFFFFF"
   inverse-surface: "#78736F"
-  secondary: "#005BAB"
-  success: "#1AAE39"
-  error: "#F64932"
-  warning: "#FFB110"
+  secondary: "#1AAE39"
+  tertiary: "#FFB110"
 typography:
   headline-display:
     fontFamily: NotionInter
@@ -74,7 +73,7 @@ rounded:
 spacing:
   xs: 3px
   sm: 8px
-  md: 12px
+  md: 16px
   lg: 24px
   xl: 40px
   gutter: 8px
@@ -88,10 +87,10 @@ components:
     padding: 4px 14px
     height: 36px
   button-primary-hover:
-    backgroundColor: "{colors.secondary}"
+    backgroundColor: "#005BAB"
   button-outline:
     backgroundColor: "{colors.surface-container}"
-    textColor: "{colors.secondary}"
+    textColor: "#005BAB"
     typography: "{typography.label-lg}"
     rounded: "{rounded.md}"
     padding: 6px 15px
@@ -121,27 +120,26 @@ Notion describes itself as: “Build Custom Agents, search across all your apps,
 
 Type is set in **NotionInter**. Headlines run large with tight negative tracking; body text is 14px. The surface language is flat. Corners are mostly 8px.
 
-Measured from [notion.com](https://www.notion.com/) on October 28, 2026 at 1440×900 and 390×844 from 266 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [notion.com](https://www.notion.com/) on October 29, 2026 at 1440×900 and 390×844 from 266 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 15 roles.
+The palette has 14 roles.
 
 - **White (#FFFFFF):** Page background, seen 14 times. Token `background`.
 - **Charcoal (#0D0D0D):** Primary text and headings. Token `on-surface`.
 - **Near Black (#000000):** Headings and emphasis, seen 13 times. Token `on-surface-strong`.
 - **Charcoal (#1A1A1A):** Secondary text, seen 6 times. Token `on-surface-variant`.
+- **Warm Slate (#615D59):** Muted text and metadata, seen 6 times. Token `on-surface-muted`, CSS `--tatami-color-icon-button-active`.
 - **Snow (#F9F9F8):** Raised areas one step from the page, seen 3 times. Token `surface-container-low`, CSS `--tatami-color-menu-button-background`.
 - **Pale Blue (#E6F3FE):** Cards and panels, seen 1 time. Token `surface-container`, CSS `--tatami-color-blue-200`.
 - **Near Black 5% (#0000000D):** Translucent fill for cards and controls, seen 1 time. Token `overlay`.
-- **Near Black 10% (#0000001A):** Borders and dividers, seen 15 times. Token `outline`, CSS `--tatami-color-background-base-active`.
+- **Near Black 10% (#0000001A):** Borders and dividers, seen 14 times. Token `outline`, CSS `--tatami-color-background-base-active`.
 - **Vivid Blue (#0075DE):** Primary buttons and calls to action, seen 3 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Warm Slate (#78736F):** High-contrast fills, seen 9 times. Token `inverse-surface`, CSS `--tatami-color-gray-500`.
-- **Dark Blue (#005BAB):** Accent, seen 2 times. Token `secondary`.
-- **Green (#1AAE39):** Success and positive states, seen 2 times. Token `success`.
-- **Vivid Red (#F64932):** Errors and destructive states, seen 2 times. Token `error`.
-- **Vivid Amber (#FFB110):** Warnings and highlights, seen 1 time. Token `warning`.
+- **Warm Slate (#78736F):** High-contrast fills, seen 8 times. Token `inverse-surface`, CSS `--tatami-color-gray-500`.
+- **Green (#1AAE39):** Accent in text, fills and borders, seen 2 times. Token `secondary`.
+- **Vivid Amber (#FFB110):** Accent in text, fills and borders, seen 2 times. Token `tertiary`.
 
 ## Typography
 
@@ -157,12 +155,12 @@ The palette has 15 roles.
 
 ## Layout
 
-Spacing does not follow a strict grid: 62% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 66% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
-- **Scale:** xs 3px, sm 8px, md 12px, lg 24px, xl 40px.
+- **Scale:** xs 3px, sm 8px, md 16px, lg 24px, xl 40px.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
 - **Container:** content is capped at 500px.
-- **Breakpoints:** 600px, 840px, 1080px, 1280px, 1440px.
+- **Breakpoints:** 375px, 400px, 440px, 500px, 599px, 600px, 768px, 799px, 839px, 840px, 919px, 960px, 980px, 1080px, 1280px, 1440px, 1600px.
 
 ## Elevation & Depth
 
@@ -172,10 +170,10 @@ The design is flat: no shadows were measured. Hierarchy comes from tonal surface
 
 Most elements use 8px corners. Measured radii, most used first:
 
-- **md (8px):** 204 elements.
+- **md (8px):** 180 elements.
 - **lg (12px):** 56 elements.
+- **sm (4px):** 44 elements.
 - **full (9999px):** 32 elements.
-- **sm (4px):** 20 elements.
 
 ## Components
 
@@ -192,10 +190,10 @@ Measured from the rendered page. Token values reference the tokens above.
 ## Do's and Don'ts
 
 - Do use #FFFFFF for the page and lift surfaces in small steps: #F9F9F8, #E6F3FE.
-- Do keep text in 3 levels: #0D0D0D, #000000, #1A1A1A.
+- Do keep text in 4 levels: #0D0D0D, #000000, #1A1A1A, #615D59.
 - Do reserve #0075DE for primary actions and key highlights.
 - Do set headlines in NotionInter with tight tracking (-0.048em).
-- Do reuse the measured spacing steps (8px, 12px, 24px).
+- Do reuse the measured spacing steps (8px, 16px, 24px).
 - Do use 8px corners on most elements; larger surfaces also use 12px and 4px.
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond NotionInter.
@@ -209,4 +207,4 @@ Interface transitions are quick: 0.2s, 0.15s, 0.3s.
 - **Easing:** `cubic-bezier(0.42, 0, 1, 1)`, `ease`, `cubic-bezier(0.645, 0.045, 0.355, 1)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/notion.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/notion.com/), the free DESIGN.md generator (engine 2026.10.29+bf9d681d83cf).

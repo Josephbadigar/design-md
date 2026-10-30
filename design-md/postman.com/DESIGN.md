@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Postman
-description: "Light interface measured from postman.com: gtStandard type with system-ui, vivid orange accents, flat surfaces and pill-shaped controls."
+description: "Light interface measured from postman.com: gtStandard type with system-ui, orange accents, flat surfaces and pill-shaped controls."
 colors:
   background: "#FF6C37"
   surface: "#FF6C37"
@@ -13,12 +13,11 @@ colors:
   overlay-strong: "#120A0666"
   outline: "#FFE0C424"
   outline-variant: "#FFE0C40F"
-  primary: "#FF6C37"
-  on-primary: "#000000"
-  inverse-surface: "#0E0704"
-  secondary: "#E0531F"
-  tertiary: "#FF8A5C"
-  warning: "#FFA90A"
+  primary: "#E0531F"
+  on-primary: "#FFFFFF"
+  inverse-surface: "#141312"
+  secondary: "#FF8A5C"
+  tertiary: "#0265D2"
 typography:
   headline-display:
     fontFamily: gtStandard
@@ -69,11 +68,11 @@ typography:
     lineHeight: 1.63
     letterSpacing: -0.013em
   label-lg:
-    fontFamily: system-ui
+    fontFamily: inter
     fontSize: 16px
-    fontWeight: 400
-    lineHeight: 1.15
-    letterSpacing: -0.01em
+    fontWeight: 600
+    lineHeight: 1.4
+    letterSpacing: 0.03em
   label-md:
     fontFamily: inter
     fontSize: 15px
@@ -99,26 +98,26 @@ typography:
     lineHeight: 1.02
     letterSpacing: -0.02em
 rounded:
-  sm: 5px
+  sm: 4px
   md: 8px
   lg: 12px
   full: 9999px
 spacing:
   xs: 4px
-  sm: 5px
-  md: 10px
+  sm: 8px
+  md: 12px
   lg: 22px
   xl: 40px
-  gutter: 10px
+  gutter: 8px
   section: 96px
   margin: 24px
   container: 760px
 components:
   button-primary:
-    backgroundColor: "{colors.secondary}"
-    textColor: "{colors.on-surface-variant}"
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.on-primary}"
     typography: "{typography.label-sm}"
-    rounded: "{rounded.sm}"
+    rounded: 5px
     padding: 4px 12px
     height: 33px
   button-primary-hover:
@@ -155,34 +154,33 @@ components:
 
 ## Overview
 
-Postman describes itself as: “Go faster from development to production with higher accuracy and fewer tokens.” The interface is light, built on **Vivid Orange (#FF6C37)** with **Charcoal (#212121)** text, and **Vivid Orange (#FF6C37)** as the main accent.
+Postman describes itself as: “Go faster from development to production with higher accuracy and fewer tokens.” The interface is light, built on **Vivid Orange (#FF6C37)** with **Charcoal (#212121)** text, and **Orange (#E0531F)** as the main accent.
 
 Type is set in **gtStandard** and **system-ui**, with **ibmPlexMono** for code. Headlines run large with tight negative tracking; body text is 16px. Depth comes from soft drop shadows. Controls are pill-shaped.
 
-Measured from [postman.com](https://www.postman.com/) on October 21, 2026 at 1440×900 and 390×844 from 391 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [postman.com](https://www.postman.com/) on October 29, 2026 at 1440×900 and 390×844 from 419 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 14 roles, plus gradient stops #230C15, #300F18, #FF6C379E.
+The palette has 13 roles, plus gradient stops #230C15, #300F18, #FF6C379E.
 
-- **Vivid Orange (#FF6C37):** Page background. Token `background`, CSS `--orange-50`.
+- **Vivid Orange (#FF6C37):** Page background. Token `background`.
 - **Charcoal (#212121):** Primary text and headings. Token `on-surface`.
-- **White (#FFFFFF):** Secondary text, seen 51 times. Token `on-surface-variant`, CSS `--color-white`.
-- **Pale Orange (#FFF0DE):** Muted text and metadata, seen 24 times. Token `on-surface-muted`.
+- **White (#FFFFFF):** Secondary text, seen 7 times. Token `on-surface-variant`, CSS `--aether-grey-00`.
+- **Pale Orange (#FFF0DE):** Muted text and metadata, seen 28 times. Token `on-surface-muted`.
 - **Pale Orange 14% (#FFE0C424):** Translucent fill for cards and controls, seen 4 times. Token `overlay`.
 - **Warm Charcoal 40% (#120A0666):** Stronger translucent fill, seen 4 times. Token `overlay-strong`.
 - **Pale Orange 14% (#FFE0C424):** Borders and dividers, seen 8 times. Token `outline`.
 - **Pale Orange 6% (#FFE0C40F):** Secondary dividers, seen 6 times. Token `outline-variant`.
-- **Vivid Orange (#FF6C37):** Brand color on large areas, seen 1 time. Token `primary`, CSS `--orange-50`.
-- **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
-- **Near Black (#0E0704):** High-contrast fills, seen 8 times. Token `inverse-surface`.
-- **Orange (#E0531F):** Secondary buttons, seen 36 times. Token `secondary`.
-- **Orange (#FF8A5C):** Most used accent color, seen 6 times. Token `tertiary`.
-- **Vivid Orange (#FFA90A):** Warnings and highlights, seen 3 times. Token `warning`.
+- **Orange (#E0531F):** Primary buttons and calls to action, seen 1 time. Token `primary`.
+- **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
+- **Charcoal (#141312):** High-contrast fills, seen 10 times. Token `inverse-surface`.
+- **Orange (#FF8A5C):** Accent in text, fills and borders, seen 7 times. Token `secondary`.
+- **Blue (#0265D2):** Accent in text, fills and borders, seen 2 times. Token `tertiary`.
 
 ## Typography
 
-**gtStandard**, **system-ui**, **inter** and **ibmPlexMono** (monospace) share the interface. Fallback stack: `gtStandard, gtStandard Fallback, inter, inter Fallback`. Other loaded fonts: inter Fallback, ibmPlexMono Fallback.
+**gtStandard**, **system-ui**, **inter** and **ibmPlexMono** (monospace) share the interface. Fallback stack: `gtStandard, gtStandard Fallback, inter, inter Fallback`.
 
 - **headline-display:** gtStandard 63.5px at weight 500, line height 1.02, tracking -0.02em (58px on mobile). Page title (h1).
 - **headline-lg:** gtStandard 36px at weight 500, line height 1.22, tracking -0.02em. Section headings (h2).
@@ -192,21 +190,21 @@ The palette has 14 roles, plus gradient stops #230C15, #300F18, #FF6C379E.
 - **body-lg:** inter 19px at weight 400, line height 1.6, tracking -0.008em. Lead paragraphs.
 - **body-sm:** inter 14px at weight 400, line height 1.7, tracking -0.011em. Secondary and small text.
 - **caption:** inter 12px at weight 400, line height 1.63, tracking -0.013em. Captions and fine print.
-- **label-lg:** system-ui 16px at weight 400, line height 1.15, tracking -0.01em. Large buttons and tabs.
+- **label-lg:** inter 16px at weight 600, line height 1.4, tracking 0.03em. Large buttons and tabs.
 - **label-md:** inter 15px at weight 600, line height 1.15, tracking -0.011em. Buttons, navigation and labels.
 - **label-sm:** inter 14px at weight 600, line height 1.63, tracking -0.011em. Small labels and badges.
 - **code:** ibmPlexMono 12px at weight 400, line height 1.63, tracking -0.013em, uppercase. Code and technical values.
 
 ## Layout
 
-Spacing does not follow a strict grid: 33% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 55% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
-- **Scale:** xs 4px, sm 5px, md 10px, lg 22px, xl 40px.
+- **Scale:** xs 4px, sm 8px, md 12px, lg 22px, xl 40px.
 - **Sections:** 96px vertical padding between major sections.
-- **Gaps:** 10px is the most common gap in flex and grid layouts.
+- **Gaps:** 8px is the most common gap in flex and grid layouts.
 - **Container:** content is capped at 760px.
 - **Page margin:** 24px on each side of full-width sections.
-- **Breakpoints:** 480px, 500px, 576px, 640px, 768px, 1024px, 1140px, 1199px, 1200px, 1375px, 2160px, 2560px.
+- **Breakpoints:** 480px, 576px, 640px, 768px, 769px, 800px, 1024px, 1140px, 1199px, 1200px, 1375px, 2160px, 2560px.
 
 ## Elevation & Depth
 
@@ -219,10 +217,10 @@ Raised elements use soft drop shadows. The most used recipes:
 
 Interactive controls are pill-shaped. Measured radii, most used first:
 
-- **full (9999px):** 68 elements.
+- **full (9999px):** 50 elements.
+- **md (8px):** 48 elements.
+- **sm (4px):** 36 elements.
 - **lg (12px):** 20 elements.
-- **sm (5px):** 16 elements.
-- **md (8px):** 8 elements.
 
 ## Components
 
@@ -240,21 +238,21 @@ Measured from the rendered page. Token values reference the tokens above.
 
 - Do use #FF6C37 for the page.
 - Do keep text in 3 levels: #212121, #FFFFFF, #FFF0DE.
-- Do use #FF6C37 as the brand accent: header, logo and key highlights.
+- Do reserve #E0531F for primary actions and key highlights.
 - Do set headlines in gtStandard with tight tracking (-0.02em).
-- Do reuse the measured spacing steps (5px, 10px, 22px).
-- Do make buttons and chips fully rounded (9999px); most other elements use 12px corners.
-- Don't use #FFFFFF for body text; it reaches 2.8:1 on #FF6C37. Keep it for large text or metadata.
-- Don't use #FFF0DE for body text; it reaches 2.5:1 on #FF6C37. Keep it for large text or metadata.
+- Do reuse the measured spacing steps (8px, 12px, 22px).
+- Do make buttons and chips fully rounded (9999px); most other elements use 8px corners.
+- Don't use #FFFFFF for body text; it reaches 2.82:1 on #FF6C37. Keep it for large text or metadata.
+- Don't use #FFF0DE for body text; it reaches 2.52:1 on #FF6C37. Keep it for large text or metadata.
 - Don't introduce new font families beyond gtStandard, system-ui, inter and ibmPlexMono.
-- Don't use #FF6C37 for large backgrounds or body text.
-- Don't make interface transitions slower than 0.3s.
+- Don't use #E0531F for large backgrounds or body text.
+- Don't make interface transitions slower than 0.6s.
 
 ## Motion
 
-Interface transitions are quick: 0.15s, 0.2s, 0.1s, 0.3s.
+Interface transitions are quick: 0.12s, 0.15s, 0.2s, 0.1s.
 
-- **Easing:** `ease`, `cubic-bezier(0.2, 0.7, 0.2, 1)`, `cubic-bezier(0.4, 0, 0.2, 1)`.
+- **Easing:** `ease-out`, `ease`, `cubic-bezier(0.2, 0.7, 0.2, 1)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/postman.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/postman.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

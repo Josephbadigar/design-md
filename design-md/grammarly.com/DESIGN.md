@@ -17,9 +17,6 @@ colors:
   on-primary: "#FFFFFF"
   inverse-surface: "#1C1C1C"
   secondary: "#4285F4"
-  success: "#34A853"
-  warning: "#FBBC05"
-  error: "#EB4335"
 typography:
   display-hero:
     fontFamily: matter
@@ -46,20 +43,30 @@ typography:
     lineHeight: 1.2
   body-md:
     fontFamily: system-ui
-    fontSize: 14px
-    fontWeight: 400
-  body-lg:
-    fontFamily: system-ui
     fontSize: 16px
     fontWeight: 400
+  body-lg:
+    fontFamily: sans-serif
+    fontSize: 18px
+    fontWeight: 400
+    lineHeight: 1.44
   body-sm:
+    fontFamily: sans-serif
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.5
+  caption:
     fontFamily: system-ui
     fontSize: 12px
     fontWeight: 400
   label-md:
     fontFamily: system-ui
-    fontSize: 14px
+    fontSize: 16px
     fontWeight: 700
+  label-sm:
+    fontFamily: system-ui
+    fontSize: 14px
+    fontWeight: 400
   headline-display-mobile:
     fontFamily: matter
     fontSize: 30px
@@ -96,7 +103,7 @@ components:
   button-primary:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
-    typography: "{typography.body-md}"
+    typography: "{typography.body-sm}"
     rounded: "{rounded.md}"
     padding: 0px 8px
     height: 34px
@@ -111,7 +118,7 @@ components:
   button-ghost:
     backgroundColor: "{colors.surface-container-low}"
     textColor: "#545454"
-    typography: "{typography.body-md}"
+    typography: "{typography.body-sm}"
     padding: 0px
     height: 48px
   card:
@@ -129,42 +136,41 @@ components:
 
 Grammarly describes itself as: “Grammarly makes AI writing convenient. Work smarter with personalized AI guidance and text generation on any app or website.” The interface is light, built on **White (#FFFFFF)** with **Deep Indigo (#1F243C)** text, and **Dark Teal (#027E6F)** as the main accent.
 
-Type is set in **matter** and **Matter**. Headlines run large with tight negative tracking; body text is 14px. The surface language is flat. Corners are mostly 6px.
+Type is set in **matter** and **Matter**. Headlines run large with tight negative tracking; body text is 16px. The surface language is flat. Corners are mostly 6px.
 
-Measured from [grammarly.com](https://www.grammarly.com/) on October 21, 2026 at 1440×900 and 390×844 from 367 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [grammarly.com](https://www.grammarly.com/) on October 29, 2026 at 1440×900 and 390×844 from 378 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 15 roles.
+The palette has 12 roles.
 
 - **White (#FFFFFF):** Page background, seen 17 times. Token `background`, CSS `--button-ghost-shortcut-text-active`.
-- **Deep Indigo (#1F243C):** Primary text and headings, seen 71 times. Token `on-surface`.
+- **Deep Indigo (#1F243C):** Primary text and headings, seen 74 times. Token `on-surface`.
 - **Near Black (#000000):** Headings and emphasis, seen 10 times. Token `on-surface-strong`.
 - **Cool Charcoal (#0E101A):** Secondary text, seen 9 times. Token `on-surface-variant`.
-- **Graphite (#2E2E2E):** Muted text and metadata, seen 12 times. Token `on-surface-muted`, CSS `--origin-color-fill-base-inverse`.
+- **Graphite (#2E2E2E):** Muted text and metadata, seen 17 times. Token `on-surface-muted`, CSS `--origin-color-fill-base-inverse`.
 - **Snow (#F5F5F5):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`, CSS `--origin-color-spot-illustration-fill-secondary`.
 - **Mist (#EBEBEB):** Borders and dividers, seen 5 times. Token `outline`.
 - **Light Blue (#C6CBDE):** Secondary dividers, seen 1 time. Token `outline-variant`.
-- **Dark Teal (#027E6F):** Primary buttons and calls to action, seen 18 times. Token `primary`, CSS `--green-60`.
+- **Dark Teal (#027E6F):** Primary buttons and calls to action, seen 19 times. Token `primary`, CSS `--green-60`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
 - **Charcoal (#1C1C1C):** High-contrast fills, seen 1 time. Token `inverse-surface`, CSS `--button-pro-background-active`.
 - **Vivid Blue (#4285F4):** Accent, seen 1 time. Token `secondary`.
-- **Green (#34A853):** Success and positive states, seen 1 time. Token `success`.
-- **Vivid Amber (#FBBC05):** Warnings and highlights, seen 1 time. Token `warning`.
-- **Vivid Red (#EB4335):** Errors and destructive states, seen 1 time. Token `error`.
 
 ## Typography
 
-**matter**, **Matter** and **system-ui** share the interface. Fallback stack: `matter, sans-serif`. Other loaded fonts: Glyph.
+**matter**, **Matter**, **system-ui** and **sans-serif** share the interface. Fallback stack: `matter, sans-serif`. Other loaded fonts: Glyph.
 
 - **display-hero:** matter 52px at weight 670, line height 1.12, tracking -0.01em (34px on mobile). Oversized hero statements.
 - **headline-display:** matter 46px at weight 670, line height 1.09, tracking -0.01em (30px on mobile). Page title (h1).
 - **headline-lg:** matter 36px at weight 670, line height 1.11, tracking -0.01em (28px on mobile). Section headings (h2).
 - **headline-md:** Matter 20px at weight 600, line height 1.2. Sub-section headings.
-- **body-md:** system-ui 14px at weight 400. Body text.
-- **body-lg:** system-ui 16px at weight 400. Lead paragraphs.
-- **body-sm:** system-ui 12px at weight 400. Secondary and small text.
-- **label-md:** system-ui 14px at weight 700. Buttons, navigation and labels.
+- **body-md:** system-ui 16px at weight 400. Body text.
+- **body-lg:** sans-serif 18px at weight 400, line height 1.44. Lead paragraphs.
+- **body-sm:** sans-serif 14px at weight 400, line height 1.5. Secondary and small text.
+- **caption:** system-ui 12px at weight 400. Captions and fine print.
+- **label-md:** system-ui 16px at weight 700. Buttons, navigation and labels.
+- **label-sm:** system-ui 14px at weight 400. Small labels and badges.
 
 ## Layout
 
@@ -182,7 +188,7 @@ The design is flat: no shadows were measured. Hierarchy comes from tonal surface
 
 Most elements use 6px corners. Measured radii, most used first:
 
-- **md (6px):** 48 elements.
+- **md (6px):** 60 elements.
 - **lg (8px):** 48 elements.
 - **sm (4px):** 28 elements.
 - **full (9999px):** 12 elements.
@@ -207,7 +213,7 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do keep spacing on the 4px grid.
 - Do use 6px corners on most elements; larger surfaces also use 8px and 4px.
 - Don't add drop shadows for depth; use tonal surfaces.
-- Don't introduce new font families beyond matter, Matter and system-ui.
+- Don't introduce new font families beyond matter, Matter, system-ui and sans-serif.
 - Don't use #027E6F for large backgrounds or body text.
 - Don't make interface transitions slower than 0.3s.
 
@@ -217,4 +223,4 @@ Interface transitions are quick: 0.3s, 0.2s.
 
 - **Easing:** `ease-out`, `ease`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/grammarly.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/grammarly.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

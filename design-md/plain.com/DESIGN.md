@@ -11,8 +11,7 @@ colors:
   on-surface-muted: "#607066"
   outline: "#1AD379"
   primary: "#1AD379"
-  on-primary: "#0000EE"
-  secondary: "#F14A4A"
+  on-primary: "#F3FBE9"
   success: "#17B267"
   error: "#FFBAC3"
 typography:
@@ -56,10 +55,6 @@ typography:
     fontWeight: 500
     lineHeight: 1.33
     letterSpacing: -0.01em
-  label-sm:
-    fontFamily: Roboto
-    fontSize: 12px
-    fontWeight: 700
   code:
     fontFamily: Geist Mono
     fontSize: 13px
@@ -79,12 +74,10 @@ typography:
     lineHeight: 1.16
     letterSpacing: -0.02em
 rounded:
-  sm: 3px
   md: 6px
 spacing:
   sm: 8px
   md: 10px
-  lg: 24px
   gutter: 12px
 components:
   button-primary:
@@ -96,24 +89,6 @@ components:
     height: 34px
   button-primary-hover:
     backgroundColor: "{colors.success}"
-  button-secondary:
-    backgroundColor: "{colors.on-surface}"
-    textColor: "{colors.background}"
-    typography: "{typography.label-sm}"
-    rounded: "{rounded.sm}"
-    padding: 7.5px 24px
-    height: 31px
-  button-outline:
-    textColor: "{colors.on-surface}"
-    typography: "{typography.label-sm}"
-    rounded: "{rounded.sm}"
-    padding: 7.5px 24px
-    height: 31px
-  button-ghost:
-    textColor: "{colors.on-surface}"
-    typography: "{typography.body-sm}"
-    rounded: 0px
-    padding: 0px
   link:
     textColor: "{colors.success}"
 ---
@@ -126,26 +101,25 @@ Plain describes itself as: “Plain is the AI support stack built for B2B teams.
 
 Type is set in **ABC Favorit Regular** and **ABC Favorit Medium**, with **Geist Mono** for code. Headlines run large with tight negative tracking; body text is 15px. The surface language is flat. Corners are mostly 6px.
 
-Measured from [plain.com](https://www.plain.com/) on October 21, 2026 at 1440×900 and 390×844 from 303 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [plain.com](https://www.plain.com/) on October 29, 2026 at 1440×900 and 390×844 from 299 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 10 roles.
+The palette has 9 roles.
 
 - **White (#FFFFFF):** Page background, seen 1 time. Token `background`.
-- **Near Black (#000000):** Primary text and headings, seen 27 times. Token `on-surface`.
-- **Deep Green (#0A2414):** Secondary text, seen 52 times. Token `on-surface-variant`.
+- **Near Black (#000000):** Primary text and headings, seen 24 times. Token `on-surface`.
+- **Deep Green (#0A2414):** Secondary text, seen 51 times. Token `on-surface-variant`.
 - **Slate (#607066):** Muted text and metadata, seen 2 times. Token `on-surface-muted`.
 - **Teal (#1AD379):** Borders and dividers, seen 3 times. Token `outline`.
-- **Teal (#1AD379):** Primary buttons and calls to action, seen 22 times. Token `primary`.
-- **Vivid Indigo (#0000EE):** Text and icons on primary. Token `on-primary`.
-- **Vivid Red (#F14A4A):** Accent, seen 1 time. Token `secondary`.
+- **Teal (#1AD379):** Primary buttons and calls to action, seen 24 times. Token `primary`.
+- **Pale Lime (#F3FBE9):** Text and icons on primary. Token `on-primary`.
 - **Teal (#17B267):** Success and positive states, seen 34 times. Token `success`.
 - **Pale Red (#FFBAC3):** Errors and destructive states, seen 4 times. Token `error`.
 
 ## Typography
 
-**ABC Favorit Regular**, **ABC Favorit Medium**, **sans-serif**, **Roboto** and **Geist Mono** (monospace) share the interface. Fallback stack: `ABC Favorit Regular, ABC Favorit Regular Placeholder, sans-serif`. Other loaded fonts: ABC Favorit Medium Placeholder, ABC Favorit Regular Placeholder.
+**ABC Favorit Regular**, **ABC Favorit Medium**, **sans-serif** and **Geist Mono** (monospace) share the interface. Fallback stack: `ABC Favorit Regular, ABC Favorit Regular Placeholder, sans-serif`.
 
 - **headline-display:** ABC Favorit Regular 80px at weight 400, line height 1, tracking -0.02em (46px on mobile). Page title (h1).
 - **headline-lg:** ABC Favorit Regular 48px at weight 400, line height 1.04, tracking -0.02em (31px on mobile). Section headings (h2).
@@ -154,14 +128,13 @@ The palette has 10 roles.
 - **body-lg:** ABC Favorit Medium 18px at weight 500, line height 1.33, tracking -0.01em. Lead paragraphs.
 - **body-sm:** sans-serif 12px at weight 400. Secondary and small text.
 - **label-md:** ABC Favorit Medium 15px at weight 500, line height 1.33, tracking -0.01em. Buttons, navigation and labels.
-- **label-sm:** Roboto 12px at weight 700. Small labels and badges.
 - **code:** Geist Mono 13px at weight 500, line height 1.46, tracking 0.015em. Code and technical values.
 
 ## Layout
 
-Spacing does not follow a strict grid: 55% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 57% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
-- **Scale:** sm 8px, md 10px, lg 24px.
+- **Scale:** sm 8px, md 10px.
 - **Gaps:** 12px is the most common gap in flex and grid layouts.
 - **Breakpoints:** 576px, 798.98px, 799px, 959px, 959.98px, 960px, 1069px, 1069.98px, 1199px, 1249px, 1272px.
 
@@ -174,17 +147,13 @@ The design is flat: no shadows were measured. Hierarchy comes from color contras
 Most elements use 6px corners. Measured radii, most used first:
 
 - **md (6px):** 44 elements.
-- **sm (3px):** 8 elements.
 
 ## Components
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“BOOK A DEMO”):** #1AD379 fill, #0000EE text, 12px/400, 6px radius, padding 8px 10px 7px 10px.
-- **button-primary-hover:** background #17B267, text #0000EE on hover.
-- **button-secondary (“Accept”):** #000000 fill, #FFFFFF text, 12px/700, 3px radius, padding 7.5px 24px, border 1px solid #000000.
-- **button-outline (“Preferences”):** transparent fill, #000000 text, 12px/700, 3px radius, padding 7.5px 24px, border 1px solid #000000.
-- **button-ghost (“Cookie Policy”):** transparent fill, #000000 text, 12px/400, padding 0px.
+- **button-primary (“BOOK A DEMO”):** #1AD379 fill, #F3FBE9 text, 12px/400, 6px radius, padding 8px 10px 7px 10px.
+- **button-primary-hover:** background #17B267, text #F3FBE9 on hover.
 - **link:** transparent fill, #17B267 text, padding 0px.
 
 ## Do's and Don'ts
@@ -193,10 +162,10 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do keep text in 3 levels: #000000, #0A2414, #607066.
 - Do reserve #1AD379 for primary actions and key highlights.
 - Do set headlines in ABC Favorit Regular with tight tracking (-0.02em).
-- Do reuse the measured spacing steps (8px, 10px, 24px).
-- Do use 6px corners on most elements; larger surfaces also use 3px.
+- Do reuse the measured spacing steps (8px, 10px).
+- Do use 6px corners on most elements.
 - Don't add drop shadows for depth; use borders and contrast.
-- Don't introduce new font families beyond ABC Favorit Regular, ABC Favorit Medium, sans-serif, Roboto and Geist Mono.
+- Don't introduce new font families beyond ABC Favorit Regular, ABC Favorit Medium, sans-serif and Geist Mono.
 - Don't use #1AD379 for large backgrounds or body text.
 - Don't make interface transitions slower than 0.4s.
 
@@ -206,4 +175,4 @@ Interface transitions are quick: 0.4s.
 
 - **Easing:** `cubic-bezier(0.44, 0, 0.56, 1)`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/plain.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/plain.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Raycast
-description: "Dark interface measured from raycast.com: Inter type with Segoe UI Variable, red accents, tonal surfaces and 20px corners."
+description: "Dark interface measured from raycast.com: Inter type, red accents, tonal surfaces and 20px corners."
 colors:
   background: "#07080A"
   surface: "#07080A"
@@ -15,9 +15,10 @@ colors:
   overlay: "#FFFFFF1A"
   overlay-strong: "#FFFFFF05"
   outline: "#FFFFFF0F"
-  outline-variant: "#FFFFFF0D"
+  outline-variant: "#FFFFFF1A"
   primary: "#FF6363"
   on-primary: "#000000"
+  secondary: "#FEBC2E"
 typography:
   headline-display:
     fontFamily: Inter
@@ -46,7 +47,7 @@ typography:
     fontWeight: 400
     lineHeight: 1.78
   body-sm:
-    fontFamily: Segoe UI Variable
+    fontFamily: Inter
     fontSize: 13px
     fontWeight: 400
     lineHeight: 1.23
@@ -74,10 +75,10 @@ typography:
     letterSpacing: 0.008em
   code:
     fontFamily: GeistMono
-    fontSize: 14px
-    fontWeight: 500
+    fontSize: 12px
+    fontWeight: 400
     lineHeight: 1.6
-    letterSpacing: 0.021em
+    letterSpacing: 0.017em
   headline-display-mobile:
     fontFamily: Inter
     fontSize: 36px
@@ -90,7 +91,7 @@ typography:
     lineHeight: 1.6
     letterSpacing: 0.011em
 rounded:
-  xs: 4px
+  xs: 6px
   sm: 8px
   md: 12px
   lg: 16px
@@ -124,13 +125,13 @@ components:
   button-ghost:
     textColor: "{colors.on-surface-variant}"
     typography: "{typography.caption}"
-    rounded: "{rounded.xs}"
+    rounded: 4px
     padding: 0px
   input-field:
     textColor: "{colors.on-surface}"
     typography: "{typography.label-md}"
     rounded: 0px
-    padding: 0px 8px 0px 4px
+    padding: 0px 4px
   card:
     textColor: "{colors.on-surface}"
     typography: "{typography.body-md}"
@@ -146,13 +147,13 @@ components:
 
 Raycast describes itself as: “A collection of powerful productivity tools all within an extendable launcher.” The interface is dark, built on **Near Black (#07080A)** with **White (#FFFFFF)** text, and **Red (#FF6363)** as the main accent.
 
-Type is set in **Inter** and **Segoe UI Variable**, with **GeistMono** for code. Headlines run large; body text is 16px. Depth comes from hairline borders and inset highlights rather than drop shadows. Corners are mostly 20px.
+Type is set in **Inter**, with **GeistMono** for code. Headlines run large; body text is 16px. Depth comes from hairline borders and inset highlights rather than drop shadows. Corners are mostly 20px.
 
-Measured from [raycast.com](https://www.raycast.com/) on October 21, 2026 at 1440×900 and 390×844 from 390 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [raycast.com](https://www.raycast.com/) on October 29, 2026 at 1440×900 and 390×844 from 390 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 13 roles, plus gradient stops #043F96B3, #523091B3, #20235BB3.
+The palette has 14 roles, plus gradient stops #043F96B3, #523091B3, #20235BB3.
 
 - **Near Black (#07080A):** Page background, seen 1 time. Token `background`, CSS `--grey-900`.
 - **White (#FFFFFF):** Primary text and headings, seen 61 times. Token `on-surface`, CSS `--reverse-background`.
@@ -164,25 +165,26 @@ The palette has 13 roles, plus gradient stops #043F96B3, #523091B3, #20235BB3.
 - **White 10% (#FFFFFF1A):** Translucent fill for cards and controls, seen 5 times. Token `overlay`.
 - **White 2% (#FFFFFF05):** Stronger translucent fill, seen 3 times. Token `overlay-strong`.
 - **White 6% (#FFFFFF0F):** Borders and dividers, seen 9 times. Token `outline`.
-- **White 5% (#FFFFFF0D):** Secondary dividers, seen 2 times. Token `outline-variant`.
+- **White 10% (#FFFFFF1A):** Secondary dividers, seen 1 time. Token `outline-variant`.
 - **Red (#FF6363):** Brand color in the logo, seen 3 times. Token `primary`, CSS `--red-dark`.
 - **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
+- **Vivid Amber (#FEBC2E):** Accent, seen 1 time. Token `secondary`.
 
 ## Typography
 
-**Inter**, **Segoe UI Variable** and **GeistMono** (monospace) share the interface. Fallback stack: `Inter, Inter Fallback, sans-serif`. Other loaded fonts: Inter Fallback, jetBrainsMono, jetBrainsMono Fallback.
+**Inter** and **GeistMono** (monospace) share the interface. Fallback stack: `Inter, Inter Fallback, sans-serif`. Other loaded fonts: jetBrainsMono.
 
 - **headline-display:** Inter 64px at weight 600, line height 1.1 (36px on mobile). Page title (h1).
 - **headline-lg:** Inter 24px at weight 500, line height 1.6, tracking 0.008em. Section headings (h2).
 - **headline-md:** Inter 20px at weight 500, tracking 0.01em (18px on mobile). Sub-section headings.
 - **body-md:** Inter 16px at weight 400, line height 1.15. Body text.
 - **body-lg:** Inter 18px at weight 400, line height 1.78. Lead paragraphs.
-- **body-sm:** Segoe UI Variable 13px at weight 400, line height 1.23. Secondary and small text.
+- **body-sm:** Inter 13px at weight 400, line height 1.23. Secondary and small text.
 - **caption:** Inter 12px at weight 400, line height 1.15, tracking 0.008em. Captions and fine print.
 - **label-lg:** Inter 16px at weight 500, line height 1.6. Large buttons and tabs.
 - **label-md:** Inter 14px at weight 500, tracking 0.014em. Buttons, navigation and labels.
 - **label-sm:** Inter 12px at weight 600, line height 1.15, tracking 0.008em. Small labels and badges.
-- **code:** GeistMono 14px at weight 500, line height 1.6, tracking 0.021em. Code and technical values.
+- **code:** GeistMono 12px at weight 400, line height 1.6, tracking 0.017em. Code and technical values.
 
 ## Layout
 
@@ -190,7 +192,7 @@ Spacing follows a 4px grid: 96% of measured gaps and paddings are multiples of 4
 
 - **Scale:** xs 4px, sm 8px, md 16px, lg 24px, xl 40px.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
-- **Breakpoints:** 480px, 540px, 548px, 640px, 720px, 767px, 768px, 800px, 840px, 880px, 1000px, 1024px, 1064px.
+- **Breakpoints:** 480px, 548px, 640px, 720px, 767px, 768px, 840px, 880px, 1000px, 1024px, 1064px.
 
 ## Elevation & Depth
 
@@ -210,8 +212,8 @@ Most elements use 20px corners. Measured radii, most used first:
 - **lg (16px):** 96 elements.
 - **sm (8px):** 92 elements.
 - **md (12px):** 92 elements.
-- **xs (4px):** 68 elements.
-- **full (9999px):** 4 elements.
+- **xs (6px):** 44 elements.
+- **full (9999px):** 16 elements.
 
 ## Components
 
@@ -220,8 +222,8 @@ Measured from the rendered page. Token values reference the tokens above.
 - **button-primary (“Download”):** #E6E6E6 fill, #2F3031 text, 14px/500, 8px radius, padding 8px 12px, shadow `rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset`.
 - **button-primary-hover:** background #FFFFFF, text #2F3031 on hover.
 - **button-outline (“The Raycast Keyboard”):** #130D0E fill, #FFFFFF text, 14px/500, 1000px radius, padding 4px 12px.
-- **button-ghost (“Install via WinGet”):** transparent fill, #9C9C9D text, 12px/400, 4px radius, padding 0px.
-- **input-field (“Ask anything, @ tools, or / for ”):** transparent fill, #FFFFFF text, 14px/400, padding 0px 8px 0px 4px.
+- **button-ghost (“Install via Homebrew”):** transparent fill, #9C9C9D text, 12px/400, 4px radius, padding 0px.
+- **input-field (“Ask anything, @ tools, or / for ”):** transparent fill, #FFFFFF text, 14px/400, padding 0px 4px.
 - **card:** transparent fill, #FFFFFF text, 16px/400, 20px radius, padding 0px, shadow `rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba(7, 13, 79, 0.05) 0px 0px 20px 3px, rgba(7, 13, 79, 0.05) 0px 0px 40px 20px, rgba(255, 255, 255, 0.06) 0px 0px 0px 1px inset`.
 - **link:** transparent fill, #9C9C9D text, padding 0px.
 
@@ -232,10 +234,10 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do use #FF6363 as the brand accent: header, logo and key highlights.
 - Do keep spacing on the 4px grid.
 - Do use 20px corners on most elements; larger surfaces also use 16px, 8px and 12px.
-- Don't use #6A6B6C for body text; it reaches 3.8:1 on #07080A. Keep it for large text or metadata.
-- Don't use #434345 for body text; it reaches 2.0:1 on #07080A. Keep it for large text or metadata.
+- Don't use #6A6B6C for body text; it reaches 3.75:1 on #07080A. Keep it for large text or metadata.
+- Don't use #434345 for body text; it reaches 2.03:1 on #07080A. Keep it for large text or metadata.
 - Don't use heavy drop shadows; keep depth to hairline rings and tonal surfaces.
-- Don't introduce new font families beyond Inter, Segoe UI Variable and GeistMono.
+- Don't introduce new font families beyond Inter and GeistMono.
 - Don't use #FF6363 for large backgrounds or body text.
 - Don't make interface transitions slower than 0.3s.
 
@@ -245,4 +247,4 @@ Interface transitions are quick: 0.3s, 0.2s, 0.1s, 0.15s. Longer ambient animati
 
 - **Easing:** `ease`, `ease-in-out`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/raycast.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/raycast.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

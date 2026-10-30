@@ -9,10 +9,9 @@ colors:
   on-background: "#FFFFFF"
   on-surface-variant: "#94A3B8"
   on-surface-muted: "#9E9FA8"
-  surface-container-low: "#0F172A"
-  surface-container: "#020617"
-  surface-container-high: "#000000"
-  surface-container-highest: "#333333"
+  on-surface-subtle: "#5F5F5F"
+  surface-container-low: "#000000"
+  surface-container: "#333333"
   overlay: "#00000080"
   overlay-strong: "#FFFFFF1A"
   outline: "#3F3F46"
@@ -21,8 +20,7 @@ colors:
   on-primary: "#000000"
   secondary: "#029CFD"
   tertiary: "#FF4785"
-  warning: "#FFAE00"
-  error: "#EF4444"
+  success: "#16B242"
 typography:
   headline-display:
     fontFamily: Nunito Sans
@@ -100,8 +98,8 @@ components:
     rounded: "{rounded.full}"
     padding: 0px 12px
   input-field:
-    backgroundColor: "{colors.surface-container-low}"
-    textColor: "{colors.on-surface}"
+    backgroundColor: "{colors.primary}"
+    textColor: "#27272A"
     typography: "{typography.label-lg}"
     rounded: "{rounded.lg}"
     padding: 0px 100px 0px 16px
@@ -117,30 +115,28 @@ Storybook describes itself as: “Storybook is a frontend workshop for building 
 
 Type is set in **Nunito Sans**. Headlines run large; body text is 14px. Depth comes from soft drop shadows. Controls are pill-shaped.
 
-Measured from [storybook.js.org](https://storybook.js.org/) on October 21, 2026 at 1440×900 and 390×844 from 270 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [storybook.js.org](https://storybook.js.org/) on October 29, 2026 at 1440×900 and 390×844 from 313 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 18 roles, plus gradient stops #4791FF, #FF4785.
+The palette has 16 roles, plus gradient stops #4791FF, #FF4785.
 
-- **Deep Indigo (#0D1026):** Page background. Token `background`.
-- **White (#FFFFFF):** Primary text and headings, seen 56 times. Token `on-surface`, CSS `--docsearch-footer-background`.
+- **Deep Indigo (#0D1026):** Page background, seen 1 time. Token `background`.
+- **White (#FFFFFF):** Primary text and headings, seen 55 times. Token `on-surface`, CSS `--docsearch-footer-background`.
 - **Blue (#94A3B8):** Secondary text, seen 12 times. Token `on-surface-variant`.
 - **Cool Gray (#9E9FA8):** Muted text and metadata, seen 4 times. Token `on-surface-muted`.
-- **Deep Blue (#0F172A):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`.
-- **Deep Indigo (#020617):** Cards and panels, seen 1 time. Token `surface-container`.
-- **Near Black (#000000):** Hover and pressed fills, seen 2 times. Token `surface-container-high`.
-- **Graphite (#333333):** Highest raised elements, seen 1 time. Token `surface-container-highest`.
+- **Slate (#5F5F5F):** Subtle text and placeholders, seen 2 times. Token `on-surface-subtle`.
+- **Near Black (#000000):** Raised areas one step from the page, seen 2 times. Token `surface-container-low`.
+- **Graphite (#333333):** Cards and panels, seen 1 time. Token `surface-container`.
 - **Near Black 50% (#00000080):** Translucent fill for cards and controls, seen 2 times. Token `overlay`.
 - **White 10% (#FFFFFF1A):** Stronger translucent fill, seen 1 time. Token `overlay-strong`.
 - **Cool Graphite (#3F3F46):** Borders and dividers, seen 12 times. Token `outline`.
 - **Cool Slate (#52525B):** Secondary dividers, seen 8 times. Token `outline-variant`.
-- **White (#FFFFFF):** Primary buttons and calls to action, seen 82 times. Token `primary`, CSS `--docsearch-footer-background`.
+- **White (#FFFFFF):** Primary buttons and calls to action, seen 83 times. Token `primary`, CSS `--docsearch-footer-background`.
 - **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
-- **Vivid Blue (#029CFD):** Most used accent color, seen 17 times. Token `secondary`.
-- **Pink (#FF4785):** Brand color in the logo, seen 15 times. Token `tertiary`.
-- **Vivid Amber (#FFAE00):** Warnings and highlights, seen 4 times. Token `warning`.
-- **Vivid Red (#EF4444):** Errors and destructive states, seen 2 times. Token `error`.
+- **Vivid Blue (#029CFD):** Accent in text, fills and borders, seen 14 times. Token `secondary`.
+- **Pink (#FF4785):** Accent in the logo, seen 2 times. Token `tertiary`.
+- **Green (#16B242):** Success and positive states, seen 5 times. Token `success`.
 
 ## Typography
 
@@ -186,16 +182,17 @@ Measured from the rendered page. Token values reference the tokens above.
 - **button-secondary (“Introducing MCP for React”):** transparent fill, #FFFFFF text, 12px/400, 9999px radius, padding 6px 12px.
 - **button-outline (“npm create storybook@latest”):** transparent fill, #FFFFFF text, 16px/700, 9999px radius, padding 0px 24px, border 1px solid #FFFFFF.
 - **button-ghost (“Search docs K”):** transparent fill, #FFFFFF text, 16px/500, 9999px radius, padding 0px 12px, border 1px solid #FFFFFF4D.
-- **input-field (“you@domain.com”):** #0F172A fill, #FFFFFF text, 16px/400, 6px radius, padding 0px 100px 0px 16px, border 1px solid #334155.
+- **input-field (“you@domain.com”):** #FFFFFF fill, #27272A text, 16px/400, 6px radius, padding 0px 100px 0px 16px, border 1px solid #E4E4E7.
 - **link:** transparent fill, #FFFFFF text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #0D1026 for the page and lift surfaces in small steps: #0F172A, #020617, #000000, #333333.
-- Do keep text in 3 levels: #FFFFFF, #94A3B8, #9E9FA8.
+- Do use #0D1026 for the page and lift surfaces in small steps: #000000, #333333.
+- Do keep text in 4 levels: #FFFFFF, #94A3B8, #9E9FA8, #5F5F5F.
 - Do let contrast carry emphasis; primary actions use #FFFFFF on #0D1026.
 - Do keep spacing on the 4px grid.
 - Do make buttons and chips fully rounded (9999px); most other elements use 4px corners.
+- Don't use #5F5F5F for body text; it reaches 2.94:1 on #0D1026. Keep it for large text or metadata.
 - Don't introduce new font families beyond Nunito Sans.
 - Don't add saturated accent colors; the measured palette is almost entirely neutral.
 - Don't make interface transitions slower than 0.3s.
@@ -207,4 +204,4 @@ Interface transitions are quick: 0.15s, 0.2s, 0.3s. Longer ambient animations ru
 - **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `ease`, `linear`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/storybook.js.org/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/storybook.js.org/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

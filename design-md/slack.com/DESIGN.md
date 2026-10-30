@@ -99,7 +99,7 @@ rounded:
 spacing:
   xs: 4px
   sm: 8px
-  md: 10px
+  md: 16px
   lg: 24px
   xl: 40px
   gutter: 8px
@@ -140,31 +140,31 @@ components:
 
 ## Overview
 
-Slack describes itself as: “Boost productivity and save time with Slack‌ – ‌the AI work platform for managing projects, automating workflows and connecting teams securely. Start working smarter today.” The interface is light, built on **White (#FFFFFF)** with **Near Black (#000000)** text, and **Dark Purple (#730394)** as the main accent.
+Slack describes itself as: “Boost productivity and save time with Slack‌ — ‌the AI work platform for managing projects, automating workflows, and connecting teams securely. Start working smarter today.” The interface is light, built on **White (#FFFFFF)** with **Near Black (#000000)** text, and **Dark Purple (#730394)** as the main accent.
 
 Type is set in **Salesforce-Avant-Garde** and **Salesforce-Sans**. Headlines run large with tight negative tracking; body text is 18px. Depth comes from hairline borders and inset highlights rather than drop shadows. Controls are pill-shaped.
 
-Measured from [slack.com](https://slack.com/intl/en-in/) on October 21, 2026 at 1440×900 and 390×844 from 339 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [slack.com](https://slack.com/) on October 29, 2026 at 1440×900 and 390×844 from 331 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 15 roles.
 
-- **White (#FFFFFF):** Page background, seen 21 times. Token `background`, CSS `--article-theme-secondary`.
-- **Near Black (#000000):** Primary text and headings, seen 38 times. Token `on-surface`, CSS `--attachment-color`.
+- **White (#FFFFFF):** Page background, seen 19 times. Token `background`, CSS `--article-theme-secondary`.
+- **Near Black (#000000):** Primary text and headings, seen 34 times. Token `on-surface`, CSS `--attachment-color`.
 - **Charcoal (#1D1D1D):** Secondary text, seen 5 times. Token `on-surface-variant`.
 - **Graphite (#444444):** Muted text and metadata, seen 5 times. Token `on-surface-muted`.
 - **Slate (#747474):** Subtle text and placeholders, seen 4 times. Token `on-surface-subtle`.
 - **White 90% (#FFFFFFE6):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`.
-- **Cool Snow (#F9F0FF):** Cards and panels, seen 13 times. Token `surface-container`.
+- **Cool Snow (#F9F0FF):** Cards and panels, seen 11 times. Token `surface-container`.
 - **Deep Purple 12% (#481A541F):** Translucent fill for cards and controls, seen 4 times. Token `overlay`.
 - **Near Black 50% (#00000080):** Stronger translucent fill, seen 3 times. Token `overlay-strong`.
-- **Mist (#F3F3F3):** Borders and dividers, seen 10 times. Token `outline`.
+- **Mist (#F3F3F3):** Borders and dividers, seen 8 times. Token `outline`.
 - **Silver (#C9C9C9):** Secondary dividers, seen 3 times. Token `outline-variant`.
-- **Dark Purple (#730394):** Primary buttons and calls to action, seen 23 times. Token `primary`.
+- **Dark Purple (#730394):** Primary buttons and calls to action, seen 21 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Deep Purple (#481A54):** Brand color on large areas, seen 57 times. Token `secondary`, CSS `--article-theme-primary`.
-- **Vivid Indigo (#0000EE):** Most used accent color, seen 15 times. Token `tertiary`.
+- **Deep Purple (#481A54):** Accent on large areas, seen 2 times. Token `secondary`, CSS `--article-theme-primary`.
+- **Vivid Indigo (#0000EE):** Accent in text, fills and borders, seen 12 times. Token `tertiary`.
 
 ## Typography
 
@@ -182,9 +182,9 @@ The palette has 15 roles.
 
 ## Layout
 
-Spacing does not follow a strict grid: 69% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 70% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
-- **Scale:** xs 4px, sm 8px, md 10px, lg 24px, xl 40px.
+- **Scale:** xs 4px, sm 8px, md 16px, lg 24px, xl 40px.
 - **Sections:** 72px vertical padding between major sections.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
 
@@ -202,8 +202,8 @@ A few raised panels add a soft drop shadow: `rgba(0, 0, 0, 0.1) 0px 0px 16px 0px
 Interactive controls are pill-shaped. Measured radii, most used first:
 
 - **sm (4px):** 84 elements.
-- **md (16px):** 80 elements.
-- **full (9999px):** 68 elements.
+- **md (16px):** 72 elements.
+- **full (9999px):** 60 elements.
 
 ## Components
 
@@ -222,7 +222,7 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do keep text in 4 levels: #000000, #1D1D1D, #444444, #747474.
 - Do reserve #730394 for primary actions and key highlights.
 - Do set headlines in Salesforce-Avant-Garde with tight tracking (-0.012em).
-- Do reuse the measured spacing steps (8px, 10px, 24px).
+- Do reuse the measured spacing steps (8px, 16px, 24px).
 - Do make buttons and chips fully rounded (9999px); most other elements use 4px corners.
 - Don't use heavy drop shadows; keep depth to hairline rings and tonal surfaces.
 - Don't introduce new font families beyond Salesforce-Avant-Garde and Salesforce-Sans.
@@ -231,8 +231,8 @@ Measured from the rendered page. Token values reference the tokens above.
 
 ## Motion
 
-Interface transitions are quick: 0.42s, 0.2s, 0.001s. Longer ambient animations run 0.65s, 1s.
+Interface transitions are quick: 0.42s, 0.2s, 0.26s, 0.001s. Longer ambient animations run 0.65s, 1s.
 
-- **Easing:** `cubic-bezier(0.165, 0.84, 0.44, 1)`, `ease`, `ease-in`.
+- **Easing:** `cubic-bezier(0.165, 0.84, 0.44, 1)`, `ease`, `cubic-bezier(0.22, 0.61, 0.36, 1)`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/slack.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/slack.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

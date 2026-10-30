@@ -13,14 +13,14 @@ colors:
   surface-container-low: "#F8FAFD"
   surface-container: "#F5F5FF"
   surface-container-high: "#E5EDF5"
-  surface-container-highest: "#E3ECF7"
+  surface-container-highest: "#E8E9FF"
   overlay: "#FFFFFFA6"
   outline: "#E5EDF5"
   outline-variant: "#E2E4FF"
   primary: "#533AFD"
   on-primary: "#FFFFFF"
-  secondary: "#0A2540"
-  tertiary: "#1C1E54"
+  secondary: "#1C1E54"
+  tertiary: "#FF6118"
 typography:
   headline-display:
     fontFamily: sohne-var
@@ -118,25 +118,19 @@ components:
     height: 48px
   button-outline-hover:
     textColor: "#2E2B8C"
-  button-secondary:
-    backgroundColor: "{colors.secondary}"
-    textColor: "{colors.on-primary}"
-    rounded: "{rounded.sm}"
-    padding: 0px 24px
-    height: 40px
   button-ghost:
-    textColor: "{colors.on-surface}"
+    textColor: "{colors.on-primary}"
     typography: "{typography.body-sm}"
     rounded: "{rounded.sm}"
-    padding: 12px 0px
+    padding: 10.5px 20px 13.5px 20px
+    height: 40px
   input-field:
-    backgroundColor: "{colors.background}"
-    textColor: "{colors.on-surface-strong}"
+    textColor: "{colors.on-surface}"
     typography: "{typography.body-md}"
     rounded: 0px
-    padding: 11px 17px
+    padding: 0px 15px
   link:
-    textColor: "{colors.on-surface}"
+    textColor: "{colors.on-surface-strong}"
 ---
 
 # Stripe Design System
@@ -147,28 +141,28 @@ Stripe describes itself as: “Stripe is a financial services platform that help
 
 Type is set in **sohne-var**. Headlines run large with tight negative tracking; body text is 16px. The surface language is flat. Corners are mostly 4px.
 
-Measured from [stripe.com](https://stripe.com/) on October 28, 2026 at 1440×900 and 390×844 from 474 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [stripe.com](https://stripe.com/) on October 30, 2026 at 1440×900 and 390×844 from 470 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 16 roles, plus gradient stops #DA4BFECC, #FF8C6CCC, #4304EA, #715CFFCC.
+The palette has 16 roles, plus gradient stops #DA4BFECC, #FF8C6CCC, #8A35DF, #715CFFCC.
 
-- **White (#FFFFFF):** Page background, seen 13 times. Token `background`, CSS `--hds-color-util-bg-min`.
-- **Deep Blue (#061B31):** Primary text and headings, seen 77 times. Token `on-surface`, CSS `--hds-color-heading-solid`.
-- **Near Black (#000000):** Headings and emphasis, seen 19 times. Token `on-surface-strong`.
+- **White (#FFFFFF):** Page background, seen 10 times. Token `background`, CSS `--hds-color-util-bg-min`.
+- **Deep Blue (#061B31):** Primary text and headings, seen 76 times. Token `on-surface`, CSS `--hds-color-heading-solid`.
+- **Near Black (#000000):** Headings and emphasis, seen 17 times. Token `on-surface-strong`.
 - **Blue (#50617A):** Secondary text, seen 8 times. Token `on-surface-variant`.
-- **Blue (#64748D):** Muted text and metadata, seen 37 times. Token `on-surface-muted`, CSS `--hds-color-heading-subdued`.
+- **Blue (#64748D):** Muted text and metadata, seen 31 times. Token `on-surface-muted`, CSS `--hds-color-heading-subdued`.
 - **Snow (#F8FAFD):** Raised areas one step from the page, seen 3 times. Token `surface-container-low`, CSS `--hds-color-util-bg-quiet`.
 - **Cool Snow (#F5F5FF):** Cards and panels, seen 2 times. Token `surface-container`.
-- **Cool Mist (#E5EDF5):** Hover and pressed fills, seen 5 times. Token `surface-container-high`, CSS `--hds-color-util-neutral-50`.
-- **Pale Blue (#E3ECF7):** Highest raised elements, seen 3 times. Token `surface-container-highest`.
+- **Cool Mist (#E5EDF5):** Hover and pressed fills, seen 7 times. Token `surface-container-high`, CSS `--hds-color-util-neutral-50`.
+- **Pale Indigo (#E8E9FF):** Highest raised elements, seen 3 times. Token `surface-container-highest`.
 - **White 65% (#FFFFFFA6):** Translucent fill for cards and controls, seen 1 time. Token `overlay`, CSS `--hds-color-action-bg-translucent`.
 - **Cool Mist (#E5EDF5):** Borders and dividers, seen 4 times. Token `outline`, CSS `--hds-color-util-neutral-50`.
 - **Pale Indigo (#E2E4FF):** Secondary dividers, seen 3 times. Token `outline-variant`.
-- **Vivid Indigo (#533AFD):** Primary buttons and calls to action, seen 21 times. Token `primary`, CSS `--hds-color-accent-border-solid`.
+- **Vivid Indigo (#533AFD):** Primary buttons and calls to action, seen 23 times. Token `primary`, CSS `--hds-color-accent-border-solid`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Deep Blue (#0A2540):** Secondary buttons. Token `secondary`.
-- **Deep Indigo (#1C1E54):** Accent (CSS variable). Token `tertiary`.
+- **Deep Indigo (#1C1E54):** Accent (CSS variable). Token `secondary`.
+- **Vivid Orange (#FF6118):** Accent in text, fills and borders, seen 3 times. Token `tertiary`.
 
 ## Typography
 
@@ -194,14 +188,14 @@ Spacing is mostly on a 4px grid (80% of measured values), with some off-grid ste
 
 ## Elevation & Depth
 
-The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#F8FAFD → #F5F5FF → #E5EDF5 → #E3ECF7) and #E5EDF5 borders.
+The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#F8FAFD → #F5F5FF → #E5EDF5 → #E8E9FF) and #E5EDF5 borders.
 
 ## Shapes
 
 Most elements use 4px corners. Measured radii, most used first:
 
-- **sm (4px):** 128 elements.
-- **md (6px):** 16 elements.
+- **sm (4px):** 136 elements.
+- **md (6px):** 12 elements.
 
 ## Components
 
@@ -211,14 +205,13 @@ Measured from the rendered page. Token values reference the tokens above.
 - **button-primary-hover:** background #4032C8, text #FFFFFF on hover.
 - **button-outline (“Sign up with Google”):** #FFFFFFA6 fill, #533AFD text, 16px/400, 4px radius, padding 14.5px 24px 15.5px 24px, border 1px solid #B9B9F9.
 - **button-outline-hover:** background #FFFFFFA6, text #2E2B8C on hover.
-- **button-secondary (“Chat now with sales”):** #0A2540 fill, #FFFFFF text, 15px/400, 4px radius, padding 0px 24px, border 1px solid #FFFFFF1F.
-- **button-ghost (“Products”):** transparent fill, #061B31 text, 14px/400, 4px radius, padding 12px 0px.
-- **input-field (“Sell software subscriptions to o”):** #FFFFFF fill, #000000 text, 16px/300, padding 11px 17px.
-- **link:** transparent fill, #061B31 text, padding 0px.
+- **button-ghost (“Sign in Sign in”):** transparent fill, #FFFFFF text, 14px/400, 4px radius, padding 10.5px 20px 13.5px 20px, border 1px solid #FFFFFF.
+- **input-field (“Enter work email”):** transparent fill, #061B31 text, 16px/300, padding 0px 15px.
+- **link:** transparent fill, #000000 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #FFFFFF for the page and lift surfaces in small steps: #F8FAFD, #F5F5FF, #E5EDF5, #E3ECF7.
+- Do use #FFFFFF for the page and lift surfaces in small steps: #F8FAFD, #F5F5FF, #E5EDF5, #E8E9FF.
 - Do keep text in 4 levels: #061B31, #000000, #50617A, #64748D.
 - Do reserve #533AFD for primary actions and key highlights.
 - Do set headlines in sohne-var with tight tracking (-0.02em).
@@ -235,4 +228,4 @@ Interface transitions are quick: 0.3s, 0.15s, 0.24s, 0.4s. Longer ambient animat
 
 - **Easing:** `cubic-bezier(0.25, 1, 0.5, 1)`, `linear`, `cubic-bezier(0.45, 0.05, 0.55, 0.95)`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/stripe.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/stripe.com/), the free DESIGN.md generator (engine 2026.10.29+bf9d681d83cf).

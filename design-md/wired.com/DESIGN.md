@@ -1,18 +1,17 @@
 ---
 version: alpha
 name: WIRED
-description: "Light monochrome interface measured from wired.com: WiredDisplay type with Apercu, flat surfaces and 4px corners."
+description: "Light interface measured from wired.com: WiredDisplay type with Apercu, purple accents, flat surfaces and 4px corners."
 colors:
-  background: "#FFFFFF"
-  surface: "#FFFFFF"
-  on-surface: "#000000"
-  on-background: "#000000"
-  on-surface-variant: "#1A1A1A"
-  on-surface-muted: "#333333"
+  background: "#E5E5E5"
+  surface: "#E5E5E5"
+  on-surface: "#1A1A1A"
+  on-background: "#1A1A1A"
+  on-surface-strong: "#000000"
   overlay: "#000000D9"
-  primary: "#000000"
+  primary: "#9320B8"
   on-primary: "#FFFFFF"
-  secondary: "#057DBC"
+  secondary: "#C146FF"
 typography:
   headline-display:
     fontFamily: WiredDisplay
@@ -59,6 +58,12 @@ typography:
     fontWeight: 400
     lineHeight: 1.47
     letterSpacing: 0.005em
+  label-sm:
+    fontFamily: Apercu
+    fontSize: 16px
+    fontWeight: 700
+    lineHeight: 1.13
+    letterSpacing: 0.019em
   code:
     fontFamily: WIRED Mono
     fontSize: 13px
@@ -77,13 +82,13 @@ spacing:
   container: 1600px
 components:
   button-ghost:
-    textColor: "{colors.on-surface}"
+    textColor: "{colors.primary}"
     typography: "{typography.code}"
     rounded: 0px
     padding: 12px 8px
   card:
-    backgroundColor: "{colors.primary}"
-    textColor: "{colors.on-primary}"
+    backgroundColor: "{colors.secondary}"
+    textColor: "{colors.on-surface-strong}"
     typography: "{typography.body-sm}"
     rounded: 0px
     padding: 8px
@@ -95,24 +100,23 @@ components:
 
 ## Overview
 
-WIRED describes itself as: “We bring you the future as it happens. From the latest in science and technology to the big stories in business and culture, we've got you covered.” The interface is light, built on **White (#FFFFFF)** with **Near Black (#000000)** text and almost no color: actions are carried by contrast, not hue.
+WIRED describes itself as: “We bring you the future as it happens. From the latest in science and technology to the big stories in business and culture, we've got you covered.” The interface is light, built on **Mist (#E5E5E5)** with **Charcoal (#1A1A1A)** text, and **Purple (#9320B8)** as the main accent.
 
 Type is set in **WiredDisplay** and **Apercu**, with **WIRED Mono** for code. Headlines run large with tight negative tracking; body text is 17px. The surface language is flat. Corners are mostly 4px.
 
-Measured from [wired.com](https://www.wired.com/) on October 21, 2026 at 1440×900 and 728×1576 from 450 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [wired.com](https://www.wired.com/) on October 29, 2026 at 1440×900 and 390×844 from 438 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 8 roles.
+The palette has 7 roles.
 
-- **White (#FFFFFF):** Page background, seen 1 time. Token `background`, CSS `--fides-overlay-gpc-applied-text-color`.
-- **Near Black (#000000):** Primary text and headings, seen 78 times. Token `on-surface`.
-- **Charcoal (#1A1A1A):** Secondary text, seen 28 times. Token `on-surface-variant`.
-- **Graphite (#333333):** Muted text and metadata, seen 3 times. Token `on-surface-muted`.
-- **Near Black 85% (#000000D9):** Translucent fill for cards and controls, seen 17 times. Token `overlay`.
-- **Near Black (#000000):** Primary actions (the main text color; the palette is monochrome), seen 105 times. Token `primary`.
+- **Mist (#E5E5E5):** Page background, seen 1 time. Token `background`.
+- **Charcoal (#1A1A1A):** Primary text and headings, seen 99 times. Token `on-surface`.
+- **Near Black (#000000):** Headings and emphasis, seen 9 times. Token `on-surface-strong`.
+- **Near Black 85% (#000000D9):** Translucent fill for cards and controls, seen 15 times. Token `overlay`.
+- **Purple (#9320B8):** Brand color in the logo, seen 11 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Dark Blue (#057DBC):** Accent, seen 1 time. Token `secondary`.
+- **Violet (#C146FF):** Accent in text, fills and borders, seen 18 times. Token `secondary`.
 
 ## Typography
 
@@ -126,11 +130,12 @@ The palette has 8 roles.
 - **body-sm:** Proxima Nova 12px at weight 400, line height 1.33. Secondary and small text.
 - **caption:** Proxima Nova 11px at weight 400, line height 1.45. Captions and fine print.
 - **label-md:** Breve Text 19px at weight 400, line height 1.47, tracking 0.005em. Buttons, navigation and labels.
+- **label-sm:** Apercu 16px at weight 700, line height 1.13, tracking 0.019em. Small labels and badges.
 - **code:** WIRED Mono 13px at weight 700, line height 1.23. Code and technical values.
 
 ## Layout
 
-Spacing is mostly on a 4px grid (74% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
+Spacing is mostly on a 4px grid (73% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
 
 - **Scale:** xs 4px, sm 8px, md 14.11px, lg 32px, xl 64px.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
@@ -146,34 +151,34 @@ The design is flat: no shadows were measured. Hierarchy comes from color contras
 
 Most elements use 4px corners. Measured radii, most used first:
 
-- **md (4px):** 68 elements.
+- **md (4px):** 60 elements.
 
 ## Components
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-ghost (“Menu”):** transparent fill, #000000 text, 13px/400, padding 12px 8px.
-- **card:** #000000 fill, #FFFFFF text, 12px/400, padding 8px.
+- **button-ghost (“Menu”):** transparent fill, #9320B8 text, 13px/400, padding 12px 8px.
+- **card:** #C146FF fill, #000000 text, 12px/400, padding 8px.
 - **link:** transparent fill, #999999 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #FFFFFF for the page.
-- Do keep text in 3 levels: #000000, #1A1A1A, #333333.
-- Do let contrast carry emphasis; primary actions use #000000 on #FFFFFF.
+- Do use #E5E5E5 for the page.
+- Do keep text in 2 levels: #1A1A1A, #000000.
+- Do use #9320B8 as the brand accent: header, logo and key highlights.
 - Do set headlines in WiredDisplay with tight tracking (-0.008em).
 - Do reuse the measured spacing steps (8px, 14.11px, 32px).
 - Do use 4px corners on most elements.
 - Don't add drop shadows for depth; use borders and contrast.
 - Don't introduce new font families beyond WiredDisplay, Apercu, Proxima Nova, Breve Text and WIRED Mono.
-- Don't add saturated accent colors; the measured palette is almost entirely neutral.
+- Don't use #9320B8 for large backgrounds or body text.
 - Don't make interface transitions slower than 0.2s.
 
 ## Motion
 
-Interface transitions are quick: 0.2s. Longer ambient animations run 1s.
+Interface transitions are quick: 0.2s, 0.1s. Longer ambient animations run 1s.
 
-- **Easing:** `ease-in-out`, `cubic-bezier(0.37, 0, 0.63, 1)`, `ease`.
+- **Easing:** `ease-in-out`, `cubic-bezier(0.37, 0, 0.63, 1)`, `ease-out`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/wired.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/wired.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

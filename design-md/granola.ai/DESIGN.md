@@ -19,10 +19,7 @@ colors:
   primary: "#B2C248"
   on-primary: "#000000"
   secondary: "#5B6F00"
-  tertiary: "#4C5616"
-  error: "#FB2C36"
-  warning: "#FEBC2E"
-  success: "#19C332"
+  tertiary: "#E0C976"
 typography:
   display-hero:
     fontFamily: quadrant
@@ -119,11 +116,9 @@ components:
     typography: "{typography.body-lg}"
     padding: 9px 24px
     height: 56px
-  button-primary-hover:
-    backgroundColor: "{colors.tertiary}"
   button-outline:
     backgroundColor: "{colors.surface-container-low}"
-    textColor: "{colors.on-surface-strong}"
+    textColor: "{colors.on-surface}"
     typography: "{typography.body-lg}"
     padding: 6px 12px 6px 6px
     height: 32px
@@ -142,11 +137,11 @@ Granola describes itself as: “The AI notepad for back-to-back meetings. Notes,
 
 Type is set in **quadrant** and **melange**. Headlines run large with tight negative tracking; body text is 14px. Depth comes from soft drop shadows. Controls are pill-shaped.
 
-Measured from [granola.ai](https://www.granola.ai/) on October 21, 2026 at 1440×900 and 390×844 from 325 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [granola.ai](https://www.granola.ai/) on October 29, 2026 at 1440×900 and 390×844 from 325 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 18 roles, plus gradient stops #FEBE29, #FF91E0, #CEBEF8, #D2E4F8.
+The palette has 15 roles, plus gradient stops #FEBE29, #FF91E0, #CEBEF8, #D2E4F8.
 
 - **White (#FFFFFF):** Page background, seen 3 times. Token `background`, CSS `--color-white`.
 - **Graphite (#292929):** Primary text and headings, seen 65 times. Token `on-surface`, CSS `--color-oats-neutral-800`.
@@ -161,15 +156,12 @@ The palette has 18 roles, plus gradient stops #FEBE29, #FF91E0, #CEBEF8, #D2E4F8
 - **Dark Amber 20% (#47432A33):** Secondary dividers, seen 1 time. Token `outline-variant`, CSS `--oats-border-hairline`.
 - **Yellow (#B2C248):** Brand color on large areas, seen 1 time. Token `primary`.
 - **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
-- **Deep Lime (#5B6F00):** Secondary buttons, seen 61 times. Token `secondary`, CSS `--oats-ink-accent-strong`.
-- **Deep Lime (#4C5616):** Brand accent (CSS variable), seen 24 times. Token `tertiary`.
-- **Vivid Red (#FB2C36):** Errors and destructive states, seen 2 times. Token `error`.
-- **Vivid Amber (#FEBC2E):** Warnings and highlights, seen 1 time. Token `warning`.
-- **Green (#19C332):** Success and positive states, seen 1 time. Token `success`.
+- **Deep Lime (#5B6F00):** Secondary buttons, seen 1 time. Token `secondary`, CSS `--oats-ink-accent-strong`.
+- **Amber (#E0C976):** Accent in the header. Token `tertiary`.
 
 ## Typography
 
-**quadrant** and **melange** share the interface. Fallback stack: `quadrant, quadrant Fallback`. Other loaded fonts: melange Fallback.
+**quadrant** and **melange** share the interface. Fallback stack: `quadrant, quadrant Fallback`.
 
 - **display-hero:** quadrant 108px at weight 400, line height 0.97, tracking -0.02em (60px on mobile). Oversized hero statements.
 - **headline-display:** quadrant 86.5px at weight 400, line height 0.93, tracking -0.02em (48px on mobile). Page title (h1).
@@ -184,7 +176,7 @@ The palette has 18 roles, plus gradient stops #FEBE29, #FF91E0, #CEBEF8, #D2E4F8
 
 ## Layout
 
-Spacing does not follow a strict grid: 69% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 70% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
 - **Scale:** xs 2px, sm 8px, md 12px, lg 24px, xl 40px.
 - **Sections:** 112px vertical padding between major sections.
@@ -212,8 +204,7 @@ Interactive controls are pill-shaped. Measured radii, most used first:
 Measured from the rendered page. Token values reference the tokens above.
 
 - **button-primary (“Download for free”):** #5B6F00 fill, #FCFCF8 text, 16px/430, 3.35544e+07px radius, padding 9px 24px.
-- **button-primary-hover:** background #4C5616, text #FCFCF8 on hover.
-- **button-outline (“New Granola for Apple Watch”):** #F7F7F2 fill, #0E0F0C text, 16px/400, 3.35544e+07px radius, padding 6px 12px 6px 6px.
+- **button-outline (“New Voice typing by Granola”):** #F7F7F2 fill, #292929 text, 16px/400, 3.35544e+07px radius, padding 6px 12px 6px 6px.
 - **button-ghost (“Talk to sales”):** transparent fill, #292929 text, 14px/400, 3.35544e+07px radius, padding 6px 12px, border 1px solid #47432A33.
 
 ## Do's and Don'ts
@@ -224,7 +215,7 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do set headlines in quadrant with tight tracking (-0.02em).
 - Do reuse the measured spacing steps (8px, 12px, 24px).
 - Do make buttons and chips fully rounded (9999px); most other elements use 10px corners.
-- Don't use #ACADA8 for body text; it reaches 2.3:1 on #FFFFFF. Keep it for large text or metadata.
+- Don't use #ACADA8 for body text; it reaches 2.26:1 on #FFFFFF. Keep it for large text or metadata.
 - Don't introduce new font families beyond quadrant and melange.
 - Don't use #B2C248 for large backgrounds or body text.
 - Don't make interface transitions slower than 0.6s.
@@ -236,4 +227,4 @@ Interface transitions are quick: 0.15s, 0.5s, 0.2s, 0.4s. Longer ambient animati
 - **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `ease-in-out`, `ease-out`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/granola.ai/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/granola.ai/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

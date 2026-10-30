@@ -11,15 +11,12 @@ colors:
   on-surface-muted: "#292929"
   on-surface-subtle: "#898989"
   surface-container-low: "#F5F5F5"
-  surface-container: "#F4F4F4"
   overlay: "#FFFFFFCC"
   outline: "#CBCBCB"
   outline-variant: "#1414141A"
   primary: "#111111"
   on-primary: "#FFFFFF"
   secondary: "#0099FF"
-  warning: "#FFC107"
-  error: "#FF3D00"
 typography:
   headline-display:
     fontFamily: Cal Sans
@@ -104,19 +101,19 @@ spacing:
   gutter: 8px
 components:
   button-primary:
-    textColor: "#0000EE"
+    textColor: "{colors.on-primary}"
     typography: "{typography.body-sm}"
     rounded: "{rounded.md}"
     padding: 8px 12px
     height: 36px
   button-secondary:
-    textColor: "#0000EE"
+    textColor: "{colors.on-surface-muted}"
     typography: "{typography.body-sm}"
     rounded: "{rounded.md}"
     padding: 8px 12px
     height: 36px
   button-tertiary:
-    textColor: "#0000EE"
+    textColor: "{colors.on-surface-muted}"
     typography: "{typography.body-sm}"
     rounded: "{rounded.md}"
     padding: 8px 12px
@@ -133,27 +130,24 @@ Cal.com describes itself as: “A fully customizable scheduling software for ind
 
 Type is set in **Cal Sans** and **Cal Sans UI Variable Light**, with **Roboto Mono** for code. Headlines run large; body text is 14px. Depth comes from hairline borders and inset highlights rather than drop shadows. Controls are pill-shaped.
 
-Measured from [cal.com](https://cal.com/) on October 21, 2026 at 1440×900 and 390×844 from 404 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [cal.com](https://cal.com/) on October 29, 2026 at 1440×900 and 390×844 from 404 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 15 roles.
+The palette has 12 roles.
 
 - **White (#FFFFFF):** Page background, seen 7 times. Token `background`, CSS `--sj-tw-ring-offset-color`.
 - **Charcoal (#111111):** Primary text and headings, seen 59 times. Token `on-surface`.
 - **Graphite (#242424):** Secondary text, seen 47 times. Token `on-surface-variant`.
 - **Graphite (#292929):** Muted text and metadata, seen 16 times. Token `on-surface-muted`.
 - **Gray (#898989):** Subtle text and placeholders, seen 43 times. Token `on-surface-subtle`.
-- **Snow (#F5F5F5):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`.
-- **Snow (#F4F4F4):** Cards and panels, seen 1 time. Token `surface-container`.
+- **Snow (#F5F5F5):** Raised areas one step from the page, seen 2 times. Token `surface-container-low`.
 - **White 80% (#FFFFFFCC):** Translucent fill for cards and controls, seen 8 times. Token `overlay`.
 - **Silver (#CBCBCB):** Borders and dividers, seen 9 times. Token `outline`.
 - **Charcoal 10% (#1414141A):** Secondary dividers, seen 7 times. Token `outline-variant`.
 - **Charcoal (#111111):** Primary actions (the main text color; the palette is monochrome), seen 59 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Vivid Blue (#0099FF):** Most used accent color, seen 3 times. Token `secondary`.
-- **Vivid Amber (#FFC107):** Warnings and highlights, seen 1 time. Token `warning`.
-- **Vivid Red (#FF3D00):** Errors and destructive states, seen 1 time. Token `error`.
+- **Vivid Blue (#0099FF):** Accent in text, fills and borders, seen 2 times. Token `secondary`.
 
 ## Typography
 
@@ -182,7 +176,7 @@ Spacing is mostly on a 4px grid (84% of measured values), with some off-grid ste
 
 ## Elevation & Depth
 
-Depth comes mostly from hairline rings and inset highlights on tonal surfaces (#F5F5F5 → #F4F4F4):
+Depth comes mostly from hairline rings and inset highlights on tonal surfaces (#F5F5F5):
 
 - `rgba(255, 255, 255, 0.15) 0px 2px 0px 0px inset`
 - `rgb(255, 255, 255) 0px 2px 0px 0px inset`
@@ -201,21 +195,21 @@ Interactive controls are pill-shaped. Measured radii, most used first:
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Get started”):** transparent fill, #0000EE text, 12px/400, 12px radius, padding 8px 12px, shadow `rgba(255, 255, 255, 0.15) 0px 2px 0px 0px inset`.
-- **button-secondary (“Sign up with email”):** transparent fill, #0000EE text, 12px/400, 12px radius, padding 8px 12px, shadow `rgb(255, 255, 255) 0px 2px 0px 0px inset`.
-- **button-tertiary (“Book a demo”):** transparent fill, #0000EE text, 12px/400, 12px radius, padding 8px 12px, shadow `rgb(255, 255, 255) 0px 2px 0px 0px inset`.
+- **button-primary (“Get started”):** transparent fill, #FFFFFF text, 12px/400, 12px radius, padding 8px 12px, shadow `rgba(255, 255, 255, 0.15) 0px 2px 0px 0px inset`.
+- **button-secondary (“Sign up with email”):** transparent fill, #292929 text, 12px/400, 12px radius, padding 8px 12px, shadow `rgb(255, 255, 255) 0px 2px 0px 0px inset`.
+- **button-tertiary (“Book a demo”):** transparent fill, #292929 text, 12px/400, 12px radius, padding 8px 12px, shadow `rgb(255, 255, 255) 0px 2px 0px 0px inset`.
 - **link:** transparent fill, #111111 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #FFFFFF for the page and lift surfaces in small steps: #F5F5F5, #F4F4F4.
+- Do use #FFFFFF for the page and lift surfaces in small steps: #F5F5F5.
 - Do keep text in 4 levels: #111111, #242424, #292929, #898989.
 - Do let contrast carry emphasis; primary actions use #111111 on #FFFFFF.
 - Do reuse the measured spacing steps (8px, 12px, 20px).
 - Do make buttons and chips fully rounded (9999px); most other elements use 12px corners.
-- Don't use #898989 for body text; it reaches 3.5:1 on #FFFFFF. Keep it for large text or metadata.
+- Don't use #898989 for body text; it reaches 3.50:1 on #FFFFFF. Keep it for large text or metadata.
 - Don't use heavy drop shadows; keep depth to hairline rings and tonal surfaces.
 - Don't introduce new font families beyond Cal Sans, Cal Sans UI Variable Light, Matter Regular, Inter and Roboto Mono.
 - Don't add saturated accent colors; the measured palette is almost entirely neutral.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/cal.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/cal.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).

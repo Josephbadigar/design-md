@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Neon
-description: "Dark interface measured from neon.tech: Inter type, teal accents, tonal surfaces and 4px corners."
+description: "Dark interface measured from neon.com: Inter type, teal accents, tonal surfaces and 4px corners."
 colors:
   background: "#000000"
   surface: "#000000"
@@ -20,7 +20,7 @@ colors:
   primary: "#34D59A"
   on-primary: "#000000"
   inverse-surface: "#E4E5E7"
-  error: "#FF3621"
+  secondary: "#FF3621"
 typography:
   headline-display:
     fontFamily: Inter
@@ -99,7 +99,8 @@ typography:
     lineHeight: 1.25
     letterSpacing: -0.02em
 rounded:
-  md: 4px
+  sm: 4px
+  md: 6px
 spacing:
   xs: 4px
   sm: 6px
@@ -114,16 +115,12 @@ components:
     typography: "{typography.label-md}"
     padding: 0px 28px
     height: 44px
-  button-primary-hover:
-    backgroundColor: "{colors.on-surface-variant}"
   button-secondary:
     backgroundColor: "{colors.on-surface}"
     textColor: "{colors.on-primary}"
     typography: "{typography.label-sm}"
     padding: 0px 18px
     height: 36px
-  button-secondary-hover:
-    backgroundColor: "{colors.on-surface-variant}"
   button-outline:
     textColor: "{colors.on-surface}"
     typography: "{typography.label-sm}"
@@ -132,10 +129,10 @@ components:
   button-ghost:
     textColor: "{colors.on-surface}"
     typography: "{typography.body-md}"
-    rounded: "{rounded.md}"
+    rounded: "{rounded.sm}"
     padding: 0px 14px
   link:
-    textColor: "{colors.on-surface-muted}"
+    textColor: "{colors.on-surface}"
 ---
 
 # Neon Design System
@@ -146,17 +143,17 @@ Neon describes itself as: “The backend for apps and agents. Build with Lakebas
 
 Type is set in **Inter**, with **GeistMono** for code. Headlines run large with tight negative tracking; body text is 15px. Depth comes from hairline borders and inset highlights rather than drop shadows. Corners are mostly 4px.
 
-Measured from [neon.tech](https://neon.com/) on October 21, 2026 at 1440×900 and 390×844 from 411 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [neon.com](https://neon.com/) on October 29, 2026 at 1440×900 and 390×844 from 416 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 16 roles.
 
 - **Near Black (#000000):** Page background, seen 8 times. Token `background`, CSS `--error-tooltip-bg`.
-- **White (#FFFFFF):** Primary text and headings, seen 28 times. Token `on-surface`, CSS `--shiki-token-embed`.
+- **White (#FFFFFF):** Primary text and headings, seen 34 times. Token `on-surface`, CSS `--shiki-token-embed`.
 - **Cool Silver (#C9CBCF):** Secondary text, seen 6 times. Token `on-surface-variant`.
 - **Cool Gray (#AFB1B6):** Muted text and metadata, seen 29 times. Token `on-surface-muted`.
-- **Cool Slate (#797D86):** Subtle text and placeholders, seen 10 times. Token `on-surface-subtle`, CSS `--shiki-token-comment`.
+- **Cool Slate (#797D86):** Subtle text and placeholders, seen 13 times. Token `on-surface-subtle`, CSS `--shiki-token-comment`.
 - **Charcoal (#111315):** Raised areas one step from the page, seen 5 times. Token `surface-container-low`.
 - **Charcoal (#151617):** Cards and panels, seen 1 time. Token `surface-container`.
 - **Charcoal (#18191B):** Hover and pressed fills, seen 4 times. Token `surface-container-high`.
@@ -166,12 +163,12 @@ The palette has 16 roles.
 - **Cool Graphite (#303236):** Secondary dividers, seen 2 times. Token `outline-variant`.
 - **Teal (#34D59A):** Brand color in the logo, seen 2 times. Token `primary`, CSS `--shiki-token-keyword`.
 - **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
-- **Mist (#E4E5E7):** High-contrast fills, seen 15 times. Token `inverse-surface`.
-- **Vivid Red (#FF3621):** Errors and destructive states, seen 4 times. Token `error`.
+- **Mist (#E4E5E7):** High-contrast fills, seen 7 times. Token `inverse-surface`.
+- **Vivid Red (#FF3621):** Accent, seen 4 times. Token `secondary`.
 
 ## Typography
 
-**Inter** and **GeistMono** (monospace) share the interface. Fallback stack: `Inter, Inter Fallback, ui-sans-serif, system-ui`. Other loaded fonts: Inter Fallback.
+**Inter** and **GeistMono** (monospace) share the interface. Fallback stack: `Inter, Inter Fallback, ui-sans-serif, system-ui`.
 
 - **headline-display:** Inter 56px at weight 400, line height 1.13, tracking -0.04em (32px on mobile). Page title (h1).
 - **headline-lg:** Inter 44px at weight 400, line height 1.13, tracking -0.04em (28px on mobile). Section headings (h2).
@@ -186,11 +183,11 @@ The palette has 16 roles.
 
 ## Layout
 
-Spacing does not follow a strict grid: 66% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 69% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
 - **Scale:** xs 4px, sm 6px, md 16px, lg 32px, xl 40px.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
-- **Breakpoints:** 640px, 1024px, 1280px, 1366px, 1407px, 1919px, 1921px.
+- **Breakpoints:** 640px, 1024px, 1100px, 1280px, 1366px, 1407px, 1921px.
 
 ## Elevation & Depth
 
@@ -202,19 +199,18 @@ The design avoids drop shadows. Layers are separated by tonal surface steps (#11
 
 Most elements use 4px corners. Measured radii, most used first:
 
-- **md (4px):** 140 elements.
+- **sm (4px):** 140 elements.
+- **md (6px):** 24 elements.
 
 ## Components
 
 Measured from the rendered page. Token values reference the tokens above.
 
 - **button-primary (“Get started”):** #FFFFFF fill, #1A1A1A text, 16px/500, 3.35544e+07px radius, padding 0px 28px.
-- **button-primary-hover:** background #C9CBCF, text #1A1A1A on hover.
 - **button-secondary (“Sign up”):** #FFFFFF fill, #000000 text, 14px/500, 3.35544e+07px radius, padding 0px 18px.
-- **button-secondary-hover:** background #C9CBCF, text #000000 on hover.
 - **button-outline (“Log in”):** transparent fill, #FFFFFF text, 14px/500, 3.35544e+07px radius, padding 0px 18px, border 1px solid #61646B.
 - **button-ghost (“Product”):** transparent fill, #FFFFFF text, 15px/400, 4px radius, padding 0px 14px.
-- **link:** transparent fill, #AFB1B6 text, padding 0px.
+- **link:** transparent fill, #FFFFFF text, padding 0px.
 
 ## Do's and Don'ts
 
@@ -223,7 +219,7 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do use #34D59A as the brand accent: header, logo and key highlights.
 - Do set headlines in Inter with tight tracking (-0.04em).
 - Do reuse the measured spacing steps (6px, 16px, 32px).
-- Do use 4px corners on most elements.
+- Do use 4px corners on most elements; larger surfaces also use 6px.
 - Don't add drop shadows for depth; use hairline rings and tonal surfaces.
 - Don't introduce new font families beyond Inter and GeistMono.
 - Don't use #34D59A for large backgrounds or body text.
@@ -233,7 +229,7 @@ Measured from the rendered page. Token values reference the tokens above.
 
 Interface transitions are quick: 0.2s, 0.15s.
 
-- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`.
+- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `cubic-bezier(0.16, 0.68, 0.88, 0.54)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/neon.tech/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/neon.tech/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).
