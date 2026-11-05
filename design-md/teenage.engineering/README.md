@@ -6,7 +6,7 @@ The DESIGN.md file for teenage.engineering, in the E-commerce and brands categor
 
 - Theme: dark
 - Fonts: te-20
-- Colors: `#000000` `#F1F2F2` `#E5E5E5`
+- Colors: `#000000` `#F1F2F2` `#E5E5E5` `#006837`
 - Accent: `#F1F2F2`
 
 [![teenage engineering home page](https://sitepeel.dev/design-md/teenage.engineering/screenshot.jpg)](https://sitepeel.dev/design-md/teenage.engineering/)

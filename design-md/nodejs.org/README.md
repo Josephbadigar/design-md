@@ -4,10 +4,10 @@
 
 The DESIGN.md file for nodejs.org, in the Developer tools category. [Sitepeel](https://sitepeel.dev/design-md/nodejs.org/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: OPEN SANS, SFMono-Regular
-- Colors: `#0D121C` `#2C3437` `#FFFFFF` `#ECEFF4` `#AE5F00` `#84BA64`
-- Accent: `#AE5F00`
+- Colors: `#FFFFFF` `#E9F4FA` `#F6F7F9` `#1F2328` `#2C3437` `#417E38`
+- Accent: `#417E38`
 
 [![Node.js home page](https://sitepeel.dev/design-md/nodejs.org/screenshot.jpg)](https://sitepeel.dev/design-md/nodejs.org/)
 

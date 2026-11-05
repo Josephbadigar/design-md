@@ -4,9 +4,9 @@
 
 The DESIGN.md file for substack.com, in the Media and consumer apps category. [Sitepeel](https://sitepeel.dev/design-md/substack.com/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: Cahuenga
-- Colors: `#161718` `#232525` `#1B1C1D` `#EEEEEE` `#777777` `#FF6719`
+- Colors: `#FFFFFF` `#363737` `#777777` `#FF6719` `#2F6D5D` `#EB5757`
 - Accent: `#FF6719`
 
 [![Substack home page](https://sitepeel.dev/design-md/substack.com/screenshot.jpg)](https://sitepeel.dev/design-md/substack.com/)

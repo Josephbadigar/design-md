@@ -5,8 +5,8 @@
 The DESIGN.md file for miro.com, in the SaaS and productivity category. [Sitepeel](https://sitepeel.dev/design-md/miro.com/) measured it from the live site.
 
 - Theme: light
-- Fonts: Roobert PRO Medium, Noto Sans
-- Colors: `#FFFFFF` `#FDE0F0` `#F0F0F0` `#000000` `#1C1C1E` `#FDE050`
+- Fonts: Apris Regular, Roobert PRO Regular
+- Colors: `#FFFFFF` `#FDE0F0` `#FBFAF7` `#000000` `#1C1C1E` `#FDE050`
 - Accent: `#FDE050`
 
 [![Miro home page](https://sitepeel.dev/design-md/miro.com/screenshot.jpg)](https://sitepeel.dev/design-md/miro.com/)

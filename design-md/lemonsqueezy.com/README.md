@@ -6,8 +6,8 @@ The DESIGN.md file for lemonsqueezy.com, in the Fintech and payments category. [
 
 - Theme: dark
 - Fonts: Circularpro book, Inter
-- Colors: `#5423E7` `#FFFFFF` `#121217` `#7047EB`
-- Accent: `#5423E7`
+- Colors: `#5423E7` `#FFFFFF` `#121217` `#FFC233` `#7047EB`
+- Accent: `#FFC233`
 
 [![Lemonsqueezy home page](https://sitepeel.dev/design-md/lemonsqueezy.com/screenshot.jpg)](https://sitepeel.dev/design-md/lemonsqueezy.com/)
 

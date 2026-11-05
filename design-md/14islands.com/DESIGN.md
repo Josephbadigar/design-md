@@ -1,0 +1,129 @@
+---
+version: alpha
+name: 14islands
+description: "Light monochrome interface measured from 14islands.com: AftenScreen type with BentonSans, tonal surfaces and square corners."
+colors:
+  background: "#FFFFFF"
+  surface: "#FFFFFF"
+  on-surface: "#070707"
+  on-background: "#070707"
+  on-surface-variant: "#A2A2A9"
+  surface-container-low: "#F2F2F2"
+  outline: "#A2A2A9"
+  primary: "#070707"
+  on-primary: "#FFFFFF"
+typography:
+  headline-display:
+    fontFamily: AftenScreen
+    fontSize: 100px
+    fontWeight: 400
+    lineHeight: 1
+    letterSpacing: -0.04em
+  body-md:
+    fontFamily: BentonSans
+    fontSize: 16px
+    fontWeight: 400
+  body-lg:
+    fontFamily: AftenScreen
+    fontSize: 27px
+    fontWeight: 400
+    lineHeight: 1.3
+    letterSpacing: -0.04em
+  label-md:
+    fontFamily: BentonSans
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 1.4
+rounded:
+  none: 0px
+spacing:
+  xs: 3.6px
+  md: 10px
+  lg: 20px
+  xl: 54.17px
+  gutter: 10px
+  section: 100px
+  margin: 54.17px
+components:
+  link:
+    textColor: "{colors.primary}"
+---
+
+# 14islands Design System
+
+## Overview
+
+14islands describes itself as: “We're a nimble team of designers and developers crafting premium products, brands, and experiences — with offices in Stockholm and Reykjavík.” The interface is light, built on **White (#FFFFFF)** with **Near Black (#070707)** text and almost no color: actions are carried by contrast, not hue.
+
+Type is set in **AftenScreen** and **BentonSans**. Headlines run large with tight negative tracking; body text is 16px. The surface language is flat. Corners are square.
+
+Measured from [14islands.com](https://www.14islands.com/) on November 4, 2026 at 1440×900 and 390×844 from 255 rendered elements. Values are computed styles from the live page, not the original source files.
+
+## Colors
+
+The palette has 7 roles.
+
+- **White (#FFFFFF):** Page background, seen 2 times. Token `background`, CSS `--color-white`.
+- **Near Black (#070707):** Primary text and headings, seen 57 times. Token `on-surface`, CSS `--color-almost-black`.
+- **Cool Gray (#A2A2A9):** Secondary text, seen 20 times. Token `on-surface-variant`, CSS `--color-grey-highlight-light`.
+- **Mist (#F2F2F2):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`.
+- **Cool Gray (#A2A2A9):** Borders and dividers, seen 16 times. Token `outline`, CSS `--color-grey-highlight-light`.
+- **Near Black (#070707):** Primary actions (the main text color; the palette is monochrome), seen 70 times. Token `primary`, CSS `--color-almost-black`.
+- **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
+
+## Typography
+
+**AftenScreen** and **BentonSans** share the interface. Fallback stack: `AftenScreen, sans-serif`.
+
+- **headline-display:** AftenScreen 100px at weight 400, line height 1, tracking -0.04em. Page title (h1).
+- **body-md:** BentonSans 16px at weight 400. Body text.
+- **body-lg:** AftenScreen 27px at weight 400, line height 1.3, tracking -0.04em. Lead paragraphs.
+- **label-md:** BentonSans 12px at weight 400, line height 1.4, uppercase. Buttons, navigation and labels.
+
+## Layout
+
+Spacing does not follow a strict grid: 14% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+
+- **Scale:** xs 3.6px, md 10px, lg 20px, xl 54.17px.
+- **Sections:** 100px vertical padding between major sections.
+- **Gaps:** 10px is the most common gap in flex and grid layouts.
+- **Page margin:** 54.17px on each side of full-width sections.
+- **Breakpoints:** 600px, 899px, 900px, 1400px.
+
+## Elevation & Depth
+
+The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#F2F2F2) and #A2A2A9 borders.
+
+## Shapes
+
+Corners are square. Measured radii, most used first:
+
+- **none (0px):** measured.
+
+## Components
+
+Measured from the rendered page. Token values reference the tokens above.
+
+- **link:** transparent fill, #070707 text, padding 0px.
+
+## Do's and Don'ts
+
+- Do use #FFFFFF for the page and lift surfaces in small steps: #F2F2F2.
+- Do keep text in 2 levels: #070707, #A2A2A9.
+- Do let contrast carry emphasis; primary actions use #070707 on #FFFFFF.
+- Do set headlines in AftenScreen with tight tracking (-0.04em).
+- Do reuse the measured spacing steps (10px, 20px).
+- Don't use #A2A2A9 for body text; it reaches 2.54:1 on #FFFFFF. Keep it for large text or metadata.
+- Don't add drop shadows for depth; use tonal surfaces.
+- Don't introduce new font families beyond AftenScreen and BentonSans.
+- Don't add saturated accent colors; the measured palette is almost entirely neutral.
+- Don't make interface transitions slower than 0.6s.
+
+## Motion
+
+Interface transitions are quick: 0.5s, 0.55s, 0.6s. Longer ambient animations run 1.25s, 1.3s, 1.35s.
+
+- **Easing:** `ease`, `cubic-bezier(0.25, 0.46, 0.45, 0.94)`.
+- **Reduced motion:** the page responds to `prefers-reduced-motion`.
+
+Generated by [Sitepeel](https://sitepeel.dev/design-md/14islands.com/), the free DESIGN.md generator (engine 2026.10.29+b828a475ee10).

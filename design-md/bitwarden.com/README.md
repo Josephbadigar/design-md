@@ -4,10 +4,10 @@
 
 The DESIGN.md file for bitwarden.com, in the Security and privacy category. [Sitepeel](https://sitepeel.dev/design-md/bitwarden.com/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: Inter Variable
-- Colors: `#0A171F` `#FFFFFF` `#F3F6F9` `#0C3276` `#65ABFF` `#FF4E63`
-- Accent: `#0C3276`
+- Colors: `#FFFFFF` `#000000` `#0A171F` `#175DDC` `#0C3276` `#FF4E63`
+- Accent: `#175DDC`
 
 [![Bitwarden home page](https://sitepeel.dev/design-md/bitwarden.com/screenshot.jpg)](https://sitepeel.dev/design-md/bitwarden.com/)
 

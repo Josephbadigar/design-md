@@ -6,7 +6,7 @@ The DESIGN.md file for netlify.com, in the Developer tools category. [Sitepeel](
 
 - Theme: dark
 - Fonts: Figtree, Instrument Sans
-- Colors: `#12181F` `#181A1C` `#DEFFFE` `#E4F0FB` `#32E6E2` `#89DDFF`
+- Colors: `#12181F` `#181A1C` `#FFFFFF` `#DEFFFE` `#32E6E2` `#014847`
 - Accent: `#32E6E2`
 
 [![Netlify home page](https://sitepeel.dev/design-md/netlify.com/screenshot.jpg)](https://sitepeel.dev/design-md/netlify.com/)

@@ -4,10 +4,10 @@
 
 The DESIGN.md file for bun.sh, in the Developer tools category. [Sitepeel](https://sitepeel.dev/design-md/bun.sh/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: Archivo
-- Colors: `#0D0A0C` `#000000` `#0E0E0E` `#EAEAE8` `#A8A8A5` `#FF2E97`
-- Accent: `#EAEAE8`
+- Colors: `#FFFFFF` `#F6F6F6` `#0A0A0A` `#525252` `#0C0C0C` `#D60066`
+- Accent: `#0C0C0C`
 
 [![Bun home page](https://sitepeel.dev/design-md/bun.sh/screenshot.jpg)](https://sitepeel.dev/design-md/bun.sh/)
 

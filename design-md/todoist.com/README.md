@@ -6,7 +6,7 @@ The DESIGN.md file for todoist.com, in the SaaS and productivity category. [Site
 
 - Theme: light
 - Fonts: Graphik, Inter
-- Colors: `#FEFDFC` `#F9F7F6` `#FFFFFF` `#25221E` `#6F6D6A` `#E34432`
+- Colors: `#FEFDFC` `#F4FBF7` `#FFFFFF` `#25221E` `#6F6D6A` `#E34432`
 - Accent: `#E34432`
 
 [![Todoist home page](https://sitepeel.dev/design-md/todoist.com/screenshot.jpg)](https://sitepeel.dev/design-md/todoist.com/)

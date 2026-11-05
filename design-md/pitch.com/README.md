@@ -6,7 +6,7 @@ The DESIGN.md file for pitch.com, in the Design tools and site builders category
 
 - Theme: light
 - Fonts: Mark Pro Bold, Mark Pro Regular
-- Colors: `#FFFFFF` `#EBE3FE` `#0C021C` `#C6A5FF` `#280F62` `#5318EB`
+- Colors: `#FFFFFF` `#EBE3FE` `#F6F6F6` `#0C021C` `#363636` `#C6A5FF`
 - Accent: `#C6A5FF`
 
 [![Pitch home page](https://sitepeel.dev/design-md/pitch.com/screenshot.jpg)](https://sitepeel.dev/design-md/pitch.com/)

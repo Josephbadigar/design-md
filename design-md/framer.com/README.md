@@ -6,7 +6,7 @@ The DESIGN.md file for framer.com, in the Design tools and site builders categor
 
 - Theme: dark
 - Fonts: GT Walsheim Medium, Inter
-- Colors: `#000000` `#FFFFFF` `#CCCCCC` `#0099FF` `#4CD963`
+- Colors: `#000000` `#1F1F1F` `#FFFFFF` `#CCCCCC` `#0099FF`
 - Accent: `#FFFFFF`
 
 [![Framer home page](https://sitepeel.dev/design-md/framer.com/screenshot.jpg)](https://sitepeel.dev/design-md/framer.com/)

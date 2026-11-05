@@ -4,9 +4,9 @@
 
 The DESIGN.md file for apple.com, in the E-commerce and brands category. [Sitepeel](https://sitepeel.dev/design-md/apple.com/) measured it from the live site.
 
-- Theme: light
+- Theme: dark
 - Fonts: SF Pro Display, SF Pro Text
-- Colors: `#F5F5F7` `#FFFFFF` `#FAFAFC` `#1D1D1F` `#313131` `#0071E3`
+- Colors: `#000000` `#1D1D1F` `#F5F5F7` `#CCCCCC` `#0071E3` `#0066CC`
 - Accent: `#0071E3`
 
 [![Apple home page](https://sitepeel.dev/design-md/apple.com/screenshot.jpg)](https://sitepeel.dev/design-md/apple.com/)

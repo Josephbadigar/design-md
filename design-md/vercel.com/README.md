@@ -4,10 +4,10 @@
 
 The DESIGN.md file for vercel.com, in the Developer tools category. [Sitepeel](https://sitepeel.dev/design-md/vercel.com/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: GeistSans, Geist Mono
-- Colors: `#000000` `#262626` `#0A0A0A` `#EDEDED` `#A1A1A1`
-- Accent: `#EDEDED`
+- Colors: `#FAFAFA` `#EBEBEB` `#FFFFFF` `#171717` `#4D4D4D` `#BA1638`
+- Accent: `#BA1638`
 
 [![Vercel home page](https://sitepeel.dev/design-md/vercel.com/screenshot.jpg)](https://sitepeel.dev/design-md/vercel.com/)
 

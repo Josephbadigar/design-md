@@ -6,8 +6,8 @@ The DESIGN.md file for posthog.com, in the Marketing and analytics category. [Si
 
 - Theme: light
 - Fonts: RoundHog
-- Colors: `#EEEFE9` `#FFFFFF` `#374151` `#111827` `#F54E00` `#EB9D2A`
-- Accent: `#F54E00`
+- Colors: `#EEEFE9` `#FFFFFF` `#FDFDF8` `#374151` `#111827` `#B62AD9`
+- Accent: `#B62AD9`
 
 [![PostHog home page](https://sitepeel.dev/design-md/posthog.com/screenshot.jpg)](https://sitepeel.dev/design-md/posthog.com/)
 

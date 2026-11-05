@@ -6,8 +6,8 @@ The DESIGN.md file for rust-lang.org, in the Developer tools category. [Sitepeel
 
 - Theme: dark
 - Fonts: Alfa Slab One, Fira Sans
-- Colors: `#0B7261` `#000000` `#2A3439` `#4299BF`
-- Accent: `#0B7261`
+- Colors: `#0B7261` `#000000` `#2A3439` `#2E2459` `#4299BF`
+- Accent: `#2E2459`
 
 [![Rust home page](https://sitepeel.dev/design-md/rust-lang.org/screenshot.jpg)](https://sitepeel.dev/design-md/rust-lang.org/)
 

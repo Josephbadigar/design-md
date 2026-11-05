@@ -6,7 +6,7 @@ The DESIGN.md file for shopify.com, in the E-commerce and brands category. [Site
 
 - Theme: dark
 - Fonts: Shopify-Inter, ui-monospace
-- Colors: `#02090A` `#000000` `#000A1E` `#FFFFFF` `#99B3AD`
+- Colors: `#02090A` `#000000` `#000A1E` `#FFFFFF` `#9DABAD` `#7126FF`
 - Accent: `#FFFFFF`
 
 [![Shopify home page](https://sitepeel.dev/design-md/shopify.com/screenshot.jpg)](https://sitepeel.dev/design-md/shopify.com/)

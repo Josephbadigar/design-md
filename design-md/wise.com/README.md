@@ -6,8 +6,8 @@ The DESIGN.md file for wise.com, in the Fintech and payments category. [Sitepeel
 
 - Theme: light
 - Fonts: Wise Sans, Inter
-- Colors: `#FFFFFF` `#163300` `#454745` `#9FE870` `#054D28` `#B8232B`
-- Accent: `#9FE870`
+- Colors: `#9FE870` `#FFFFFF` `#163300` `#454745` `#054D28` `#B8232B`
+- Accent: `#163300`
 
 [![Wise home page](https://sitepeel.dev/design-md/wise.com/screenshot.jpg)](https://sitepeel.dev/design-md/wise.com/)
 

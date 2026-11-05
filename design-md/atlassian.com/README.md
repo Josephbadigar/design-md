@@ -4,9 +4,9 @@
 
 The DESIGN.md file for atlassian.com, in the SaaS and productivity category. [Sitepeel](https://sitepeel.dev/design-md/atlassian.com/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: Charlie Display, Charlie Text
-- Colors: `#101214` `#FFFFFF` `#1868DB` `#BAF3DB` `#7EE2B8`
+- Colors: `#FFFFFF` `#F8F8F8` `#292A2E` `#1C2B42` `#1868DB` `#7EE2B8`
 - Accent: `#1868DB`
 
 [![Atlassian home page](https://sitepeel.dev/design-md/atlassian.com/screenshot.jpg)](https://sitepeel.dev/design-md/atlassian.com/)

@@ -6,7 +6,7 @@ The DESIGN.md file for elevenlabs.io, in the AI category. [Sitepeel](https://sit
 
 - Theme: light
 - Fonts: Waldenburg, Inter
-- Colors: `#F5F3F1` `#FFFFFF` `#FDFCFC` `#000000` `#777169` `#0A59D2`
+- Colors: `#F5F3F1` `#FDFCFC` `#EFEFEF` `#000000` `#777169` `#F41A2F`
 - Accent: `#000000`
 
 [![ElevenLabs home page](https://sitepeel.dev/design-md/elevenlabs.io/screenshot.jpg)](https://sitepeel.dev/design-md/elevenlabs.io/)

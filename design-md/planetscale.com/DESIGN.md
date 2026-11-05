@@ -1,0 +1,141 @@
+---
+version: alpha
+name: PlanetScale
+description: "Light interface measured from planetscale.com: system-ui type, vivid amber accents, flat surfaces and square corners."
+colors:
+  background: "#FAFAFA"
+  surface: "#FAFAFA"
+  on-surface: "#414141"
+  on-background: "#414141"
+  on-surface-strong: "#000000"
+  on-surface-variant: "#737373"
+  primary: "#FBCA00"
+  on-primary: "#000000"
+  inverse-surface: "#111111"
+  secondary: "#F35815"
+  tertiary: "#0B6EC5"
+typography:
+  headline-display:
+    fontFamily: ui-monospace
+    fontSize: 16px
+    fontWeight: 700
+    lineHeight: 1.5
+  code:
+    fontFamily: ui-monospace
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.5
+rounded:
+  none: 0px
+spacing:
+  base: 4px
+  xs: 4px
+  sm: 8px
+  md: 16px
+  lg: 24px
+  xl: 56px
+  gutter: 24px
+  margin: 96px
+  container: 1280px
+components:
+  button-primary:
+    backgroundColor: "{colors.secondary}"
+    textColor: "#FFFFFF"
+    typography: "{typography.headline-display}"
+    rounded: "{rounded.none}"
+    padding: 0px 8px
+    height: 32px
+  button-outline:
+    textColor: "{colors.on-surface}"
+    typography: "{typography.headline-display}"
+    rounded: "{rounded.none}"
+    padding: 0px 8px
+    height: 32px
+  button-ghost:
+    textColor: "{colors.on-surface}"
+    typography: "{typography.headline-display}"
+    rounded: "{rounded.none}"
+    padding: 0px 8px
+  link:
+    textColor: "{colors.tertiary}"
+---
+
+# PlanetScale Design System
+
+## Overview
+
+PlanetScale describes itself as: “PlanetScale offers the world’s fastest and most scalable cloud hosting for Vitess, Neki, and Postgres.” The interface is light, built on **Snow (#FAFAFA)** with **Graphite (#414141)** text, and **Vivid Amber (#FBCA00)** as the main accent.
+
+Type is set in **system-ui**, with **ui-monospace** for code. Headlines run large; body text is compact. The surface language is flat. Corners are square.
+
+Measured from [planetscale.com](https://planetscale.com/) on November 4, 2026 at 1440×900 and 390×844 from 302 rendered elements. Values are computed styles from the live page, not the original source files.
+
+## Colors
+
+The palette has 9 roles.
+
+- **Snow (#FAFAFA):** Page background, seen 2 times. Token `background`, CSS `--bg-primary`.
+- **Graphite (#414141):** Primary text and headings, seen 77 times. Token `on-surface`.
+- **Near Black (#000000):** Headings and emphasis, seen 6 times. Token `on-surface-strong`, CSS `--text-color-contrast`.
+- **Slate (#737373):** Secondary text, seen 7 times. Token `on-surface-variant`, CSS `--color-gray-550`.
+- **Vivid Amber (#FBCA00):** Brand color in the header. Token `primary`.
+- **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
+- **Charcoal (#111111):** High-contrast fills, seen 2 times. Token `inverse-surface`.
+- **Vivid Orange (#F35815):** Secondary buttons, seen 3 times. Token `secondary`, CSS `--orange-500`.
+- **Blue (#0B6EC5):** Links and interactive text, seen 67 times. Token `tertiary`, CSS `--blue-600`.
+
+## Typography
+
+**ui-monospace** (monospace) carries the whole interface. Fallback stack: `ui-monospace, SFMono-Regular, SF Mono, Menlo`.
+
+- **headline-display:** ui-monospace 16px at weight 700, line height 1.5. Page title (h1).
+- **code:** ui-monospace 16px at weight 400, line height 1.5. Code and technical values.
+
+## Layout
+
+Spacing follows a 4px grid: 95% of measured gaps and paddings are multiples of 4px.
+
+- **Scale:** xs 4px, sm 8px, md 16px, lg 24px, xl 56px.
+- **Gaps:** 24px is the most common gap in flex and grid layouts.
+- **Container:** content is capped at 1280px.
+- **Page margin:** 96px on each side of full-width sections.
+- **Breakpoints:** 640px, 768px, 801px.
+
+## Elevation & Depth
+
+The design is flat: no shadows were measured. Hierarchy comes from color contrast.
+
+## Shapes
+
+Corners are square. Measured radii, most used first:
+
+- **none (0px):** measured.
+
+## Components
+
+Measured from the rendered page. Token values reference the tokens above.
+
+- **button-primary (“Get in touch”):** #F35815 fill, #FFFFFF text, 16px/600, padding 0px 8px.
+- **button-outline (“View sandbox”):** transparent fill, #414141 text, 16px/600, padding 0px 8px, border 2px solid #F35815.
+- **button-ghost (“View sandbox”):** transparent fill, #414141 text, 16px/600, padding 0px 8px, border 2px solid #F35815.
+- **link:** transparent fill, #0B6EC5 text, padding 0px.
+
+## Do's and Don'ts
+
+- Do use #FAFAFA for the page.
+- Do keep text in 3 levels: #414141, #000000, #737373.
+- Do use #FBCA00 as the brand accent: header, logo and key highlights.
+- Do keep spacing on the 4px grid.
+- Don't add drop shadows for depth; use borders and contrast.
+- Don't introduce new font families beyond ui-monospace.
+- Don't use #FBCA00 for large backgrounds or body text.
+- Don't make interface transitions slower than 0.15s.
+
+## Motion
+
+Interface transitions are quick: 0.15s.
+
+- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`.
+- **Reduced motion:** the page responds to `prefers-reduced-motion`.
+
+Generated by [Sitepeel](https://sitepeel.dev/design-md/planetscale.com/), the free DESIGN.md generator (engine 2026.10.29+b828a475ee10).

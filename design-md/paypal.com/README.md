@@ -6,8 +6,8 @@ The DESIGN.md file for paypal.com, in the Fintech and payments category. [Sitepe
 
 - Theme: light
 - Fonts: PayPal Pro, PayPal Pro Text VF
-- Colors: `#FFFFFF` `#F5F7FA` `#000000` `#5E5E5E` `#002991` `#60CDFF`
-- Accent: `#002991`
+- Colors: `#FFFFFF` `#CCCCCC` `#EDF0F2` `#000000` `#60CDFF` `#002991`
+- Accent: `#60CDFF`
 
 [![PayPal home page](https://sitepeel.dev/design-md/paypal.com/screenshot.jpg)](https://sitepeel.dev/design-md/paypal.com/)
 

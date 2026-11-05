@@ -6,8 +6,8 @@ The DESIGN.md file for gitlab.com, in the Developer tools category. [Sitepeel](h
 
 - Theme: dark
 - Fonts: GitLab Sans, GitLab Mono
-- Colors: `#171321` `#FFFFFF` `#F7F7F5` `#FC6D26` `#FCA326`
-- Accent: `#FFFFFF`
+- Colors: `#171321` `#FFFFFF` `#F7F7F5` `#E24329` `#FC6D26`
+- Accent: `#E24329`
 
 [![GitLab home page](https://sitepeel.dev/design-md/gitlab.com/screenshot.jpg)](https://sitepeel.dev/design-md/gitlab.com/)
 

@@ -4,10 +4,10 @@
 
 The DESIGN.md file for are.na, in the Inspiration category. [Sitepeel](https://sitepeel.dev/design-md/are.na/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: areal
-- Colors: `#000000` `#333333` `#1A1A1A` `#FFFFFF` `#E5E5E5` `#E2DFE9`
-- Accent: `#E2DFE9`
+- Colors: `#FFFFFF` `#F7F7F7` `#000000` `#333333` `#00075F`
+- Accent: `#00075F`
 
 [![Are.na home page](https://sitepeel.dev/design-md/are.na/screenshot.jpg)](https://sitepeel.dev/design-md/are.na/)
 

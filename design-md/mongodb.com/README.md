@@ -6,7 +6,7 @@ The DESIGN.md file for mongodb.com, in the Developer tools category. [Sitepeel](
 
 - Theme: dark
 - Fonts: Sohne Condensed, Sohne
-- Colors: `#061621` `#081B28` `#FFFFFF` `#FDFEEC` `#00ED64` `#016BF8`
+- Colors: `#061621` `#14242F` `#FAFBFC` `#E7EEEC` `#00ED64` `#00684A`
 - Accent: `#00ED64`
 
 [![MongoDB home page](https://sitepeel.dev/design-md/mongodb.com/screenshot.jpg)](https://sitepeel.dev/design-md/mongodb.com/)

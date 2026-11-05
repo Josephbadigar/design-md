@@ -4,9 +4,9 @@
 
 The DESIGN.md file for webflow.com, in the Design tools and site builders category. [Sitepeel](https://sitepeel.dev/design-md/webflow.com/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: WF Visual Sans Variable
-- Colors: `#080808` `#171717` `#FFFFFF` `#ABABAB` `#146EF5` `#3B89FF`
+- Colors: `#FFFFFF` `#D8D8D8` `#F0F0F0` `#080808` `#5A5A5A` `#146EF5`
 - Accent: `#146EF5`
 
 [![Webflow home page](https://sitepeel.dev/design-md/webflow.com/screenshot.jpg)](https://sitepeel.dev/design-md/webflow.com/)

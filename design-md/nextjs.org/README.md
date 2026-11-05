@@ -4,10 +4,10 @@
 
 The DESIGN.md file for nextjs.org, in the Developer tools category. [Sitepeel](https://sitepeel.dev/design-md/nextjs.org/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: GeistSans
-- Colors: `#000000` `#292929` `#0A0A0A` `#EDEDED` `#A1A1A1` `#0057FF`
-- Accent: `#EDEDED`
+- Colors: `#FAFAFA` `#E6E6E6` `#FFFFFF` `#171717` `#4D4D4D` `#0057FF`
+- Accent: `#171717`
 
 [![Next.js home page](https://sitepeel.dev/design-md/nextjs.org/screenshot.jpg)](https://sitepeel.dev/design-md/nextjs.org/)
 

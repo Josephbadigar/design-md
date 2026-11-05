@@ -6,8 +6,8 @@ The DESIGN.md file for go.dev, in the Developer tools category. [Sitepeel](https
 
 - Theme: dark
 - Fonts: Roboto
-- Colors: `#202224` `#253443` `#2D2D2D` `#F0F1F2` `#AAACAE` `#007D9C`
-- Accent: `#007D9C`
+- Colors: `#007D9C` `#FFFFFF` `#202224` `#FDDD00` `#FFED89` `#00769C`
+- Accent: `#FDDD00`
 
 [![Go home page](https://sitepeel.dev/design-md/go.dev/screenshot.jpg)](https://sitepeel.dev/design-md/go.dev/)
 

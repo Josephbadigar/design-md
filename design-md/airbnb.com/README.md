@@ -6,7 +6,7 @@ The DESIGN.md file for airbnb.com, in the Media and consumer apps category. [Sit
 
 - Theme: light
 - Fonts: Airbnb Cereal VF
-- Colors: `#FFFFFF` `#EBEBEB` `#F2F2F2` `#222222` `#FF385C`
+- Colors: `#F7F7F7` `#FFFFFF` `#F2F2F2` `#222222` `#6C6C6C` `#FF385C`
 - Accent: `#FF385C`
 
 [![Airbnb home page](https://sitepeel.dev/design-md/airbnb.com/screenshot.jpg)](https://sitepeel.dev/design-md/airbnb.com/)

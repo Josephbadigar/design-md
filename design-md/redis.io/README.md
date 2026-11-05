@@ -6,8 +6,8 @@ The DESIGN.md file for redis.io, in the Developer tools category. [Sitepeel](htt
 
 - Theme: dark
 - Fonts: primaryFont, Space Grotesk
-- Colors: `#091A23` `#351D22` `#0D212C` `#FFFFFF` `#B9C2C6` `#DCFF1E`
-- Accent: `#DCFF1E`
+- Colors: `#091A23` `#351D22` `#0D212C` `#FFFFFF` `#B9C2C6` `#FF4438`
+- Accent: `#FF4438`
 
 [![Redis home page](https://sitepeel.dev/design-md/redis.io/screenshot.jpg)](https://sitepeel.dev/design-md/redis.io/)
 

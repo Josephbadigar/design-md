@@ -6,7 +6,7 @@ The DESIGN.md file for squarespace.com, in the Design tools and site builders ca
 
 - Theme: dark
 - Fonts: Clarkson, Clarkson Serif
-- Colors: `#000000` `#2F2F2F` `#FFFFFF`
+- Colors: `#000000` `#2F2F2F` `#FFFFFF` `#898989`
 - Accent: `#FFFFFF`
 
 [![Squarespace home page](https://sitepeel.dev/design-md/squarespace.com/screenshot.jpg)](https://sitepeel.dev/design-md/squarespace.com/)

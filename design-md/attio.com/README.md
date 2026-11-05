@@ -6,7 +6,7 @@ The DESIGN.md file for attio.com, in the SaaS and productivity category. [Sitepe
 
 - Theme: light
 - Fonts: interDisplay, inter
-- Colors: `#FFFFFF` `#FAFAFB` `#242629` `#2E3238` `#202124` `#266DF0`
+- Colors: `#FFFFFF` `#F4F5F6` `#FAFAFB` `#1C1D1F` `#232529` `#202124`
 - Accent: `#202124`
 
 [![Attio home page](https://sitepeel.dev/design-md/attio.com/screenshot.jpg)](https://sitepeel.dev/design-md/attio.com/)

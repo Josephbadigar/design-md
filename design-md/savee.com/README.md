@@ -4,10 +4,10 @@
 
 The DESIGN.md file for savee.com, in the Inspiration category. [Sitepeel](https://sitepeel.dev/design-md/savee.com/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: saveeFont
-- Colors: `#0A0A0A` `#151515` `#D4D4D4` `#9C9C9C` `#FDFDFD`
-- Accent: `#FDFDFD`
+- Colors: `#F3F3F3` `#FDFDFD` `#404040` `#464646` `#050505` `#22C55E`
+- Accent: `#050505`
 
 [![Savee home page](https://sitepeel.dev/design-md/savee.com/screenshot.jpg)](https://sitepeel.dev/design-md/savee.com/)
 

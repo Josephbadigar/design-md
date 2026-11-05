@@ -6,7 +6,7 @@ The DESIGN.md file for storybook.js.org, in the UI and animation libraries categ
 
 - Theme: dark
 - Fonts: Nunito Sans
-- Colors: `#0D1026` `#020617` `#0F172A` `#FFFFFF` `#94A3B8` `#029CFD`
+- Colors: `#0D1026` `#333333` `#000000` `#FFFFFF` `#94A3B8` `#029CFD`
 - Accent: `#FFFFFF`
 
 [![Storybook home page](https://sitepeel.dev/design-md/storybook.js.org/screenshot.jpg)](https://sitepeel.dev/design-md/storybook.js.org/)

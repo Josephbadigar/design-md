@@ -6,8 +6,8 @@ The DESIGN.md file for wix.com, in the Design tools and site builders category. 
 
 - Theme: light
 - Fonts: wix-madefor-display-v2, wix-madefor-text-v2
-- Colors: `#FFFFFF` `#000000` `#514B3D` `#9FEAFF` `#166AEA` `#1A6AFF`
-- Accent: `#9FEAFF`
+- Colors: `#FFFFFF` `#000000` `#514B3D` `#A8F8CF` `#FFF3C7` `#166AEA`
+- Accent: `#A8F8CF`
 
 [![wix.com home page](https://sitepeel.dev/design-md/wix.com/screenshot.jpg)](https://sitepeel.dev/design-md/wix.com/)
 

@@ -6,7 +6,7 @@ The DESIGN.md file for trello.com, in the SaaS and productivity category. [Sitep
 
 - Theme: light
 - Fonts: Charlie Display, Charlie Text
-- Colors: `#F4F5F7` `#FFFFFF` `#F0F0F0` `#091E42` `#172B4D` `#0065FF`
+- Colors: `#F4F5F7` `#FFFFFF` `#EFEFEF` `#091E42` `#172B4D` `#0065FF`
 - Accent: `#0065FF`
 
 [![Trello home page](https://sitepeel.dev/design-md/trello.com/screenshot.jpg)](https://sitepeel.dev/design-md/trello.com/)

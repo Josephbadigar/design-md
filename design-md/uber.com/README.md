@@ -6,8 +6,8 @@ The DESIGN.md file for uber.com, in the Media and consumer apps category. [Sitep
 
 - Theme: dark
 - Fonts: UberMove
-- Colors: `#000000` `#292929` `#111111` `#FFFFFF` `#AFAFAF` `#0000EE`
-- Accent: `#FFFFFF`
+- Colors: `#000000` `#292929` `#111111` `#FFFFFF` `#AFAFAF` `#F6F6F6`
+- Accent: `#F6F6F6`
 
 [![Uber home page](https://sitepeel.dev/design-md/uber.com/screenshot.jpg)](https://sitepeel.dev/design-md/uber.com/)
 

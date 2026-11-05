@@ -4,10 +4,10 @@
 
 The DESIGN.md file for supabase.com, in the Developer tools category. [Sitepeel](https://sitepeel.dev/design-md/supabase.com/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: Manrope, Inter
-- Colors: `#131413` `#181A19` `#0C0F24` `#EDEFEE` `#BCBDBC` `#006338`
-- Accent: `#006338`
+- Colors: `#FDFDFD` `#FFFFFF` `#030303` `#525252` `#0E7E4E` `#3FCF8E`
+- Accent: `#0E7E4E`
 
 [![Supabase home page](https://sitepeel.dev/design-md/supabase.com/screenshot.jpg)](https://sitepeel.dev/design-md/supabase.com/)
 

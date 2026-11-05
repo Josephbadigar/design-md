@@ -4,10 +4,10 @@
 
 The DESIGN.md file for gumroad.com, in the E-commerce and brands category. [Sitepeel](https://sitepeel.dev/design-md/gumroad.com/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: ABC Favorit, Arial
-- Colors: `#000000` `#242423` `#FFFFFF` `#B3B3B3` `#FF90E8`
-- Accent: `#FF90E8`
+- Colors: `#F4F4F0` `#FFFFFF` `#000000` `#FF90E8`
+- Accent: `#000000`
 
 [![Gumroad home page](https://sitepeel.dev/design-md/gumroad.com/screenshot.jpg)](https://sitepeel.dev/design-md/gumroad.com/)
 

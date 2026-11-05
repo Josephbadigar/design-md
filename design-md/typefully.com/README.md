@@ -4,9 +4,9 @@
 
 The DESIGN.md file for typefully.com, in the SaaS and productivity category. [Sitepeel](https://sitepeel.dev/design-md/typefully.com/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: Inter, inter-arrows-subset
-- Colors: `#111418` `#282B31` `#C4C9D4` `#8B94A7` `#199AF5` `#00E5CC`
+- Colors: `#FFFFFF` `#000000` `#354450` `#199AF5` `#FF4D4D`
 - Accent: `#199AF5`
 
 [![Typefully home page](https://sitepeel.dev/design-md/typefully.com/screenshot.jpg)](https://sitepeel.dev/design-md/typefully.com/)

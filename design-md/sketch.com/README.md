@@ -6,7 +6,7 @@ The DESIGN.md file for sketch.com, in the Design tools and site builders categor
 
 - Theme: light
 - Fonts: Reckless, InterVariable
-- Colors: `#F5F5F5` `#FAFAFA` `#F9F9F9` `#212123` `#494949` `#151515`
+- Colors: `#F5F5F5` `#FFFFFF` `#F9F9F9` `#212123` `#494949` `#151515`
 - Accent: `#151515`
 
 [![Sketch home page](https://sitepeel.dev/design-md/sketch.com/screenshot.jpg)](https://sitepeel.dev/design-md/sketch.com/)

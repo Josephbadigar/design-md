@@ -5,7 +5,7 @@
 The DESIGN.md file for raycast.com, in the SaaS and productivity category. [Sitepeel](https://sitepeel.dev/design-md/raycast.com/) measured it from the live site.
 
 - Theme: dark
-- Fonts: Inter, Segoe UI Variable
+- Fonts: Inter, GeistMono
 - Colors: `#07080A` `#111214` `#130D0E` `#FFFFFF` `#9C9C9D` `#FF6363`
 - Accent: `#FF6363`
 

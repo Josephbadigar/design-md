@@ -4,10 +4,10 @@
 
 The DESIGN.md file for replicate.com, in the AI category. [Sitepeel](https://sitepeel.dev/design-md/replicate.com/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: rb-freigeist-neue, basier-square
-- Colors: `#111111` `#1B180F` `#181111` `#EEEEEE` `#B4B4B4` `#FFFFFF`
-- Accent: `#FFFFFF`
+- Colors: `#FFFFFF` `#FEFCE9` `#FFFCFC` `#202020` `#24292E` `#000000`
+- Accent: `#000000`
 
 [![Replicate home page](https://sitepeel.dev/design-md/replicate.com/screenshot.jpg)](https://sitepeel.dev/design-md/replicate.com/)
 

@@ -6,7 +6,7 @@ The DESIGN.md file for docker.com, in the Developer tools category. [Sitepeel](h
 
 - Theme: light
 - Fonts: Repro, Inter
-- Colors: `#F9FAFB` `#F0F0F0` `#FFFFFF` `#2C333F` `#475569` `#2560FF`
+- Colors: `#F9FAFB` `#D6DCE6` `#FFFFFF` `#2C333F` `#8A93AB` `#2560FF`
 - Accent: `#2560FF`
 
 [![Docker home page](https://sitepeel.dev/design-md/docker.com/screenshot.jpg)](https://sitepeel.dev/design-md/docker.com/)

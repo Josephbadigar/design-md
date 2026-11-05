@@ -4,10 +4,10 @@
 
 The DESIGN.md file for github.com, in the Developer tools category. [Sitepeel](https://sitepeel.dev/design-md/github.com/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: Mona Sans, Mona Sans VF
-- Colors: `#000000` `#0D1117` `#090D0A` `#FFFFFF` `#A4AEA6` `#080A3D`
-- Accent: `#080A3D`
+- Colors: `#FFFFFF` `#F2F5F3` `#F9FBF9` `#000000` `#58635B` `#08872B`
+- Accent: `#08872B`
 
 [![GitHub home page](https://sitepeel.dev/design-md/github.com/screenshot.jpg)](https://sitepeel.dev/design-md/github.com/)
 

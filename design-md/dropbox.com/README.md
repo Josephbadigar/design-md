@@ -6,7 +6,7 @@ The DESIGN.md file for dropbox.com, in the SaaS and productivity category. [Site
 
 - Theme: light
 - Fonts: Sharp Grotesk, Sharp Grotesk 23
-- Colors: `#F7F5F2` `#FFFFFF` `#1E1919` `#70695E` `#0061FE` `#CD2F7B`
+- Colors: `#F7F5F2` `#FFFFFF` `#1E1919` `#70695E` `#0061FE` `#0044AF`
 - Accent: `#0061FE`
 
 [![Dropbox home page](https://sitepeel.dev/design-md/dropbox.com/screenshot.jpg)](https://sitepeel.dev/design-md/dropbox.com/)

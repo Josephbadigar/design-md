@@ -6,7 +6,7 @@ The DESIGN.md file for mobbin.com, in the Inspiration category. [Sitepeel](https
 
 - Theme: light
 - Fonts: saans
-- Colors: `#FFFFFF` `#141414` `#707070`
+- Colors: `#FFFFFF` `#141414` `#222222`
 - Accent: `#141414`
 
 [![Mobbin home page](https://sitepeel.dev/design-md/mobbin.com/screenshot.jpg)](https://sitepeel.dev/design-md/mobbin.com/)

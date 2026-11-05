@@ -4,9 +4,9 @@
 
 The DESIGN.md file for basecamp.com, in the SaaS and productivity category. [Sitepeel](https://sitepeel.dev/design-md/basecamp.com/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: Graphik
-- Colors: `#131F25` `#1B2930` `#0B151B` `#E1E5E8` `#A8AFB3` `#117AF3`
+- Colors: `#FFF9F5` `#FCF9E7` `#FCF8F3` `#29353C` `#6D767B` `#117AF3`
 - Accent: `#117AF3`
 
 [![Basecamp home page](https://sitepeel.dev/design-md/basecamp.com/screenshot.jpg)](https://sitepeel.dev/design-md/basecamp.com/)

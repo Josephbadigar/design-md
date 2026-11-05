@@ -4,10 +4,10 @@
 
 The DESIGN.md file for svelte.dev, in the Developer tools category. [Sitepeel](https://sitepeel.dev/design-md/svelte.dev/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: DM Serif Display, Fira Sans
-- Colors: `#1C1E22` `#2E333E` `#23272F` `#CACBCE` `#E5E5E6` `#F96743`
-- Accent: `#F96743`
+- Colors: `#FFFFFF` `#F2F2F2` `#262626` `#141414` `#D43008`
+- Accent: `#D43008`
 
 [![Svelte home page](https://sitepeel.dev/design-md/svelte.dev/screenshot.jpg)](https://sitepeel.dev/design-md/svelte.dev/)
 

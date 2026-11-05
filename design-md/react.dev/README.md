@@ -4,10 +4,10 @@
 
 The DESIGN.md file for react.dev, in the Developer tools category. [Sitepeel](https://sitepeel.dev/design-md/react.dev/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: Optimistic Display, Optimistic Text
-- Colors: `#23272F` `#343A46` `#FFFFFF` `#F6F7F9` `#58C4DC` `#77B7D7`
-- Accent: `#58C4DC`
+- Colors: `#FFFFFF` `#F6F7F9` `#24292E` `#404756` `#087EA4` `#005CC5`
+- Accent: `#087EA4`
 
 [![React home page](https://sitepeel.dev/design-md/react.dev/screenshot.jpg)](https://sitepeel.dev/design-md/react.dev/)
 

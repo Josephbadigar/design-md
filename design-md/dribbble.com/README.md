@@ -5,7 +5,7 @@
 The DESIGN.md file for dribbble.com, in the Inspiration category. [Sitepeel](https://sitepeel.dev/design-md/dribbble.com/) measured it from the live site.
 
 - Theme: light
-- Fonts: Mona Sans, Arial
+- Fonts: Mona Sans
 - Colors: `#FFFFFF` `#ECEBF0` `#FAF9FB` `#0D0C22` `#524B63` `#EA4C89`
 - Accent: `#EA4C89`
 

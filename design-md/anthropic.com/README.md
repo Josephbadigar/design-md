@@ -4,10 +4,10 @@
 
 The DESIGN.md file for anthropic.com, in the AI category. [Sitepeel](https://sitepeel.dev/design-md/anthropic.com/) measured it from the live site.
 
-- Theme: dark
-- Fonts: anthropicSerif, anthropicSans
-- Colors: `#141413` `#3B3B3B` `#262624` `#FAF9F5` `#E8E6DC`
-- Accent: `#E8E6DC`
+- Theme: light
+- Fonts: anthropicSans, anthropicSerif
+- Colors: `#F5F4ED` `#FFFFFF` `#FAF9F5` `#141413` `#30302E`
+- Accent: `#141413`
 
 [![Anthropic home page](https://sitepeel.dev/design-md/anthropic.com/screenshot.jpg)](https://sitepeel.dev/design-md/anthropic.com/)
 

@@ -6,8 +6,8 @@ The DESIGN.md file for amplitude.com, in the Marketing and analytics category. [
 
 - Theme: light
 - Fonts: Gellix, IBM Plex Sans
-- Colors: `#FFFFFF` `#F5F7FA` `#000000` `#50565B` `#1E61F0` `#0052F2`
-- Accent: `#1E61F0`
+- Colors: `#FFFFFF` `#F5F7FA` `#000000` `#50565B` `#0052F2` `#1E61F0`
+- Accent: `#0052F2`
 
 [![Amplitude home page](https://sitepeel.dev/design-md/amplitude.com/screenshot.jpg)](https://sitepeel.dev/design-md/amplitude.com/)
 

@@ -6,8 +6,8 @@ The DESIGN.md file for dub.co, in the Marketing and analytics category. [Sitepee
 
 - Theme: light
 - Fonts: satoshi, Inter
-- Colors: `#FFFFFF` `#F5F5F5` `#FAFAFA` `#737373` `#262626` `#000000`
-- Accent: `#000000`
+- Colors: `#FFFFFF` `#F5F5F5` `#FAFAFA` `#737373` `#262626` `#C084FC`
+- Accent: `#737373`
 
 [![Dub home page](https://sitepeel.dev/design-md/dub.co/screenshot.jpg)](https://sitepeel.dev/design-md/dub.co/)
 

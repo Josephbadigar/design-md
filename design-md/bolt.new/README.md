@@ -6,7 +6,7 @@ The DESIGN.md file for bolt.new, in the AI category. [Sitepeel](https://sitepeel
 
 - Theme: dark
 - Fonts: Schibsted Grotesk, Silkscreen
-- Colors: `#111114` `#000000` `#171719` `#FFFFFF` `#F9F6F9` `#2BA6FF`
+- Colors: `#111114` `#000000` `#171719` `#F9F6F9` `#D6D5DE` `#2BA6FF`
 - Accent: `#2BA6FF`
 
 [![bolt.new home page](https://sitepeel.dev/design-md/bolt.new/screenshot.jpg)](https://sitepeel.dev/design-md/bolt.new/)

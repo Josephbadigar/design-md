@@ -4,9 +4,9 @@
 
 The DESIGN.md file for twilio.com, in the Developer tools category. [Sitepeel](https://sitepeel.dev/design-md/twilio.com/) measured it from the live site.
 
-- Theme: light
+- Theme: dark
 - Fonts: Buffalo, Whitney SSm
-- Colors: `#FFFFFF` `#000D25` `#7E869C` `#1866EE` `#DB132A` `#030B5D`
+- Colors: `#000D25` `#0D122B` `#FFFFFF` `#565B73` `#1866EE` `#DB132A`
 - Accent: `#1866EE`
 
 [![Twilio home page](https://sitepeel.dev/design-md/twilio.com/screenshot.jpg)](https://sitepeel.dev/design-md/twilio.com/)

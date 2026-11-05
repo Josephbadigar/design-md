@@ -6,8 +6,8 @@ The DESIGN.md file for asana.com, in the SaaS and productivity category. [Sitepe
 
 - Theme: light
 - Fonts: TWK Lausanne
-- Colors: `#FFFFFF` `#F3F3F3` `#FAFAFA` `#0D0D0D` `#3D3D3D` `#FFC9FF`
-- Accent: `#FFC9FF`
+- Colors: `#FFFFFF` `#F3F3F3` `#FAFAFA` `#0D0D0D` `#3D3D3D` `#FF584A`
+- Accent: `#FF584A`
 
 [![Asana home page](https://sitepeel.dev/design-md/asana.com/screenshot.jpg)](https://sitepeel.dev/design-md/asana.com/)
 

@@ -6,8 +6,8 @@ The DESIGN.md file for typescriptlang.org, in the Developer tools category. [Sit
 
 - Theme: dark
 - Fonts: Segoe UI Web (West European), JetBrains Mono
-- Colors: `#3178C6` `#FFFFFF` `#000000` `#235A97` `#F7CBA4`
-- Accent: `#3178C6`
+- Colors: `#3178C6` `#000000` `#FFFFFF` `#235A97` `#098658` `#F7CBA4`
+- Accent: `#235A97`
 
 [![TypeScript home page](https://sitepeel.dev/design-md/typescriptlang.org/screenshot.jpg)](https://sitepeel.dev/design-md/typescriptlang.org/)
 

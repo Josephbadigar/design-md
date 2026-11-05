@@ -4,9 +4,9 @@
 
 The DESIGN.md file for mui.com, in the UI and animation libraries category. [Sitepeel](https://sitepeel.dev/design-md/mui.com/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: General Sans, IBM Plex Sans
-- Colors: `#0F1214` `#3B3B3B` `#303840` `#FFFFFF` `#CCE6FF` `#0073E6`
+- Colors: `#FFFFFF` `#DFE2E7` `#EBF5FF` `#1A1E23` `#303741` `#0073E6`
 - Accent: `#0073E6`
 
 [![MUI home page](https://sitepeel.dev/design-md/mui.com/screenshot.jpg)](https://sitepeel.dev/design-md/mui.com/)

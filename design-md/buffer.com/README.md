@@ -6,7 +6,7 @@ The DESIGN.md file for buffer.com, in the Marketing and analytics category. [Sit
 
 - Theme: light
 - Fonts: Stolzl, Figtree
-- Colors: `#FEFDFB` `#213130` `#4A4A45` `#B0EC9C` `#F3BDFF`
+- Colors: `#FEFDFB` `#213130` `#565662` `#B0EC9C` `#F3BDFF`
 - Accent: `#B0EC9C`
 
 [![Buffer home page](https://sitepeel.dev/design-md/buffer.com/screenshot.jpg)](https://sitepeel.dev/design-md/buffer.com/)

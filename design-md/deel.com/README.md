@@ -6,8 +6,8 @@ The DESIGN.md file for deel.com, in the SaaS and productivity category. [Sitepee
 
 - Theme: light
 - Fonts: BagossExtendedFont, BagossCondensedFont
-- Colors: `#FFFFFF` `#F7F5F2` `#1B1B1B` `#212121` `#5938B7` `#B1D8FC`
-- Accent: `#5938B7`
+- Colors: `#FFFFFF` `#F7F5F2` `#1B1B1B` `#212121` `#201148` `#B1D8FC`
+- Accent: `#201148`
 
 [![Deel home page](https://sitepeel.dev/design-md/deel.com/screenshot.jpg)](https://sitepeel.dev/design-md/deel.com/)
 

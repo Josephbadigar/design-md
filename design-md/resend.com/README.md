@@ -6,8 +6,8 @@ The DESIGN.md file for resend.com, in the Developer tools category. [Sitepeel](h
 
 - Theme: dark
 - Fonts: domaine, aBCFavorit
-- Colors: `#000000` `#0B0E14` `#F0F0F0` `#ABAFB4` `#3B9EFF`
-- Accent: `#F0F0F0`
+- Colors: `#000000` `#0B0E14` `#F0F0F0` `#ABAFB4` `#9281F7`
+- Accent: `#0B0E14`
 
 [![Resend home page](https://sitepeel.dev/design-md/resend.com/screenshot.jpg)](https://sitepeel.dev/design-md/resend.com/)
 

@@ -6,8 +6,8 @@ The DESIGN.md file for wired.com, in the Media and consumer apps category. [Site
 
 - Theme: light
 - Fonts: WiredDisplay, Apercu
-- Colors: `#FFFFFF` `#000000` `#1A1A1A` `#057DBC`
-- Accent: `#000000`
+- Colors: `#E5E5E5` `#1A1A1A` `#9320B8` `#C146FF`
+- Accent: `#9320B8`
 
 [![WIRED home page](https://sitepeel.dev/design-md/wired.com/screenshot.jpg)](https://sitepeel.dev/design-md/wired.com/)
 

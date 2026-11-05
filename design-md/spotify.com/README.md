@@ -6,8 +6,8 @@ The DESIGN.md file for spotify.com, in the Media and consumer apps category. [Si
 
 - Theme: dark
 - Fonts: SpotifyMixUITitle, SpotifyMixUI
-- Colors: `#121212` `#3B3B3B` `#1F1F1F` `#B3B3B3` `#292929`
-- Accent: `#292929`
+- Colors: `#121212` `#3B3B3B` `#1F1F1F` `#B3B3B3` `#1ED760` `#CF4C29`
+- Accent: `#1ED760`
 
 [![Spotify home page](https://sitepeel.dev/design-md/spotify.com/screenshot.jpg)](https://sitepeel.dev/design-md/spotify.com/)
 

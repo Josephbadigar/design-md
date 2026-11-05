@@ -4,10 +4,10 @@
 
 The DESIGN.md file for arc.net, in the SaaS and productivity category. [Sitepeel](https://sitepeel.dev/design-md/arc.net/) measured it from the live site.
 
-- Theme: light
-- Fonts: Marlin Soft SQ, Marlin
-- Colors: `#FFFCEC` `#FFFFFF` `#000000` `#3139FB` `#2702C2` `#FF5060`
-- Accent: `#3139FB`
+- Theme: dark
+- Fonts: Exposure VAR, ABC Oracle
+- Colors: `#0B0B0B` `#000000` `#FFFFFF` `#7F7F7F` `#5B45E0` `#C86B00`
+- Accent: `#FFFFFF`
 
 [![Arc home page](https://sitepeel.dev/design-md/arc.net/screenshot.jpg)](https://sitepeel.dev/design-md/arc.net/)
 

@@ -4,10 +4,10 @@
 
 The DESIGN.md file for ui.shadcn.com, in the UI and animation libraries category. [Sitepeel](https://sitepeel.dev/design-md/ui.shadcn.com/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: Geist
-- Colors: `#0A0A0A` `#262626` `#171717` `#FAFAFA` `#A1A1A1` `#E5E5E5`
-- Accent: `#E5E5E5`
+- Colors: `#FFFFFF` `#F5F5F5` `#FAFAFA` `#0A0A0A` `#171717` `#F0B100`
+- Accent: `#171717`
 
 [![shadcn/ui home page](https://sitepeel.dev/design-md/ui.shadcn.com/screenshot.jpg)](https://sitepeel.dev/design-md/ui.shadcn.com/)
 

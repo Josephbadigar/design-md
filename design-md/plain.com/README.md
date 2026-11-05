@@ -6,7 +6,7 @@ The DESIGN.md file for plain.com, in the SaaS and productivity category. [Sitepe
 
 - Theme: light
 - Fonts: ABC Favorit Regular, ABC Favorit Medium
-- Colors: `#FFFFFF` `#000000` `#0A2414` `#1AD379` `#F14A4A`
+- Colors: `#FFFFFF` `#000000` `#0A2414` `#1AD379`
 - Accent: `#1AD379`
 
 [![Plain home page](https://sitepeel.dev/design-md/plain.com/screenshot.jpg)](https://sitepeel.dev/design-md/plain.com/)

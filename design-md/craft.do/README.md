@@ -6,7 +6,7 @@ The DESIGN.md file for craft.do, in the SaaS and productivity category. [Sitepee
 
 - Theme: light
 - Fonts: UntitledSerifFont, UntitledSansFont
-- Colors: `#FCF9F7` `#FFFFFF` `#030302` `#1B1B1A` `#B8CAF5` `#AADAF1`
+- Colors: `#FCF9F7` `#FFFFFF` `#030302` `#1B1B1A` `#B8CAF5` `#9BD2EE`
 - Accent: `#B8CAF5`
 
 [![Craft home page](https://sitepeel.dev/design-md/craft.do/screenshot.jpg)](https://sitepeel.dev/design-md/craft.do/)

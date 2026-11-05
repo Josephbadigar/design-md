@@ -4,10 +4,10 @@
 
 The DESIGN.md file for radix-ui.com, in the UI and animation libraries category. [Sitepeel](https://sitepeel.dev/design-md/radix-ui.com/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: adobeTextPro
-- Colors: `#111113` `#EDEEF0` `#B0B4BA` `#3E63DD` `#9EB1FF`
-- Accent: `#EDEEF0`
+- Colors: `#FFFFFF` `#1C2024` `#60646C` `#3E63DD` `#CB1D63`
+- Accent: `#1C2024`
 
 [![Radix UI home page](https://sitepeel.dev/design-md/radix-ui.com/screenshot.jpg)](https://sitepeel.dev/design-md/radix-ui.com/)
 

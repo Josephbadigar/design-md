@@ -6,7 +6,7 @@ The DESIGN.md file for plaid.com, in the Fintech and payments category. [Sitepee
 
 - Theme: light
 - Fonts: Plaid Sans, Cern
-- Colors: `#FFFFFF` `#111111` `#00172E` `#034049` `#05565C` `#CCF8FF`
+- Colors: `#FFFFFF` `#111111` `#00172E` `#034049` `#CCF8FF` `#0A5A8B`
 - Accent: `#034049`
 
 [![Plaid home page](https://sitepeel.dev/design-md/plaid.com/screenshot.jpg)](https://sitepeel.dev/design-md/plaid.com/)

@@ -6,7 +6,7 @@ The DESIGN.md file for auth0.com, in the Developer tools category. [Sitepeel](ht
 
 - Theme: dark
 - Fonts: Aeonik, Aeonik Mono
-- Colors: `#20003A` `#120021` `#FFFFFF` `#E5E5E5` `#BCBAFF`
+- Colors: `#20003A` `#000000` `#120021` `#FFFFFF` `#E5E5E5` `#BCBAFF`
 - Accent: `#FFFFFF`
 
 [![Auth0 home page](https://sitepeel.dev/design-md/auth0.com/screenshot.jpg)](https://sitepeel.dev/design-md/auth0.com/)

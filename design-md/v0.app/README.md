@@ -4,10 +4,10 @@
 
 The DESIGN.md file for v0.app, in the AI category. [Sitepeel](https://sitepeel.dev/design-md/v0.app/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: GeistSans, Inter
-- Colors: `#000000` `#121212` `#0A0A0A` `#EDEDED` `#A0A0A0`
-- Accent: `#EDEDED`
+- Colors: `#FAFAFA` `#F2F2F2` `#FFFFFF` `#171717` `#4D4D4D`
+- Accent: `#171717`
 
 [![v0 home page](https://sitepeel.dev/design-md/v0.app/screenshot.jpg)](https://sitepeel.dev/design-md/v0.app/)
 

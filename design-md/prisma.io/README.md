@@ -6,7 +6,7 @@ The DESIGN.md file for prisma.io, in the Developer tools category. [Sitepeel](ht
 
 - Theme: light
 - Fonts: Sora, Inter
-- Colors: `#FFFFFF` `#F4F7F7` `#DCFDFF` `#3A3B3C` `#646567` `#000000`
+- Colors: `#FFFFFF` `#DCFDFF` `#EEFFFF` `#3A3B3C` `#646567` `#000000`
 - Accent: `#000000`
 
 [![Prisma home page](https://sitepeel.dev/design-md/prisma.io/screenshot.jpg)](https://sitepeel.dev/design-md/prisma.io/)

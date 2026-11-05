@@ -4,10 +4,10 @@
 
 The DESIGN.md file for vuejs.org, in the Developer tools category. [Sitepeel](https://sitepeel.dev/design-md/vuejs.org/) measured it from the live site.
 
-- Theme: dark
+- Theme: light
 - Fonts: Inter var experimental
-- Colors: `#1A1A1A` `#2F2F2F` `#242424` `#E1E1E1` `#AAC8E4` `#42D392`
-- Accent: `#42D392`
+- Colors: `#FFFFFF` `#F1F1F1` `#F9F9F9` `#213547` `#476582` `#33A06F`
+- Accent: `#33A06F`
 
 [![Vue.js home page](https://sitepeel.dev/design-md/vuejs.org/screenshot.jpg)](https://sitepeel.dev/design-md/vuejs.org/)
 

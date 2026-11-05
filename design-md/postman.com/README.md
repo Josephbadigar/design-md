@@ -6,8 +6,8 @@ The DESIGN.md file for postman.com, in the Developer tools category. [Sitepeel](
 
 - Theme: light
 - Fonts: gtStandard
-- Colors: `#FF6C37` `#212121` `#FFFFFF` `#E0531F` `#FF8A5C`
-- Accent: `#FF6C37`
+- Colors: `#FF6C37` `#212121` `#FFFFFF` `#E0531F` `#FF8A5C` `#0265D2`
+- Accent: `#E0531F`
 
 [![Postman home page](https://sitepeel.dev/design-md/postman.com/screenshot.jpg)](https://sitepeel.dev/design-md/postman.com/)
 

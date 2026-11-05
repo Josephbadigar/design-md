@@ -6,7 +6,7 @@ The DESIGN.md file for cal.com, in the SaaS and productivity category. [Sitepeel
 
 - Theme: light
 - Fonts: Cal Sans, Cal Sans UI Variable Light
-- Colors: `#FFFFFF` `#F4F4F4` `#F5F5F5` `#111111` `#242424` `#0099FF`
+- Colors: `#FFFFFF` `#F5F5F5` `#111111` `#242424` `#0099FF`
 - Accent: `#111111`
 
 [![Cal.com home page](https://sitepeel.dev/design-md/cal.com/screenshot.jpg)](https://sitepeel.dev/design-md/cal.com/)

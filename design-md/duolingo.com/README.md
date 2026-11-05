@@ -6,8 +6,8 @@ The DESIGN.md file for duolingo.com, in the Media and consumer apps category. [S
 
 - Theme: light
 - Fonts: feather, duolingo-sans
-- Colors: `#FFFFFF` `#4B4B4B` `#777777` `#A5ED6E` `#58CC02` `#AF623C`
-- Accent: `#A5ED6E`
+- Colors: `#FFFFFF` `#4B4B4B` `#777777` `#58CC02` `#A5ED6E` `#1CB0F6`
+- Accent: `#58CC02`
 
 [![Duolingo home page](https://sitepeel.dev/design-md/duolingo.com/screenshot.jpg)](https://sitepeel.dev/design-md/duolingo.com/)
 

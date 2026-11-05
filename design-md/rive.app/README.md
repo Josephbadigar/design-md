@@ -6,7 +6,7 @@ The DESIGN.md file for rive.app, in the Design tools and site builders category.
 
 - Theme: dark
 - Fonts: Orbitron, Inter
-- Colors: `#000000` `#FFFFFF` `#CCCCCC` `#E6E6E6`
+- Colors: `#000000` `#FFFFFF` `#D9D9D9` `#E6E6E6` `#71FF19`
 - Accent: `#E6E6E6`
 
 [![Rive home page](https://sitepeel.dev/design-md/rive.app/screenshot.jpg)](https://sitepeel.dev/design-md/rive.app/)
