@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Vercel
-description: "Light interface measured from vercel.com: GeistSans type, red accents, tonal surfaces and 6px corners."
+description: "Light monochrome interface measured from vercel.com: GeistSans type, tonal surfaces and 6px corners."
 colors:
   background: "#FAFAFA"
   surface: "#FAFAFA"
@@ -11,7 +11,8 @@ colors:
   on-surface-muted: "#8F8F8F"
   surface-container-low: "#FFFFFF"
   surface-container: "#EBEBEB"
-  primary: "#BA1638"
+  outline: "#00000014"
+  primary: "#171717"
   on-primary: "#FFFFFF"
 typography:
   headline-display:
@@ -70,6 +71,15 @@ spacing:
   xl: 40px
   gutter: 20px
 components:
+  button-primary:
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.on-primary}"
+    typography: "{typography.label-sm}"
+    rounded: "{rounded.md}"
+    padding: 0px 6px
+    height: 32px
+  button-primary-hover:
+    backgroundColor: "#383838"
   button-outline:
     backgroundColor: "{colors.surface-container-low}"
     textColor: "{colors.on-surface}"
@@ -79,15 +89,6 @@ components:
     height: 32px
   button-outline-hover:
     backgroundColor: "#F2F2F2"
-  button-secondary:
-    backgroundColor: "{colors.on-surface}"
-    textColor: "{colors.on-primary}"
-    typography: "{typography.label-sm}"
-    rounded: "{rounded.md}"
-    padding: 0px 6px
-    height: 32px
-  button-secondary-hover:
-    backgroundColor: "#383838"
   button-ghost:
     textColor: "{colors.on-surface-variant}"
     typography: "{typography.label-sm}"
@@ -101,23 +102,24 @@ components:
 
 ## Overview
 
-Vercel describes itself as: “The autonomous stack for every app and agent.” The interface is light, built on **Snow (#FAFAFA)** with **Charcoal (#171717)** text, and **Red (#BA1638)** as the main accent.
+Vercel describes itself as: “The autonomous stack for every app and agent.” The interface is light, built on **Snow (#FAFAFA)** with **Charcoal (#171717)** text and almost no color: actions are carried by contrast, not hue.
 
 Type is set in **GeistSans**, with **Geist Mono** for code. Headlines run large with tight negative tracking; body text is 16px. Depth comes from hairline borders and inset highlights rather than drop shadows. Corners are mostly 6px.
 
-Measured from [vercel.com](https://vercel.com/) on October 30, 2026 at 1440×900 and 390×844 from 358 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [vercel.com](https://vercel.com/) on November 5, 2026 at 1440×900 and 390×844 from 353 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 8 roles.
+The palette has 9 roles.
 
 - **Snow (#FAFAFA):** Page background, seen 5 times. Token `background`, CSS `--ds-background-200`.
 - **Charcoal (#171717):** Primary text and headings, seen 51 times. Token `on-surface`.
 - **Slate (#4D4D4D):** Secondary text, seen 92 times. Token `on-surface-variant`.
 - **Gray (#8F8F8F):** Muted text and metadata, seen 3 times. Token `on-surface-muted`.
-- **White (#FFFFFF):** Raised areas one step from the page, seen 11 times. Token `surface-container-low`, CSS `--dropdown-triangle-stroke`.
+- **White (#FFFFFF):** Raised areas one step from the page, seen 11 times. Token `surface-container-low`.
 - **Mist (#EBEBEB):** Cards and panels, seen 4 times. Token `surface-container`.
-- **Red (#BA1638):** Brand color in the logo. Token `primary`.
+- **Near Black 8% (#00000014):** Borders and dividers, seen 3 times. Token `outline`.
+- **Charcoal (#171717):** Primary buttons and calls to action, seen 64 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
 
 ## Typography
@@ -144,9 +146,8 @@ Spacing does not follow a strict grid: 15% of measured values are multiples of 4
 
 Depth comes mostly from hairline rings and inset highlights on tonal surfaces (#FFFFFF → #EBEBEB):
 
+- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px`
 - `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px`
-- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px inset`
-- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgb(250, 250, 250) 0px 0px 0px 1px`
 
 A few raised panels add a soft drop shadow: `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 2px 2px 0px, rgb(250, 250, 250) 0px 0px 0px 1px`.
 
@@ -162,10 +163,10 @@ Most elements use 6px corners. Measured radii, most used first:
 
 Measured from the rendered page. Token values reference the tokens above.
 
+- **button-primary (“Sign Up”):** #171717 fill, #FFFFFF text, 14px/500, 6px radius, padding 0px 6px.
+- **button-primary-hover:** background #383838, text #FFFFFF on hover.
 - **button-outline (“Get a Demo”):** #FFFFFF fill, #171717 text, 14px/500, 6px radius, padding 0px 6px, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px`.
 - **button-outline-hover:** background #F2F2F2, text #171717 on hover.
-- **button-secondary (“Sign Up”):** #171717 fill, #FFFFFF text, 14px/500, 6px radius, padding 0px 6px.
-- **button-secondary-hover:** background #383838, text #FFFFFF on hover.
 - **button-ghost (“Products”):** transparent fill, #4D4D4D text, 14px/400, padding 0px.
 - **link:** transparent fill, #4D4D4D text, padding 0px.
 
@@ -173,21 +174,21 @@ Measured from the rendered page. Token values reference the tokens above.
 
 - Do use #FAFAFA for the page and lift surfaces in small steps: #FFFFFF, #EBEBEB.
 - Do keep text in 3 levels: #171717, #4D4D4D, #8F8F8F.
-- Do use #BA1638 as the brand accent: header, logo and key highlights.
+- Do let contrast carry emphasis; primary actions use #171717 on #FAFAFA.
 - Do set headlines in GeistSans with tight tracking (-0.06em).
 - Do reuse the measured spacing steps (6px, 12px, 20px).
 - Do use 6px corners on most elements; larger surfaces also use 20px and 4px.
 - Don't use #8F8F8F for body text; it reaches 3.10:1 on #FAFAFA. Keep it for large text or metadata.
 - Don't use heavy drop shadows; keep depth to hairline rings and tonal surfaces.
 - Don't introduce new font families beyond GeistSans and Geist Mono.
-- Don't use #BA1638 for large backgrounds or body text.
+- Don't add saturated accent colors; the measured palette is almost entirely neutral.
 - Don't make interface transitions slower than 0.5s.
 
 ## Motion
 
-Interface transitions are quick: 0.1s, 0.15s, 0.2s, 0.5s. Longer ambient animations run 0.95s, 1s.
+Interface transitions are quick: 0.1s, 0.15s, 0.5s, 0.2s. Longer ambient animations run 0.95s, 1s.
 
-- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `ease`, `cubic-bezier(0, 0, 0.2, 1)`.
+- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `cubic-bezier(0, 0, 0.2, 1)`, `ease`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/vercel.com/), the free DESIGN.md generator (engine 2026.10.29+bf9d681d83cf).
+Generated by [Sitepeel](https://sitepeel.dev/design-md/vercel.com/), the free DESIGN.md generator (engine 2026.10.29+b828a475ee10).

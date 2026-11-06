@@ -19,8 +19,8 @@ colors:
   outline-variant: "#E2E4FF"
   primary: "#533AFD"
   on-primary: "#FFFFFF"
-  secondary: "#1C1E54"
-  tertiary: "#FF6118"
+  secondary: "#0A2540"
+  tertiary: "#1C1E54"
 typography:
   headline-display:
     fontFamily: sohne-var
@@ -118,12 +118,17 @@ components:
     height: 48px
   button-outline-hover:
     textColor: "#2E2B8C"
-  button-ghost:
+  button-secondary:
+    backgroundColor: "{colors.secondary}"
     textColor: "{colors.on-primary}"
+    rounded: "{rounded.sm}"
+    padding: 0px 24px
+    height: 40px
+  button-ghost:
+    textColor: "{colors.on-surface}"
     typography: "{typography.body-sm}"
     rounded: "{rounded.sm}"
-    padding: 10.5px 20px 13.5px 20px
-    height: 40px
+    padding: 12px 0px
   input-field:
     backgroundColor: "{colors.background}"
     textColor: "{colors.on-surface-strong}"
@@ -146,7 +151,7 @@ Measured from [stripe.com](https://stripe.com/) on November 5, 2026 at 1440×900
 
 ## Colors
 
-The palette has 16 roles, plus gradient stops #DA4BFECC, #FF8C6CCC, #C42FA5, #715CFFCC.
+The palette has 16 roles, plus gradient stops #DA4BFECC, #FF8C6CCC, #2874AD, #715CFFCC.
 
 - **White (#FFFFFF):** Page background, seen 13 times. Token `background`, CSS `--hds-color-util-bg-min`.
 - **Deep Blue (#061B31):** Primary text and headings, seen 77 times. Token `on-surface`, CSS `--hds-color-heading-solid`.
@@ -162,8 +167,8 @@ The palette has 16 roles, plus gradient stops #DA4BFECC, #FF8C6CCC, #C42FA5, #71
 - **Pale Indigo (#E2E4FF):** Secondary dividers, seen 3 times. Token `outline-variant`.
 - **Vivid Indigo (#533AFD):** Primary buttons and calls to action, seen 21 times. Token `primary`, CSS `--hds-color-accent-border-solid`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Deep Indigo (#1C1E54):** Accent (CSS variable). Token `secondary`.
-- **Vivid Orange (#FF6118):** Accent in text, fills and borders, seen 3 times. Token `tertiary`.
+- **Deep Blue (#0A2540):** Secondary buttons. Token `secondary`.
+- **Deep Indigo (#1C1E54):** Accent (CSS variable). Token `tertiary`.
 
 ## Typography
 
@@ -206,7 +211,8 @@ Measured from the rendered page. Token values reference the tokens above.
 - **button-primary-hover:** background #4032C8, text #FFFFFF on hover.
 - **button-outline (“Sign up with Google”):** #FFFFFFA6 fill, #533AFD text, 16px/400, 4px radius, padding 14.5px 24px 15.5px 24px, border 1px solid #B9B9F9.
 - **button-outline-hover:** background #FFFFFFA6, text #2E2B8C on hover.
-- **button-ghost (“Sign in Sign in”):** transparent fill, #FFFFFF text, 14px/400, 4px radius, padding 10.5px 20px 13.5px 20px, border 1px solid #FFFFFF.
+- **button-secondary (“Chat now with sales”):** #0A2540 fill, #FFFFFF text, 15px/400, 4px radius, padding 0px 24px, border 1px solid #FFFFFF1F.
+- **button-ghost (“Products”):** transparent fill, #061B31 text, 14px/400, 4px radius, padding 12px 0px.
 - **input-field (“Sell software subscriptions to o”):** #FFFFFF fill, #000000 text, 16px/300, padding 11px 17px.
 - **link:** transparent fill, #061B31 text, padding 0px.
 

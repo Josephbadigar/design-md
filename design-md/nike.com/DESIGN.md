@@ -56,7 +56,7 @@ rounded:
   sm: 24px
   md: 30px
 spacing:
-  xs: 4px
+  xs: 2px
   sm: 6px
   md: 16px
   lg: 24px
@@ -86,19 +86,19 @@ components:
 
 Nike.com describes itself as: “Inspiring the world's athletes, Nike delivers innovative products, experiences and services.” The interface is light, built on **White (#FFFFFF)** with **Charcoal (#111111)** text and almost no color: actions are carried by contrast, not hue.
 
-Type is set in **Nike Futura ND** and **Helvetica Now Display Medium**. Headlines run large; body text is 16px. Depth comes from hairline borders and inset highlights rather than drop shadows. Corners are mostly 30px.
+Type is set in **Nike Futura ND** and **Helvetica Now Display Medium**. Headlines run large; body text is 16px. The surface language is flat. Corners are mostly 30px.
 
-Measured from [nike.com](https://www.nike.com/) on October 29, 2026 at 1440×900 and 390×844 from 366 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [nike.com](https://www.nike.com/) on November 5, 2026 at 1440×900 and 390×844 from 362 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 6 roles.
 
-- **White (#FFFFFF):** Page background, seen 17 times. Token `background`, CSS `--podium-cds-button-color-bg-primary-on-dark`.
-- **Charcoal (#111111):** Primary text and headings, seen 56 times. Token `on-surface`, CSS `--podium-cds-icon-button-color-bg-primary`.
-- **Slate (#707072):** Secondary text, seen 49 times. Token `on-surface-variant`, CSS `--pds-color-element-disabled-always-dark`.
+- **White (#FFFFFF):** Page background, seen 15 times. Token `background`, CSS `--podium-cds-button-color-bg-primary-on-dark`.
+- **Charcoal (#111111):** Primary text and headings, seen 48 times. Token `on-surface`, CSS `--podium-cds-icon-button-color-bg-primary`.
+- **Slate (#707072):** Secondary text, seen 46 times. Token `on-surface-variant`, CSS `--pds-color-element-disabled-always-dark`.
 - **Snow (#F5F5F5):** Raised areas one step from the page, seen 2 times. Token `surface-container-low`, CSS `--podium-cds-color-bg-secondary`.
-- **Charcoal (#111111):** Primary actions (the main text color; the palette is monochrome), seen 73 times. Token `primary`, CSS `--podium-cds-icon-button-color-bg-primary`.
+- **Charcoal (#111111):** Primary actions (the main text color; the palette is monochrome), seen 64 times. Token `primary`, CSS `--podium-cds-icon-button-color-bg-primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
 
 ## Typography
@@ -115,32 +115,30 @@ The palette has 6 roles.
 
 ## Layout
 
-Spacing does not follow a strict grid: 51% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 52% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
-- **Scale:** xs 4px, sm 6px, md 16px, lg 24px, xl 48px.
+- **Scale:** xs 2px, sm 6px, md 16px, lg 24px, xl 48px.
 - **Sections:** 48px vertical padding between major sections.
 - **Container:** content is capped at 1920px.
 - **Page margin:** 48px on each side of full-width sections.
-- **Breakpoints:** 0px, 599px, 600px, 890px, 891px, 959px, 960px, 961px, 1023px, 1440px, 1920px.
+- **Breakpoints:** 0px, 599px, 600px, 890px, 891px, 959px, 960px, 961px, 1023px, 1024px, 1440px, 1920px.
 
 ## Elevation & Depth
 
-The design avoids drop shadows. Layers are separated by tonal surface steps (#F5F5F5) and hairline rings:
-
-- `rgb(17, 17, 17) 0px -1px 0px 0px inset`
+The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#F5F5F5).
 
 ## Shapes
 
 Most elements use 30px corners. Measured radii, most used first:
 
-- **md (30px):** 56 elements.
-- **sm (24px):** 28 elements.
+- **md (30px):** 52 elements.
+- **sm (24px):** 36 elements.
 
 ## Components
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-ghost (“HOW REFRESHING The Milwaukee Bre”):** transparent fill, #111111 text, 16px/400, padding 0px.
+- **button-ghost (“NEVER MISS A DAY Conditions chan”):** transparent fill, #111111 text, 16px/400, padding 0px.
 - **input-field (“Search”):** #F5F5F5 fill, #111111 text, 16px/500, 24px radius, padding 7px 0px 9px 2px.
 - **link:** transparent fill, #707072 text, padding 0px.
 
@@ -151,16 +149,16 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do let contrast carry emphasis; primary actions use #111111 on #FFFFFF.
 - Do reuse the measured spacing steps (6px, 16px, 24px).
 - Do use 30px corners on most elements; larger surfaces also use 24px.
-- Don't add drop shadows for depth; use hairline rings and tonal surfaces.
+- Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond Nike Futura ND, Helvetica Now Display Medium, Helvetica Now Text and Helvetica Now Text Medium.
 - Don't add saturated accent colors; the measured palette is almost entirely neutral.
 - Don't make interface transitions slower than 0.15s.
 
 ## Motion
 
-Interface transitions are quick: 0.15s. Longer ambient animations run 0.7s, 0.65s.
+Interface transitions are quick: 0.15s. Longer ambient animations run 0.7s, 0.65s, 3s.
 
-- **Easing:** `ease`.
+- **Easing:** `ease`, `ease-in-out`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/nike.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).
+Generated by [Sitepeel](https://sitepeel.dev/design-md/nike.com/), the free DESIGN.md generator (engine 2026.10.29+b828a475ee10).

@@ -162,7 +162,7 @@ Clay describes itself as: “Infrastructure to get any data, run agentic workflo
 
 Type is set in **Roobertvf**. Headlines run large with tight negative tracking; body text is 16px. Depth comes from hairline borders and inset highlights rather than drop shadows. Corners are mostly 12px.
 
-Measured from [clay.com](https://www.clay.com/) on November 4, 2026 at 1440×900 and 390×844 from 374 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [clay.com](https://www.clay.com/) on November 5, 2026 at 1440×900 and 390×844 from 374 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
