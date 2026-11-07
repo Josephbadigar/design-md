@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Spline
-description: "Dark monochrome interface measured from spline.design: Geist type with Spline Sans, tonal surfaces and pill-shaped controls."
+description: "Dark interface measured from spline.design: Geist type with Spline Sans, deep teal accents, tonal surfaces and pill-shaped controls."
 colors:
   background: "#000000"
   surface: "#000000"
@@ -17,11 +17,11 @@ colors:
   overlay-strong: "#FFFFFF1A"
   outline: "#2E2E2E"
   outline-variant: "#1E1E1E"
-  primary: "#EEEEEE"
-  on-primary: "#000000"
+  primary: "#083629"
+  on-primary: "#FFFFFF"
   inverse-surface: "#3E3E3E"
-  secondary: "#8EB2F2"
-  tertiary: "#F2C879"
+  secondary: "#00A376"
+  tertiary: "#00140E"
 typography:
   display-hero:
     fontFamily: Geist
@@ -105,23 +105,23 @@ spacing:
   margin: 48px
 components:
   button-primary:
-    backgroundColor: "{colors.primary}"
-    textColor: "{colors.on-primary}"
+    backgroundColor: "#EEEEEE"
+    textColor: "{colors.background}"
     typography: "{typography.label-sm}"
     rounded: "{rounded.full}"
     padding: 0px 14px
     height: 34px
   button-primary-hover:
-    backgroundColor: "#FFFFFF"
+    backgroundColor: "{colors.on-primary}"
   button-secondary:
     backgroundColor: "#1F1F1F"
-    textColor: "{colors.primary}"
+    textColor: "#EEEEEE"
     typography: "{typography.body-sm}"
     rounded: "{rounded.full}"
     padding: 0px 10px
     height: 24px
   button-outline:
-    textColor: "{colors.primary}"
+    textColor: "#EEEEEE"
     typography: "{typography.label-sm}"
     rounded: "{rounded.full}"
     padding: 0px 14px
@@ -132,13 +132,13 @@ components:
     rounded: "{rounded.md}"
     padding: 0px 10px
   input-field:
-    textColor: "#FFFFFF"
+    textColor: "{colors.on-primary}"
     typography: "{typography.body-lg}"
     rounded: 0px
     padding: 2px 8px 0px 8px
   card:
     backgroundColor: "{colors.surface-container-low}"
-    textColor: "{colors.primary}"
+    textColor: "#EEEEEE"
     typography: "{typography.body-lg}"
     rounded: "{rounded.lg}"
     padding: 0px
@@ -150,11 +150,11 @@ components:
 
 ## Overview
 
-Spline describes itself as: “Spline is a free 3D design tool in the browser. Your team and its agents model, animate and ship interactive 3D together, in real time.” The interface is dark, built on **Near Black (#000000)** with **Gray (#8A8A8A)** text and almost no color: actions are carried by contrast, not hue.
+Spline describes itself as: “Spline is a free 3D design tool in the browser. Your team and its agents model, animate and ship interactive 3D together, in real time.” The interface is dark, built on **Near Black (#000000)** with **Gray (#8A8A8A)** text, and **Deep Teal (#083629)** as the main accent.
 
 Type is set in **Geist** and **Spline Sans**, with **Geist Mono** for code. Headlines run large with tight negative tracking; body text is 14px. Depth comes from hairline borders and inset highlights rather than drop shadows. Controls are pill-shaped.
 
-Measured from [spline.design](https://spline.design/) on October 29, 2026 at 1440×900 and 390×844 from 393 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [spline.design](https://spline.design/) on November 6, 2026 at 1440×900 and 390×844 from 394 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
@@ -163,7 +163,7 @@ The palette has 17 roles.
 - **Near Black (#000000):** Page background, seen 1 time. Token `background`, CSS `--color-bg`.
 - **Gray (#8A8A8A):** Primary text and headings, seen 63 times. Token `on-surface`.
 - **Mist (#E6E6E6):** Headings and emphasis, seen 19 times. Token `on-surface-strong`, CSS `--color-white-090`.
-- **Silver (#BDBDBD):** Secondary text, seen 30 times. Token `on-surface-variant`.
+- **Silver (#BDBDBD):** Secondary text, seen 31 times. Token `on-surface-variant`.
 - **Gray (#999999):** Muted text and metadata, seen 13 times. Token `on-surface-muted`, CSS `--color-text-paragraph`.
 - **Charcoal (#101010):** Raised areas one step from the page, seen 3 times. Token `surface-container-low`.
 - **Charcoal (#181818):** Cards and panels, seen 6 times. Token `surface-container`.
@@ -172,11 +172,11 @@ The palette has 17 roles.
 - **White 10% (#FFFFFF1A):** Stronger translucent fill, seen 8 times. Token `overlay-strong`, CSS `--color-white-010`.
 - **Graphite (#2E2E2E):** Borders and dividers, seen 4 times. Token `outline`.
 - **Charcoal (#1E1E1E):** Secondary dividers, seen 3 times. Token `outline-variant`.
-- **Mist (#EEEEEE):** Primary buttons and calls to action, seen 17 times. Token `primary`.
-- **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
+- **Deep Teal (#083629):** Brand accent (CSS variable). Token `primary`.
+- **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
 - **Graphite (#3E3E3E):** High-contrast fills, seen 2 times. Token `inverse-surface`.
-- **Light Blue (#8EB2F2):** Accent in text, fills and borders, seen 5 times. Token `secondary`.
-- **Light Orange (#F2C879):** Accent in text, fills and borders, seen 3 times. Token `tertiary`.
+- **Dark Teal (#00A376):** Accent (CSS variable). Token `secondary`.
+- **Deep Teal (#00140E):** Accent (CSS variable). Token `tertiary`.
 
 ## Typography
 
@@ -201,7 +201,7 @@ Spacing does not follow a strict grid: 58% of measured values are multiples of 4
 - **Sections:** 256px vertical padding between major sections.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
 - **Page margin:** 48px on each side of full-width sections.
-- **Breakpoints:** 400px, 560px, 625px, 640px, 720px, 780px, 820px, 821px, 1000px, 1080px, 1160px, 1200px, 1280px.
+- **Breakpoints:** 400px, 500px, 560px, 600px, 625px, 640px, 720px, 780px, 820px, 880px, 900px, 901px, 1080px, 1160px, 1200px.
 
 ## Elevation & Depth
 
@@ -217,7 +217,7 @@ Interactive controls are pill-shaped. Measured radii, most used first:
 
 - **full (9999px):** 228 elements.
 - **sm (6px):** 116 elements.
-- **md (8px):** 60 elements.
+- **md (8px):** 56 elements.
 - **lg (16px):** 24 elements.
 
 ## Components
@@ -237,13 +237,13 @@ Measured from the rendered page. Token values reference the tokens above.
 
 - Do use #000000 for the page and lift surfaces in small steps: #101010, #181818, #242424.
 - Do keep text in 4 levels: #8A8A8A, #E6E6E6, #BDBDBD, #999999.
-- Do let contrast carry emphasis; primary actions use #EEEEEE on #000000.
+- Do use #083629 as the brand accent: header, logo and key highlights.
 - Do set headlines in Geist with tight tracking (-0.06em).
 - Do reuse the measured spacing steps (8px, 10px, 20px).
 - Do make buttons and chips fully rounded (9999px); most other elements use 6px corners.
 - Don't add drop shadows for depth; use hairline rings and tonal surfaces.
 - Don't introduce new font families beyond Geist, Spline Sans and Geist Mono.
-- Don't add saturated accent colors; the measured palette is almost entirely neutral.
+- Don't use #083629 for large backgrounds or body text.
 - Don't make interface transitions slower than 0.6s.
 
 ## Motion
@@ -253,4 +253,4 @@ Interface transitions are quick: 0.2s, 0.35s, 0.15s, 0.5s. Longer ambient animat
 - **Easing:** `ease`, `cubic-bezier(0.2, 0.8, 0.2, 1)`, `ease-in-out`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/spline.design/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).
+Generated by [Sitepeel](https://sitepeel.dev/design-md/spline.design/), the free DESIGN.md generator (engine 2026.10.29+b828a475ee10).
