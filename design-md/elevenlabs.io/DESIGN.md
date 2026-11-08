@@ -141,7 +141,7 @@ ElevenLabs describes itself as: “Create lifelike speech with our AI voice gene
 
 Type is set in **Waldenburg** and **Inter**. Headlines run large with tight negative tracking; body text is 15px. Depth comes from hairline borders and inset highlights rather than drop shadows. Controls are pill-shaped.
 
-Measured from [elevenlabs.io](https://elevenlabs.io/) on November 6, 2026 at 1440×900 and 390×844 from 451 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [elevenlabs.io](https://elevenlabs.io/) on November 7, 2026 at 1440×900 and 390×844 from 451 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 

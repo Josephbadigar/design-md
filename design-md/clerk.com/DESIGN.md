@@ -82,7 +82,6 @@ rounded:
   lg: 12.5px
   xl: 22px
 spacing:
-  base: 4px
   xs: 4px
   sm: 8px
   md: 12px
@@ -90,6 +89,7 @@ spacing:
   xl: 40px
   gutter: 8px
   section: 164px
+  container: 1136px
 components:
   button-primary:
     backgroundColor: "{colors.primary}"
@@ -121,16 +121,16 @@ Clerk describes itself as: “The easiest way to add authentication and user man
 
 Type is set in **geistNumbers** and **system-ui**. Headlines run large with tight negative tracking; body text is 17px. Depth comes from hairline borders and inset highlights rather than drop shadows. Corners are mostly 12px.
 
-Measured from [clerk.com](https://clerk.com/) on October 29, 2026 at 1440×900 and 390×844 from 398 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [clerk.com](https://clerk.com/) on November 7, 2026 at 1440×900 and 390×844 from 405 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 14 roles, plus gradient stops #E0876A, #D97757.
 
 - **White (#FFFFFF):** Page background, seen 1 time. Token `background`, CSS `--color-white`.
-- **Charcoal (#131316):** Primary text and headings, seen 52 times. Token `on-surface`, CSS `--typography-link`.
+- **Charcoal (#131316):** Primary text and headings, seen 58 times. Token `on-surface`, CSS `--typography-link`.
 - **Near Black (#000000):** Headings and emphasis, seen 8 times. Token `on-surface-strong`.
-- **Cool Slate (#5E5F6E):** Secondary text, seen 6 times. Token `on-surface-variant`.
+- **Cool Slate (#5E5F6E):** Secondary text, seen 3 times. Token `on-surface-variant`.
 - **Cool Slate (#747686):** Muted text and metadata, seen 9 times. Token `on-surface-muted`, CSS `--color-gray-500`.
 - **Snow (#F7F7F8):** Raised areas one step from the page, seen 14 times. Token `surface-container-low`.
 - **Mist (#EEEEF0):** Cards and panels, seen 1 time. Token `surface-container`, CSS `--color-gray-100`.
@@ -139,12 +139,12 @@ The palette has 14 roles, plus gradient stops #E0876A, #D97757.
 - **Near Black 20% (#00000033):** Borders and dividers, seen 10 times. Token `outline`.
 - **Cool Graphite (#42434D):** Primary buttons and calls to action, seen 3 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Violet (#6C47FF):** Accent in text, fills and borders, seen 5 times. Token `secondary`.
+- **Violet (#6C47FF):** Accent in text, fills and borders, seen 4 times. Token `secondary`.
 - **Light Indigo (#9785FF):** Accent in text, fills and borders, seen 2 times. Token `tertiary`.
 
 ## Typography
 
-**geistNumbers** and **system-ui** share the interface. Fallback stack: `geistNumbers, suisse, suisse Fallback`. Other loaded fonts: suisse, soehneMono, Inter.
+**geistNumbers** and **system-ui** share the interface. Fallback stack: `geistNumbers, suisse, suisse Fallback`. Other loaded fonts: suisse, soehneMono.
 
 - **headline-display:** geistNumbers 56px at weight 700, line height 1.14, tracking -0.035em (32px on mobile). Page title (h1).
 - **headline-lg:** geistNumbers 32px at weight 600, line height 1.25, tracking -0.015em. Section headings (h2).
@@ -158,11 +158,12 @@ The palette has 14 roles, plus gradient stops #E0876A, #D97757.
 
 ## Layout
 
-Spacing follows a 4px grid: 90% of measured gaps and paddings are multiples of 4px.
+Spacing is mostly on a 4px grid (88% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
 
 - **Scale:** xs 4px, sm 8px, md 12px, lg 20px, xl 40px.
 - **Sections:** 164px vertical padding between major sections.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
+- **Container:** content is capped at 1136px.
 
 ## Elevation & Depth
 
@@ -197,7 +198,7 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do keep text in 4 levels: #131316, #000000, #5E5F6E, #747686.
 - Do let contrast carry emphasis; primary actions use #42434D on #FFFFFF.
 - Do set headlines in geistNumbers with tight tracking (-0.035em).
-- Do keep spacing on the 4px grid.
+- Do reuse the measured spacing steps (8px, 12px, 20px).
 - Do use 12px corners on most elements; larger surfaces also use 12.5px, 22px and 6px.
 - Don't use #747686 for body text; it reaches 4.49:1 on #FFFFFF. Keep it for large text or metadata.
 - Don't use heavy drop shadows; keep depth to hairline rings and tonal surfaces.
@@ -209,7 +210,7 @@ Measured from the rendered page. Token values reference the tokens above.
 
 Interface transitions are quick: 0.15s, 0.45s, 0.2s, 0.35s.
 
-- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `cubic-bezier(0.33, 1, 0.68, 1)`, `linear(0 0%, 0.1812 9.09091%, 0.4669 18.1818%, 0.6943 27.2727%, 0.8403 36.3636%, 0.9233 45.4545%, 0.9664 54.5455%, 0.9869 63.6364%, 0.9958 72.7273%, 0.9992 81.8182%, 1.0003 90.9091%, 1 100%)`.
+- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `cubic-bezier(0.33, 1, 0.68, 1)`, `cubic-bezier(0.4, 0.36, 0, 1)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/clerk.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).
+Generated by [Sitepeel](https://sitepeel.dev/design-md/clerk.com/), the free DESIGN.md generator (engine 2026.10.29+b828a475ee10).
