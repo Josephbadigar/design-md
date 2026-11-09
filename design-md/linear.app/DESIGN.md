@@ -147,7 +147,7 @@ Linear describes itself as: “Purpose-built for planning and building products 
 
 Type is set in **Inter Variable**, with **Berkeley Mono** for code. Headlines run large with tight negative tracking; body text is 16px. Depth comes from hairline borders and inset highlights rather than drop shadows. Controls are pill-shaped.
 
-Measured from [linear.app](https://linear.app/) on November 7, 2026 at 1440×900 and 390×844 from 438 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [linear.app](https://linear.app/) on November 9, 2026 at 1440×900 and 390×844 from 438 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 

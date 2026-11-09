@@ -3,21 +3,20 @@ version: alpha
 name: Calendly.com
 description: "Light interface measured from calendly.com: Calendly Sans type with Wulkan Text, pale blue accents, tonal surfaces and 4px corners."
 colors:
-  background: "#F5F3EE"
-  surface: "#F5F3EE"
+  background: "#FCFBF8"
+  surface: "#FCFBF8"
   on-surface: "#071A31"
   on-background: "#071A31"
   on-surface-variant: "#3D464E"
   on-surface-muted: "#5F6D77"
-  surface-container-low: "#FCFBF8"
-  surface-container: "#FFFFFF"
-  overlay: "#071A310D"
-  overlay-strong: "#FCFBF80D"
+  surface-container-low: "#FFFFFF"
+  overlay: "#FCFBF80D"
+  overlay-strong: "#071A310D"
   outline: "#FCFBF81A"
   outline-variant: "#071A310D"
   primary: "#C3DFFE"
   on-primary: "#000000"
-  secondary: "#84C1FF"
+  secondary: "#467DCA"
   tertiary: "#6BB1FF"
 typography:
   headline-display:
@@ -96,60 +95,61 @@ spacing:
   sm: 8px
   md: 12px
   lg: 24px
-  xl: 56px
+  xl: 48px
   gutter: 8px
   section: 120px
   margin: 24px
 components:
   button-primary:
     backgroundColor: "{colors.on-surface}"
-    textColor: "{colors.surface-container-low}"
+    textColor: "{colors.background}"
     typography: "{typography.body-md}"
     rounded: "{rounded.lg}"
     padding: 12px 16px
     height: 48px
   button-outline:
+    backgroundColor: "{colors.background}"
+    textColor: "{colors.on-surface}"
+    typography: "{typography.label-lg}"
+    rounded: 20px
+    padding: 12px 20px
+    height: 50px
+  button-ghost:
     textColor: "{colors.on-surface}"
     typography: "{typography.body-md}"
     rounded: "{rounded.lg}"
     padding: 12px 16px
     height: 48px
-  button-ghost:
-    textColor: "{colors.on-surface}"
-    typography: "{typography.label-md}"
-    rounded: "{rounded.lg}"
-    padding: 8px
   link:
-    textColor: "#FCFBF8B2"
+    textColor: "{colors.background}"
 ---
 
 # Calendly.com Design System
 
 ## Overview
 
-Calendly.com describes itself as: “Calendly connects and simplifies all of the work around meetings, from scheduling, payments, and meeting prep to notetaking, contact management, and follow-up.” The interface is light, built on **Warm Mist (#F5F3EE)** with **Deep Blue (#071A31)** text, and **Pale Blue (#C3DFFE)** as the main accent.
+Calendly.com describes itself as: “Calendly connects and simplifies all of the work around meetings, from scheduling, payments, and meeting prep to notetaking, contact management, and follow-up.” The interface is light, built on **Snow (#FCFBF8)** with **Deep Blue (#071A31)** text, and **Pale Blue (#C3DFFE)** as the main accent.
 
 Type is set in **Calendly Sans** and **Wulkan Text**. Headlines run large with tight negative tracking; body text is 14px. Depth comes from soft drop shadows. Corners are mostly 4px.
 
-Measured from [calendly.com](https://calendly.com/) on October 29, 2026 at 1440×900 and 390×844 from 406 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [calendly.com](https://calendly.com/) on November 9, 2026 at 1440×900 and 390×844 from 401 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 14 roles.
+The palette has 13 roles.
 
-- **Warm Mist (#F5F3EE):** Page background. Token `background`.
-- **Deep Blue (#071A31):** Primary text and headings, seen 34 times. Token `on-surface`.
-- **Cool Graphite (#3D464E):** Secondary text, seen 4 times. Token `on-surface-variant`.
-- **Blue (#5F6D77):** Muted text and metadata, seen 25 times. Token `on-surface-muted`, CSS `--color-text-secondary`.
-- **Snow (#FCFBF8):** Raised areas one step from the page, seen 14 times. Token `surface-container-low`, CSS `--color-ramp-orange-025`.
-- **White (#FFFFFF):** Cards and panels, seen 5 times. Token `surface-container`.
-- **Deep Blue 5% (#071A310D):** Translucent fill for cards and controls, seen 12 times. Token `overlay`.
-- **Snow 5% (#FCFBF80D):** Stronger translucent fill, seen 12 times. Token `overlay-strong`.
+- **Snow (#FCFBF8):** Page background, seen 15 times. Token `background`, CSS `--color-ramp-orange-025`.
+- **Deep Blue (#071A31):** Primary text and headings, seen 38 times. Token `on-surface`.
+- **Cool Graphite (#3D464E):** Secondary text, seen 3 times. Token `on-surface-variant`.
+- **Blue (#5F6D77):** Muted text and metadata, seen 13 times. Token `on-surface-muted`, CSS `--color-text-secondary`.
+- **White (#FFFFFF):** Raised areas one step from the page, seen 4 times. Token `surface-container-low`.
+- **Snow 5% (#FCFBF80D):** Translucent fill for cards and controls, seen 12 times. Token `overlay`.
+- **Deep Blue 5% (#071A310D):** Stronger translucent fill, seen 7 times. Token `overlay-strong`.
 - **Snow 10% (#FCFBF81A):** Borders and dividers, seen 12 times. Token `outline`.
-- **Deep Blue 5% (#071A310D):** Secondary dividers, seen 9 times. Token `outline-variant`.
+- **Deep Blue 5% (#071A310D):** Secondary dividers, seen 3 times. Token `outline-variant`.
 - **Pale Blue (#C3DFFE):** Brand color on large areas. Token `primary`.
 - **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
-- **Light Blue (#84C1FF):** Secondary buttons, seen 1 time. Token `secondary`.
+- **Blue (#467DCA):** Accent in logos and imagery. Token `secondary`.
 - **Light Blue (#6BB1FF):** Accent, seen 6 times. Token `tertiary`.
 
 ## Typography
@@ -169,9 +169,9 @@ The palette has 14 roles.
 
 ## Layout
 
-Spacing follows a 4px grid: 95% of measured gaps and paddings are multiples of 4px.
+Spacing follows a 4px grid: 98% of measured gaps and paddings are multiples of 4px.
 
-- **Scale:** xs 4px, sm 8px, md 12px, lg 24px, xl 56px.
+- **Scale:** xs 4px, sm 8px, md 12px, lg 24px, xl 48px.
 - **Sections:** 120px vertical padding between major sections.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
 - **Page margin:** 24px on each side of full-width sections.
@@ -186,8 +186,8 @@ Raised elements use soft drop shadows. The most used recipes:
 
 Most elements use 4px corners. Measured radii, most used first:
 
-- **xs (4px):** 168 elements.
-- **sm (8px):** 64 elements.
+- **xs (4px):** 172 elements.
+- **sm (8px):** 48 elements.
 - **md (12px):** 48 elements.
 - **lg (16px):** 32 elements.
 - **xl (48px):** 20 elements.
@@ -197,13 +197,13 @@ Most elements use 4px corners. Measured radii, most used first:
 Measured from the rendered page. Token values reference the tokens above.
 
 - **button-primary (“Get started for free”):** #071A31 fill, #FCFBF8 text, 14px/400, 16px radius, padding 12px 16px.
-- **button-outline (“Log In”):** transparent fill, #071A31 text, 14px/400, 16px radius, padding 12px 16px, border 1px solid #071A31.
-- **button-ghost (“Product”):** transparent fill, #071A31 text, 14px/500, 16px radius, padding 8px.
+- **button-outline (“Sign up with Google”):** #FCFBF8 fill, #071A31 text, 16px/500, 20px radius, padding 12px 20px, border 1px solid #FCFBF8.
+- **button-ghost (“Log In”):** transparent fill, #071A31 text, 14px/400, 16px radius, padding 12px 16px, border 1px solid #071A31.
 - **link:** transparent fill, #FCFBF8B2 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #F5F3EE for the page and lift surfaces in small steps: #FCFBF8, #FFFFFF.
+- Do use #FCFBF8 for the page and lift surfaces in small steps: #FFFFFF.
 - Do keep text in 3 levels: #071A31, #3D464E, #5F6D77.
 - Do use #C3DFFE as the brand accent: header, logo and key highlights.
 - Do set headlines in Calendly Sans with tight tracking (-0.028em).
@@ -217,7 +217,7 @@ Measured from the rendered page. Token values reference the tokens above.
 
 Interface transitions are quick: 0.15s, 0.2s, 0.5s, 0.18s.
 
-- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `cubic-bezier(0, 0, 0.2, 1)`, `ease-in-out`.
+- **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `ease`, `ease-in-out`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/calendly.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).
+Generated by [Sitepeel](https://sitepeel.dev/design-md/calendly.com/), the free DESIGN.md generator (engine 2026.10.29+b828a475ee10).

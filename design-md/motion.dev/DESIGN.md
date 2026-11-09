@@ -138,7 +138,7 @@ Motion describes itself as: “Motion (prev Framer Motion) is a fast, production
 
 Type is set in **TASA Orbiter** and **system-ui**, with **Geist Mono** for code. Headlines run large with tight negative tracking; body text is 15px. Depth comes from soft drop shadows. Controls are pill-shaped.
 
-Measured from [motion.dev](https://motion.dev/) on November 5, 2026 at 1440×900 and 390×844 from 479 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [motion.dev](https://motion.dev/) on November 8, 2026 at 1440×900 and 390×844 from 479 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
