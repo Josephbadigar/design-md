@@ -145,7 +145,7 @@ Expo describes itself as: “Develop, validate, deploy and monitor iOS, Android,
 
 Type is set in **Inter**, with **JetBrains Mono** for code. Headlines run large with tight negative tracking; body text is 14px. Depth comes from soft drop shadows. Controls are pill-shaped.
 
-Measured from [expo.dev](https://expo.dev/) on November 4, 2026 at 1440×900 and 390×844 from 393 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [expo.dev](https://expo.dev/) on November 10, 2026 at 1440×900 and 390×844 from 393 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 

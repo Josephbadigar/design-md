@@ -88,7 +88,7 @@ Nike.com describes itself as: “Inspiring the world's athletes, Nike delivers i
 
 Type is set in **Nike Futura ND** and **Helvetica Now Display Medium**. Headlines run large; body text is 16px. The surface language is flat. Corners are mostly 30px.
 
-Measured from [nike.com](https://www.nike.com/) on November 5, 2026 at 1440×900 and 390×844 from 362 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [nike.com](https://www.nike.com/) on November 9, 2026 at 1440×900 and 390×844 from 362 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
@@ -96,7 +96,7 @@ The palette has 6 roles.
 
 - **White (#FFFFFF):** Page background, seen 15 times. Token `background`, CSS `--podium-cds-button-color-bg-primary-on-dark`.
 - **Charcoal (#111111):** Primary text and headings, seen 48 times. Token `on-surface`, CSS `--podium-cds-icon-button-color-bg-primary`.
-- **Slate (#707072):** Secondary text, seen 46 times. Token `on-surface-variant`, CSS `--pds-color-element-disabled-always-dark`.
+- **Slate (#707072):** Secondary text, seen 46 times. Token `on-surface-variant`, CSS `--pds-color-gray-500`.
 - **Snow (#F5F5F5):** Raised areas one step from the page, seen 2 times. Token `surface-container-low`, CSS `--podium-cds-color-bg-secondary`.
 - **Charcoal (#111111):** Primary actions (the main text color; the palette is monochrome), seen 64 times. Token `primary`, CSS `--podium-cds-icon-button-color-bg-primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
