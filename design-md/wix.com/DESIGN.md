@@ -1,16 +1,16 @@
 ---
 version: alpha
 name: wix.com
-description: "Light interface measured from wix.com: wix-madefor-display-v2 type with wix-madefor-text-v2, light green accents, flat surfaces and 50px corners."
+description: "Light interface measured from wix.com: wix-madefor-display-v2 type with Madefor-Text, light amber accents, flat surfaces and 50px corners."
 colors:
   background: "#FFFFFF"
   surface: "#FFFFFF"
   on-surface: "#000000"
   on-background: "#000000"
   on-surface-variant: "#514B3D"
-  primary: "#A8F8CF"
+  primary: "#FFF1AC"
   on-primary: "#000000"
-  secondary: "#FFF3C7"
+  secondary: "#FDF4C7"
   tertiary: "#166AEA"
 typography:
   headline-display:
@@ -44,15 +44,15 @@ typography:
     lineHeight: 1
     letterSpacing: -0.02em
   body-md:
+    fontFamily: Madefor-Text
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.71
+  body-lg:
     fontFamily: wix-madefor-text-v2
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.3
-  body-lg:
-    fontFamily: wix-madefor-display-v2
-    fontSize: 19px
-    fontWeight: 500
-    lineHeight: 1.15
   body-sm:
     fontFamily: Arial
     fontSize: 10px
@@ -76,17 +76,17 @@ typography:
     letterSpacing: -0.02em
 rounded:
   xs: 8.64px
-  sm: 11.25px
-  md: 42px
-  lg: 50px
-  xl: 300px
+  sm: 10px
+  md: 11.25px
+  lg: 42px
+  xl: 50px
   full: 9999px
 spacing:
   xs: 2px
   sm: 8px
   md: 12px
   lg: 30px
-  xl: 61.92px
+  xl: 35px
   gutter: 22.5px
   container: 99999px
 components:
@@ -94,21 +94,21 @@ components:
     backgroundColor: "{colors.on-surface}"
     textColor: "{colors.background}"
     typography: "{typography.body-sm}"
-    rounded: "{rounded.lg}"
+    rounded: "{rounded.xl}"
     padding: 0px 10px 0px 34px
     height: 54px
   button-secondary:
     backgroundColor: "{colors.tertiary}"
     textColor: "{colors.background}"
-    typography: "{typography.body-md}"
-    rounded: "{rounded.md}"
+    typography: "{typography.body-lg}"
+    rounded: "{rounded.lg}"
     padding: 8px 30px
     height: 40px
   button-secondary-hover:
     backgroundColor: "#2D83FF"
   button-ghost:
     textColor: "{colors.on-surface}"
-    typography: "{typography.body-md}"
+    typography: "{typography.body-lg}"
     rounded: 0px
     padding: 0px 12px
   input-field:
@@ -124,44 +124,44 @@ components:
 
 ## Overview
 
-wix.com describes itself as: “Build the business you have in mind on a platform trusted by millions. Hosting, business tools, domains and marketing built in. Try it for free.” The interface is light, built on **White (#FFFFFF)** with **Near Black (#000000)** text, and **Light Green (#A8F8CF)** as the main accent.
+wix.com describes itself as: “Build the business you have in mind on a platform trusted by millions. Hosting, business tools, domains and marketing built in. Try it for free.” The interface is light, built on **White (#FFFFFF)** with **Near Black (#000000)** text, and **Light Amber (#FFF1AC)** as the main accent.
 
-Type is set in **wix-madefor-display-v2** and **wix-madefor-text-v2**. Headlines run large with tight negative tracking; body text is 16px. Depth comes from soft drop shadows. Corners are mostly 50px.
+Type is set in **wix-madefor-display-v2** and **Madefor-Text**. Headlines run large with tight negative tracking; body text is 14px. Depth comes from soft drop shadows. Corners are mostly 50px.
 
-Measured from [wix.com](https://www.wix.com/) on October 29, 2026 at 1440×900 and 390×844 from 457 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [wix.com](https://www.wix.com/) on November 11, 2026 at 1440×900 and 390×844 from 443 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 7 roles, plus gradient stops #49877E.
 
 - **White (#FFFFFF):** Page background, seen 5 times. Token `background`, CSS `--wst-color-fill-background-primary`.
-- **Near Black (#000000):** Primary text and headings, seen 129 times. Token `on-surface`, CSS `--wst-color-line`.
+- **Near Black (#000000):** Primary text and headings, seen 114 times. Token `on-surface`, CSS `--wst-color-line`.
 - **Dark Amber (#514B3D):** Secondary text, seen 4 times. Token `on-surface-variant`.
-- **Light Green (#A8F8CF):** Brand color on large areas. Token `primary`.
+- **Light Amber (#FFF1AC):** Brand color on large areas. Token `primary`.
 - **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
-- **Pale Amber (#FFF3C7):** Accent in logos and imagery. Token `secondary`.
+- **Pale Amber (#FDF4C7):** Accent in logos and imagery. Token `secondary`.
 - **Vivid Blue (#166AEA):** Secondary buttons, seen 1 time. Token `tertiary`.
 
 ## Typography
 
-**wix-madefor-display-v2**, **wix-madefor-text-v2** and **Arial** share the interface. Fallback stack: `wix-madefor-display-v2, sans-serif`. Other loaded fonts: madefor-display, madefor-display-bold, madefor-text, madefor-text-mediumbold.
+**wix-madefor-display-v2**, **Madefor-Text**, **wix-madefor-text-v2** and **Arial** share the interface. Fallback stack: `wix-madefor-display-v2, sans-serif`. Other loaded fonts: madefor-display, madefor-display-bold, madefor-text, madefor-text-mediumbold.
 
 - **headline-display:** wix-madefor-display-v2 82.5px at weight 400, line height 1.2, tracking -0.02em (41px on mobile). Page title (h1).
 - **headline-lg:** wix-madefor-display-v2 72px at weight 400, line height 1, tracking -0.02em. Section headings (h2).
 - **headline-md:** wix-madefor-display-v2 54px at weight 400, line height 1.1, tracking -0.02em. Sub-section headings.
 - **headline-sm:** wix-madefor-display-v2 48px at weight 400, line height 1.14, tracking -0.02em. Card and feature titles.
 - **title-lg:** wix-madefor-display-v2 30px at weight 500, line height 1, tracking -0.02em. Small titles.
-- **body-md:** wix-madefor-text-v2 16px at weight 400, line height 1.3. Body text.
-- **body-lg:** wix-madefor-display-v2 19px at weight 500, line height 1.15. Lead paragraphs.
+- **body-md:** Madefor-Text 14px at weight 400, line height 1.71. Body text.
+- **body-lg:** wix-madefor-text-v2 16px at weight 400, line height 1.3. Lead paragraphs.
 - **body-sm:** Arial 10px at weight 400. Secondary and small text.
 - **label-md:** wix-madefor-display-v2 16px at weight 500, line height 1.5. Buttons, navigation and labels.
 - **label-sm:** wix-madefor-display-v2 14px at weight 500, line height 1.1, tracking -0.02em. Small labels and badges.
 
 ## Layout
 
-Spacing does not follow a strict grid: 52% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 55% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
-- **Scale:** xs 2px, sm 8px, md 12px, lg 30px, xl 61.92px.
+- **Scale:** xs 2px, sm 8px, md 12px, lg 30px, xl 35px.
 - **Gaps:** 22.5px is the most common gap in flex and grid layouts.
 - **Container:** content is capped at 99999px.
 - **Breakpoints:** 1px, 750px, 767px, 768px, 769px, 1099px.
@@ -176,12 +176,12 @@ Raised elements use soft drop shadows. The most used recipes:
 
 Most elements use 50px corners. Measured radii, most used first:
 
-- **lg (50px):** 44 elements.
+- **xl (50px):** 48 elements.
 - **xs (8.64px):** 40 elements.
-- **full (9999px):** 8 elements.
-- **sm (11.25px):** 4 elements.
-- **md (42px):** 4 elements.
-- **xl (300px):** 4 elements.
+- **sm (10px):** 12 elements.
+- **full (9999px):** 12 elements.
+- **md (11.25px):** 8 elements.
+- **lg (42px):** 4 elements.
 
 ## Components
 
@@ -198,19 +198,19 @@ Measured from the rendered page. Token values reference the tokens above.
 
 - Do use #FFFFFF for the page.
 - Do keep text in 2 levels: #000000, #514B3D.
-- Do use #A8F8CF as the brand accent: header, logo and key highlights.
+- Do use #FFF1AC as the brand accent: header, logo and key highlights.
 - Do set headlines in wix-madefor-display-v2 with tight tracking (-0.02em).
 - Do reuse the measured spacing steps (8px, 12px, 30px).
-- Do use 50px corners on most elements; larger surfaces also use 8.64px, 11.25px and 42px.
-- Don't introduce new font families beyond wix-madefor-display-v2, wix-madefor-text-v2 and Arial.
-- Don't use #A8F8CF for large backgrounds or body text.
+- Do use 50px corners on most elements; larger surfaces also use 8.64px, 10px and 11.25px.
+- Don't introduce new font families beyond wix-madefor-display-v2, Madefor-Text, wix-madefor-text-v2 and Arial.
+- Don't use #FFF1AC for large backgrounds or body text.
 - Don't make interface transitions slower than 0.6s.
 
 ## Motion
 
-Interface transitions are quick: 0.4s, 0.2s, 0.3s, 0.6s. Longer ambient animations run 12s.
+Interface transitions are quick: 0.2s, 0.4s, 0.3s, 0.6s. Longer ambient animations run 12s.
 
 - **Easing:** `ease`, `ease-in-out`, `cubic-bezier(0.2, 1, 0, 1)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/wix.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).
+Generated by [Sitepeel](https://sitepeel.dev/design-md/wix.com/), the free DESIGN.md generator (engine 2026.10.29+b828a475ee10).
