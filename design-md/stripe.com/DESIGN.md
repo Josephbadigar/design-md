@@ -12,8 +12,8 @@ colors:
   on-surface-muted: "#64748D"
   surface-container-low: "#F8FAFD"
   surface-container: "#F5F5FF"
-  surface-container-high: "#ECEDFE"
-  surface-container-highest: "#E5EDF5"
+  surface-container-high: "#E5EDF5"
+  surface-container-highest: "#E8E9FF"
   overlay: "#FFFFFFA6"
   outline: "#E5EDF5"
   outline-variant: "#E2E4FF"
@@ -141,25 +141,25 @@ Stripe describes itself as: “Stripe is a financial services platform that help
 
 Type is set in **sohne-var**. Headlines run large with tight negative tracking; body text is 16px. The surface language is flat. Corners are mostly 4px.
 
-Measured from [stripe.com](https://stripe.com/) on November 12, 2026 at 1440×900 and 390×844 from 470 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [stripe.com](https://stripe.com/) on November 13, 2026 at 1440×900 and 390×844 from 470 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 16 roles, plus gradient stops #DA4BFECC, #FF8C6CCC, #C42FA5, #715CFFCC.
+The palette has 16 roles, plus gradient stops #DA4BFECC, #FF8C6CCC, #8A35DF, #715CFFCC.
 
 - **White (#FFFFFF):** Page background, seen 10 times. Token `background`, CSS `--hds-color-util-bg-min`.
-- **Deep Blue (#061B31):** Primary text and headings, seen 74 times. Token `on-surface`, CSS `--hds-color-heading-solid`.
+- **Deep Blue (#061B31):** Primary text and headings, seen 75 times. Token `on-surface`, CSS `--hds-color-heading-solid`.
 - **Near Black (#000000):** Headings and emphasis, seen 17 times. Token `on-surface-strong`.
-- **Blue (#50617A):** Secondary text, seen 8 times. Token `on-surface-variant`.
-- **Blue (#64748D):** Muted text and metadata, seen 28 times. Token `on-surface-muted`, CSS `--hds-color-heading-subdued`.
+- **Blue (#50617A):** Secondary text, seen 7 times. Token `on-surface-variant`.
+- **Blue (#64748D):** Muted text and metadata, seen 31 times. Token `on-surface-muted`, CSS `--hds-color-heading-subdued`.
 - **Snow (#F8FAFD):** Raised areas one step from the page, seen 3 times. Token `surface-container-low`, CSS `--hds-color-util-bg-quiet`.
 - **Cool Snow (#F5F5FF):** Cards and panels, seen 2 times. Token `surface-container`.
-- **Pale Indigo (#ECEDFE):** Hover and pressed fills, seen 1 time. Token `surface-container-high`.
-- **Cool Mist (#E5EDF5):** Highest raised elements, seen 7 times. Token `surface-container-highest`, CSS `--hds-color-util-neutral-50`.
+- **Cool Mist (#E5EDF5):** Hover and pressed fills, seen 7 times. Token `surface-container-high`, CSS `--hds-color-util-neutral-50`.
+- **Pale Indigo (#E8E9FF):** Highest raised elements, seen 2 times. Token `surface-container-highest`.
 - **White 65% (#FFFFFFA6):** Translucent fill for cards and controls, seen 1 time. Token `overlay`, CSS `--hds-color-action-bg-translucent`.
 - **Cool Mist (#E5EDF5):** Borders and dividers, seen 4 times. Token `outline`, CSS `--hds-color-util-neutral-50`.
 - **Pale Indigo (#E2E4FF):** Secondary dividers, seen 3 times. Token `outline-variant`.
-- **Vivid Indigo (#533AFD):** Primary buttons and calls to action, seen 22 times. Token `primary`, CSS `--hds-color-accent-border-solid`.
+- **Vivid Indigo (#533AFD):** Primary buttons and calls to action, seen 21 times. Token `primary`, CSS `--hds-color-accent-border-solid`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
 - **Deep Indigo (#1C1E54):** Accent (CSS variable). Token `secondary`.
 - **Vivid Orange (#FF6118):** Accent in text, fills and borders, seen 3 times. Token `tertiary`.
@@ -180,7 +180,7 @@ The palette has 16 roles, plus gradient stops #DA4BFECC, #FF8C6CCC, #C42FA5, #71
 
 ## Layout
 
-Spacing is mostly on a 4px grid (79% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
+Spacing is mostly on a 4px grid (80% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
 
 - **Scale:** xs 4px, sm 8px, md 16px, lg 24px, xl 64px.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
@@ -188,13 +188,13 @@ Spacing is mostly on a 4px grid (79% of measured values), with some off-grid ste
 
 ## Elevation & Depth
 
-The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#F8FAFD → #F5F5FF → #ECEDFE → #E5EDF5) and #E5EDF5 borders.
+The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#F8FAFD → #F5F5FF → #E5EDF5 → #E8E9FF) and #E5EDF5 borders.
 
 ## Shapes
 
 Most elements use 4px corners. Measured radii, most used first:
 
-- **sm (4px):** 136 elements.
+- **sm (4px):** 132 elements.
 - **md (6px):** 12 elements.
 
 ## Components
@@ -211,7 +211,7 @@ Measured from the rendered page. Token values reference the tokens above.
 
 ## Do's and Don'ts
 
-- Do use #FFFFFF for the page and lift surfaces in small steps: #F8FAFD, #F5F5FF, #ECEDFE, #E5EDF5.
+- Do use #FFFFFF for the page and lift surfaces in small steps: #F8FAFD, #F5F5FF, #E5EDF5, #E8E9FF.
 - Do keep text in 4 levels: #061B31, #000000, #50617A, #64748D.
 - Do reserve #533AFD for primary actions and key highlights.
 - Do set headlines in sohne-var with tight tracking (-0.02em).
@@ -228,4 +228,4 @@ Interface transitions are quick: 0.3s, 0.15s, 0.24s, 0.4s. Longer ambient animat
 
 - **Easing:** `cubic-bezier(0.25, 1, 0.5, 1)`, `linear`, `cubic-bezier(0.45, 0.05, 0.55, 0.95)`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/stripe.com/), the free DESIGN.md generator (engine 2026.10.29+8c0d12c54897).
+Generated by [Sitepeel](https://sitepeel.dev/design-md/stripe.com/), the free DESIGN.md generator (engine 2026.10.29+f0c146f7cdfd).
