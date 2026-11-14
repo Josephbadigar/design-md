@@ -104,22 +104,22 @@ components:
 
 Vercel describes itself as: “The autonomous stack for every app and agent.” The interface is light, built on **Snow (#FAFAFA)** with **Charcoal (#171717)** text and almost no color: actions are carried by contrast, not hue.
 
-Type is set in **GeistSans**, with **Geist Mono** for code. Headlines run large with tight negative tracking; body text is 16px. Depth comes from hairline borders and inset highlights rather than drop shadows. Corners are mostly 6px.
+Type is set in **GeistSans**, with **Geist Mono** for code. Headlines run large with tight negative tracking; body text is 16px. Depth comes from soft drop shadows. Corners are mostly 6px.
 
-Measured from [vercel.com](https://vercel.com/) on November 12, 2026 at 1440×900 and 390×844 from 353 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [vercel.com](https://vercel.com/) on November 13, 2026 at 1440×900 and 390×844 from 357 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 9 roles.
 
 - **Snow (#FAFAFA):** Page background, seen 5 times. Token `background`, CSS `--ds-background-200`.
-- **Charcoal (#171717):** Primary text and headings, seen 51 times. Token `on-surface`.
-- **Slate (#4D4D4D):** Secondary text, seen 92 times. Token `on-surface-variant`.
+- **Charcoal (#171717):** Primary text and headings, seen 52 times. Token `on-surface`.
+- **Slate (#4D4D4D):** Secondary text, seen 93 times. Token `on-surface-variant`.
 - **Gray (#8F8F8F):** Muted text and metadata, seen 3 times. Token `on-surface-muted`.
 - **White (#FFFFFF):** Raised areas one step from the page, seen 11 times. Token `surface-container-low`.
-- **Mist (#EBEBEB):** Cards and panels, seen 4 times. Token `surface-container`.
+- **Mist (#EBEBEB):** Cards and panels, seen 5 times. Token `surface-container`.
 - **Near Black 8% (#00000014):** Borders and dividers, seen 3 times. Token `outline`.
-- **Charcoal (#171717):** Primary buttons and calls to action, seen 64 times. Token `primary`.
+- **Charcoal (#171717):** Primary buttons and calls to action, seen 65 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
 
 ## Typography
@@ -136,7 +136,7 @@ The palette has 9 roles.
 
 ## Layout
 
-Spacing does not follow a strict grid: 15% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 16% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
 - **Scale:** xs 2px, sm 6px, md 12px, lg 20px, xl 40px.
 - **Gaps:** 20px is the most common gap in flex and grid layouts.
@@ -144,12 +144,11 @@ Spacing does not follow a strict grid: 15% of measured values are multiples of 4
 
 ## Elevation & Depth
 
-Depth comes mostly from hairline rings and inset highlights on tonal surfaces (#FFFFFF → #EBEBEB):
+Raised elements use soft drop shadows. The most used recipes:
 
-- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px`
-- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px`
+- `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 2px 2px 0px, rgb(250, 250, 250) 0px 0px 0px 1px`
 
-A few raised panels add a soft drop shadow: `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 2px 2px 0px, rgb(250, 250, 250) 0px 0px 0px 1px`.
+Hairline rings and inset highlights also appear: `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px`.
 
 ## Shapes
 
@@ -179,7 +178,6 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do reuse the measured spacing steps (6px, 12px, 20px).
 - Do use 6px corners on most elements; larger surfaces also use 20px and 4px.
 - Don't use #8F8F8F for body text; it reaches 3.10:1 on #FAFAFA. Keep it for large text or metadata.
-- Don't use heavy drop shadows; keep depth to hairline rings and tonal surfaces.
 - Don't introduce new font families beyond GeistSans and Geist Mono.
 - Don't add saturated accent colors; the measured palette is almost entirely neutral.
 - Don't make interface transitions slower than 0.5s.
@@ -191,4 +189,4 @@ Interface transitions are quick: 0.1s, 0.15s, 0.5s, 0.2s. Longer ambient animati
 - **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)`, `cubic-bezier(0, 0, 0.2, 1)`, `ease`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/vercel.com/), the free DESIGN.md generator (engine 2026.10.29+8c0d12c54897).
+Generated by [Sitepeel](https://sitepeel.dev/design-md/vercel.com/), the free DESIGN.md generator (engine 2026.10.29+f0c146f7cdfd).

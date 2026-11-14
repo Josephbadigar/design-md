@@ -1,25 +1,23 @@
 ---
 version: alpha
 name: Apple
-description: "Dark interface measured from apple.com: SF Pro Display type with SF Pro Text, vivid blue accents, tonal surfaces and pill-shaped controls."
+description: "Light interface measured from apple.com: SF Pro Display type with SF Pro Text, deep pink accents, tonal surfaces and pill-shaped controls."
 colors:
-  background: "#1A4C44"
-  surface: "#1A4C44"
-  on-surface: "#F5F5F7"
-  on-background: "#F5F5F7"
-  on-surface-strong: "#FFFFFF"
-  on-surface-variant: "#D1DBDA"
-  on-surface-muted: "#071513"
-  surface-container-low: "#1D1D1F"
+  background: "#F5F5F7"
+  surface: "#F5F5F7"
+  on-surface: "#1D1D1F"
+  on-background: "#1D1D1F"
+  on-surface-variant: "#313131"
+  on-surface-muted: "#444445"
+  surface-container-low: "#FFFFFF"
   overlay: "#0000007A"
   overlay-strong: "#D2D2D7A3"
-  outline: "#0066CC"
-  outline-variant: "#00000029"
-  primary: "#0071E3"
+  outline: "#00000029"
+  primary: "#5A122C"
   on-primary: "#FFFFFF"
   inverse-surface: "#000000"
-  secondary: "#397A58"
-  tertiary: "#2997FF"
+  secondary: "#0071E3"
+  tertiary: "#0066CC"
 typography:
   headline-display:
     fontFamily: SF Pro Display
@@ -77,17 +75,17 @@ typography:
 rounded:
   full: 9999px
 spacing:
-  xs: 3px
+  xs: 4px
   sm: 8px
   md: 9.6px
   lg: 21px
-  xl: 33.22px
+  xl: 37px
   gutter: 12px
   margin: 12px
   container: 2560px
 components:
   button-primary:
-    backgroundColor: "{colors.primary}"
+    backgroundColor: "{colors.secondary}"
     textColor: "{colors.on-primary}"
     typography: "{typography.label-md}"
     rounded: "{rounded.full}"
@@ -96,53 +94,50 @@ components:
   button-primary-hover:
     backgroundColor: "#0076DF"
   button-outline:
-    textColor: "{colors.outline}"
+    textColor: "{colors.tertiary}"
     typography: "{typography.label-md}"
     rounded: "{rounded.full}"
     padding: 11px 21px
     height: 44px
   button-outline-hover:
     backgroundColor: "#0076DF"
-    textColor: "{colors.on-surface-strong}"
+    textColor: "{colors.on-primary}"
   button-ghost:
-    textColor: "{colors.tertiary}"
-    typography: "{typography.label-md}"
-    rounded: "{rounded.full}"
-    padding: 11px 21px
-    height: 44px
+    textColor: "{colors.on-surface-variant}"
+    typography: "{typography.body-sm}"
+    rounded: 0px
+    padding: 0px 8px
   link:
-    textColor: "{colors.on-surface-muted}"
+    textColor: "#000000B8"
 ---
 
 # Apple Design System
 
 ## Overview
 
-The interface is dark, built on **Deep Teal (#1A4C44)** with **Snow (#F5F5F7)** text, and **Vivid Blue (#0071E3)** as the main accent.
+The interface is light, built on **Snow (#F5F5F7)** with **Charcoal (#1D1D1F)** text, and **Deep Pink (#5A122C)** as the main accent.
 
 Type is set in **SF Pro Display** and **SF Pro Text**. Headlines run large with tight negative tracking; body text is 21px. The surface language is flat. Controls are pill-shaped.
 
-Measured from [apple.com](https://www.apple.com/) on November 13, 2026 at 1440×900 and 390×844 from 381 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [apple.com](https://www.apple.com/) on November 14, 2026 at 1440×900 and 390×844 from 381 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 15 roles, plus gradient stops #FDD30F, #90CEEE, #48A7F4, #2789FF.
+The palette has 13 roles.
 
-- **Deep Teal (#1A4C44):** Page background. Token `background`.
-- **Snow (#F5F5F7):** Primary text and headings, seen 39 times. Token `on-surface`, CSS `--sk-fill-tertiary`.
-- **White (#FFFFFF):** Headings and emphasis, seen 9 times. Token `on-surface-strong`, CSS `--sk-fill`.
-- **Silver (#D1DBDA):** Secondary text, seen 12 times. Token `on-surface-variant`.
-- **Charcoal (#071513):** Muted text and metadata, seen 22 times. Token `on-surface-muted`, CSS `--sk-glyph-gray-secondary-alt-alpha`.
-- **Charcoal (#1D1D1F):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`, CSS `--sk-body-text-color`.
+- **Snow (#F5F5F7):** Page background, seen 1 time. Token `background`, CSS `--sk-fill-tertiary`.
+- **Charcoal (#1D1D1F):** Primary text and headings, seen 15 times. Token `on-surface`, CSS `--sk-body-text-color`.
+- **Graphite (#313131):** Secondary text, seen 12 times. Token `on-surface-variant`.
+- **Graphite (#444445):** Muted text and metadata, seen 22 times. Token `on-surface-muted`, CSS `--sk-glyph-gray-secondary-alt-alpha`.
+- **White (#FFFFFF):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`, CSS `--sk-fill`.
 - **Near Black 48% (#0000007A):** Translucent fill for cards and controls, seen 7 times. Token `overlay`.
 - **Silver 64% (#D2D2D7A3):** Stronger translucent fill, seen 1 time. Token `overlay-strong`.
-- **Blue (#0066CC):** Borders and dividers, seen 4 times. Token `outline`, CSS `--sk-body-link-color`.
-- **Near Black 16% (#00000029):** Secondary dividers, seen 1 time. Token `outline-variant`, CSS `--sk-fill-gray-tertiary-alpha`.
-- **Vivid Blue (#0071E3):** Primary buttons and calls to action, seen 9 times. Token `primary`, CSS `--sk-focus-color`.
+- **Near Black 16% (#00000029):** Borders and dividers, seen 1 time. Token `outline`, CSS `--sk-fill-gray-tertiary-alpha`.
+- **Deep Pink (#5A122C):** Brand color on large areas. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
 - **Near Black (#000000):** High-contrast fills, seen 19 times. Token `inverse-surface`, CSS `--sk-focus-color-alt`.
-- **Dark Green (#397A58):** Accent in logos and imagery. Token `secondary`.
-- **Vivid Blue (#2997FF):** Accent in text, fills and borders, seen 6 times. Token `tertiary`.
+- **Vivid Blue (#0071E3):** Secondary buttons, seen 9 times. Token `secondary`, CSS `--sk-focus-color`.
+- **Blue (#0066CC):** Accent in text, fills and borders, seen 19 times. Token `tertiary`, CSS `--sk-body-link-color`.
 
 ## Typography
 
@@ -159,9 +154,9 @@ The palette has 15 roles, plus gradient stops #FDD30F, #90CEEE, #48A7F4, #2789FF
 
 ## Layout
 
-Spacing does not follow a strict grid: 44% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 45% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
-- **Scale:** xs 3px, sm 8px, md 9.6px, lg 21px, xl 33.22px.
+- **Scale:** xs 4px, sm 8px, md 9.6px, lg 21px, xl 37px.
 - **Gaps:** 12px is the most common gap in flex and grid layouts.
 - **Container:** content is capped at 2560px.
 - **Page margin:** 12px on each side of full-width sections.
@@ -169,7 +164,7 @@ Spacing does not follow a strict grid: 44% of measured values are multiples of 4
 
 ## Elevation & Depth
 
-The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#1D1D1F) and #0066CC borders.
+The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#FFFFFF) and #00000029 borders.
 
 ## Shapes
 
@@ -181,25 +176,24 @@ Interactive controls are pill-shaped. Measured radii, most used first:
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Shop gifts”):** #0071E3 fill, #FFFFFF text, 17px/400, 980px radius, padding 11px 21px.
+- **button-primary (“Learn more”):** #0071E3 fill, #FFFFFF text, 17px/400, 980px radius, padding 11px 21px.
 - **button-primary-hover:** background #0076DF, text #FFFFFF on hover.
 - **button-outline (“Buy”):** transparent fill, #0066CC text, 17px/400, 980px radius, padding 11px 21px, border 1px solid #0066CC.
 - **button-outline-hover:** background #0076DF, text #FFFFFF on hover.
-- **button-ghost (“Buy”):** transparent fill, #2997FF text, 17px/400, 980px radius, padding 11px 21px, border 1px solid #2997FF.
+- **button-ghost (“0 +”):** transparent fill, #000000CC text, 12px/400, padding 0px 8px.
 - **link:** transparent fill, #000000B8 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #1A4C44 for the page and lift surfaces in small steps: #1D1D1F.
-- Do keep text in 4 levels: #F5F5F7, #FFFFFF, #D1DBDA, #071513.
-- Do reserve #0071E3 for primary actions and key highlights.
+- Do use #F5F5F7 for the page and lift surfaces in small steps: #FFFFFF.
+- Do keep text in 3 levels: #1D1D1F, #313131, #444445.
+- Do use #5A122C as the brand accent: header, logo and key highlights.
 - Do set headlines in SF Pro Display with tight tracking (-0.005em).
 - Do reuse the measured spacing steps (8px, 9.6px, 21px).
 - Do make buttons and chips fully rounded (9999px).
-- Don't use #071513 for body text; it reaches 1.92:1 on #1A4C44. Keep it for large text or metadata.
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond SF Pro Display and SF Pro Text.
-- Don't use #0071E3 for large backgrounds or body text.
+- Don't use #5A122C for large backgrounds or body text.
 - Don't make interface transitions slower than 0.32s.
 
 ## Motion
