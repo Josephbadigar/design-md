@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Apple
-description: "Light interface measured from apple.com: SF Pro Display type with SF Pro Text, deep blue accents, tonal surfaces and pill-shaped controls."
+description: "Light interface measured from apple.com: SF Pro Display type with SF Pro Text, deep pink accents, tonal surfaces and pill-shaped controls."
 colors:
   background: "#F5F5F7"
   surface: "#F5F5F7"
@@ -13,7 +13,7 @@ colors:
   overlay: "#0000007A"
   overlay-strong: "#D2D2D7A3"
   outline: "#00000029"
-  primary: "#00224D"
+  primary: "#5A122C"
   on-primary: "#FFFFFF"
   inverse-surface: "#000000"
   secondary: "#0071E3"
@@ -115,11 +115,11 @@ components:
 
 ## Overview
 
-The interface is light, built on **Snow (#F5F5F7)** with **Charcoal (#1D1D1F)** text, and **Deep Blue (#00224D)** as the main accent.
+The interface is light, built on **Snow (#F5F5F7)** with **Charcoal (#1D1D1F)** text, and **Deep Pink (#5A122C)** as the main accent.
 
 Type is set in **SF Pro Display** and **SF Pro Text**. Headlines run large with tight negative tracking; body text is 21px. The surface language is flat. Controls are pill-shaped.
 
-Measured from [apple.com](https://www.apple.com/) on November 14, 2026 at 1440×900 and 390×844 from 381 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [apple.com](https://www.apple.com/) on November 16, 2026 at 1440×900 and 390×844 from 381 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
@@ -133,7 +133,7 @@ The palette has 13 roles.
 - **Near Black 48% (#0000007A):** Translucent fill for cards and controls, seen 7 times. Token `overlay`.
 - **Silver 64% (#D2D2D7A3):** Stronger translucent fill, seen 1 time. Token `overlay-strong`.
 - **Near Black 16% (#00000029):** Borders and dividers, seen 1 time. Token `outline`, CSS `--sk-fill-gray-tertiary-alpha`.
-- **Deep Blue (#00224D):** Brand color on large areas. Token `primary`.
+- **Deep Pink (#5A122C):** Brand color on large areas. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
 - **Near Black (#000000):** High-contrast fills, seen 19 times. Token `inverse-surface`, CSS `--sk-focus-color-alt`.
 - **Vivid Blue (#0071E3):** Secondary buttons, seen 9 times. Token `secondary`, CSS `--sk-focus-color`.
@@ -187,13 +187,13 @@ Measured from the rendered page. Token values reference the tokens above.
 
 - Do use #F5F5F7 for the page and lift surfaces in small steps: #FFFFFF.
 - Do keep text in 3 levels: #1D1D1F, #313131, #444445.
-- Do use #00224D as the brand accent: header, logo and key highlights.
+- Do use #5A122C as the brand accent: header, logo and key highlights.
 - Do set headlines in SF Pro Display with tight tracking (-0.005em).
 - Do reuse the measured spacing steps (8px, 9.6px, 21px).
 - Do make buttons and chips fully rounded (9999px).
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond SF Pro Display and SF Pro Text.
-- Don't use #00224D for large backgrounds or body text.
+- Don't use #5A122C for large backgrounds or body text.
 - Don't make interface transitions slower than 0.32s.
 
 ## Motion
