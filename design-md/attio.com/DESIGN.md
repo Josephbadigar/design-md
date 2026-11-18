@@ -5,23 +5,22 @@ description: "Light monochrome interface measured from attio.com: interDisplay t
 colors:
   background: "#FFFFFF"
   surface: "#FFFFFF"
-  on-surface: "#1C1D1F"
-  on-background: "#1C1D1F"
-  on-surface-variant: "#232529"
-  on-surface-muted: "#242629"
-  on-surface-subtle: "#505967"
+  on-surface: "#242629"
+  on-background: "#242629"
+  on-surface-strong: "#1C1D1F"
+  on-surface-variant: "#2E3238"
+  on-surface-muted: "#505967"
   surface-container-low: "#FAFAFB"
-  surface-container: "#F4F5F6"
-  surface-container-high: "#DDF9E4"
-  surface-container-highest: "#F5EEFF"
+  surface-container: "#E8F0FF"
+  surface-container-high: "#E4E7EC"
   outline: "#E4E7EC"
   outline-variant: "#0000000D"
   primary: "#202124"
   on-primary: "#F3F4F6"
-  inverse-surface: "#101010"
-  secondary: "#407FF2"
-  tertiary: "#B8D0FF"
-  success: "#075A39"
+  inverse-surface: "#232529"
+  secondary: "#266DF0"
+  tertiary: "#9B69FF"
+  success: "#0FC27B"
   error: "#FF5B59"
   warning: "#F5B900"
 typography:
@@ -108,7 +107,7 @@ rounded:
   lg: 10px
 spacing:
   xs: 4px
-  sm: 5px
+  sm: 6px
   md: 12px
   lg: 24px
   xl: 48px
@@ -132,7 +131,7 @@ components:
     height: 96px
   button-ghost:
     backgroundColor: "{colors.background}"
-    textColor: "#2E3238"
+    textColor: "{colors.on-surface-variant}"
     typography: "{typography.label-sm}"
     rounded: "{rounded.lg}"
     padding: 0px 12px
@@ -145,33 +144,32 @@ components:
 
 ## Overview
 
-Attio describes itself as: “The system for revenue teams to build pipeline, accelerate deals, and grow accounts around the clock.” The interface is light, built on **White (#FFFFFF)** with **Charcoal (#1C1D1F)** text and almost no color: actions are carried by contrast, not hue.
+Attio describes itself as: “The system for revenue teams to build pipeline, accelerate deals, and grow accounts around the clock.” The interface is light, built on **White (#FFFFFF)** with **Graphite (#242629)** text and almost no color: actions are carried by contrast, not hue.
 
 Type is set in **interDisplay** and **inter**, with **JetBrains Mono** for code. Headlines run large with tight negative tracking; body text is 14px. The surface language is flat. Corners are mostly 8px.
 
-Measured from [attio.com](https://attio.com/) on October 29, 2026 at 1440×900 and 390×844 from 445 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [attio.com](https://attio.com/) on November 18, 2026 at 1440×900 and 390×844 from 447 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 19 roles, plus gradient stops #D06785, #4283EB, #D6A07A, #A8623D.
+The palette has 18 roles, plus gradient stops #D6A07A, #A8623D.
 
 - **White (#FFFFFF):** Page background, seen 17 times. Token `background`.
-- **Charcoal (#1C1D1F):** Primary text and headings, seen 35 times. Token `on-surface`.
-- **Cool Graphite (#232529):** Secondary text, seen 12 times. Token `on-surface-variant`.
-- **Graphite (#242629):** Muted text and metadata, seen 21 times. Token `on-surface-muted`.
-- **Dark Blue (#505967):** Subtle text and placeholders, seen 10 times. Token `on-surface-subtle`.
-- **Snow (#FAFAFB):** Raised areas one step from the page, seen 11 times. Token `surface-container-low`.
-- **Snow (#F4F5F6):** Cards and panels, seen 1 time. Token `surface-container`.
-- **Pale Green (#DDF9E4):** Hover and pressed fills, seen 3 times. Token `surface-container-high`.
-- **Cool Snow (#F5EEFF):** Highest raised elements, seen 4 times. Token `surface-container-highest`.
+- **Graphite (#242629):** Primary text and headings, seen 41 times. Token `on-surface`.
+- **Charcoal (#1C1D1F):** Headings and emphasis, seen 15 times. Token `on-surface-strong`.
+- **Cool Graphite (#2E3238):** Secondary text, seen 9 times. Token `on-surface-variant`.
+- **Dark Blue (#505967):** Muted text and metadata, seen 11 times. Token `on-surface-muted`.
+- **Snow (#FAFAFB):** Raised areas one step from the page, seen 12 times. Token `surface-container-low`.
+- **Pale Blue (#E8F0FF):** Cards and panels, seen 1 time. Token `surface-container`.
+- **Cool Mist (#E4E7EC):** Hover and pressed fills, seen 2 times. Token `surface-container-high`.
 - **Cool Mist (#E4E7EC):** Borders and dividers, seen 20 times. Token `outline`.
-- **Near Black 5% (#0000000D):** Secondary dividers, seen 8 times. Token `outline-variant`.
+- **Near Black 5% (#0000000D):** Secondary dividers, seen 16 times. Token `outline-variant`.
 - **Charcoal (#202124):** Primary buttons and calls to action, seen 12 times. Token `primary`.
 - **Snow (#F3F4F6):** Text and icons on primary. Token `on-primary`.
-- **Charcoal (#101010):** High-contrast fills, seen 8 times. Token `inverse-surface`.
-- **Vivid Blue (#407FF2):** Accent in text, fills and borders, seen 6 times. Token `secondary`.
-- **Pale Blue (#B8D0FF):** Accent in text, fills and borders, seen 6 times. Token `tertiary`.
-- **Deep Teal (#075A39):** Success and positive states, seen 3 times. Token `success`.
+- **Cool Graphite (#232529):** High-contrast fills, seen 10 times. Token `inverse-surface`.
+- **Vivid Blue (#266DF0):** Accent in text, fills and borders, seen 4 times. Token `secondary`.
+- **Light Violet (#9B69FF):** Accent in text, fills and borders, seen 3 times. Token `tertiary`.
+- **Teal (#0FC27B):** Success and positive states, seen 3 times. Token `success`.
 - **Red (#FF5B59):** Errors and destructive states, seen 1 time. Token `error`.
 - **Vivid Amber (#F5B900):** Warnings and highlights, seen 1 time. Token `warning`.
 
@@ -193,23 +191,23 @@ The palette has 19 roles, plus gradient stops #D06785, #4283EB, #D6A07A, #A8623D
 
 ## Layout
 
-Spacing is mostly on a 4px grid (73% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
+Spacing is mostly on a 4px grid (84% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
 
-- **Scale:** xs 4px, sm 5px, md 12px, lg 24px, xl 48px.
+- **Scale:** xs 4px, sm 6px, md 12px, lg 24px, xl 48px.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
-- **Breakpoints:** 360px, 375px, 480px, 576px, 640px, 768px, 992px, 1199px, 1200px, 1400px.
+- **Breakpoints:** 360px, 480px, 576px, 640px, 768px, 992px, 1024px, 1199px, 1200px, 1400px.
 
 ## Elevation & Depth
 
-The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#FAFAFB → #F4F5F6 → #DDF9E4 → #F5EEFF) and #E4E7EC borders.
+The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#FAFAFB → #E8F0FF → #E4E7EC) and #E4E7EC borders.
 
 ## Shapes
 
 Most elements use 8px corners. Measured radii, most used first:
 
-- **md (8px):** 292 elements.
+- **md (8px):** 208 elements.
 - **lg (10px):** 88 elements.
-- **sm (4.8px):** 12 elements.
+- **sm (4.8px):** 40 elements.
 
 ## Components
 
@@ -223,11 +221,11 @@ Measured from the rendered page. Token values reference the tokens above.
 
 ## Do's and Don'ts
 
-- Do use #FFFFFF for the page and lift surfaces in small steps: #FAFAFB, #F4F5F6, #DDF9E4, #F5EEFF.
-- Do keep text in 4 levels: #1C1D1F, #232529, #242629, #505967.
+- Do use #FFFFFF for the page and lift surfaces in small steps: #FAFAFB, #E8F0FF, #E4E7EC.
+- Do keep text in 4 levels: #242629, #1C1D1F, #2E3238, #505967.
 - Do let contrast carry emphasis; primary actions use #202124 on #FFFFFF.
 - Do set headlines in interDisplay with tight tracking (-0.02em).
-- Do reuse the measured spacing steps (5px, 12px, 24px).
+- Do reuse the measured spacing steps (6px, 12px, 24px).
 - Do use 8px corners on most elements; larger surfaces also use 10px and 4.8px.
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond interDisplay, inter and JetBrains Mono.
@@ -236,9 +234,9 @@ Measured from the rendered page. Token values reference the tokens above.
 
 ## Motion
 
-Interface transitions are quick: 0.15s, 0.3s, 0.4s, 0.2s.
+Interface transitions are quick: 0.15s, 0.2s, 0.3s, 0.4s.
 
 - **Easing:** `cubic-bezier(0, 0, 0, 1)`, `cubic-bezier(0.2, 0, 0, 1)`, `cubic-bezier(0.4, 0, 0.2, 1)`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/attio.com/), the free DESIGN.md tool (engine 2026.10.29+bf9d681d83cf).
+Generated by [Sitepeel](https://sitepeel.dev/design-md/attio.com/), the free DESIGN.md generator (engine 2026.10.29+f0c146f7cdfd).

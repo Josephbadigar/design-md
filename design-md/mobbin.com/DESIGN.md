@@ -7,9 +7,8 @@ colors:
   surface: "#FFFFFF"
   on-surface: "#141414"
   on-background: "#141414"
-  on-surface-variant: "#222222"
-  on-surface-muted: "#707070"
-  on-surface-subtle: "#ADADAD"
+  on-surface-variant: "#707070"
+  on-surface-muted: "#ADADAD"
   surface-container-low: "#FFFFFFF5"
   surface-container: "#FFFFFFE6"
   overlay: "#40404014"
@@ -121,22 +120,21 @@ Mobbin describes itself as: “Save hours of UI & UX research with our library o
 
 Type is set in **saans**. Headlines run large with tight negative tracking; body text is 16px. Depth comes from hairline borders and inset highlights rather than drop shadows. Controls are pill-shaped.
 
-Measured from [mobbin.com](https://mobbin.com/) on November 17, 2026 at 1440×900 and 390×844 from 300 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [mobbin.com](https://mobbin.com/) on November 18, 2026 at 1440×900 and 390×844 from 300 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 11 roles.
+The palette has 10 roles.
 
 - **White (#FFFFFF):** Page background, seen 12 times. Token `background`, CSS `--color-overscroll-canvas`.
 - **Charcoal (#141414):** Primary text and headings, seen 40 times. Token `on-surface`.
-- **Charcoal (#222222):** Secondary text, seen 5 times. Token `on-surface-variant`.
-- **Slate (#707070):** Muted text and metadata, seen 10 times. Token `on-surface-muted`, CSS `--color-text-secondary`.
-- **Gray (#ADADAD):** Subtle text and placeholders, seen 10 times. Token `on-surface-subtle`.
+- **Slate (#707070):** Secondary text, seen 10 times. Token `on-surface-variant`, CSS `--color-text-secondary`.
+- **Gray (#ADADAD):** Muted text and metadata, seen 10 times. Token `on-surface-muted`.
 - **White 96% (#FFFFFFF5):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`.
 - **White 90% (#FFFFFFE6):** Cards and panels, seen 1 time. Token `surface-container`.
 - **Graphite 8% (#40404014):** Translucent fill for cards and controls, seen 6 times. Token `overlay`.
 - **White 8% (#FFFFFF14):** Stronger translucent fill, seen 3 times. Token `overlay-strong`.
-- **Charcoal (#141414):** Primary buttons and calls to action, seen 83 times. Token `primary`.
+- **Charcoal (#141414):** Primary buttons and calls to action, seen 84 times. Token `primary`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
 
 ## Typography
@@ -190,7 +188,7 @@ Measured from the rendered page. Token values reference the tokens above.
 ## Do's and Don'ts
 
 - Do use #FFFFFF for the page and lift surfaces in small steps: #FFFFFFF5, #FFFFFFE6.
-- Do keep text in 4 levels: #141414, #222222, #707070, #ADADAD.
+- Do keep text in 3 levels: #141414, #707070, #ADADAD.
 - Do let contrast carry emphasis; primary actions use #141414 on #FFFFFF.
 - Do set headlines in saans with tight tracking (-0.007em).
 - Do keep spacing on the 4px grid.
