@@ -106,7 +106,7 @@ Vercel describes itself as: “The autonomous stack for every app and agent.” 
 
 Type is set in **GeistSans**, with **Geist Mono** for code. Headlines run large with tight negative tracking; body text is 16px. Depth comes from soft drop shadows. Corners are mostly 6px.
 
-Measured from [vercel.com](https://vercel.com/) on November 15, 2026 at 1440×900 and 390×844 from 357 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [vercel.com](https://vercel.com/) on November 19, 2026 at 1440×900 and 390×844 from 357 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
