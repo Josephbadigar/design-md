@@ -2,9 +2,9 @@
 
 <p align="center"><a href="https://sitepeel.dev/design-md/examples/"><img src="assets/banner.png" alt="A growing library of DESIGN.md files, by Sitepeel" width="100%"></a></p>
 
-<h1 align="center">DESIGN.md library</h1>
+<h1 align="center">Sitepeel DESIGN.md library</h1>
 
-<p align="center">A growing library of free DESIGN.md files for AI coding agents.<br>319 websites so far, measured by <a href="https://sitepeel.dev">Sitepeel</a> and updated every day.</p>
+<p align="center"><a href="https://sitepeel.dev">Sitepeel</a>'s growing library of free DESIGN.md files for AI coding agents.<br>319 websites so far, each measured from the live site and updated every day.</p>
 
 <p align="center">
   <a href="https://sitepeel.dev/design-md/"><b>Generate a DESIGN.md</b></a> ·
