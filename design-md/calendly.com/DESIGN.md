@@ -132,7 +132,7 @@ Calendly.com describes itself as: “Calendly connects and simplifies all of the
 
 Type is set in **Calendly Sans** and **Wulkan Text**. Headlines run large with tight negative tracking; body text is 14px. Depth comes from soft drop shadows. Corners are mostly 4px.
 
-Measured from [calendly.com](https://calendly.com/) on November 18, 2026 at 1440×900 and 390×844 from 399 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [calendly.com](https://calendly.com/) on November 19, 2026 at 1440×900 and 390×844 from 399 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 

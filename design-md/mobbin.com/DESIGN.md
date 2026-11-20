@@ -120,7 +120,7 @@ Mobbin describes itself as: “Save hours of UI & UX research with our library o
 
 Type is set in **saans**. Headlines run large with tight negative tracking; body text is 16px. Depth comes from hairline borders and inset highlights rather than drop shadows. Controls are pill-shaped.
 
-Measured from [mobbin.com](https://mobbin.com/) on November 18, 2026 at 1440×900 and 390×844 from 300 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [mobbin.com](https://mobbin.com/) on November 19, 2026 at 1440×900 and 390×844 from 300 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 

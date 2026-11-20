@@ -7,9 +7,9 @@ colors:
   surface: "#FFFFFF"
   on-surface: "#061B31"
   on-background: "#061B31"
-  on-surface-variant: "#50617A"
-  on-surface-muted: "#64748D"
-  on-surface-subtle: "#7D8BA4"
+  on-surface-variant: "#273951"
+  on-surface-muted: "#50617A"
+  on-surface-subtle: "#64748D"
   surface-container-low: "#F8FAFD"
   surface-container: "#EDFBE0"
   surface-container-high: "#F5F5FF"
@@ -143,23 +143,23 @@ Stripe describes itself as: “Stripe is a financial services platform that help
 
 Type is set in **sohne-var**. Headlines run large with tight negative tracking; body text is 16px. The surface language is flat. Corners are mostly 4px.
 
-Measured from [stripe.com](https://stripe.com/) on November 18, 2026 at 1440×900 and 390×844 from 474 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [stripe.com](https://stripe.com/) on November 20, 2026 at 1440×900 and 390×844 from 474 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 16 roles, plus gradient stops #DA4BFECC, #FF8C6CCC, #8A35DF, #715CFFCC.
+The palette has 16 roles, plus gradient stops #DA4BFECC, #FF8C6CCC, #715CFFCC, #533AFDCC.
 
-- **White (#FFFFFF):** Page background, seen 13 times. Token `background`, CSS `--hds-color-util-bg-min`.
-- **Deep Blue (#061B31):** Primary text and headings, seen 81 times. Token `on-surface`, CSS `--hds-color-heading-solid`.
-- **Blue (#50617A):** Secondary text, seen 8 times. Token `on-surface-variant`.
-- **Blue (#64748D):** Muted text and metadata, seen 38 times. Token `on-surface-muted`, CSS `--hds-color-heading-subdued`.
-- **Blue (#7D8BA4):** Subtle text and placeholders, seen 5 times. Token `on-surface-subtle`, CSS `--hds-color-input-text-placeholder`.
+- **White (#FFFFFF):** Page background, seen 12 times. Token `background`, CSS `--hds-color-util-bg-min`.
+- **Deep Blue (#061B31):** Primary text and headings, seen 78 times. Token `on-surface`, CSS `--hds-color-heading-solid`.
+- **Dark Blue (#273951):** Secondary text, seen 3 times. Token `on-surface-variant`, CSS `--hds-color-input-text-label`.
+- **Blue (#50617A):** Muted text and metadata, seen 8 times. Token `on-surface-muted`.
+- **Blue (#64748D):** Subtle text and placeholders, seen 38 times. Token `on-surface-subtle`, CSS `--hds-color-heading-subdued`.
 - **Snow (#F8FAFD):** Raised areas one step from the page, seen 3 times. Token `surface-container-low`, CSS `--hds-color-util-bg-quiet`.
 - **Pale Lime (#EDFBE0):** Cards and panels, seen 1 time. Token `surface-container`.
 - **Cool Snow (#F5F5FF):** Hover and pressed fills, seen 2 times. Token `surface-container-high`.
 - **Pale Red (#FEE8EB):** Highest raised elements, seen 1 time. Token `surface-container-highest`.
 - **White 65% (#FFFFFFA6):** Translucent fill for cards and controls, seen 1 time. Token `overlay`, CSS `--hds-color-action-bg-translucent`.
-- **Cool Mist (#E5EDF5):** Borders and dividers, seen 4 times. Token `outline`, CSS `--hds-color-util-neutral-50`.
+- **Cool Mist (#E5EDF5):** Borders and dividers, seen 3 times. Token `outline`, CSS `--hds-color-util-neutral-50`.
 - **Pale Indigo (#E2E4FF):** Secondary dividers, seen 3 times. Token `outline-variant`.
 - **Vivid Indigo (#533AFD):** Primary buttons and calls to action, seen 21 times. Token `primary`, CSS `--hds-color-accent-border-solid`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
@@ -215,12 +215,11 @@ Measured from the rendered page. Token values reference the tokens above.
 ## Do's and Don'ts
 
 - Do use #FFFFFF for the page and lift surfaces in small steps: #F8FAFD, #EDFBE0, #F5F5FF, #FEE8EB.
-- Do keep text in 4 levels: #061B31, #50617A, #64748D, #7D8BA4.
+- Do keep text in 4 levels: #061B31, #273951, #50617A, #64748D.
 - Do reserve #533AFD for primary actions and key highlights.
 - Do set headlines in sohne-var with tight tracking (-0.02em).
 - Do reuse the measured spacing steps (8px, 16px, 24px).
 - Do use 4px corners on most elements; larger surfaces also use 6px and 2px.
-- Don't use #7D8BA4 for body text; it reaches 3.44:1 on #FFFFFF. Keep it for large text or metadata.
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond sohne-var.
 - Don't use #533AFD for large backgrounds or body text.
