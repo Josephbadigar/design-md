@@ -7,9 +7,9 @@ colors:
   surface: "#FFFFFF"
   on-surface: "#061B31"
   on-background: "#061B31"
-  on-surface-variant: "#273951"
-  on-surface-muted: "#50617A"
-  on-surface-subtle: "#64748D"
+  on-surface-variant: "#50617A"
+  on-surface-muted: "#64748D"
+  on-surface-subtle: "#7D8BA4"
   surface-container-low: "#F8FAFD"
   surface-container: "#EDFBE0"
   surface-container-high: "#F5F5FF"
@@ -126,13 +126,12 @@ components:
     padding: 10.5px 20px 13.5px 20px
     height: 40px
   input-field:
-    backgroundColor: "{colors.background}"
-    textColor: "#000000"
+    textColor: "{colors.on-surface}"
     typography: "{typography.body-md}"
     rounded: 0px
-    padding: 11px 17px
+    padding: 0px 15px
   link:
-    textColor: "{colors.on-surface}"
+    textColor: "#000000"
 ---
 
 # Stripe Design System
@@ -143,25 +142,25 @@ Stripe describes itself as: “Stripe is a financial services platform that help
 
 Type is set in **sohne-var**. Headlines run large with tight negative tracking; body text is 16px. The surface language is flat. Corners are mostly 4px.
 
-Measured from [stripe.com](https://stripe.com/) on November 20, 2026 at 1440×900 and 390×844 from 474 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [stripe.com](https://stripe.com/) on November 21, 2026 at 1440×900 and 390×844 from 470 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 16 roles, plus gradient stops #DA4BFECC, #FF8C6CCC, #715CFFCC, #533AFDCC.
+The palette has 16 roles, plus gradient stops #DA4BFECC, #FF8C6CCC, #0810BF, #715CFFCC.
 
-- **White (#FFFFFF):** Page background, seen 12 times. Token `background`, CSS `--hds-color-util-bg-min`.
-- **Deep Blue (#061B31):** Primary text and headings, seen 78 times. Token `on-surface`, CSS `--hds-color-heading-solid`.
-- **Dark Blue (#273951):** Secondary text, seen 3 times. Token `on-surface-variant`, CSS `--hds-color-input-text-label`.
-- **Blue (#50617A):** Muted text and metadata, seen 8 times. Token `on-surface-muted`.
-- **Blue (#64748D):** Subtle text and placeholders, seen 38 times. Token `on-surface-subtle`, CSS `--hds-color-heading-subdued`.
+- **White (#FFFFFF):** Page background, seen 10 times. Token `background`, CSS `--hds-color-util-bg-min`.
+- **Deep Blue (#061B31):** Primary text and headings, seen 82 times. Token `on-surface`, CSS `--hds-color-heading-solid`.
+- **Blue (#50617A):** Secondary text, seen 8 times. Token `on-surface-variant`.
+- **Blue (#64748D):** Muted text and metadata, seen 32 times. Token `on-surface-muted`, CSS `--hds-color-heading-subdued`.
+- **Blue (#7D8BA4):** Subtle text and placeholders, seen 7 times. Token `on-surface-subtle`, CSS `--hds-color-input-text-placeholder`.
 - **Snow (#F8FAFD):** Raised areas one step from the page, seen 3 times. Token `surface-container-low`, CSS `--hds-color-util-bg-quiet`.
 - **Pale Lime (#EDFBE0):** Cards and panels, seen 1 time. Token `surface-container`.
 - **Cool Snow (#F5F5FF):** Hover and pressed fills, seen 2 times. Token `surface-container-high`.
 - **Pale Red (#FEE8EB):** Highest raised elements, seen 1 time. Token `surface-container-highest`.
 - **White 65% (#FFFFFFA6):** Translucent fill for cards and controls, seen 1 time. Token `overlay`, CSS `--hds-color-action-bg-translucent`.
-- **Cool Mist (#E5EDF5):** Borders and dividers, seen 3 times. Token `outline`, CSS `--hds-color-util-neutral-50`.
+- **Cool Mist (#E5EDF5):** Borders and dividers, seen 4 times. Token `outline`, CSS `--hds-color-util-neutral-50`.
 - **Pale Indigo (#E2E4FF):** Secondary dividers, seen 3 times. Token `outline-variant`.
-- **Vivid Indigo (#533AFD):** Primary buttons and calls to action, seen 21 times. Token `primary`, CSS `--hds-color-accent-border-solid`.
+- **Vivid Indigo (#533AFD):** Primary buttons and calls to action, seen 22 times. Token `primary`, CSS `--hds-color-accent-border-solid`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
 - **Deep Indigo (#1C1E54):** Accent (CSS variable). Token `secondary`.
 - **Vivid Orange (#FF6118):** Accent in text, fills and borders, seen 3 times. Token `tertiary`.
@@ -197,8 +196,8 @@ The design is flat: no shadows were measured. Hierarchy comes from tonal surface
 Most elements use 4px corners. Measured radii, most used first:
 
 - **md (4px):** 132 elements.
-- **lg (6px):** 16 elements.
-- **sm (2px):** 12 elements.
+- **lg (6px):** 12 elements.
+- **sm (2px):** 8 elements.
 
 ## Components
 
@@ -209,17 +208,18 @@ Measured from the rendered page. Token values reference the tokens above.
 - **button-outline (“Sign up with Google”):** #FFFFFFA6 fill, #533AFD text, 16px/400, 4px radius, padding 14.5px 24px 15.5px 24px, border 1px solid #B9B9F9.
 - **button-outline-hover:** background #FFFFFFA6, text #2E2B8C on hover.
 - **button-ghost (“Sign in Sign in”):** transparent fill, #FFFFFF text, 14px/400, 4px radius, padding 10.5px 20px 13.5px 20px, border 1px solid #FFFFFF.
-- **input-field (“Sell software subscriptions to o”):** #FFFFFF fill, #000000 text, 16px/300, padding 11px 17px.
-- **link:** transparent fill, #061B31 text, padding 0px.
+- **input-field (“Enter work email”):** transparent fill, #061B31 text, 16px/300, padding 0px 15px.
+- **link:** transparent fill, #000000 text, padding 0px.
 
 ## Do's and Don'ts
 
 - Do use #FFFFFF for the page and lift surfaces in small steps: #F8FAFD, #EDFBE0, #F5F5FF, #FEE8EB.
-- Do keep text in 4 levels: #061B31, #273951, #50617A, #64748D.
+- Do keep text in 4 levels: #061B31, #50617A, #64748D, #7D8BA4.
 - Do reserve #533AFD for primary actions and key highlights.
 - Do set headlines in sohne-var with tight tracking (-0.02em).
 - Do reuse the measured spacing steps (8px, 16px, 24px).
 - Do use 4px corners on most elements; larger surfaces also use 6px and 2px.
+- Don't use #7D8BA4 for body text; it reaches 3.44:1 on #FFFFFF. Keep it for large text or metadata.
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond sohne-var.
 - Don't use #533AFD for large backgrounds or body text.

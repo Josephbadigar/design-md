@@ -119,24 +119,24 @@ The interface is light, built on **Snow (#F5F5F7)** with **Charcoal (#1D1D1F)** 
 
 Type is set in **SF Pro Display** and **SF Pro Text**. Headlines run large with tight negative tracking; body text is 21px. The surface language is flat. Controls are pill-shaped.
 
-Measured from [apple.com](https://www.apple.com/) on November 21, 2026 at 1440×900 and 390×844 from 382 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [apple.com](https://www.apple.com/) on November 22, 2026 at 1440×900 and 390×844 from 382 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 12 roles.
 
 - **Snow (#F5F5F7):** Page background, seen 2 times. Token `background`, CSS `--sk-fill-tertiary`.
-- **Charcoal (#1D1D1F):** Primary text and headings, seen 15 times. Token `on-surface`, CSS `--sk-body-text-color`.
+- **Charcoal (#1D1D1F):** Primary text and headings, seen 17 times. Token `on-surface`, CSS `--sk-body-text-color`.
 - **Graphite (#313131):** Secondary text, seen 12 times. Token `on-surface-variant`.
-- **Graphite (#444445):** Muted text and metadata, seen 22 times. Token `on-surface-muted`, CSS `--sk-glyph-gray-secondary-alt-alpha`.
+- **Graphite (#444445):** Muted text and metadata, seen 20 times. Token `on-surface-muted`, CSS `--sk-glyph-gray-secondary-alt-alpha`.
 - **White (#FFFFFF):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`, CSS `--sk-fill`.
 - **Near Black 48% (#0000007A):** Translucent fill for cards and controls, seen 7 times. Token `overlay`.
 - **Silver 64% (#D2D2D7A3):** Stronger translucent fill, seen 1 time. Token `overlay-strong`.
 - **Near Black 16% (#00000029):** Borders and dividers, seen 1 time. Token `outline`, CSS `--sk-fill-gray-tertiary-alpha`.
 - **Vivid Blue (#0071E3):** Primary buttons and calls to action, seen 9 times. Token `primary`, CSS `--sk-focus-color`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Near Black (#000000):** High-contrast fills, seen 18 times. Token `inverse-surface`, CSS `--sk-focus-color-alt`.
-- **Blue (#0066CC):** Accent in text, fills and borders, seen 21 times. Token `secondary`, CSS `--sk-body-link-color`.
+- **Near Black (#000000):** High-contrast fills, seen 19 times. Token `inverse-surface`, CSS `--sk-focus-color-alt`.
+- **Blue (#0066CC):** Accent in text, fills and borders, seen 23 times. Token `secondary`, CSS `--sk-body-link-color`.
 
 ## Typography
 
@@ -153,7 +153,7 @@ The palette has 12 roles.
 
 ## Layout
 
-Spacing does not follow a strict grid: 55% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 54% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
 - **Scale:** xs 4px, sm 8px, md 9.6px, lg 20px, xl 37px.
 - **Gaps:** 12px is the most common gap in flex and grid layouts.
@@ -169,7 +169,7 @@ The design is flat: no shadows were measured. Hierarchy comes from tonal surface
 
 Interactive controls are pill-shaped. Measured radii, most used first:
 
-- **full (9999px):** 64 elements.
+- **full (9999px):** 68 elements.
 
 ## Components
 
