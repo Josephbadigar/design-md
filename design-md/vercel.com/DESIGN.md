@@ -87,8 +87,6 @@ components:
     rounded: "{rounded.md}"
     padding: 0px 6px
     height: 32px
-  button-outline-hover:
-    backgroundColor: "#F2F2F2"
   button-ghost:
     textColor: "{colors.on-surface-variant}"
     typography: "{typography.label-sm}"
@@ -106,7 +104,7 @@ Vercel describes itself as: “The autonomous stack for every app and agent.” 
 
 Type is set in **GeistSans**, with **Geist Mono** for code. Headlines run large with tight negative tracking; body text is 16px. Depth comes from soft drop shadows. Corners are mostly 6px.
 
-Measured from [vercel.com](https://vercel.com/) on November 22, 2026 at 1440×900 and 390×844 from 357 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [vercel.com](https://vercel.com/) on November 24, 2026 at 1440×900 and 390×844 from 357 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
@@ -165,7 +163,6 @@ Measured from the rendered page. Token values reference the tokens above.
 - **button-primary (“Sign Up”):** #171717 fill, #FFFFFF text, 14px/500, 6px radius, padding 0px 6px.
 - **button-primary-hover:** background #383838, text #FFFFFF on hover.
 - **button-outline (“Get a Demo”):** #FFFFFF fill, #171717 text, 14px/500, 6px radius, padding 0px 6px, shadow `rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px`.
-- **button-outline-hover:** background #F2F2F2, text #171717 on hover.
 - **button-ghost (“Products”):** transparent fill, #4D4D4D text, 14px/400, padding 0px.
 - **link:** transparent fill, #4D4D4D text, padding 0px.
 
