@@ -105,6 +105,7 @@ rounded:
   sm: 4.8px
   md: 8px
   lg: 10px
+  xl: 12px
 spacing:
   xs: 4px
   sm: 6px
@@ -148,14 +149,14 @@ Attio describes itself as: “The system for revenue teams to build pipeline, ac
 
 Type is set in **interDisplay** and **inter**, with **JetBrains Mono** for code. Headlines run large with tight negative tracking; body text is 14px. The surface language is flat. Corners are mostly 8px.
 
-Measured from [attio.com](https://attio.com/) on November 18, 2026 at 1440×900 and 390×844 from 447 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [attio.com](https://attio.com/) on November 26, 2026 at 1440×900 and 390×844 from 447 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 18 roles, plus gradient stops #D6A07A, #A8623D.
 
 - **White (#FFFFFF):** Page background, seen 17 times. Token `background`.
-- **Graphite (#242629):** Primary text and headings, seen 41 times. Token `on-surface`.
+- **Graphite (#242629):** Primary text and headings, seen 42 times. Token `on-surface`.
 - **Charcoal (#1C1D1F):** Headings and emphasis, seen 15 times. Token `on-surface-strong`.
 - **Cool Graphite (#2E3238):** Secondary text, seen 9 times. Token `on-surface-variant`.
 - **Dark Blue (#505967):** Muted text and metadata, seen 11 times. Token `on-surface-muted`.
@@ -195,7 +196,7 @@ Spacing is mostly on a 4px grid (84% of measured values), with some off-grid ste
 
 - **Scale:** xs 4px, sm 6px, md 12px, lg 24px, xl 48px.
 - **Gaps:** 8px is the most common gap in flex and grid layouts.
-- **Breakpoints:** 360px, 480px, 576px, 640px, 768px, 992px, 1024px, 1199px, 1200px, 1400px.
+- **Breakpoints:** 360px, 375px, 576px, 768px, 992px, 1200px, 1400px, 1536px.
 
 ## Elevation & Depth
 
@@ -206,8 +207,9 @@ The design is flat: no shadows were measured. Hierarchy comes from tonal surface
 Most elements use 8px corners. Measured radii, most used first:
 
 - **md (8px):** 208 elements.
-- **lg (10px):** 88 elements.
+- **lg (10px):** 80 elements.
 - **sm (4.8px):** 40 elements.
+- **xl (12px):** 12 elements.
 
 ## Components
 
@@ -226,7 +228,7 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do let contrast carry emphasis; primary actions use #202124 on #FFFFFF.
 - Do set headlines in interDisplay with tight tracking (-0.02em).
 - Do reuse the measured spacing steps (6px, 12px, 24px).
-- Do use 8px corners on most elements; larger surfaces also use 10px and 4.8px.
+- Do use 8px corners on most elements; larger surfaces also use 10px, 4.8px and 12px.
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond interDisplay, inter and JetBrains Mono.
 - Don't add saturated accent colors; the measured palette is almost entirely neutral.

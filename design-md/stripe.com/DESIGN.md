@@ -142,7 +142,7 @@ Stripe describes itself as: “Stripe is a financial services platform that help
 
 Type is set in **sohne-var**. Headlines run large with tight negative tracking; body text is 16px. The surface language is flat. Corners are mostly 4px.
 
-Measured from [stripe.com](https://stripe.com/) on November 21, 2026 at 1440×900 and 390×844 from 470 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [stripe.com](https://stripe.com/) on November 26, 2026 at 1440×900 and 390×844 from 470 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
