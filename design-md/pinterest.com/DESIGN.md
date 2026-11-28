@@ -10,11 +10,8 @@ colors:
   on-surface-variant: "#62625B"
   surface-container-low: "#E5E5E0"
   primary: "#E60023"
-  on-primary: "#000000"
-  secondary: "#4285F4"
-  error: "#DD0E0E"
-  success: "#34A853"
-  warning: "#FBBC04"
+  on-primary: "#FFFFFF"
+  secondary: "#DD0E0E"
 typography:
   headline-display:
     fontFamily: Pin Sans
@@ -47,8 +44,8 @@ rounded:
   full: 9999px
 spacing:
   xs: 4px
-  sm: 6px
-  md: 14px
+  sm: 8px
+  md: 16px
   xl: 44px
 components:
   button-primary:
@@ -56,38 +53,27 @@ components:
     textColor: "{colors.on-primary}"
     typography: "{typography.label-sm}"
     rounded: "{rounded.lg}"
-    padding: 6px 14px
+    padding: 8px 16px
     height: 48px
-  button-primary-hover:
-    backgroundColor: "#CC001F"
   button-secondary:
     backgroundColor: "{colors.surface-container-low}"
     textColor: "{colors.on-surface}"
     typography: "{typography.label-sm}"
     rounded: "{rounded.lg}"
-    padding: 6px 14px
-    height: 48px
-  button-secondary-hover:
-    backgroundColor: "#DADAD3"
-  button-tertiary:
-    backgroundColor: "{colors.surface-container-low}"
-    textColor: "#211922"
-    typography: "{typography.label-sm}"
-    rounded: "{rounded.lg}"
-    padding: 6px 14px
+    padding: 8px 16px
     height: 48px
   button-ghost:
     textColor: "#211922"
     typography: "{typography.label-sm}"
     rounded: "{rounded.lg}"
-    padding: 6px 14px
+    padding: 8px 16px
   input-field:
     textColor: "{colors.on-surface}"
     typography: "{typography.body-md}"
     rounded: 0px
     padding: 0px
   link:
-    textColor: "#211922"
+    textColor: "{colors.on-surface}"
 ---
 
 # Pinterest Design System
@@ -98,22 +84,19 @@ Pinterest describes itself as: “Discover recipes, home ideas, style inspiratio
 
 Type is set in **Pin Sans**. Headlines run large with tight negative tracking; body text is 16px. The surface language is flat. Corners are mostly 16px.
 
-Measured from [pinterest.com](https://www.pinterest.com/) on October 21, 2026 at 1440×900 and 800×1732 from 144 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [pinterest.com](https://www.pinterest.com/) on November 27, 2026 at 1440×900 and 390×844 from 146 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
-The palette has 10 roles.
+The palette has 7 roles.
 
 - **White (#FFFFFF):** Page background, seen 3 times. Token `background`, CSS `--comp-iconbutton-color-icon-gray-enabled-selected`.
 - **Near Black (#000000):** Primary text and headings, seen 15 times. Token `on-surface`, CSS `--comp-bannerslim-color-text-body-warning-expanded`.
 - **Warm Slate (#62625B):** Secondary text, seen 4 times. Token `on-surface-variant`, CSS `--sema-color-icon-subtle`.
 - **Mist (#E5E5E0):** Raised areas one step from the page, seen 3 times. Token `surface-container-low`.
 - **Vivid Red (#E60023):** Primary buttons and calls to action, seen 18 times. Token `primary`.
-- **Near Black (#000000):** Text and icons on primary. Token `on-primary`.
-- **Vivid Blue (#4285F4):** Accent, seen 1 time. Token `secondary`.
-- **Vivid Red (#DD0E0E):** Errors and destructive states, seen 4 times. Token `error`.
-- **Green (#34A853):** Success and positive states, seen 1 time. Token `success`.
-- **Vivid Amber (#FBBC04):** Warnings and highlights, seen 1 time. Token `warning`.
+- **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
+- **Vivid Red (#DD0E0E):** Accent, seen 4 times. Token `secondary`.
 
 ## Typography
 
@@ -127,9 +110,9 @@ The palette has 10 roles.
 
 ## Layout
 
-Spacing does not follow a strict grid: 21% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing is mostly on a 4px grid (87% of measured values), with some off-grid steps. Match the measured scale rather than rounding everything.
 
-- **Scale:** xs 4px, sm 6px, md 14px, xl 44px.
+- **Scale:** xs 4px, sm 8px, md 16px, xl 44px.
 - **Breakpoints:** 576px, 768px, 1312px, 1440px, 1680px, 2048px.
 
 ## Elevation & Depth
@@ -140,7 +123,7 @@ The design is flat: no shadows were measured. Hierarchy comes from tonal surface
 
 Most elements use 16px corners. Measured radii, most used first:
 
-- **lg (16px):** 60 elements.
+- **lg (16px):** 64 elements.
 - **sm (8px):** 16 elements.
 - **md (12px):** 12 elements.
 - **full (9999px):** 12 elements.
@@ -149,14 +132,11 @@ Most elements use 16px corners. Measured radii, most used first:
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Log in”):** #E60023 fill, #000000 text, 12px/400, 16px radius, padding 6px 14px.
-- **button-primary-hover:** background #CC001F, text #000000 on hover.
-- **button-secondary (“Sign up”):** #E5E5E0 fill, #000000 text, 12px/400, 16px radius, padding 6px 14px.
-- **button-secondary-hover:** background #DADAD3, text #000000 on hover.
-- **button-tertiary (“See all”):** #E5E5E0 fill, #211922 text, 12px/400, 16px radius, padding 6px 14px.
-- **button-ghost (“Explore”):** transparent fill, #211922 text, 12px/400, 16px radius, padding 6px 14px.
+- **button-primary (“Log in”):** #E60023 fill, #FFFFFF text, 12px/400, 16px radius, padding 8px 16px.
+- **button-secondary (“Sign up”):** #E5E5E0 fill, #000000 text, 12px/400, 16px radius, padding 8px 16px.
+- **button-ghost (“Explore”):** transparent fill, #211922 text, 12px/400, 16px radius, padding 8px 16px.
 - **input-field (“Search for easy dinners, fashion”):** transparent fill, #000000 text, 16px/400, padding 0px.
-- **link:** transparent fill, #211922 text, padding 0px.
+- **link:** transparent fill, #000000 text, padding 0px.
 
 ## Do's and Don'ts
 
@@ -164,7 +144,7 @@ Measured from the rendered page. Token values reference the tokens above.
 - Do keep text in 2 levels: #000000, #62625B.
 - Do reserve #E60023 for primary actions and key highlights.
 - Do set headlines in Pin Sans with tight tracking (-0.018em).
-- Do reuse the measured spacing steps (6px, 14px).
+- Do reuse the measured spacing steps (8px, 16px).
 - Do use 16px corners on most elements; larger surfaces also use 8px and 12px.
 - Don't add drop shadows for depth; use tonal surfaces.
 - Don't introduce new font families beyond Pin Sans.
@@ -178,4 +158,4 @@ Interface transitions are quick: 0.085s.
 - **Easing:** `ease-out`.
 - **Reduced motion:** the page responds to `prefers-reduced-motion`.
 
-Generated by [Sitepeel](https://sitepeel.dev/design-md/pinterest.com/), the free DESIGN.md generator.
+Generated by [Sitepeel](https://sitepeel.dev/design-md/pinterest.com/), the free DESIGN.md generator (engine 2026.10.29+f0c146f7cdfd).

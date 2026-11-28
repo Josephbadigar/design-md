@@ -1,21 +1,21 @@
 ---
 version: alpha
 name: Apple
-description: "Light interface measured from apple.com: SF Pro Display type with SF Pro Text, vivid blue accents, tonal surfaces and pill-shaped controls."
+description: "Dark interface measured from apple.com: SF Pro Display type with SF Pro Text, vivid blue accents, tonal surfaces and pill-shaped controls."
 colors:
-  background: "#F5F5F7"
-  surface: "#F5F5F7"
-  on-surface: "#1D1D1F"
-  on-background: "#1D1D1F"
-  on-surface-variant: "#313131"
-  on-surface-muted: "#444445"
-  surface-container-low: "#FFFFFF"
+  background: "#000F3E"
+  surface: "#000F3E"
+  on-surface: "#F5F5F7"
+  on-background: "#F5F5F7"
+  on-surface-strong: "#FFFFFF"
+  on-surface-variant: "#CCCFD8"
+  surface-container-low: "#1D1D1F"
+  surface-container: "#000000"
   overlay: "#0000007A"
   overlay-strong: "#D2D2D7A3"
   outline: "#00000029"
   primary: "#0071E3"
   on-primary: "#FFFFFF"
-  inverse-surface: "#000000"
   secondary: "#0066CC"
 typography:
   headline-display:
@@ -100,13 +100,12 @@ components:
     height: 44px
   button-outline-hover:
     backgroundColor: "#0076DF"
-    textColor: "{colors.on-primary}"
+    textColor: "{colors.on-surface-strong}"
   button-ghost:
-    textColor: "#2997FF"
-    typography: "{typography.label-md}"
-    rounded: "{rounded.full}"
-    padding: 11px 21px
-    height: 44px
+    textColor: "{colors.on-surface-variant}"
+    typography: "{typography.body-sm}"
+    rounded: 0px
+    padding: 0px 8px
   link:
     textColor: "#000000B8"
 ---
@@ -115,32 +114,32 @@ components:
 
 ## Overview
 
-The interface is light, built on **Snow (#F5F5F7)** with **Charcoal (#1D1D1F)** text, and **Vivid Blue (#0071E3)** as the main accent.
+The interface is dark, built on **Deep Blue (#000F3E)** with **Snow (#F5F5F7)** text, and **Vivid Blue (#0071E3)** as the main accent.
 
 Type is set in **SF Pro Display** and **SF Pro Text**. Headlines run large with tight negative tracking; body text is 21px. The surface language is flat. Controls are pill-shaped.
 
-Measured from [apple.com](https://www.apple.com/) on November 27, 2026 at 1440×900 and 390×844 from 382 rendered elements. Values are computed styles from the live page, not the original source files.
+Measured from [apple.com](https://www.apple.com/) on November 28, 2026 at 1440×900 and 390×844 from 381 rendered elements. Values are computed styles from the live page, not the original source files.
 
 ## Colors
 
 The palette has 12 roles.
 
-- **Snow (#F5F5F7):** Page background, seen 2 times. Token `background`, CSS `--sk-fill-tertiary`.
-- **Charcoal (#1D1D1F):** Primary text and headings, seen 17 times. Token `on-surface`, CSS `--sk-body-text-color`.
-- **Graphite (#313131):** Secondary text, seen 12 times. Token `on-surface-variant`.
-- **Graphite (#444445):** Muted text and metadata, seen 20 times. Token `on-surface-muted`, CSS `--sk-glyph-gray-secondary-alt-alpha`.
-- **White (#FFFFFF):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`, CSS `--sk-fill`.
+- **Deep Blue (#000F3E):** Page background. Token `background`.
+- **Snow (#F5F5F7):** Primary text and headings, seen 39 times. Token `on-surface`, CSS `--sk-fill-tertiary`.
+- **White (#FFFFFF):** Headings and emphasis, seen 9 times. Token `on-surface-strong`, CSS `--sk-fill`.
+- **Cool Silver (#CCCFD8):** Secondary text, seen 12 times. Token `on-surface-variant`.
+- **Charcoal (#1D1D1F):** Raised areas one step from the page, seen 1 time. Token `surface-container-low`, CSS `--sk-body-text-color`.
+- **Near Black (#000000):** Cards and panels, seen 19 times. Token `surface-container`, CSS `--sk-focus-color-alt`.
 - **Near Black 48% (#0000007A):** Translucent fill for cards and controls, seen 7 times. Token `overlay`.
 - **Silver 64% (#D2D2D7A3):** Stronger translucent fill, seen 1 time. Token `overlay-strong`.
 - **Near Black 16% (#00000029):** Borders and dividers, seen 1 time. Token `outline`, CSS `--sk-fill-gray-tertiary-alpha`.
 - **Vivid Blue (#0071E3):** Primary buttons and calls to action, seen 9 times. Token `primary`, CSS `--sk-focus-color`.
 - **White (#FFFFFF):** Text and icons on primary. Token `on-primary`.
-- **Near Black (#000000):** High-contrast fills, seen 19 times. Token `inverse-surface`, CSS `--sk-focus-color-alt`.
-- **Blue (#0066CC):** Accent in text, fills and borders, seen 23 times. Token `secondary`, CSS `--sk-body-link-color`.
+- **Blue (#0066CC):** Accent in text, fills and borders, seen 19 times. Token `secondary`, CSS `--sk-body-link-color`.
 
 ## Typography
 
-**SF Pro Display** and **SF Pro Text** share the interface. Fallback stack: `SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica`. Other loaded fonts: SF Pro Icons.
+**SF Pro Display** and **SF Pro Text** share the interface. Fallback stack: `SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica`.
 
 - **headline-display:** SF Pro Display 56px at weight 600, line height 1.07, tracking -0.005em (32px on mobile). Page title (h1).
 - **headline-lg:** SF Pro Display 40px at weight 600, line height 1.1. Section headings (h2).
@@ -153,7 +152,7 @@ The palette has 12 roles.
 
 ## Layout
 
-Spacing does not follow a strict grid: 54% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
+Spacing does not follow a strict grid: 56% of measured values are multiples of 4px, so match the measured steps rather than rounding to a grid.
 
 - **Scale:** xs 4px, sm 8px, md 9.6px, lg 20px, xl 37px.
 - **Gaps:** 12px is the most common gap in flex and grid layouts.
@@ -163,29 +162,29 @@ Spacing does not follow a strict grid: 54% of measured values are multiples of 4
 
 ## Elevation & Depth
 
-The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#FFFFFF) and #00000029 borders.
+The design is flat: no shadows were measured. Hierarchy comes from tonal surface steps (#1D1D1F → #000000) and #00000029 borders.
 
 ## Shapes
 
 Interactive controls are pill-shaped. Measured radii, most used first:
 
-- **full (9999px):** 68 elements.
+- **full (9999px):** 64 elements.
 
 ## Components
 
 Measured from the rendered page. Token values reference the tokens above.
 
-- **button-primary (“Learn more”):** #0071E3 fill, #FFFFFF text, 17px/400, 980px radius, padding 11px 21px.
+- **button-primary (“Shop”):** #0071E3 fill, #FFFFFF text, 17px/400, 980px radius, padding 11px 21px.
 - **button-primary-hover:** background #0076DF, text #FFFFFF on hover.
 - **button-outline (“Shop iPhone”):** transparent fill, #0066CC text, 17px/400, 980px radius, padding 11px 21px, border 1px solid #0066CC.
 - **button-outline-hover:** background #0076DF, text #FFFFFF on hover.
-- **button-ghost (“Buy”):** transparent fill, #2997FF text, 17px/400, 980px radius, padding 11px 21px, border 1px solid #2997FF.
+- **button-ghost (“0 +”):** transparent fill, #FFFFFFCC text, 12px/400, padding 0px 8px.
 - **link:** transparent fill, #000000B8 text, padding 0px.
 
 ## Do's and Don'ts
 
-- Do use #F5F5F7 for the page and lift surfaces in small steps: #FFFFFF.
-- Do keep text in 3 levels: #1D1D1F, #313131, #444445.
+- Do use #000F3E for the page and lift surfaces in small steps: #1D1D1F, #000000.
+- Do keep text in 3 levels: #F5F5F7, #FFFFFF, #CCCFD8.
 - Do reserve #0071E3 for primary actions and key highlights.
 - Do set headlines in SF Pro Display with tight tracking (-0.005em).
 - Do reuse the measured spacing steps (8px, 9.6px, 20px).
@@ -197,7 +196,7 @@ Measured from the rendered page. Token values reference the tokens above.
 
 ## Motion
 
-Interface transitions are quick: 0.32s, 0.25s, 0.1s. Longer ambient animations run 1s, 0.8s.
+Interface transitions are quick: 0.32s, 0.25s, 0.1s. Longer ambient animations run 1s.
 
 - **Easing:** `cubic-bezier(0.4, 0, 0.6, 1)`, `ease-in-out`, `linear`.
 
